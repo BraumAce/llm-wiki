@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+*.egg
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Quartz build artifacts
+quartz/.quartz-cache/
+quartz/public/
+quartz/node_modules/
+
+# Temp
+_debug*
+*.tmp
+*.log
