@@ -37,7 +37,14 @@
     - **存在**：合并新内容到对应小节（详情/应用/局限），扩展但不覆盖；frontmatter `sources` 追加本 source
     - **不存在**：基于 `templates/entity.md` 创建。**字数必须 ≥ 1500**——单篇素材撑不到 1500 字时，从该素材已有信息出发主动补背景知识填到 1500 字（标注哪些来自 source、哪些是补充的常识）
 3. **写来源摘要**：基于 `templates/source.md` 创建 `ai-wiki/wiki/sources/<title>.md`
-    - 必须含 ≥ 2 段 100 字摘录、"实践内容"段（代码/prompt 原样）
+    - 必须含 ≥ 2 段 100 字摘录
+    - **"实践内容"段**应收尽收以下原文片段（原样保留，不要总结掉）：
+      - 代码 / prompt / 命令
+      - 配置示例 / schema
+      - **强约束清单**：黑名单 / 白名单 / 限额表 / 默认值表（如 SandBox 禁挂载路径列表、网络模式黑名单、默认 cap drop 等）
+      - 公式 / 算法（如 MMR 评分、时间衰减公式）
+      - 命名约定 / 目录布局
+    - 经验：query 时若用户问"X 默认禁止什么"这类约束类问题，答案应该能从 source 实践内容直接命中——不要让 entity 页成为孤立信息源
     - `related_entities`、`related_topics` 填齐
 4. **主题判断**：
     - 检查现有 topics 是否覆盖此 source 的核心议题；如覆盖，仅追加到 topic 的 `sources`

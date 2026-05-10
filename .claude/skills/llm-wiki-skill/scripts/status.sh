@@ -54,3 +54,40 @@ LLM Wiki Status
 原始素材:   $RAW_FILES 个文件 (raw/)
 最后 lint:  $LAST_LINT
 EOF
+
+# --- Graph 摘要（轻量预览，仅读已有 _graph.json，不重写） ---
+GRAPH="$WIKI_DIR/_graph.json"
+if [ -f "$GRAPH" ] && command -v jq >/dev/null 2>&1; then
+  GRAPH_GENERATED=$(jq -r '.generated_at // "—"' "$GRAPH")
+  GRAPH_NODES=$(jq -r '.stats.nodes // 0' "$GRAPH")
+  GRAPH_EDGES=$(jq -r '.stats.edges // 0' "$GRAPH")
+  GRAPH_ORPHANS=$(jq -r '.stats.orphan_links | length' "$GRAPH")
+  echo ""
+  echo "Graph 摘要 (生成于 $GRAPH_GENERATED)"
+  echo "==============="
+  echo "节点:       $GRAPH_NODES"
+  echo "边:         $GRAPH_EDGES"
+  echo "孤儿链接:   $GRAPH_ORPHANS"
+  echo "Top 3 入度:"
+  jq -r '
+    .edges
+    | group_by(.to)
+    | map({to: .[0].to, indeg: ([.[].weight] | add)})
+    | sort_by(-.indeg)
+    | .[0:3]
+    | .[] | "  \(.indeg)  \(.to)"
+  ' "$GRAPH"
+  # 时效提示：图谱晚于最近 wiki 改动则提示重跑
+  if [ -d "$WIKI_DIR" ]; then
+    NEWER=$(find "$WIKI_DIR" -name '*.md' -type f -newer "$GRAPH" 2>/dev/null | wc -l | tr -d ' ')
+    if [ "$NEWER" -gt 0 ]; then
+      echo ""
+      echo "提示: 有 $NEWER 个 .md 文件晚于图谱更新时间，建议重跑 scripts/graph.sh"
+    fi
+  fi
+else
+  if [ ! -f "$GRAPH" ]; then
+    echo ""
+    echo "提示: 未找到 _graph.json，运行 scripts/graph.sh 生成知识图谱"
+  fi
+fi

@@ -61,6 +61,39 @@ openclaw sandbox recreate    # 强制重建容器
 openclaw sandbox explain     # 调试当前配置（解释模式合并结果）
 ```
 
+### SandBox 强约束黑名单（原文 3.8.6）
+
+**禁止的绑定挂载**：
+
+```
+/etc  /proc  /sys  /dev  /root  /boot  /run
+/var/run/docker.sock
+/   （根文件系统）
+```
+
+**禁止的网络模式**：
+
+```
+host                 （绕过网络隔离）
+container:<id>       （命名空间加入）
+```
+
+**默认安全配置**：
+
+```
+readOnlyRoot: true
+network: "none"
+capDrop: ["ALL"]
+```
+
+### SandBox 三档配置矩阵（原文 3.8.3 / 3.8.4 / 3.8.5）
+
+| 维度 | 档位与默认 |
+|---|---|
+| 隔离模式 mode | `off` / `non-main`（默认）/ `all` |
+| 容器作用域 scope | `session`（默认）/ `agent` / `shared` |
+| 工作区访问 workspaceAccess | `none`（默认）/ `ro` / `rw` |
+
 ### 记忆系统目录布局（原文 3.9.2）
 
 ```

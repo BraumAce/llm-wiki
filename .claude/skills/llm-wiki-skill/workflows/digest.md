@@ -25,7 +25,9 @@
 4. **写入文件**：`ai-wiki/wiki/topics/<subject>-digest-YYYYMMDD.md`
     - frontmatter `type: topic`、`tags: [digest]`
     - 至少引用 5 个 sources / entities
-5. **链接回写**：在被引用的 entity / source 页底部加 `相关综合：[[<subject>-digest-YYYYMMDD]]`
+5. **链接回写**（仅 entity 页）：在被引用的 entity 页底部加 `## 相关综合\n\n- [[<subject>-digest-YYYYMMDD]]`
+    - **不要回写到 source 页**：source 是原料归档，多次 digest 累积会让 source 底部塞满"相关综合"，污染严重；反向关系靠 `graph` workflow 解析 `[[wikilink]]` 还原即可
+    - **回写时去重**：若 entity 已有 `## 相关综合` 段，把新 digest 追加为列表项；若指向的 digest 已在列表中，跳过
 6. **lint**
 
 ## 输出
