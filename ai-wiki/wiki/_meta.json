@@ -2,10 +2,10 @@
   "version": "1.0",
   "lang": "zh",
   "created_at": "2026-05-10T20:50:00+08:00",
-  "last_lint": "2026-05-10T20:55:00+08:00",
+  "last_lint": "2026-05-10T21:30:00+08:00",
   "stats": {
-    "entities": 0,
+    "entities": 2,
     "topics": 0,
-    "sources": 0
+    "sources": 2
   }
 }
