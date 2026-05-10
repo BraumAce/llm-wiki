@@ -1,0 +1,470 @@
+{
+  "generated_at": "2026-05-10T23:00:09+08:00",
+  "wiki_dir": "/Users/liuguang/Documents/Private/llm-wiki/ai-wiki/wiki",
+  "stats": {
+    "nodes": 14,
+    "edges": 61,
+    "edge_weight_total": 177,
+    "orphan_links": [],
+    "by_type": {
+      "entity": 4,
+      "topic": 1,
+      "source": 9
+    }
+  },
+  "nodes": [
+    {
+      "id": "OpenClaw",
+      "type": "entity",
+      "title": "OpenClaw",
+      "tags": [
+        "ai-agent",
+        "personal-assistant",
+        "local-first",
+        "open-source",
+        "agentic"
+      ]
+    },
+    {
+      "id": "OpenClaw-SandBox",
+      "type": "entity",
+      "title": "OpenClaw-SandBox",
+      "tags": [
+        "security",
+        "docker",
+        "sandbox",
+        "openclaw-module"
+      ]
+    },
+    {
+      "id": "OpenClaw-Skills",
+      "type": "entity",
+      "title": "OpenClaw-Skills",
+      "tags": [
+        "skills",
+        "openclaw-module",
+        "knowledge-pack"
+      ]
+    },
+    {
+      "id": "OpenClaw-双源记忆系统",
+      "type": "entity",
+      "title": "OpenClaw-双源记忆系统",
+      "tags": [
+        "memory",
+        "openclaw-module",
+        "sqlite",
+        "hybrid-search"
+      ]
+    },
+    {
+      "id": "OpenClaw-Agent与Skill架构详解",
+      "type": "source",
+      "title": "OpenClaw Agent与Skill架构详解",
+      "tags": [
+        "openclaw",
+        "agent",
+        "skill",
+        "subagent"
+      ]
+    },
+    {
+      "id": "OpenClaw橙皮书-从入门到精通",
+      "type": "source",
+      "title": "OpenClaw橙皮书：从入门到精通",
+      "tags": [
+        "openclaw",
+        "handbook",
+        "index-page"
+      ]
+    },
+    {
+      "id": "从架构到代码-深入理解OpenClaw的双源记忆系统",
+      "type": "source",
+      "title": "从架构到代码：深入理解 OpenClaw 的双源记忆系统",
+      "tags": [
+        "openclaw",
+        "memory-system"
+      ]
+    },
+    {
+      "id": "以OpenClaw为例介绍AI-Agent的运作原理",
+      "type": "source",
+      "title": "以 OpenClaw 为例介绍 AI Agent 的运作原理",
+      "tags": [
+        "openclaw",
+        "ai-agent",
+        "tutorial"
+      ]
+    },
+    {
+      "id": "深入理解OpenClaw技术架构与实现原理-上",
+      "type": "source",
+      "title": "深入理解OpenClaw技术架构与实现原理（上）",
+      "tags": [
+        "openclaw",
+        "architecture",
+        "agent-framework"
+      ]
+    },
+    {
+      "id": "深入理解OpenClaw技术架构与实现原理-下",
+      "type": "source",
+      "title": "深入理解OpenClaw技术架构与实现原理（下）",
+      "tags": [
+        "openclaw",
+        "architecture",
+        "sandbox",
+        "memory",
+        "skills"
+      ]
+    },
+    {
+      "id": "深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践",
+      "type": "source",
+      "title": "深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践",
+      "tags": [
+        "openclaw",
+        "prompt-engineering",
+        "context-engineering",
+        "harness"
+      ]
+    },
+    {
+      "id": "玩转OpenClaw-核心架构-运作原理-Agent部署步骤",
+      "type": "source",
+      "title": "玩转OpenClaw，你需要了解的：核心架构、运作原理、Agent部署步骤",
+      "tags": [
+        "openclaw",
+        "deployment",
+        "multi-agent"
+      ]
+    },
+    {
+      "id": "龙虾大脑核心揭秘1-OpenClaw处理流程链路解析",
+      "type": "source",
+      "title": "【龙虾大脑核心揭秘-1】OpenClaw处理流程链路解析",
+      "tags": [
+        "openclaw",
+        "architecture",
+        "react-loop"
+      ]
+    },
+    {
+      "id": "OpenClaw-digest-20260510",
+      "type": "topic",
+      "title": "OpenClaw 综合：架构总览、三大子系统的共同设计哲学与开放问题",
+      "tags": [
+        "digest",
+        "openclaw"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "OpenClaw",
+      "to": "OpenClaw-Agent与Skill架构详解",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw",
+      "to": "OpenClaw-SandBox",
+      "weight": 3
+    },
+    {
+      "from": "OpenClaw",
+      "to": "OpenClaw-Skills",
+      "weight": 3
+    },
+    {
+      "from": "OpenClaw",
+      "to": "OpenClaw-digest-20260510",
+      "weight": 1
+    },
+    {
+      "from": "OpenClaw",
+      "to": "OpenClaw-双源记忆系统",
+      "weight": 3
+    },
+    {
+      "from": "OpenClaw",
+      "to": "OpenClaw橙皮书-从入门到精通",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw",
+      "to": "从架构到代码-深入理解OpenClaw的双源记忆系统",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw",
+      "to": "以OpenClaw为例介绍AI-Agent的运作原理",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw",
+      "to": "深入理解OpenClaw技术架构与实现原理-上",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw",
+      "to": "深入理解OpenClaw技术架构与实现原理-下",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw",
+      "to": "深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw",
+      "to": "玩转OpenClaw-核心架构-运作原理-Agent部署步骤",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw",
+      "to": "龙虾大脑核心揭秘1-OpenClaw处理流程链路解析",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw-Agent与Skill架构详解",
+      "to": "OpenClaw",
+      "weight": 3
+    },
+    {
+      "from": "OpenClaw-Agent与Skill架构详解",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw-Agent与Skill架构详解",
+      "to": "深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践",
+      "weight": 1
+    },
+    {
+      "from": "OpenClaw-SandBox",
+      "to": "OpenClaw",
+      "weight": 5
+    },
+    {
+      "from": "OpenClaw-SandBox",
+      "to": "OpenClaw-digest-20260510",
+      "weight": 1
+    },
+    {
+      "from": "OpenClaw-SandBox",
+      "to": "深入理解OpenClaw技术架构与实现原理-下",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw-Skills",
+      "to": "OpenClaw",
+      "weight": 4
+    },
+    {
+      "from": "OpenClaw-Skills",
+      "to": "OpenClaw-Agent与Skill架构详解",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw-Skills",
+      "to": "OpenClaw-SandBox",
+      "weight": 1
+    },
+    {
+      "from": "OpenClaw-Skills",
+      "to": "OpenClaw-digest-20260510",
+      "weight": 1
+    },
+    {
+      "from": "OpenClaw-Skills",
+      "to": "OpenClaw-双源记忆系统",
+      "weight": 1
+    },
+    {
+      "from": "OpenClaw-Skills",
+      "to": "深入理解OpenClaw技术架构与实现原理-下",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw-Skills",
+      "to": "深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw-Skills",
+      "to": "玩转OpenClaw-核心架构-运作原理-Agent部署步骤",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw-digest-20260510",
+      "to": "OpenClaw",
+      "weight": 5
+    },
+    {
+      "from": "OpenClaw-digest-20260510",
+      "to": "OpenClaw-Agent与Skill架构详解",
+      "weight": 6
+    },
+    {
+      "from": "OpenClaw-digest-20260510",
+      "to": "OpenClaw-SandBox",
+      "weight": 5
+    },
+    {
+      "from": "OpenClaw-digest-20260510",
+      "to": "OpenClaw-Skills",
+      "weight": 4
+    },
+    {
+      "from": "OpenClaw-digest-20260510",
+      "to": "OpenClaw-双源记忆系统",
+      "weight": 5
+    },
+    {
+      "from": "OpenClaw-digest-20260510",
+      "to": "OpenClaw橙皮书-从入门到精通",
+      "weight": 5
+    },
+    {
+      "from": "OpenClaw-digest-20260510",
+      "to": "从架构到代码-深入理解OpenClaw的双源记忆系统",
+      "weight": 5
+    },
+    {
+      "from": "OpenClaw-digest-20260510",
+      "to": "以OpenClaw为例介绍AI-Agent的运作原理",
+      "weight": 4
+    },
+    {
+      "from": "OpenClaw-digest-20260510",
+      "to": "深入理解OpenClaw技术架构与实现原理-上",
+      "weight": 6
+    },
+    {
+      "from": "OpenClaw-digest-20260510",
+      "to": "深入理解OpenClaw技术架构与实现原理-下",
+      "weight": 4
+    },
+    {
+      "from": "OpenClaw-digest-20260510",
+      "to": "深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践",
+      "weight": 7
+    },
+    {
+      "from": "OpenClaw-digest-20260510",
+      "to": "玩转OpenClaw-核心架构-运作原理-Agent部署步骤",
+      "weight": 5
+    },
+    {
+      "from": "OpenClaw-digest-20260510",
+      "to": "龙虾大脑核心揭秘1-OpenClaw处理流程链路解析",
+      "weight": 5
+    },
+    {
+      "from": "OpenClaw-双源记忆系统",
+      "to": "OpenClaw",
+      "weight": 6
+    },
+    {
+      "from": "OpenClaw-双源记忆系统",
+      "to": "OpenClaw-SandBox",
+      "weight": 1
+    },
+    {
+      "from": "OpenClaw-双源记忆系统",
+      "to": "OpenClaw-digest-20260510",
+      "weight": 1
+    },
+    {
+      "from": "OpenClaw-双源记忆系统",
+      "to": "从架构到代码-深入理解OpenClaw的双源记忆系统",
+      "weight": 3
+    },
+    {
+      "from": "OpenClaw-双源记忆系统",
+      "to": "以OpenClaw为例介绍AI-Agent的运作原理",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw-双源记忆系统",
+      "to": "深入理解OpenClaw技术架构与实现原理-下",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw-双源记忆系统",
+      "to": "深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践",
+      "weight": 1
+    },
+    {
+      "from": "OpenClaw橙皮书-从入门到精通",
+      "to": "OpenClaw",
+      "weight": 4
+    },
+    {
+      "from": "从架构到代码-深入理解OpenClaw的双源记忆系统",
+      "to": "OpenClaw",
+      "weight": 3
+    },
+    {
+      "from": "从架构到代码-深入理解OpenClaw的双源记忆系统",
+      "to": "OpenClaw-双源记忆系统",
+      "weight": 2
+    },
+    {
+      "from": "从架构到代码-深入理解OpenClaw的双源记忆系统",
+      "to": "深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践",
+      "weight": 1
+    },
+    {
+      "from": "以OpenClaw为例介绍AI-Agent的运作原理",
+      "to": "OpenClaw",
+      "weight": 3
+    },
+    {
+      "from": "深入理解OpenClaw技术架构与实现原理-上",
+      "to": "OpenClaw",
+      "weight": 3
+    },
+    {
+      "from": "深入理解OpenClaw技术架构与实现原理-下",
+      "to": "OpenClaw",
+      "weight": 5
+    },
+    {
+      "from": "深入理解OpenClaw技术架构与实现原理-下",
+      "to": "OpenClaw-SandBox",
+      "weight": 2
+    },
+    {
+      "from": "深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践",
+      "to": "OpenClaw",
+      "weight": 3
+    },
+    {
+      "from": "深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践",
+      "to": "OpenClaw-双源记忆系统",
+      "weight": 1
+    },
+    {
+      "from": "玩转OpenClaw-核心架构-运作原理-Agent部署步骤",
+      "to": "OpenClaw",
+      "weight": 4
+    },
+    {
+      "from": "玩转OpenClaw-核心架构-运作原理-Agent部署步骤",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "龙虾大脑核心揭秘1-OpenClaw处理流程链路解析",
+      "to": "OpenClaw",
+      "weight": 3
+    }
+  ]
+}
