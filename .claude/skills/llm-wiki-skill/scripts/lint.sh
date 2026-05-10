@@ -52,12 +52,18 @@ fi
 
 # --- 3. 占位符 ---
 echo "[3/5] 占位符 (TODO/XXX/待补充/TBD)..."
-hits=$(find "$WIKI_DIR" -name '*.md' -type f -exec grep -lE '(TODO|XXX|待补充|TBD)' {} + 2>/dev/null || true)
-if [ -n "$hits" ]; then
-  while IFS= read -r f; do
+# 跳过 ``` 代码块和 `行内代码` —— 里面的 TODO 通常是源码引用，不是真的"待补充"
+while IFS= read -r -d '' f; do
+  cleaned=$(awk '
+    BEGIN {in_fence=0}
+    /^```/ {in_fence=!in_fence; next}
+    in_fence==1 {next}
+    {gsub(/`[^`]*`/, ""); print}
+  ' "$f")
+  if echo "$cleaned" | grep -qE '(TODO|XXX|待补充|TBD)'; then
     err "占位符出现在: ${f#$WIKI_DIR/}"
-  done <<< "$hits"
-fi
+  fi
+done < <(find "$WIKI_DIR" -name '*.md' -type f -print0 2>/dev/null)
 
 # --- 4. frontmatter sources 非空 ---
 echo "[4/5] frontmatter sources 非空 (entities + topics)..."

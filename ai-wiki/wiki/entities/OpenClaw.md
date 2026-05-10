@@ -2,7 +2,7 @@
 title: "OpenClaw"
 type: entity
 date: 2026-05-10
-also_known_as: ["OpenClaw AI Agent"]
+also_known_as: ["OpenClaw AI Agent", "Moltbot", "clawdbot", "龙虾"]
 tags:
   - ai-agent
   - personal-assistant
@@ -12,8 +12,17 @@ tags:
 sources:
   - "[[深入理解OpenClaw技术架构与实现原理-上]]"
   - "[[深入理解OpenClaw技术架构与实现原理-下]]"
+  - "[[从架构到代码-深入理解OpenClaw的双源记忆系统]]"
+  - "[[玩转OpenClaw-核心架构-运作原理-Agent部署步骤]]"
+  - "[[龙虾大脑核心揭秘1-OpenClaw处理流程链路解析]]"
+  - "[[以OpenClaw为例介绍AI-Agent的运作原理]]"
+  - "[[OpenClaw-Agent与Skill架构详解]]"
+  - "[[深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践]]"
+  - "[[OpenClaw橙皮书-从入门到精通]]"
 related_entities:
   - "[[OpenClaw-SandBox]]"
+  - "[[OpenClaw-双源记忆系统]]"
+  - "[[OpenClaw-Skills]]"
 ---
 
 # OpenClaw
@@ -74,8 +83,8 @@ Gateway 之上挂了三类执行单元：
 6. **上下文管理**：上下文窗口管理、压缩、剪枝、工具结果守卫、运行时上下文注入
 7. **SubAgent 子智能体**：会话键 + 注册表 + 派生逻辑 + 通告机制 + 独立工具系统
 8. **SandBox 沙箱系统** —— 见 [[OpenClaw-SandBox]]
-9. **记忆管理**：文件即真相（Markdown + SQLite + 向量），混合搜索（向量 + BM25），MMR 去重，时间衰减
-10. **Skills 模块**：Skills 优先级加载、过滤逻辑、文件监听、安装支持类型（含 GitHub）
+9. **记忆管理** —— 见 [[OpenClaw-双源记忆系统]]（动态 JSONL + 静态 Markdown + SQLite 双索引 + 混合搜索）
+10. **Skills 模块** —— 见 [[OpenClaw-Skills]]（6 源加载 + 优先级覆盖 + 菜单注入 + 自主选择）
 11. **Session 管理**：session key 设计、生命周期、存储、清理、投递路由、归档
 12. **自进化机制**：动态系统提示、自我修改可写文件、自我更新指令、进化循环
 13. **工作区与 Agent 路由**：多代理路由策略、会话键策略、性能优化
@@ -107,9 +116,21 @@ Gateway 之上挂了三类执行单元：
 ## 与其他实体的关系
 
 - [[OpenClaw-SandBox]] —— 安全隔离子系统，决定 OpenClaw "什么工具能在哪里跑"
+- [[OpenClaw-双源记忆系统]] —— 持久化记忆子系统，决定 OpenClaw "记得什么、怎么记"
+- [[OpenClaw-Skills]] —— 知识扩展子系统，决定 OpenClaw "能做哪些领域的事情"
 
 ## 参考来源
 
-- [[深入理解OpenClaw技术架构与实现原理-上]]
-- [[深入理解OpenClaw技术架构与实现原理-下]]
+- [[深入理解OpenClaw技术架构与实现原理-上]] / [[深入理解OpenClaw技术架构与实现原理-下]] —— 阿里云开发者，源码级总览
+- [[从架构到代码-深入理解OpenClaw的双源记忆系统]] —— 腾讯云开发者，记忆专题
+- [[玩转OpenClaw-核心架构-运作原理-Agent部署步骤]] —— 腾讯技术工程，部署实战
+- [[龙虾大脑核心揭秘1-OpenClaw处理流程链路解析]] —— 京东科技，十步消息流程
+- [[以OpenClaw为例介绍AI-Agent的运作原理]] —— Java 一条人，入门教程
+- [[OpenClaw-Agent与Skill架构详解]] —— 京东技术，Agent + Skill 源码深度
+- [[深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践]] —— 阿里云开发者，23 个 prompt 模块
+- [[OpenClaw橙皮书-从入门到精通]] —— 花叔的飞书 wiki 入口（手册已上架微信读书）
 - 官方网站：https://openclaw.ai/
+
+## 相关综合
+
+- [[OpenClaw-digest-20260510]]
