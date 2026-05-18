@@ -68,6 +68,8 @@ echo "  ✓ 环境检查通过"
 # === [2/4] Build ===
 if [ "$SKIP_BUILD" = "0" ]; then
   echo "[2/4] 同步内容 + Quartz build"
+  # 注入生产域名到 Quartz：影响 sitemap/RSS/og:url/canonical 等绝对链接
+  export SITE_BASE_URL="$DEPLOY_DOMAIN"
   bash "$REPO_ROOT/.claude/skills/quartz-wiki/scripts/sync-content.sh"
   cd "$REPO_ROOT/quartz"
   rm -rf .quartz-cache public

@@ -8,13 +8,13 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "LLM Wiki",
+    pageTitle: process.env.SITE_TITLE ?? "LLM Wiki",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: null,
     locale: "zh-CN",
-    baseUrl: "localhost:8080",
+    baseUrl: process.env.SITE_BASE_URL ?? "localhost:8080",
     ignorePatterns: ["private", "templates", ".obsidian", "raw"],
     defaultDateType: "modified",
     theme: {
