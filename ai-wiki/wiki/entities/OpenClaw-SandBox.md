@@ -2,7 +2,9 @@
 title: "OpenClaw-SandBox"
 type: entity
 date: 2026-05-10
-also_known_as: ["OpenClaw 沙箱系统", "OpenClaw Sandbox"]
+also_known_as:
+  - "OpenClaw 沙箱系统"
+  - "OpenClaw Sandbox"
 tags:
   - security
   - docker

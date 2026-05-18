@@ -2,7 +2,9 @@
 title: "OpenClaw-Skills"
 type: entity
 date: 2026-05-10
-also_known_as: ["OpenClaw Skills 系统", "Agent Skills"]
+also_known_as:
+  - "OpenClaw Skills 系统"
+  - "Agent Skills"
 tags:
   - skills
   - openclaw-module

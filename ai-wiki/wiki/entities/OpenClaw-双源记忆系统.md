@@ -2,7 +2,9 @@
 title: "OpenClaw-双源记忆系统"
 type: entity
 date: 2026-05-10
-also_known_as: ["OpenClaw 记忆管理", "OpenClaw Memory"]
+also_known_as:
+  - "OpenClaw 记忆管理"
+  - "OpenClaw Memory"
 tags:
   - memory
   - openclaw-module

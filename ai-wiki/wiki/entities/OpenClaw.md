@@ -2,7 +2,11 @@
 title: "OpenClaw"
 type: entity
 date: 2026-05-10
-also_known_as: ["OpenClaw AI Agent", "Moltbot", "clawdbot", "龙虾"]
+also_known_as:
+  - "OpenClaw AI Agent"
+  - "Moltbot"
+  - "clawdbot"
+  - "龙虾"
 tags:
   - ai-agent
   - personal-assistant
