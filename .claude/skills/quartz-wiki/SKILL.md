@@ -70,10 +70,25 @@ python -m http.server 8080 -d public
 - [ ] 图片加载
 - [ ] 暗色模式切换
 
-### Phase 5: 部署
+### Phase 5: 远程部署（nginx VPS）
 
-候选平台：Cloudflare Pages / Vercel / GitHub Pages。
-具体配置待落到 `references/deployment-<platform>.md`。
+```bash
+# 一行完成: sync → build → rsync → HTTP 验证
+bash .claude/skills/quartz-wiki/scripts/deploy.sh
+```
+
+可选参数：`--skip-build`（仅 rsync 已有 `public/`）、`--dry-run`（rsync 干跑）。
+环境变量覆盖：`DEPLOY_HOST` / `DEPLOY_PATH` / `DEPLOY_DOMAIN`。
+
+完整流程（含服务器侧 nginx 配置、certbot HTTPS、多设备维护、排错）见
+[references/deployment-nginx-vps.md](references/deployment-nginx-vps.md)。
+
+部署前置检查：
+- [ ] `ai-wiki/wiki/` 已 lint 通过（用 llm-wiki-skill 的 `lint` workflow）
+- [ ] 没有未 commit 的内容修改（脚本会提示）
+- [ ] 服务器 SSH 可达，部署目录已存在
+
+**其他平台**: Cloudflare Pages / Vercel / GitHub Pages 待补 `references/deployment-<platform>.md`。
 
 ## quartz.config.ts 关键配置
 
@@ -126,10 +141,19 @@ tags:
 | 图片不显示 | 检查路径，外链可直接用 |
 | 中文乱码 | `locale: "zh-CN"` + 文件 UTF-8 |
 
+## 脚本与配置
+
+| 路径 | 用途 |
+|------|------|
+| `scripts/sync-content.sh` | `ai-wiki/wiki/` → `quartz/content/` 同步 |
+| `scripts/deploy.sh` | 一键远程部署（build + rsync + HTTP 验证） |
+| `scripts/nginx-llm-wiki.conf` | nginx server block 模板 |
+| `references/deployment-nginx-vps.md` | VPS 部署完整手册 |
+
 ## TODO
 
 - [ ] `references/quartz-setup.md` 完整初始化指南
 - [ ] `references/quartz-troubleshooting.md` 修复脚本
-- [ ] `references/deployment-cloudflare.md` 部署细节
-- [ ] `scripts/sync-content.sh` 内容同步脚本
+- [ ] `references/deployment-cloudflare.md` CF Pages 部署细节
 - [ ] `scripts/fix-frontmatter.sh` 批量修复 frontmatter
+- [ ] GitHub Actions 自动 rsync
