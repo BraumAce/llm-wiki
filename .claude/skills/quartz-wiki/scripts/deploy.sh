@@ -57,6 +57,12 @@ if [ -n "$(git status --porcelain ai-wiki/ 2>/dev/null)" ]; then
   read -r -p "  继续部署未提交内容？[y/N] " ans
   [ "$ans" = "y" ] || { echo "已取消"; exit 1; }
 fi
+
+if ! ssh -o BatchMode=yes -o ConnectTimeout=5 "$DEPLOY_HOST" 'command -v rsync >/dev/null'; then
+  echo "  ✗ 远程 $DEPLOY_HOST 未安装 rsync" >&2
+  echo "    修复: ssh $DEPLOY_HOST 'dnf install -y rsync'  (或 apt install rsync)" >&2
+  exit 1
+fi
 echo "  ✓ 环境检查通过"
 
 # === [2/4] Build ===

@@ -15,7 +15,9 @@ export async function glob(
     await globby(pattern, {
       cwd,
       ignore: ignorePatterns,
-      gitignore: true,
+      // gitignore: false (was true upstream) —— 否则 quartz/content/ 被仓库根 .gitignore
+      // 屏蔽后整个内容目录被跳过；衍生物排除已经在仓库根 .gitignore 管理
+      gitignore: false,
     })
   ).map(toPosixPath)
   return fps as FilePath[]

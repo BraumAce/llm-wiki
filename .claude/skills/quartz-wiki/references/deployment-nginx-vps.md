@@ -40,11 +40,14 @@ dig wiki.bytelighting.cn +short
 # 应输出: 47.96.125.148
 ```
 
-### Step 2: 服务器准备目录 + nginx 配置
+### Step 2: 服务器准备目录 + nginx 配置 + rsync
 
 ```bash
 # 登录
 ssh root@47.96.125.148
+
+# 装 rsync（部署传输用，阿里云 Linux/CentOS 默认不带）
+dnf install -y rsync   # 或 apt install -y rsync（Debian/Ubuntu）
 
 # 建部署目录（首次会被 deploy.sh 自动建，提前建也行）
 mkdir -p /home/www/website/llm-wiki
@@ -146,6 +149,8 @@ bash .claude/skills/quartz-wiki/scripts/deploy.sh
 |------|------|
 | `dig` 返回空 | DNS 未生效，等 5-10 分钟；或者 DNS 商面板没保存 |
 | `certbot --nginx` 报 "Failed authorization" | DNS 还没指过来，或者 80 端口被防火墙挡了 |
+| build 提示 "Found 0 input files" | Quartz globby 默认 `gitignore: true` 会跳过被根 `.gitignore` 排除的 `quartz/content/`。已通过修改 `quartz/quartz/util/glob.ts` 关掉，npm 更新 Quartz 后需重新应用此修改 |
+| rsync 报 "bash: rsync: command not found" | 远程服务器未装 rsync。`ssh root@<host> 'dnf install -y rsync'`（或 apt）。`deploy.sh` 前置检查也会拦截 |
 | 部署后 404 | `ssh root@<host> 'ls /home/www/website/llm-wiki/'` 看文件有没有；看 `error.log` |
 | 部署后 403 | 目录权限，`chmod -R o+rX /home/www/website/llm-wiki` |
 | 中文路径 404 | nginx 默认 UTF-8 没问题；若异常加 `charset utf-8;` 到 server block |
