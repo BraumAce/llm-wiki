@@ -2,7 +2,7 @@
 # sync-content.sh — 把 ai-wiki/wiki/ 同步到 quartz/content/
 #
 # 用法（从任意位置）:
-#   bash .claude/skills/quartz-wiki/scripts/sync-content.sh
+#   bash .agents/skills/quartz-wiki/scripts/sync-content.sh
 #
 # 行为:
 #   1. 整体替换 quartz/content/ 内容（删除后重建）

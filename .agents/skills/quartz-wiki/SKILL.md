@@ -55,7 +55,7 @@ Quartz YAML 解析严格，部署前先扫一遍：
 rm -rf .quartz-cache public
 
 # 构建
-npx quartz build
+npm run quartz -- build
 
 # 本地预览（不要用 --serve，会清 public）
 python -m http.server 8080 -d public
@@ -74,7 +74,7 @@ python -m http.server 8080 -d public
 
 ```bash
 # 一行完成: sync → build → rsync → HTTP 验证
-bash .claude/skills/quartz-wiki/scripts/deploy.sh
+bash .agents/skills/quartz-wiki/scripts/deploy.sh
 ```
 
 可选参数：`--skip-build`（仅 rsync 已有 `public/`）、`--dry-run`（rsync 干跑）。
@@ -156,4 +156,4 @@ tags:
 - [ ] `references/quartz-troubleshooting.md` 修复脚本
 - [ ] `references/deployment-cloudflare.md` CF Pages 部署细节
 - [ ] `scripts/fix-frontmatter.sh` 批量修复 frontmatter
-- [ ] GitHub Actions 自动 rsync
+- [x] GitHub Actions 自动 rsync

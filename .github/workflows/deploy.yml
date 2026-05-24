@@ -1,0 +1,112 @@
+name: Deploy llm-wiki
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'ai-wiki/wiki/**'
+      - 'quartz/**'
+      - '.agents/skills/**'
+      - '.github/workflows/deploy.yml'
+      - 'README.md'
+  push:
+    branches: [main]
+    paths:
+      - 'ai-wiki/wiki/**'
+      - 'quartz/**'
+      - '.agents/skills/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: llm-wiki-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: quartz/package-lock.json
+
+      - name: Install quartz deps
+        working-directory: quartz
+        run: npm ci
+
+      - name: Install system deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y rsync
+
+      - name: Lint wiki
+        run: bash .agents/skills/llm-wiki-skill/scripts/lint.sh
+
+      - name: Sync wiki content
+        run: bash .agents/skills/quartz-wiki/scripts/sync-content.sh
+
+      - name: Build Quartz site
+        working-directory: quartz
+        env:
+          SITE_BASE_URL: example.com
+        run: npm run quartz -- build
+
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: validate
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: quartz/package-lock.json
+
+      - name: Install quartz deps
+        working-directory: quartz
+        run: npm ci
+
+      - name: Install system deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y rsync
+
+      - name: Check deploy secrets
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+          DEPLOY_DOMAIN: ${{ secrets.DEPLOY_DOMAIN }}
+        run: |
+          missing=0
+          for name in SSH_PRIVATE_KEY SSH_KNOWN_HOSTS DEPLOY_HOST DEPLOY_PATH DEPLOY_DOMAIN; do
+            if [ -z "${!name:-}" ]; then
+              echo "::error::Missing required secret: $name"
+              missing=1
+            fi
+          done
+          exit "$missing"
+
+      - name: Install SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+
+      - name: Deploy
+        env:
+          DEPLOY_HOST:   ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_PATH:   ${{ secrets.DEPLOY_PATH }}
+          DEPLOY_DOMAIN: ${{ secrets.DEPLOY_DOMAIN }}
+        run: bash .agents/skills/quartz-wiki/scripts/deploy.sh

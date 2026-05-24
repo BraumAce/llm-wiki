@@ -2,21 +2,21 @@
 # deploy.sh — 本地 build + rsync 部署 llm-wiki 到远程 nginx 服务器
 #
 # 用法（从任意位置）:
-#   bash .claude/skills/quartz-wiki/scripts/deploy.sh                # 完整流程
-#   bash .claude/skills/quartz-wiki/scripts/deploy.sh --skip-build   # 仅 rsync 已有 public/
-#   bash .claude/skills/quartz-wiki/scripts/deploy.sh --dry-run      # rsync 干跑（不实际传输）
+#   bash .agents/skills/quartz-wiki/scripts/deploy.sh                # 完整流程
+#   bash .agents/skills/quartz-wiki/scripts/deploy.sh --skip-build   # 仅 rsync 已有 public/
+#   bash .agents/skills/quartz-wiki/scripts/deploy.sh --dry-run      # rsync 干跑（不实际传输）
 #
 # 环境变量（可覆盖默认值）:
-#   DEPLOY_HOST    SSH 目标，默认 root@47.96.125.148
-#   DEPLOY_PATH    服务器路径，默认 /home/www/website/llm-wiki
-#   DEPLOY_DOMAIN  验证域名，默认 wiki.bytelighting.cn
+#   DEPLOY_HOST    SSH 目标，必填，例如 user@server.example.com
+#   DEPLOY_PATH    服务器路径，必填，例如 /var/www/llm-wiki
+#   DEPLOY_DOMAIN  验证域名，必填，例如 wiki.example.com
 
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "$0")/../../../.." && pwd)"
-DEPLOY_HOST="${DEPLOY_HOST:-root@47.96.125.148}"
-DEPLOY_PATH="${DEPLOY_PATH:-/home/www/website/llm-wiki}"
-DEPLOY_DOMAIN="${DEPLOY_DOMAIN:-wiki.bytelighting.cn}"
+DEPLOY_HOST="${DEPLOY_HOST:-}"
+DEPLOY_PATH="${DEPLOY_PATH:-}"
+DEPLOY_DOMAIN="${DEPLOY_DOMAIN:-}"
 
 SKIP_BUILD=0
 DRY_RUN=0
@@ -31,9 +31,24 @@ for arg in "$@"; do
   esac
 done
 
+require_env() {
+  local name="$1"
+  local value="${!name:-}"
+  if [ -z "$value" ]; then
+    echo "  ✗ 缺少环境变量 $name" >&2
+    echo "    请通过 GitHub Actions Secrets、shell export 或命令前缀设置。" >&2
+    return 1
+  fi
+}
+
 echo "═══════════════════════════════════════════════"
 echo "  llm-wiki 部署"
 echo "═══════════════════════════════════════════════"
+
+require_env DEPLOY_HOST
+require_env DEPLOY_PATH
+require_env DEPLOY_DOMAIN
+
 echo "  目标:   $DEPLOY_HOST:$DEPLOY_PATH"
 echo "  域名:   $DEPLOY_DOMAIN"
 echo "  仓库:   $REPO_ROOT"
@@ -44,7 +59,7 @@ echo
 echo "[1/4] 前置检查"
 cd "$REPO_ROOT"
 
-for cmd in rsync npx ssh curl; do
+for cmd in rsync npm ssh curl; do
   if ! command -v "$cmd" >/dev/null; then
     echo "  ✗ 未找到 $cmd" >&2
     exit 1
@@ -54,8 +69,13 @@ done
 if [ -n "$(git status --porcelain ai-wiki/ 2>/dev/null)" ]; then
   echo "  ⚠ ai-wiki/ 有未 commit 的修改:"
   git status --short ai-wiki/ | sed 's/^/    /'
-  read -r -p "  继续部署未提交内容？[y/N] " ans
-  [ "$ans" = "y" ] || { echo "已取消"; exit 1; }
+  if [ -t 0 ]; then
+    read -r -p "  继续部署未提交内容？[y/N] " ans
+    [ "$ans" = "y" ] || { echo "已取消"; exit 1; }
+  else
+    echo "  ✗ 非交互环境（CI）禁止部署未提交内容" >&2
+    exit 1
+  fi
 fi
 
 if ! ssh -o BatchMode=yes -o ConnectTimeout=5 "$DEPLOY_HOST" 'command -v rsync >/dev/null'; then
@@ -70,10 +90,10 @@ if [ "$SKIP_BUILD" = "0" ]; then
   echo "[2/4] 同步内容 + Quartz build"
   # 注入生产域名到 Quartz：影响 sitemap/RSS/og:url/canonical 等绝对链接
   export SITE_BASE_URL="$DEPLOY_DOMAIN"
-  bash "$REPO_ROOT/.claude/skills/quartz-wiki/scripts/sync-content.sh"
+  bash "$REPO_ROOT/.agents/skills/quartz-wiki/scripts/sync-content.sh"
   cd "$REPO_ROOT/quartz"
   rm -rf .quartz-cache public
-  npx quartz build
+  npm run quartz -- build
   cd "$REPO_ROOT"
 else
   echo "[2/4] 跳过 build（--skip-build）"
