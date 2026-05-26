@@ -11,11 +11,6 @@ on:
       - 'README.md'
   push:
     branches: [main]
-    paths:
-      - 'ai-wiki/wiki/**'
-      - 'quartz/**'
-      - '.agents/skills/**'
-      - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
 concurrency:
