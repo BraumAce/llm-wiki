@@ -77,31 +77,6 @@ bash .agents/skills/quartz-wiki/scripts/deploy.sh
 
 服务器侧 nginx + Let's Encrypt 一次性准备见 [deployment-nginx-vps.md](.agents/skills/quartz-wiki/references/deployment-nginx-vps.md)。
 
-## GitHub Actions 自动部署
-
-`.github/workflows/deploy.yml` 提供两段式 CI/CD：
-
-- `validate`：PR、main push、手动触发都会执行，依次运行 wiki lint、内容同步、Quartz build
-- `deploy`：仅 main push 或手动触发执行，且必须等待 `validate` 成功后才会 rsync 到服务器
-
-仓库需要配置以下 GitHub Actions Secrets：
-
-配置入口：GitHub 仓库页面 → `Settings` → `Secrets and variables` → `Actions` → `New repository secret`。
-
-| Secret | 说明 |
-|--------|------|
-| `SSH_PRIVATE_KEY` | 可登录部署服务器的私钥 |
-| `SSH_KNOWN_HOSTS` | 部署服务器的 known_hosts 记录 |
-| `DEPLOY_HOST` | SSH 目标，如 `user@server.example.com` |
-| `DEPLOY_PATH` | 服务器静态文件目录，如 `/var/www/llm-wiki` |
-| `DEPLOY_DOMAIN` | 线上验证域名，如 `wiki.example.com` |
-
-本地生成 `SSH_KNOWN_HOSTS`：
-
-```bash
-ssh-keyscan -H <server-host-or-ip>
-```
-
 ## 部署架构
 
 ```
@@ -142,7 +117,6 @@ ssh-keyscan -H <server-host-or-ip>
 - [x] llm-wiki-skill 8 个 workflow 实现
 - [x] quartz-wiki 部署脚本（sync + build + rsync + HTTP 验证）
 - [x] 部署到独立域名（nginx + HTTPS via Let's Encrypt）
-- [x] GitHub Actions 自动部署（validate 通过后 main push / 手动触发 rsync）
 - [ ] Python CLI / FastAPI（可选，参考上游 `7_wiki_writer.py`）
 - [ ] 定时任务自动 ingest（暂不做）
 - [ ] 接通 Claude Agent SDK 用于自动 ingest / digest（`.env.example` 已留接口）

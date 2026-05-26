@@ -36,7 +36,7 @@ require_env() {
   local value="${!name:-}"
   if [ -z "$value" ]; then
     echo "  ✗ 缺少环境变量 $name" >&2
-    echo "    请通过 GitHub Actions Secrets、shell export 或命令前缀设置。" >&2
+    echo "    请通过 shell export 或命令前缀设置。" >&2
     return 1
   fi
 }

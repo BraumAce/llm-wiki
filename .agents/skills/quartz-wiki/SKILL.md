@@ -156,4 +156,3 @@ tags:
 - [ ] `references/quartz-troubleshooting.md` 修复脚本
 - [ ] `references/deployment-cloudflare.md` CF Pages 部署细节
 - [ ] `scripts/fix-frontmatter.sh` 批量修复 frontmatter
-- [x] GitHub Actions 自动 rsync

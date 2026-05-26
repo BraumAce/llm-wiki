@@ -1,6 +1,6 @@
 # 部署到自有 VPS（nginx + certbot）
 
-> 本文是公开仓库可提交的占位符版 runbook。真实服务器、域名、路径、SSH 私钥只应保存在本机 shell 环境、未提交的 `.env` 文件或 GitHub Actions Secrets 中。
+> 本文是公开仓库可提交的占位符版 runbook。真实服务器、域名、路径、SSH 私钥只应保存在本机 shell 环境或未提交的 `.env` 文件中。
 
 ## 变量约定
 
@@ -132,37 +132,6 @@ bash .agents/skills/quartz-wiki/scripts/deploy.sh --skip-build
 # 干跑，看会传哪些文件，不实际写
 bash .agents/skills/quartz-wiki/scripts/deploy.sh --dry-run
 ```
-
-## GitHub Actions Secrets 配置
-
-在 GitHub 页面手动配置：
-
-1. 打开 `Settings`
-2. 进入 `Secrets and variables`
-3. 进入 `Actions`
-4. 点击 `New repository secret`
-5. 按下表逐个新增
-
-| Secret | 示例格式 | 用途 |
-|--------|----------|------|
-| `SSH_PRIVATE_KEY` | 私钥完整内容 | 登录部署服务器 |
-| `SSH_KNOWN_HOSTS` | `ssh-keyscan -H <server-host-or-ip>` 输出 | 固定 SSH host key |
-| `DEPLOY_HOST` | `user@server.example.com` | rsync 目标主机 |
-| `DEPLOY_PATH` | `/var/www/llm-wiki` | 服务器静态文件目录 |
-| `DEPLOY_DOMAIN` | `wiki.example.com` | 部署后 HTTP 验证域名 |
-
-生成 `SSH_KNOWN_HOSTS`：
-
-```bash
-ssh-keyscan -H <server-host-or-ip>
-```
-
-`SSH_PRIVATE_KEY` 建议使用仅用于部署的专用 key，并把对应 public key 加到服务器部署用户的 `~/.ssh/authorized_keys`。
-
-`.github/workflows/deploy.yml` 包含两个 job：
-
-1. `validate`：运行 wiki lint、同步内容、Quartz build
-2. `deploy`：仅 main push 或手动触发时运行，且依赖 `validate` 成功
 
 ## 排错
 
