@@ -1,0 +1,271 @@
+---
+title: "ByteLighting 2026年5月技术阅读合集"
+source_url: "https://blog.bytelighting.cn/program/reading/2026/2026.5.html"
+author: "BraumAce"
+source_type: webpage
+fetched_at: 2026-05-29
+---
+
+# 2026.5 期 | ByteLighting
+
+> 来源: https://blog.bytelighting.cn/program/reading/2026/2026.5.html
+> 作者: BraumAce
+> 发布日期: 2026/5/6
+
+---
+
+## 5.28
+
+### 让项目管理也 AI Native —— 两个 Git 仓库干掉了周报、洞察和效能报表
+https://mp.weixin.qq.com/s/gaBKZFIZetj9H9eqyhT13g
+
+用两个 Git 仓库加 AI 编码助手和 Shell 脚本替代传统项目管理中约 80% 的人工操作。第一个仓库负责业务进展跟踪，采用三层架构（原始 Markdown 自由输入 → AI 语义整合为结构化文档 → 生成静态 Dashboard 可视化），配备问题挖掘 Skill 自动识别跨团队阻塞和基建依赖热点；第二个仓库负责效能度量，通过大数据平台 CLI 拉取数据生成交互式报表。核心理念是"降低填写门槛、让 AI 做信息搬运工、人只做输入和决策"。
+
+### 大模型的Agent Skill功能，在LLM HTTP底层交互流中是怎么承载的？
+https://mp.weixin.qq.com/s/dAD9srnD5MpoCkHWlRYtzQ
+
+从 OpenAI 兼容协议的底层视角拆解 AI IDE 中 Agent Skill 的工作原理——"Skill 并非协议层概念，而是纯粹的应用层抽象"，最终被编译为三种协议原语的组合：System/Developer Message（注入 system prompt）、Tools Definition（注册工具 schema）、Multi-turn Tool Calling Loop。以 mp-read skill 为例展示渐进式加载流程。
+
+### Claude code云端部署 & 魔改sdk实现http流式调用保姆级教程
+https://mp.weixin.qq.com/s/ooTYAzFvxC4PCQ5H82dRhQ
+
+将 Claude Code 从本地部署到云端并提供 HTTP 服务的完整实践。通过 npm pack 离线打包解决无外网服务器安装问题，基于 FastAPI + SSE 魔改 claude-agent-sdk 将单次查询和多轮会话封装为流式 HTTP 接口，通过 Docker 基础镜像和沙箱平台实现多用户实例隔离，涵盖离线部署、HTTP 服务化、镜像构建、沙箱隔离四层架构。
+
+### Harness 的尽头不是缰绳，是镜子：AI 时代最沉默的那场革命
+https://mp.weixin.qq.com/s/n4iqEWPfrok91b692nFTJw
+
+以 James C. Scott 的"可读性"理论为框架，提出 AI 正在引发人类第三次"显形运动"——将工程师脑中不可言说的隐性知识强制文本化。从意图层、执行层、判断层三个维度论证 AI 改变了写文档的 ROI 经济学，最终指向 Goodhart 定律。
+
+---
+
+## 5.27
+
+### 万字入门AI Infra：深入理解大模型中的数学与Infra优化
+https://mp.weixin.qq.com/s/CX7H8LUm9PokC19NDDd_WQ
+
+以通俗方式拆解大模型核心操作（RMSNorm、Softmax、Causal Mask、Sampling）的数学原理与 Infra 优化逻辑。"RMSNorm 通过砍掉均值计算将两次全局规约简化为一次，显著降低访存开销"。核心观点：Infra 优化本质是用数学等价变换或精度妥协换取更高硬件利用率和极致推理速度。
+
+### verify-data：一个端到端的数据验数 Agent Skill
+https://mp.weixin.qq.com/s/EHXBbN-G5X05rKTo1GpQkA
+
+面向数据开发团队的端到端数据验证 Agent Skill——通过自然语言交互自动完成表结构获取、基准表发现、代码逻辑分析、验数 SQL 生成、执行及报告发布。10 类标准化 SQL 模板保障验证覆盖度，血缘 + 维度/指标精排的两阶段策略自动发现基准表，4 种降级策略兜底。
+
+### 从语言涌现到协作涌现：如何让 AI 产生高质量决策
+https://mp.weixin.qq.com/s/pV-f8WzoYSDxpEUk0uQdFw
+
+探讨 AI 智能体协作中的"涌现"现象。以"Agent Room"协作模式展示产品、架构、开发、QA 在同一上下文场中交互形成超越单一角色的集体判断，对比 DAG、Planner-Executor、Router 等传统编排与"上下文编排"的本质区别。
+
+---
+
+## 5.26
+
+### 平平无奇的源码，竟藏着Agent的核心秘密？
+https://mp.weixin.qq.com/s/LEzv1rji5RZX889fkZQrqw
+
+以开源项目 OpenClaw 为例深度拆解 AI Agent 核心架构。Agent 由"三件套"组成：System Prompt（岗前培训手册）、运行循环（执行引擎）、Skill 机制（按需注入的专业知识扩展包）。重点剖析 System Prompt 的分层组装方式，以及 Skill 机制通过 XML 标签注入、Agent 自动扫描匹配并按需加载 SKILL.md 的精巧设计。
+
+---
+
+## 5.25
+
+### AI Infra入门干货总结：大模型是如何高效推理的
+https://mp.weixin.qq.com/s/gCRMjGry2EmBmv1CFfCzVQ
+
+通过深入阅读 vLLM 源码，以 Llama 3 为例系统梳理大模型推理核心原理。围绕 Continuous Batching 和 Paged Attention 两大关键概念，详细追踪推理各环节的张量维度变化，以及 vLLM 中 Flattened 布局、slot_mapping 寻址、cu_seqlens 请求隔离等工程实现细节。
+
+---
+
+## 5.23
+
+### Agent核心技术概念与范式发生了哪些演变以及背后的思考
+https://mp.weixin.qq.com/s/11Krmb5KYmCHDQ4zN9O4uQ
+
+按 Agentic Workflow、Tool Use、CLI/Script、Skill、Workflow、Workspace、Memory 等维度重梳 Agent 技术演进。旧范式不是被简单淘汰，而是从硬编码流程、无状态函数调用和堆 Prompt，逐步转向 Skill 封装、动态编排、持久运行现场与可恢复记忆。
+
+### 腾讯云Agent Memory节省61% Token提升52%成功率的诀窍：Mermaid无限画布×上下文卸载
+https://mp.weixin.qq.com/s/MSXKfefrqM31q-7WXIqCEg
+
+腾讯云 Agent Memory 的短期记忆压缩实践。完整原文卸载到外部文件，工具调用压成 JSONL，任务状态写入 Mermaid 无限画布。在连续长 Session 中同时降低 Token 与上下文噪音，"WideSearch 最高节省 61.38% Token、通过率相对提升 51.52%"。
+
+### OpenAI Codex Plugin for Claude Code 源码剖析
+https://mp.weixin.qq.com/s/oOdSoAtitE_ayAfA607HwA
+
+逐层拆解 OpenAI 官方 codex-plugin-cc 的桥接架构。Claude Code 侧提供 /codex:review、/codex:adversarial-review、/codex:rescue 等命令，底层复用本机 Codex CLI / App Server，通过 Broker 协议、后台任务、状态持久化与 Review Gate 把 Codex 变成 Claude Code 工作流里的第二审阅者和异步 worker。
+
+---
+
+## 5.21
+
+### 从0到1搭建 Agent ：Agent 原理分析及个人助手实践（长文干货）
+https://mp.weixin.qq.com/s/ILX8GGETM84-_rQssCZhwQ
+
+面向开发者的 Agent 从零搭建长文——先解释 Agent 与普通对话模型的差异，再把 LLM、Prompt、Planning、Tools、Memory、Execution 串成执行闭环，最后落到个人助手实践中的任务拆解、工具接入、上下文管理、调试评估和低成本工程化落地。
+
+### QQ音乐Harness Engineering实践
+https://mp.weixin.qq.com/s/yw3DvqKBIV5fIZkSG12zdA
+
+QQ 音乐商业化团队的 Harness Engineering 复盘——在 50+ 微服务、业务仓 / IDL 契约仓 / Harness 规范仓协同的复杂拓扑里，不重造 IDE 或通用 Agent Runtime，而是补齐 L5 工程治理层，用服务矩阵、五阶段流程、四道门禁、三层知识体系和 Self-Refinement，把 AI 协作升级为可审计、可复用、可治理的团队级过程。
+
+---
+
+## 5.20
+
+### Claude Code Harness 工程：数仓侧落地方案｜得物技术
+https://mp.weixin.qq.com/s/KmQJU7nXmYh5qgWPj4ajlw
+
+得物离线数仓的 Claude Code Harness 方案。针对 compact 后约束丢失、规范靠记忆、血缘/自测/数据比对撑爆 context 等痛点，用 CLAUDE.md 持久化迭代状态，hooks 强制 SQL 规范与危险 DDL 检查，subagents 隔离高 token 读操作，再把需求分析等收敛成 8 步 SKILL 工作流。
+
+### 从Prompt、Context到Harness，工程的三次进化与终局之战
+https://mp.weixin.qq.com/s/b1VL28GX5d17sKPfkSbIsw
+
+梳理 AI 工程从 Prompt 到 Context 再到 Harness 的递进关系——Prompt Engineering 回答"该说什么"，Context Engineering 回答"模型该知道什么"，Harness Engineering 回答"怎样让系统稳定可靠"。工程师的价值也从手写代码转向判断模型边界、设计合适厚度的 Harness。
+
+---
+
+## 5.19
+
+### 让Skill自己训练自己：8阶段Loop、3层评测、5维AND门控，从此实现自进化
+https://mp.weixin.qq.com/s/dDkVA9mfNbJWTwkVKN1AOQ
+
+借鉴 Karpathy autoresearch 与深度学习训练循环思路，构建一套 Skill 自进化框架——以 8 阶段 Loop 驱动迭代、3 层评测（结构检查 + 逐条打分 + 对比评选）衡量质量、5 维 AND 门控决定是否保留 checkpoint，19 轮自动迭代后实现从"能跑"到"真的好"的质量收敛。
+
+---
+
+## 5.18
+
+### 从0开发大模型的17种Agent架构演进详细拆解
+https://mp.weixin.qq.com/s/5f0I2apY4oFsHrttANBOJg
+
+以 all-agentic-architectures 项目为蓝本，用 agno 框架重实现 17 种 Agent 控制流架构，揭示 Agent 演进的本质是控制流设计而非 prompt engineering。从 Reflection、Tool Use、ReAct、Planning、多 Agent 编排、Blackboard 共享黑板，直到 Cellular Automata 涌现计算，逐层分析每种架构新增的 State 字段、路由逻辑、失败模式与升级时机。
+
+### RAG 全链路技术详解
+https://mp.weixin.qq.com/s/aA2PFaabKNlDq96jhAdDkQ
+
+系统拆解 RAG 全链路工程实践——涵盖多格式文档加载与元数据提取、基于 PPL 困惑度的 Meta-Chunking 语义切分、embedding 模型选型与向量索引构建、Query 改写/HyDE/重排序等检索优化手段、Prompt 设计与 SFT 生成调优、Graph RAG 多跳推理，最终以 Ragas 评估体系形成可测可调的工程化 RAG 闭环。
+
+---
+
+## 5.16
+
+### 串讲 LLM 和 Agent 的核心原理以及各种术语
+https://mp.weixin.qq.com/s/i3yKCZCUtDkTrk4hFZz7NQ
+
+面向入门者的 LLM / Agent 全景串讲——从 token 概率预测、Instruct 微调、CoT 思维链、System Prompt、Function Calling / Tool Use 到 MCP 协议，厘清"模型能力"与"Agent 工程实现"的关系。
+
+### 深度解析腾讯云 Agent-Memory：4 层渐进式记忆管道如何实现 61% 的 Token 节省与 76% 长期记忆准确率
+https://mp.weixin.qq.com/s/FgGPjHlYMM4O_PRfEvk__A
+
+深入源码拆解 TencentDB Agent Memory 的双支柱架构——4 层渐进式记忆管道（L0 对话捕获 → L1 原子事实 → L2 场景归纳 → L3 用户画像）+ 符号化上下文卸载（Mermaid 图编码），配合混合检索与三级递进压缩。
+
+---
+
+## 5.14
+
+### 别让 AI 瞎猜了：用 Harness Engineering 终结无限返工
+https://mp.weixin.qq.com/s/AFX_qsyAPBRYyqEV365O9Q
+
+爱奇艺数据库团队的 Harness Engineering 实践——"返工根因不是模型不会写代码，而是任务入口、执行依据、边界、验证、回写没提前备好"。最小 harness 由五类组件组成，落地分三阶段（找到入口 → 可复盘 → 机械化为 lint/script/CI）。
+
+---
+
+## 5.12
+
+### 深度解析LLM Wiki / Obsidian-Wiki / GBrain：Agent时代知识的"自组织"与"自进化"
+https://mp.weixin.qq.com/s/48XpgAMHeaKYj26PrJK-hw
+
+从 Knowledge Engineering 角度解析 LLM Wiki 与 GBrain，提出用 LLM 增量构建持久化结构化 Wiki 替代传统 RAG 的"每次从头检索"模式，实现"一次学习、永久可用"。
+
+### 从零设计生产级 Multi-Agent Harness：架构、评估、记忆、成本与 MCP 工具接入全拆解
+https://mp.weixin.qq.com/s/JPhcyDc4JwRmnMQ-76A-FQ
+
+系统拆解生产级 Multi-Agent Harness 五大核心模块——架构编排（Agent 出主意、Harness 拿决定）、Tool Registry 工具治理、分层状态与记忆（含遗忘机制）、四层评估体系、Token Budget 成本控制，以及 MCP 工具安全接入实践。
+
+### 当我把 AI 变成一个"算法"：Skill 工程化设计的心路历程
+https://mp.weixin.qq.com/s/bD10zbBeTtzMyEKqjIdT1w
+
+将 Agent 当"算法"用——通过 CLI 接管一切确定性工作，让 Agent 只做理解与决策。工具信息三层分离（索引/元数据/规则）解决工具数量膨胀问题，Workflow 以文件系统驱动实现热插拔。
+
+### Agent从一问一答到自主执行面临哪些挑战？
+https://mp.weixin.qq.com/s/6zGDgA9im21cAmVPvB_fIw
+
+梳理开源 Agent（OpenClaw / Hermes Agent）定时任务在高可用、统一管理、权限、可观测与资源利用率上的痛点，提出将调度能力从 Agent 内部抽离到统一平台的思路。
+
+---
+
+## 5.11
+
+### Spring AI Session API：大多数人用 ChatMemory 用错了场景
+https://mp.weixin.qq.com/s/-Tbl6fph2i8AeRIv5dgRNw
+
+Spring AI 1.1+ 记忆双层架构梳理——短期走 Session API（配 SlidingWindow / TurnWindow / TokenCount / RecursiveSummarization 四种压缩策略 + Recall Storage 兜底），长期走 AutoMemoryTools（仿 Claude Code，6 个沙箱化文件工具 + MEMORY.md 索引 + 四类记忆）。
+
+### Harness 不是目的，知识才是护城河——一个 AI 工程交付团队的知识沉淀实践
+https://mp.weixin.qq.com/s/JV4-oPP0jjsBCZ4tW3Gy1g
+
+腾讯团队对 Harness Engineering 的再审视——"Skill / Agent / 工具链会随模型迭代过期，私域知识才是护城河"。知识体系按三维正交组织，上下文用三级渐进式索引替代一次性塞 5000-10000 行。
+
+### 缓存使用实践总结：以淘宝交易结算场景为例
+https://mp.weixin.qq.com/s/LRJUL9RAhr85FlsmStTCZQ
+
+淘宝汇金团队的缓存选型方法论——先用四条缓存条件筛选，再按三维正交组合得最终方案。五类场景配方落地，配六类风险的治理清单。
+
+---
+
+## 5.9
+
+### 5 人 7 天干完 20 人数周的活：Spec-Driven Development 如何重新定义 AI 编程
+https://mp.weixin.qq.com/s/hVizUucsy8rwFOUR-VZ6wA
+
+阿里 Qoder 团队 5 人 7 天交付 QoderWork 的 SDD 实战复盘——四阶段流程 Specify → Plan → Implement → Validate 配 Spec Kit 三件套 + constitution.md。"DAY 0 不写一行代码先固化需求边界与成功指标"。核心论点：SDD 不让 AI 变聪明，而让 AI 变可控。
+
+### MySQL 索引优化填坑实录：从 1 秒到 50ms，再到 28ms 的踩坑与填坑
+https://mp.weixin.qq.com/s/7zKMzKueDTeYRXiQ_jy5fg
+
+一次生产慢 SQL 的三段式优化——从全表扫描 1s 起步，加单列索引降到 50ms 但 filtered 仅 5.56%，换成复合索引把 filtered 拉到 55.55%、耗时压到 28ms。要点是"别只看耗时要盯 filtered"，复合索引遵循等值在前、范围在后。
+
+### AI 记忆的 Git 版本控制：Memoir 如何用分层路径替代向量数据库，让 Agent 告别上下文污染
+https://mp.weixin.qq.com/s/Pjkheeb4eIisjAQpIj8JJg
+
+把 Agent 记忆当作版本控制问题而非向量搜索问题——Memoir 用 ProllyTree + 层级化语义路径替代 UUID 与向量近似检索，做到 O(log n) 前缀查找。单次记忆更新 Token 成本降 90%，并把 Git 的 branch / commit / merge / rollback / blame 搬进记忆层。
+
+---
+
+## 5.8
+
+### AI Native 时代 —— 研发组织何去何从
+https://mp.weixin.qq.com/s/Xf3C60jCxR4ppMi4HuAnVA
+
+阿里许晓斌的 AI Native 组织转型长文——"AI 是新协作主体而非工具"，组织从 Org Chart 演化为 Execution Graph。解法是结构化 Harness 层 + 松散 Hive Mind 层的双层架构，叠加三柱治理，并区分执行/优化/创新三类工作。
+
+### 高可用架构的工程智慧
+https://mp.weixin.qq.com/s/sCJ-sJY6Y9B_PPrE_-To9Q
+
+京东张宝森的电商存储层高可用方法论——按数据特征区分流水型与状态型，流水型通过统一单据号生成规则 + 基于单据号路由数据库实现业务无感知扩容与容灾。
+
+---
+
+## 5.7
+
+### Harness Engineering：耗时一周，我是如何将应用的AI Coding率提升至90%的
+https://mp.weixin.qq.com/s/rlIyIIZOXFObNIXbPI7gDg
+
+阿里工程师在 10 万行 Java 存量应用中从零搭建 Harness 体系——以 .harness/ 目录承载 Rules / Skills / Wiki / Changes 四要素，由 Application Owner Agent 编排 10 阶段流程，把 AI 代码率从 24.86% 拉升到 90.54%。
+
+### 告别"氛围编程"：基于 Harness 治理和 SDD 的团队级 AI 研发范式演进与实践
+https://mp.weixin.qq.com/s/-_IBJFuXpvoqMJxL9oaEJQ
+
+高德团队的范式反思——出码率从 53% 涨到 90% 但项目周期没缩短，根因是研发全链路、存量风险、超长上下文三大问题。解法是 SDD + Harness 四支柱（上下文/架构约束/反馈回路/人类监督）。
+
+---
+
+## 5.6
+
+### 一个文件让 AI Coding 效率翻倍：AGENTS.md 实践指南
+https://mp.weixin.qq.com/s/fBBBSfQajYjYtngZAitZCA
+
+怎么写好一份"给 AI 看的 README"——遵循"地图，而非手册"原则，配合仓库聚合、验证闭环、lint 自动化、参考项目源码引入，让 AI"打开即理解、改完即验证"。
+
+### 基于 Harness + SDD + 多仓管理模式的 AI 全栈开发实践｜得物技术
+https://mp.weixin.qq.com/s/ygQGSH5c7GHYDvkqWoQTXQ
+
+得物团队的 AI 全栈方法论——用 Harness 思维让 AI 照着已有实现模仿而非凭空创造，多仓工作区 + SDD 双文档对齐接口契约 + 多 Agent 前后端并行 + 三阶段分离验证，实测提效 50%+。
