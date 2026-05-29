@@ -23,10 +23,15 @@ sources:
   - "[[OpenClaw-Agent与Skill架构详解]]"
   - "[[深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践]]"
   - "[[OpenClaw橙皮书-从入门到精通]]"
+  - "[[平平无奇的源码竟藏着Agent的核心秘密]]"
+  - "[[Agent核心技术概念与范式发生了哪些演变]]"
+  - "[[从0到1搭建Agent-原理分析及个人助手实践]]"
 related_entities:
   - "[[OpenClaw-SandBox]]"
   - "[[OpenClaw-双源记忆系统]]"
   - "[[OpenClaw-Skills]]"
+  - "[[Harness-Engineering]]"
+  - "[[Agent-Memory]]"
 ---
 
 # OpenClaw
