@@ -8,7 +8,10 @@ author: "阿里云开发者"
 ingested_at: 2026-05-30
 tags: [claude-code, source-code-analysis, multi-agent, agentic-coding]
 related_entities: Claude Code, Anthropic
-related_topics: Multi-Agent 架构, Agentic Coding, AI 编程工具
+related_topics:
+  - Multi-Agent 架构
+  - Agentic Coding
+  - AI 编程工具
 ---
 
 # Claude Code 源码拆解：从启动到多 Agent 扩展层

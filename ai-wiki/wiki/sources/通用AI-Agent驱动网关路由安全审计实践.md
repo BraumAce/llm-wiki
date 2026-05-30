@@ -9,7 +9,10 @@ publisher: "得物技术"
 ingested_at: 2026-05-30
 tags: [ai-agent, security-audit, gateway, api-gateway, route-security, automation, llm, e-commerce]
 related_entities: 得物技术
-related_topics: AI Agent应用, 安全审计, 网关路由
+related_topics:
+  - AI Agent应用
+  - 安全审计
+  - 网关路由
 ---
 
 # 通用 AI Agent 驱动网关路由安全审计实践

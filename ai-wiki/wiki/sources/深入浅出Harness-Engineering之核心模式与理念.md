@@ -8,7 +8,10 @@ author: "张碧泉"
 ingested_at: 2026-05-30
 tags: [harness-engineering, llm, prompt-engineering, ai-agent, core-patterns]
 related_entities: []
-related_topics: Harness Engineering, LLM应用开发, AI Agent
+related_topics:
+  - Harness Engineering
+  - LLM应用开发
+  - AI Agent
 ---
 
 # 深入浅出Harness Engineering之核心模式与理念

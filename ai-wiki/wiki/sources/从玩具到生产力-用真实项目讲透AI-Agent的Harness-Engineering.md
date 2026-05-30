@@ -8,7 +8,10 @@ author: "阿里云开发者"
 ingested_at: 2026-05-30
 tags: [ai-agent, harness-engineering, engineering-practice, prompt-engineering, agent-framework]
 related_entities: []
-related_topics: AI Agent, Harness Engineering, Agent 工程化
+related_topics:
+  - AI Agent
+  - Harness Engineering
+  - Agent 工程化
 ---
 
 # 从玩具到生产力：用真实项目讲透 AI Agent 的 Harness Engineering

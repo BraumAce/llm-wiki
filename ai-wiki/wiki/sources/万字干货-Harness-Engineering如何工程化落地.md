@@ -8,7 +8,11 @@ author: "腾讯云开发者"
 ingested_at: 2026-05-30
 tags: [harness, engineering, ai-development, agent, workflow, rule, skill, mcp]
 related_entities: Harness, Claude, MCP
-related_topics: AI辅助开发, Harness Engineering, 多Agent协作, 工程化落地
+related_topics:
+  - AI辅助开发
+  - Harness Engineering
+  - 多Agent协作
+  - 工程化落地
 ---
 
 # 万字干货！Harness Engineering如何工程化落地

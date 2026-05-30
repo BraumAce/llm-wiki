@@ -8,7 +8,9 @@ author: "Agent工程化"
 ingested_at: 2026-05-30
 tags: [wechat, cli, source-code-analysis, wechat-api]
 related_entities: [[wechat-cli]]
-related_topics: 命令行工具开发, 微信接口逆向
+related_topics:
+  - 命令行工具开发
+  - 微信接口逆向
 ---
 
 # wechat-cli 源码剖析

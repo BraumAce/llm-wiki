@@ -8,7 +8,12 @@ author: "动力节点教育"
 ingested_at: 2026-05-30
 tags: [ai-skill, enterprise-ai, capability-standardization, pluggable-architecture, auditability, ai-engineering]
 related_entities: []
-related_topics: AI Skill 体系, 企业级 AI 工程, AI 能力标准化, 可插拔架构, AI 审计与治理
+related_topics:
+  - AI Skill 体系
+  - 企业级 AI 工程
+  - AI 能力标准化
+  - 可插拔架构
+  - AI 审计与治理
 ---
 
 # AI Skill 体系全解：企业级 AI 能力标准化可插拔可审计

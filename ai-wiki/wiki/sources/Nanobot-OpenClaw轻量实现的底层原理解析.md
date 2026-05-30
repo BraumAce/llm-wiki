@@ -7,8 +7,12 @@ source_url: "https://mp.weixin.qq.com/s/O8dOafau9EGxMmLllLRq-A"
 author: "vivo AI技术开发团队 - Lin Weiwei"
 ingested_at: 2026-05-30
 tags: [openclaw, nanobot, ai-agent, lightweight-implementation, prompt-engineering]
-related_entities: [[OpenClaw]], Nanobot
-related_topics: AI Agent 架构, 轻量级 LLM 应用
+related_entities:
+  - "[[OpenClaw]]"
+  - Nanobot
+related_topics:
+  - AI Agent 架构
+  - 轻量级 LLM 应用
 ---
 
 # Nanobot（OpenClaw 轻量实现）的底层原理解析

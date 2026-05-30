@@ -8,7 +8,9 @@ author: "阿里云开发者"
 ingested_at: 2026-05-30
 tags: [agent, self-improving, source-code-analysis, llm-agent, hermes-agent]
 related_entities: Hermes Agent
-related_topics: Self-Improving Agent, Agent Architecture
+related_topics:
+  - Self-Improving Agent
+  - Agent Architecture
 ---
 
 # 深入源码：Hermes Agent 如何实现 Self-Improving

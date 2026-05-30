@@ -8,7 +8,11 @@ author: "腾讯技术工程"
 ingested_at: 2026-05-30
 tags: [vibe-coding, agentic-engineering, backend-development, ai-assisted-development, workflow-automation]
 related_entities: []
-related_topics: Vibe Coding, Agentic Engineering, AI辅助开发, 后台开发
+related_topics:
+  - Vibe Coding
+  - Agentic Engineering
+  - AI辅助开发
+  - 后台开发
 ---
 
 # 从Vibe Coding到Agentic Engineering：重构后台开发全流程

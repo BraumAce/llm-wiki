@@ -8,7 +8,9 @@ author: "腾讯技术工程"
 ingested_at: 2026-05-30
 tags: [claude-code, harness, source-code, engineering, agentic-coding]
 related_entities: Claude Code
-related_topics: Agentic Coding, Harness Engineering
+related_topics:
+  - Agentic Coding
+  - Harness Engineering
 ---
 
 # Claude Code：顶级开发团队设计的Harness工程项目源码什么样

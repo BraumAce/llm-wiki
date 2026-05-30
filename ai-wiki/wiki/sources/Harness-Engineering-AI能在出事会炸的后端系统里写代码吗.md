@@ -8,7 +8,9 @@ author: "lancelotluo"
 ingested_at: 2026-05-30
 tags: [ai-coding, backend-engineering, reliability, production-systems, harness]
 related_entities: Harness
-related_topics: AI Code Generation, Backend Reliability
+related_topics:
+  - AI Code Generation
+  - Backend Reliability
 ---
 
 # Harness Engineering：AI 能在出事会炸的后端系统里写代码吗

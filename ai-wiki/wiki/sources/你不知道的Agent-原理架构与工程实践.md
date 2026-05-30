@@ -8,7 +8,10 @@ author: "阿里云开发者"
 ingested_at: 2026-05-30
 tags: [agent, llm-agent, architecture, engineering-practice, prompt-engineering]
 related_entities: []
-related_topics: AI Agent, LLM应用架构, Prompt Engineering
+related_topics:
+  - AI Agent
+  - LLM应用架构
+  - Prompt Engineering
 ---
 
 # 你不知道的 Agent：原理、架构与工程实践

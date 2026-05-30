@@ -8,7 +8,10 @@ author: "架构师"
 ingested_at: 2026-05-30
 tags: [claude-code, source-code, architecture, prompt-engineering, permission-pipeline, cli-agent]
 related_entities: Claude Code, Claude, Anthropic
-related_topics: AI Agent Architecture, Prompt Engineering, Permission Model
+related_topics:
+  - AI Agent Architecture
+  - Prompt Engineering
+  - Permission Model
 ---
 
 # Claude Code 源码架构解析：从启动 Prompt 到权限管道

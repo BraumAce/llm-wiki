@@ -8,7 +8,10 @@ author: "沈林（阿里云智能集团高级技术专家）/ 阿里云开发者
 ingested_at: 2026-05-30
 tags: [agent, context-engineering, multi-source-context, real-time-context, environment-engineering]
 related_entities: []
-related_topics: Agent开发范式, 上下文工程, 多源实时上下文
+related_topics:
+  - Agent开发范式
+  - 上下文工程
+  - 多源实时上下文
 ---
 
 # Agent 开发范式演进：从环境工程出发简化多源实时上下文

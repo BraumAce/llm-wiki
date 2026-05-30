@@ -8,7 +8,9 @@ author: "李伟山"
 ingested_at: 2026-05-30
 tags: [harness, agent-framework, llm, prompt-engineering, agent-architecture, components]
 related_entities: []
-related_topics: AI Agent Harness, Agent 架构设计
+related_topics:
+  - AI Agent Harness
+  - Agent 架构设计
 ---
 
 # 一文讲透如何构建Harness——六大组件全解析

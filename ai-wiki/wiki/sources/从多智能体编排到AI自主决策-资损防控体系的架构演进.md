@@ -8,7 +8,11 @@ author: "阿里技术"
 ingested_at: 2026-05-30
 tags: [multi-agent, ai-decision-making, financial-loss-prevention, system-architecture, risk-control]
 related_entities: []
-related_topics: 多智能体编排, AI自主决策, 资损防控, 系统架构演进
+related_topics:
+  - 多智能体编排
+  - AI自主决策
+  - 资损防控
+  - 系统架构演进
 ---
 
 # 从多智能体编排到AI自主决策：资损防控体系的架构演进

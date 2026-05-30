@@ -8,7 +8,10 @@ author: "阿里云开发者"
 ingested_at: 2026-05-30
 tags: [skill, workflow, agent, best-practices, prompt-engineering, llm]
 related_entities: []
-related_topics: Agent Skill设计, 工作流编排, Prompt工程
+related_topics:
+  - Agent Skill设计
+  - 工作流编排
+  - Prompt工程
 ---
 
 # 工作流的 Skill 怎么写

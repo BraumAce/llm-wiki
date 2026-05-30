@@ -8,7 +8,10 @@ author: "石臻说AI"
 ingested_at: 2026-05-30
 tags: [claude-code, source-code-analysis, ai-programming, anthropic, code-generation]
 related_entities: Claude Code, Anthropic
-related_topics: AI编程工具, 代码生成, 源码分析
+related_topics:
+  - AI编程工具
+  - 代码生成
+  - 源码分析
 ---
 
 # Claude Code源码泄露深度解析：51.2万行代码里藏着怎样的AI编程系统
