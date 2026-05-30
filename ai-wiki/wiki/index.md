@@ -1,7 +1,7 @@
 ---
 title: "LLM Wiki"
 type: index
-date: 2026-05-29
+date: 2026-05-30
 ---
 
 # LLM Wiki
@@ -16,7 +16,28 @@ date: 2026-05-29
 
 ## 最近更新
 
-### 2026-05-29 ByteLighting 阅读合集批量入库
+### 2026-05-30 ByteLighting 2026.4 技术阅读合集入库
+
+从 ByteLighting 2026 年 4 月技术阅读合集抓取 42 篇文章，41 篇成功入库。通过 CDP 浏览器补充 29 篇微信公众号原文。
+
+新增实体（8 个）：
+- [[Claude-Code]] —— Anthropic 开发的 AI 编码工具（7 篇源码分析）
+- [[Hermes-Agent]] —— 能从经验中自我进化的 Agent 框架（3 篇来源）
+- [[Agentic-Engineering]] —— 从 Vibe Coding 到 Agentic Engineering 的范式演进（4 篇来源）
+- [[Anthropic]] —— Claude 和 Claude Code 的开发公司
+- [[Mitchell-Hashimoto]] —— Harness Engineering 概念的起源者
+- [[LightRAG]] —— 轻量级 RAG 框架
+- [[DeepSeek-V4]] —— DeepSeek 大语言模型
+- [[wechat-cli]] —— 微信命令行工具
+
+新增主题（3 个）：
+- [[Claude-Code源码解析-主题]] —— 7 篇文章，涵盖启动流程、Prompt 设计、权限管道、长任务防跑偏
+- [[Agentic-Engineering-主题]] —— 8 篇文章，从 Vibe Coding 到 Agentic Engineering 的范式转变
+- [[AI-Skill体系-主题]] —— 7 篇文章，AI Skill 标准化、可插拔、可审计设计
+
+新增来源摘要：41 篇
+
+### 2026-05-29 ByteLighting 2026.5 阅读合集批量入库
 
 通过 CDP 浏览器抓取 38 篇微信公众号原文，批量入库。
 
@@ -42,9 +63,9 @@ date: 2026-05-29
 
 ## 状态
 
-- 实体数：9
-- 主题数：4
-- 来源数：47
-- 最后更新：2026-05-29
+- 实体数：17
+- 主题数：7
+- 来源数：87
+- 最后更新：2026-05-30
 
 > 用 `/llm-wiki-skill status` 查看实时统计。
