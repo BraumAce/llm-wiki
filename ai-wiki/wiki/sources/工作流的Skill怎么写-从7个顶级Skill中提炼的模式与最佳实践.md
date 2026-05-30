@@ -8,7 +8,7 @@ author: "阿里云开发者"
 ingested_at: 2026-05-30
 tags: [skill, workflow, agent, best-practices, prompt-engineering, llm]
 related_entities: []
-related_topics: [[Agent Skill设计]], [[工作流编排]], [[Prompt工程]]
+related_topics: Agent Skill设计, 工作流编排, Prompt工程
 ---
 
 # 工作流的 Skill 怎么写
@@ -60,17 +60,17 @@ Skill 是一个文件夹，核心是 SKILL.md 文件（YAML frontmatter + Markdo
 > 防止 LLM 偷懒的 4 种武器：强硬语气——LLM 对命令式语气的遵从率更高；借口反驳表——预判 LLM 的自我合理化路径并堵死；量化阈值——给出硬性的最低标准；负面指令——明确说"不要做 X"。教学的 3 种有效方式：Good/Bad 对比（对比学习效果最好）、具体命令（LLM 擅长执行具体指令）、完整示例（展示期望的输出格式）。
 
 ## 涉及实体
-- [[openai/skills]] — OpenAI Codex 官方 Skill 目录
-- [[obra/superpowers]] — 14 个工作流型 Skill（含 test-driven-development）
-- [[google-labs-code/stitch-skills]] — 设计到代码的 Skill（含 stitch-loop）
-- [[deanpeters/Product-Manager-Skills]] — 40+ 产品管理 Skill（含 discovery-process）
-- [[trailofbits/skills]] — 安全审计 Skill（含 audit-context-building）
-- [[openclaw/clawhub]] — Skill 注册中心
-- [[VoltAgent/awesome-agent-skills]] — 500+ Skill 索引
-- [[travisvn/awesome-claude-skills]] — 精选列表
-- [[agentskills.io]] — Agent Skills 开放标准
+- openai/skills — OpenAI Codex 官方 Skill 目录
+- obra/superpowers — 14 个工作流型 Skill（含 test-driven-development）
+- google-labs-code/stitch-skills — 设计到代码的 Skill（含 stitch-loop）
+- deanpeters/Product-Manager-Skills — 40+ 产品管理 Skill（含 discovery-process）
+- trailofbits/skills — 安全审计 Skill（含 audit-context-building）
+- openclaw/clawhub — Skill 注册中心
+- VoltAgent/awesome-agent-skills — 500+ Skill 索引
+- travisvn/awesome-claude-skills — 精选列表
+- agentskills.io — Agent Skills 开放标准
 
 ## 涉及主题
-- [[Agent Skill设计]]
-- [[工作流编排]]
-- [[Prompt工程]]
+- Agent Skill设计
+- 工作流编排
+- Prompt工程

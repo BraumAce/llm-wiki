@@ -7,8 +7,8 @@ source_url: "https://mp.weixin.qq.com/s/MKWckXraK1irNvMgCIJXZw"
 author: "腾讯技术工程"
 ingested_at: 2026-05-30
 tags: [claude-code, harness, source-code, engineering, agentic-coding]
-related_entities: [[Claude Code]]
-related_topics: [[Agentic Coding]], [[Harness Engineering]]
+related_entities: Claude Code
+related_topics: Agentic Coding, Harness Engineering
 ---
 
 # Claude Code：顶级开发团队设计的Harness工程项目源码什么样
@@ -88,10 +88,10 @@ related_topics: [[Agentic Coding]], [[Harness Engineering]]
 > 当你的 AI coding assistant 有一只宠物、会做梦、还有年度回顾——你就知道背后的团队把这件事当成了一个有生命的产品，而不只是一个 API wrapper。Buddy 系统使用 Mulberry32 种子 PRNG，确保每个用户每次看到的精灵完全一致——这不是"随机宠物"，是"你的宠物"。
 
 ## 涉及实体
-- [[Claude Code]] —— Anthropic 官方 Agentic Coding 工具，本文分析对象
-- [[Anthropic]] —— Claude Code 开发团队
+- Claude Code —— Anthropic 官方 Agentic Coding 工具，本文分析对象
+- Anthropic —— Claude Code 开发团队
 
 ## 涉及主题
-- [[Agentic Coding]]
-- [[Harness Engineering]]
-- [[Source Code Analysis]]
+- Agentic Coding
+- Harness Engineering
+- Source Code Analysis

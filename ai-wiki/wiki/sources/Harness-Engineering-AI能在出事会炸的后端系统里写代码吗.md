@@ -7,8 +7,8 @@ source_url: "https://mp.weixin.qq.com/s/VJgVPeJ5GZhVwbRtneEk_Q"
 author: "lancelotluo"
 ingested_at: 2026-05-30
 tags: [ai-coding, backend-engineering, reliability, production-systems, harness]
-related_entities: [[Harness]]
-related_topics: [[AI Code Generation]], [[Backend Reliability]]
+related_entities: Harness
+related_topics: AI Code Generation, Backend Reliability
 ---
 
 # Harness Engineering：AI 能在出事会炸的后端系统里写代码吗
@@ -55,8 +55,8 @@ related_topics: [[AI Code Generation]], [[Backend Reliability]]
 > AI Coding 不是"让 AI 替你写代码"，而是重新定义人与 AI 协作的工程范式。LEGO Harness Engineering 的价值不在于某次效率提升的数字，而在于：每一个踩坑变成规则，每一条规则内化进 Skill，每一个 Skill 让下一个人少走弯路——这是一套可持续进化的工程体系。
 
 ## 涉及实体
-- [[Harness]] —— AI 辅助工程平台
+- Harness —— AI 辅助工程平台
 
 ## 涉及主题
-- [[AI Code Generation]]
-- [[Backend Reliability]]
+- AI Code Generation
+- Backend Reliability

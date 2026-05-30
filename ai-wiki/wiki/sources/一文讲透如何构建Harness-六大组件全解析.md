@@ -8,7 +8,7 @@ author: "李伟山"
 ingested_at: 2026-05-30
 tags: [harness, agent-framework, llm, prompt-engineering, agent-architecture, components]
 related_entities: []
-related_topics: [[AI Agent Harness]], [[Agent 架构设计]]
+related_topics: AI Agent Harness, Agent 架构设计
 ---
 
 # 一文讲透如何构建Harness——六大组件全解析
@@ -87,9 +87,9 @@ related_topics: [[AI Agent Harness]], [[Agent 架构设计]]
 > 模型决定了 Agent 能力的下限，Harness 决定了 Agent 能力的上限。模型会继续进步，但进步的速度在放缓。与此同时，Harness 的工程空间还几乎没有被充分探索。
 
 ## 涉及实体
-- [[Harness]] —— AI Agent 运行框架，本文核心讨论对象
+- Harness —— AI Agent 运行框架，本文核心讨论对象
 
 ## 涉及主题
-- [[AI Agent Harness]]
-- [[Agent 架构设计]]
-- [[Prompt Engineering]]
+- AI Agent Harness
+- Agent 架构设计
+- Prompt Engineering

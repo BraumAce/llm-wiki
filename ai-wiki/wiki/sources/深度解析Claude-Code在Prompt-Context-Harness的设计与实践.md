@@ -16,13 +16,13 @@ tags:
   - context-compression
 related_entities:
   - "[[Claude-Code]]"
-  - "[[Claude-Opus]]"
-  - "[[Claude-Sonnet]]"
+  - "Claude-Opus"
+  - "Claude-Sonnet"
   - "[[OpenClaw]]"
 related_topics:
-  - "[[Agent-系统设计方法论]]"
-  - "[[Context-Compression]]"
-  - "[[CLAUDE-md]]"
+  - "Agent-系统设计方法论"
+  - "Context-Compression"
+  - "CLAUDE-md"
 ---
 
 # 深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践
@@ -149,12 +149,12 @@ related_topics:
 ## 涉及实体
 
 - [[Claude-Code]] —— 本文的核心分析对象，一款极其强大的 AI Coding Agent
-- [[Claude-Opus]] —— Claude Code 使用的基础模型（Claude Opus 4.6）
-- [[Claude-Sonnet]] —— 用于 Memdir 语义检索的模型
+- Claude-Opus —— Claude Code 使用的基础模型（Claude Opus 4.6）
+- Claude-Sonnet —— 用于 Memdir 语义检索的模型
 - [[OpenClaw]] —— 作者此前分析的对比对象，同为 Agent 系统但定位为个人 AI 助手
 
 ## 涉及主题
 
-- [[Agent-系统设计方法论]] —— Prompt Engineering → Context Engineering → Harness Engineering 三阶段递进
-- [[Context-Compression]] —— 三层渐进式压缩体系（MicroCompact / SM Compact / Full LLM Compact）
-- [[CLAUDE-md]] —— 四级注入机制（个人通用 / 项目共享 / 个人私有 / 文件类型特定）
+- Agent-系统设计方法论 —— Prompt Engineering → Context Engineering → Harness Engineering 三阶段递进
+- Context-Compression —— 三层渐进式压缩体系（MicroCompact / SM Compact / Full LLM Compact）
+- CLAUDE-md —— 四级注入机制（个人通用 / 项目共享 / 个人私有 / 文件类型特定）

@@ -70,8 +70,8 @@ DeepSeek V4 模型参数与核心架构：
 > FP4量化感知训练的核心思想：与其让模型训练完再被粗暴量化掉一波精度，不如在训练过程中就让模型"预演"低精度计算，提前适应量化带来的数值扰动。MoE专家权重量化为FP4压缩收益最大，但闪电索引打分保留BF16因为排序对数值精度敏感——就像搬家时被子抽真空压缩，但衣服只能叠起来放否则会压坏。
 
 ## 涉及实体
-- [[DeepSeek]] —— 被介绍的大语言模型及其开发团队
+- DeepSeek —— 被介绍的大语言模型及其开发团队
 
 ## 涉及主题
-- [[LLM Architecture]] —— DeepSeek v4 的模型架构设计
-- [[Model Training]] —— DeepSeek v4 的训练策略与方法
+- LLM Architecture —— DeepSeek v4 的模型架构设计
+- Model Training —— DeepSeek v4 的训练策略与方法

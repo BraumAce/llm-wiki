@@ -7,8 +7,8 @@ source_url: "https://mp.weixin.qq.com/s/VHVZV0rrCxYkbrxjuQzIAQ"
 author: "阿里云开发者"
 ingested_at: 2026-05-30
 tags: [claude-code, source-code-analysis, multi-agent, agentic-coding]
-related_entities: [[Claude Code]], [[Anthropic]]
-related_topics: [[Multi-Agent 架构]], [[Agentic Coding]], [[AI 编程工具]]
+related_entities: Claude Code, Anthropic
+related_topics: Multi-Agent 架构, Agentic Coding, AI 编程工具
 ---
 
 # Claude Code 源码拆解：从启动到多 Agent 扩展层
@@ -93,10 +93,10 @@ MCP 接入时将原生对象翻译成内部运行时模型：MCP prompt -> Comma
 > 真正成熟的 Agent 系统，不是"模型更会做事"，而是"组织能把模型做事这件事，稳定地接进交付链路里"。
 
 ## 涉及实体
-- [[Claude Code]] —— 被分析的开源 AI 编程工具
-- [[Anthropic]] —— Claude Code 的开发方
+- Claude Code —— 被分析的开源 AI 编程工具
+- Anthropic —— Claude Code 的开发方
 
 ## 涉及主题
-- [[Multi-Agent 架构]] —— 文章核心关注的多 Agent 扩展层设计
-- [[Agentic Coding]] —— Claude Code 所属的 AI 编程范式
-- [[AI 编程工具]] —— Claude Code 的产品定位
+- Multi-Agent 架构 —— 文章核心关注的多 Agent 扩展层设计
+- Agentic Coding —— Claude Code 所属的 AI 编程范式
+- AI 编程工具 —— Claude Code 的产品定位

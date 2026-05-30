@@ -7,8 +7,8 @@ source_url: "https://mp.weixin.qq.com/s/Qi68ptxQRyiA932JU49SYQ"
 author: "阿里云开发者"
 ingested_at: 2026-05-30
 tags: [agent, self-improving, source-code-analysis, llm-agent, hermes-agent]
-related_entities: [[Hermes Agent]]
-related_topics: [[Self-Improving Agent]], [[Agent Architecture]]
+related_entities: Hermes Agent
+related_topics: Self-Improving Agent, Agent Architecture
 ---
 
 # 深入源码：Hermes Agent 如何实现 Self-Improving
@@ -81,8 +81,8 @@ K8s 部署场景三次会话对比：
 > 如果你现在还在手写 Skill、手动维护 MEMORY.md、每次升级前先做好心理建设——不妨想想：你的时间应该花在给 Agent 做运维上，还是让 Agent 自己学会做事上？
 
 ## 涉及实体
-- [[Hermes Agent]] —— 被分析的 self-improving agent 系统
+- Hermes Agent —— 被分析的 self-improving agent 系统
 
 ## 涉及主题
-- [[Self-Improving Agent]] —— agent 通过经验积累和自我反思持续改进的核心机制
-- [[Agent Architecture]] —— agent 系统的源码架构设计
+- Self-Improving Agent —— agent 通过经验积累和自我反思持续改进的核心机制
+- Agent Architecture —— agent 系统的源码架构设计

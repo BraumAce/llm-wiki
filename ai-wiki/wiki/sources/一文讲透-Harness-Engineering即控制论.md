@@ -12,7 +12,7 @@ tags:
   - control-theory
   - ai-agent
 related_entities:
-  - "[[Harness]]"
+  - "Harness"
 related_topics: []
 ---
 
@@ -98,12 +98,12 @@ related_topics: []
 
 ## 涉及实体
 
-- [[Harness]] —— 本文核心概念，探讨其与控制论的理论关联
+- Harness —— 本文核心概念，探讨其与控制论的理论关联
 
 ## 涉及主题
 
 - [[Harness-Engineering]] —— Harness 工程化方法论
-- [[Cybernetics]] —— 控制论，Harness 的理论根基
+- Cybernetics —— 控制论，Harness 的理论根基
 
 ## 我的评注
 

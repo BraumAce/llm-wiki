@@ -16,27 +16,27 @@ tags:
   - context-engineering
   - prompt-engineering
 related_entities:
-  - "[[Hermes Agent]]"
-  - "[[Nous Research]]"
+  - "Hermes Agent"
+  - "Nous Research"
   - "[[OpenClaw]]"
-  - "[[Claude Code]]"
-  - "[[ShareGPT]]"
-  - "[[LLaMA-Factory]]"
-  - "[[Andrej Karpathy]]"
+  - "Claude Code"
+  - "ShareGPT"
+  - "LLaMA-Factory"
+  - "Andrej Karpathy"
 related_topics:
-  - "[[Agent自进化]]"
-  - "[[Skill动态生成]]"
-  - "[[强化学习训练闭环]]"
-  - "[[Agent轨迹捕获]]"
-  - "[[Context Engineering]]"
-  - "[[Harness Engineering]]"
+  - "Agent自进化"
+  - "Skill动态生成"
+  - "强化学习训练闭环"
+  - "Agent轨迹捕获"
+  - "Context Engineering"
+  - "Harness Engineering"
 ---
 
 # 深度解析 Hermes Agent 如何实现自进化
 
 ## 一句话概括
 
-阿里云开发者公众号上由"飞樰"撰写的 [[Hermes Agent]] 源码深度解析，核心聚焦"自进化"（Self-Evolving）机制——通过**动态 Skill 生成**（从执行轨迹自动沉淀可复用技能）和**RL 训练闭环**（基于 ShareGPT 格式轨迹数据的强化学习微调）两条内外双路径驱动 Agent 越用越强，是继 OpenClaw、Claude Code 之后"项目深度解析"系列的第三篇。
+阿里云开发者公众号上由"飞樰"撰写的 Hermes Agent 源码深度解析，核心聚焦"自进化"（Self-Evolving）机制——通过**动态 Skill 生成**（从执行轨迹自动沉淀可复用技能）和**RL 训练闭环**（基于 ShareGPT 格式轨迹数据的强化学习微调）两条内外双路径驱动 Agent 越用越强，是继 OpenClaw、Claude Code 之后"项目深度解析"系列的第三篇。
 
 ## 实践内容
 
@@ -121,19 +121,19 @@ related_topics:
 
 ## 涉及实体
 
-- [[Hermes Agent]] —— 本文核心分析对象，Nous Research 推出的开源 Agent 项目，主打"持久运行"和"自进化"
-- [[Nous Research]] —— Hermes Agent 的开发者，美国开源人工智能研究机构
+- Hermes Agent —— 本文核心分析对象，Nous Research 推出的开源 Agent 项目，主打"持久运行"和"自进化"
+- Nous Research —— Hermes Agent 的开发者，美国开源人工智能研究机构
 - [[OpenClaw]] —— 作为对比对象，Hermes 的前身/竞品，支持从 OpenClaw 无缝迁移
-- [[Claude Code]] —— 系列文章的第二个深度解析对象，与 Hermes 有相似的 Prompt/Context/Harness 设计
-- [[ShareGPT]] —— Hermes 自进化 Pipeline 使用的统一数据格式，LLaMA-Factory/FastChat/OpenChat 等生态均支持
-- [[LLaMA-Factory]] —— 支持 ShareGPT 格式的主流训练框架之一
-- [[Andrej Karpathy]] —— 其开源项目 AutoResearch 与 Hermes 的 RL 训练闭环有相似之处
+- Claude Code —— 系列文章的第二个深度解析对象，与 Hermes 有相似的 Prompt/Context/Harness 设计
+- ShareGPT —— Hermes 自进化 Pipeline 使用的统一数据格式，LLaMA-Factory/FastChat/OpenChat 等生态均支持
+- LLaMA-Factory —— 支持 ShareGPT 格式的主流训练框架之一
+- Andrej Karpathy —— 其开源项目 AutoResearch 与 Hermes 的 RL 训练闭环有相似之处
 
 ## 涉及主题
 
-- [[Agent自进化]] —— Hermes 的核心差异化能力，通过 Skill 生成 + RL 训练双路径实现
-- [[Skill动态生成]] —— 从"静态调用"到"动态生成"的 Skill 机制变革，基于执行轨迹自动沉淀可复用技能
-- [[强化学习训练闭环]] —— 从数据合成、质量筛选到 RL 训练、自动评估的完整闭环
-- [[Agent轨迹捕获]] —— Agent 完成任务的完整对话记录，用于 Skill 生成和 RL 训练的数据源
-- [[Context Engineering]] —— Hermes 与 OpenClaw/Claude Code 的共性设计维度
-- [[Harness Engineering]] —— Hermes 与 OpenClaw/Claude Code 的共性设计维度
+- Agent自进化 —— Hermes 的核心差异化能力，通过 Skill 生成 + RL 训练双路径实现
+- Skill动态生成 —— 从"静态调用"到"动态生成"的 Skill 机制变革，基于执行轨迹自动沉淀可复用技能
+- 强化学习训练闭环 —— 从数据合成、质量筛选到 RL 训练、自动评估的完整闭环
+- Agent轨迹捕获 —— Agent 完成任务的完整对话记录，用于 Skill 生成和 RL 训练的数据源
+- Context Engineering —— Hermes 与 OpenClaw/Claude Code 的共性设计维度
+- Harness Engineering —— Hermes 与 OpenClaw/Claude Code 的共性设计维度

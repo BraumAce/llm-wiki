@@ -7,8 +7,8 @@ source_url: "https://mp.weixin.qq.com/s/77dyufF3MP8stHPS0BApNw"
 author: "腾讯云开发者"
 ingested_at: 2026-05-30
 tags: [harness, engineering, ai-development, agent, workflow, rule, skill, mcp]
-related_entities: [[Harness]], [[Claude]], [[MCP]]
-related_topics: [[AI辅助开发]], [[Harness Engineering]], [[多Agent协作]], [[工程化落地]]
+related_entities: Harness, Claude, MCP
+related_topics: AI辅助开发, Harness Engineering, 多Agent协作, 工程化落地
 ---
 
 # 万字干货！Harness Engineering如何工程化落地
@@ -54,12 +54,12 @@ related_topics: [[AI辅助开发]], [[Harness Engineering]], [[多Agent协作]],
 > 真正贵的不是 token，真正贵的是失控。我们需要的，不只是"AI 把代码写出来"，我们还需要：需求文档、方案文档、开发文档、代码评审结论、测试文档、交付结论、阶段进度和回退记录。这些东西不是形式主义，而是为了让后续任何一个人、任何一个 AI，在几天后、几周后、几个月后，都还能看懂：这个任务为什么这么做，做到哪一步了，哪些风险已经处理。
 
 ## 涉及实体
-- [[Harness]] —— AI开发工程化框架体系
-- [[Claude]] —— 作为工程执行AI的角色
-- [[MCP]] —— Model Context Protocol，外部工程系统接入层
+- Harness —— AI开发工程化框架体系
+- Claude —— 作为工程执行AI的角色
+- MCP —— Model Context Protocol，外部工程系统接入层
 
 ## 涉及主题
-- [[AI辅助开发]]
-- [[Harness Engineering]]
-- [[多Agent协作]]
-- [[工程化落地]]
+- AI辅助开发
+- Harness Engineering
+- 多Agent协作
+- 工程化落地

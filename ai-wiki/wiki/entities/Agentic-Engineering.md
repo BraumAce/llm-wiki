@@ -26,7 +26,7 @@ sources:
   - "[[Agent从一问一答到自主执行面临哪些挑战]]"
 related_entities:
   - "[[Harness-Engineering]]"
-  - "[[Context-Engineering]]"
+  - "Context-Engineering"
   - "[[Spec-Driven-Development]]"
   - "[[OpenClaw]]"
   - "[[Hermes-Agent]]"
@@ -104,7 +104,7 @@ Agentic Engineering 建立在三条公理之上：
 ## 与其他实体的关系
 
 - [[Harness-Engineering]] —— Harness Engineering 是 Agentic Engineering 在工程落地层面的核心方法论。Agentic Engineering 定义了"人与 AI Agent 协作"的范式框架，Harness Engineering 提供了具体的工程骨架（Rules、Skills、Wiki、Changes），两者在实践中高度融合
-- [[Context-Engineering]] —— Context Engineering 是 Agentic Engineering 的关键子命题。上下文的质量和结构化程度决定 AI 输出上限，Compaction、JIT 检索、子 Agent 架构等策略是 Agentic Engineering 的核心技术手段
+- Context-Engineering —— Context Engineering 是 Agentic Engineering 的关键子命题。上下文的质量和结构化程度决定 AI 输出上限，Compaction、JIT 检索、子 Agent 架构等策略是 Agentic Engineering 的核心技术手段
 - [[Spec-Driven-Development]] —— SDD 是 Agentic Engineering 在需求阶段的具体实践。通过结构化文档固化需求边界、接口契约和成功指标，让 Agent 按规格实现而非凭直觉创造
 - [[OpenClaw]] —— OpenClaw 是 Agentic Engineering 理念的开源实践载体，其 CLAUDE.md 持久化状态、hooks 强制规范、Skills 封装领域知识的设计哲学体现了 Agentic Engineering 的核心思想
 - [[Hermes-Agent]] —— Hermes Agent 代表了 Agentic Engineering 的自进化方向，通过记忆模块、反馈循环和自我反思机制实现"越用越好用"
@@ -123,6 +123,6 @@ Agentic Engineering 建立在三条公理之上：
 <!-- 写作要点：
 1. 字数 ≥ 1500（中文字符）
 2. 不允许出现 "TODO" / "XXX" / "待补充" / "TBD"
-3. 至少 1 个 [[related]]、≥ 1 个 sources，frontmatter sources 与正文一致
+3. 至少 1 个 related、≥ 1 个 sources，frontmatter sources 与正文一致
 4. 多次 ingest 同一实体时合并扩展，不覆盖
 -->

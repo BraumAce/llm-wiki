@@ -82,7 +82,7 @@ related_topics: []
 - SVN
 
 ## 涉及主题
-- [[Harness Engineering]] —— AI 编程的第三阶段，搭建受控环境让 AI 自主执行
-- [[多Agent协作]] —— 7 个角色分工协作的流水线开发模式
-- [[AI代码质量保障]] —— 声明式规则 + 自动化验证 + 基线管理
-- [[Prompt Engineering]] —— 从 Prompt 到 Context 到 Harness 的演进
+- Harness Engineering —— AI 编程的第三阶段，搭建受控环境让 AI 自主执行
+- 多Agent协作 —— 7 个角色分工协作的流水线开发模式
+- AI代码质量保障 —— 声明式规则 + 自动化验证 + 基线管理
+- Prompt Engineering —— 从 Prompt 到 Context 到 Harness 的演进

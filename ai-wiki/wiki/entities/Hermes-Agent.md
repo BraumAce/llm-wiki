@@ -25,13 +25,13 @@ sources:
   - "[[深度解析LLM-Wiki-Obsidian-Wiki-GBrain]]"
 related_entities:
   - "[[OpenClaw]]"
-  - "[[Claude Code]]"
-  - "[[Nous Research]]"
+  - "Claude Code"
+  - "Nous Research"
   - "[[Harness-Engineering]]"
-  - "[[ShareGPT]]"
-  - "[[LLaMA-Factory]]"
-  - "[[Andrej Karpathy]]"
-  - "[[Context-Engineering]]"
+  - "ShareGPT"
+  - "LLaMA-Factory"
+  - "Andrej Karpathy"
+  - "Context-Engineering"
 ---
 
 # Hermes Agent
@@ -110,13 +110,13 @@ local、Docker、SSH、Singularity、Modal 和 Daytona。其中 Daytona 和 Moda
 ## 与其他实体的关系
 
 - [[OpenClaw]] —— 前身/竞品，Hermes 提供一键迁移工具 `hermes claw migrate`；两者在 Harness Engineering 语境下代表不同的实现路径
-- [[Claude Code]] —— 同系列深度解析对象，与 Hermes 有相似的 Prompt/Context/Harness 设计维度
-- [[Nous Research]] —— Hermes Agent 的开发团队，美国开源人工智能研究机构，同时维护 Nous Portal 统一模型订阅平台
+- Claude Code —— 同系列深度解析对象，与 Hermes 有相似的 Prompt/Context/Harness 设计维度
+- Nous Research —— Hermes Agent 的开发团队，美国开源人工智能研究机构，同时维护 Nous Portal 统一模型订阅平台
 - [[Harness-Engineering]] —— Hermes 是 Harness 理念的实现载体之一，Agent = Model + Harness 的具体落地
-- [[Context-Engineering]] —— Hermes 与 OpenClaw/Claude Code 的共性设计维度，涉及上下文精细化管理和渐进式披露
-- [[ShareGPT]] —— Hermes 自进化 Pipeline 使用的统一数据格式，LLaMA-Factory/FastChat/OpenChat 等生态均支持
-- [[LLaMA-Factory]] —— 支持 ShareGPT 格式的主流训练框架之一，用于 Hermes 的 RL 训练流程
-- [[Andrej Karpathy]] —— 其开源项目 AutoResearch 与 Hermes 的 RL 训练闭环有相似之处；其 LLM-Wiki 项目与 Hermes 的 Skill 自动沉淀理念相通
+- Context-Engineering —— Hermes 与 OpenClaw/Claude Code 的共性设计维度，涉及上下文精细化管理和渐进式披露
+- ShareGPT —— Hermes 自进化 Pipeline 使用的统一数据格式，LLaMA-Factory/FastChat/OpenChat 等生态均支持
+- LLaMA-Factory —— 支持 ShareGPT 格式的主流训练框架之一，用于 Hermes 的 RL 训练流程
+- Andrej Karpathy —— 其开源项目 AutoResearch 与 Hermes 的 RL 训练闭环有相似之处；其 LLM-Wiki 项目与 Hermes 的 Skill 自动沉淀理念相通
 
 ## 参考来源
 
@@ -130,6 +130,6 @@ local、Docker、SSH、Singularity、Modal 和 Daytona。其中 Daytona 和 Moda
 <!-- 写作要点：
 1. 字数 >= 1500（中文字符）
 2. 不允许出现 "TODO" / "XXX" / "待补充" / "TBD"
-3. 至少 1 个 [[related]]、>= 1 个 sources，frontmatter sources 与正文一致
+3. 至少 1 个 related、>= 1 个 sources，frontmatter sources 与正文一致
 4. 多次 ingest 同一实体时合并扩展，不覆盖
 -->

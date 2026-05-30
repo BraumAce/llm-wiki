@@ -17,13 +17,13 @@ tags:
   - local-first
   - privacy
 sources:
-  - "[[wechat-cli 源码剖析]]"
+  - "wechat-cli 源码剖析"
 related_entities:
-  - "[[wechat-decrypt]]"
-  - "[[SQLCipher]]"
-  - "[[Click]]"
-  - "[[pycryptodome]]"
-  - "[[Claude Code]]"
+  - "wechat-decrypt"
+  - "SQLCipher"
+  - "Click"
+  - "pycryptodome"
+  - "Claude Code"
   - "[[OpenClaw]]"
 ---
 
@@ -100,16 +100,16 @@ SQLCipher 4 的页面布局为每页 4096 字节。Page 1 特殊处理：头部 
 
 ## 与其他实体的关系
 
-- [[wechat-decrypt]] —— wechat-cli 所基于的上游项目，提供 SQLCipher 4 的核心解密能力；wechat-cli 在其基础上构建了完整的 CLI 命令层和 AI 工具化架构
-- [[SQLCipher]] —— 微信本地数据库使用的加密方案（SQLCipher 4，AES-256-CBC 页级加密），wechat-cli 的核心工作就是破解这一层加密
-- [[Click]] —— wechat-cli 使用的 Python CLI 框架（8.1+），负责命令行参数解析和 11 个子命令的注册与调度
-- [[pycryptodome]] —— 用于实现 AES-256-CBC 页级解密的 Python 加密库，是 wechat-cli 解密流程的核心依赖
-- [[Claude Code]] —— AI 编程助手，可以直接调用 wechat-cli 的 JSON 输出，实现自然语言查询微信数据
+- wechat-decrypt —— wechat-cli 所基于的上游项目，提供 SQLCipher 4 的核心解密能力；wechat-cli 在其基础上构建了完整的 CLI 命令层和 AI 工具化架构
+- SQLCipher —— 微信本地数据库使用的加密方案（SQLCipher 4，AES-256-CBC 页级加密），wechat-cli 的核心工作就是破解这一层加密
+- Click —— wechat-cli 使用的 Python CLI 框架（8.1+），负责命令行参数解析和 11 个子命令的注册与调度
+- pycryptodome —— 用于实现 AES-256-CBC 页级解密的 Python 加密库，是 wechat-cli 解密流程的核心依赖
+- Claude Code —— AI 编程助手，可以直接调用 wechat-cli 的 JSON 输出，实现自然语言查询微信数据
 - [[OpenClaw]] —— AI Agent 框架，wechat-cli 可作为其 Tool 系统中的一个工具被调用
 
 ## 参考来源
 
-- [[wechat-cli 源码剖析]] —— 对 wechat-cli 完整源码的深度剖析，涵盖项目结构、SQLCipher 4 解密算法、跨平台内存扫描实现、11 个查询命令设计与 AI Agent 工具化架构
+- wechat-cli 源码剖析 —— 对 wechat-cli 完整源码的深度剖析，涵盖项目结构、SQLCipher 4 解密算法、跨平台内存扫描实现、11 个查询命令设计与 AI Agent 工具化架构
 
 ## 技术栈
 
@@ -160,6 +160,6 @@ wechat_cli/
 <!-- 写作要点：
 1. 字数 ≥ 1500（中文字符）
 2. 不允许出现 "TODO" / "XXX" / "待补充" / "TBD"
-3. 至少 1 个 [[related]]、≥ 1 个 sources，frontmatter sources 与正文一致
+3. 至少 1 个 related、≥ 1 个 sources，frontmatter sources 与正文一致
 4. 多次 ingest 同一实体时合并扩展，不覆盖
 -->

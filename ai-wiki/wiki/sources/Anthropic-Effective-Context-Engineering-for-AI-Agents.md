@@ -16,13 +16,13 @@ tags:
   - multi-agent
   - agentic-memory
 related_entities:
-  - "[[Anthropic]]"
+  - "Anthropic"
   - "[[Claude-Code]]"
-  - "[[Claude]]"
+  - "Claude"
 related_topics:
-  - "[[Context-Engineering]]"
-  - "[[Agent-Architecture]]"
-  - "[[Context-Window-Management]]"
+  - "Context-Engineering"
+  - "Agent-Architecture"
+  - "Context-Window-Management"
 ---
 
 # Anthropic: Effective context engineering for AI agents
@@ -103,12 +103,12 @@ Claude Code 示例：写针对性查询、存储结果、用 `head` 和 `tail` �
 
 ## 涉及实体
 
-- [[Anthropic]] —— 本文作者所属机构，发布于 Anthropic Engineering Blog
+- Anthropic —— 本文作者所属机构，发布于 Anthropic Engineering Blog
 - [[Claude-Code]] —— 文中多次引用的 agent 产品，作为 JIT 检索、compaction、hybrid 策略的实践案例
-- [[Claude]] —— Anthropic 的 LLM 产品线，文中提及 Sonnet 4.5 发布时配套的 memory tool public beta
+- Claude —— Anthropic 的 LLM 产品线，文中提及 Sonnet 4.5 发布时配套的 memory tool public beta
 
 ## 涉及主题
 
-- [[Context-Engineering]] —— 本文核心主题，系统定义了 context engineering 的内涵、与 prompt engineering 的关系、以及四大长时任务策略
-- [[Agent-Architecture]] —— 涵盖 agent 定义（LLM autonomously using tools in a loop）、sub-agent 架构、hybrid 检索策略
-- [[Context-Window-Management]] —— context rot、attention budget、compaction、tool result clearing 等上下文窗口管理技术
+- Context-Engineering —— 本文核心主题，系统定义了 context engineering 的内涵、与 prompt engineering 的关系、以及四大长时任务策略
+- Agent-Architecture —— 涵盖 agent 定义（LLM autonomously using tools in a loop）、sub-agent 架构、hybrid 检索策略
+- Context-Window-Management —— context rot、attention budget、compaction、tool result clearing 等上下文窗口管理技术

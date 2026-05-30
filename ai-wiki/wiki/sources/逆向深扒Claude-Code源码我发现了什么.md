@@ -14,8 +14,8 @@ tags:
   - tool-system
 related_entities:
   - "[[Claude-Code]]"
-  - "[[Claude-Sonnet]]"
-  - "[[Claude-Opus]]"
+  - "Claude-Sonnet"
+  - "Claude-Opus"
 related_topics:
   - "[[Agent架构演进-主题]]"
   - "[[Harness-Engineering-主题]]"
@@ -125,8 +125,8 @@ overrideSystemPrompt > Coordinator > Agent > customSystemPrompt > defaultSystemP
 ## 涉及实体
 
 - [[Claude-Code]] —— 本文的核心逆向分析对象，Anthropic 官方 AI Coding Agent CLI 工具
-- [[Claude-Sonnet]] —— Claude Code 中用于 Memdir 语义检索的模型
-- [[Claude-Opus]] —— Claude Code 的主力推理模型
+- Claude-Sonnet —— Claude Code 中用于 Memdir 语义检索的模型
+- Claude-Opus —— Claude Code 的主力推理模型
 
 ## 涉及主题
 

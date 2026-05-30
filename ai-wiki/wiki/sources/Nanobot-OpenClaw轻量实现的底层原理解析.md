@@ -7,8 +7,8 @@ source_url: "https://mp.weixin.qq.com/s/O8dOafau9EGxMmLllLRq-A"
 author: "vivo AI技术开发团队 - Lin Weiwei"
 ingested_at: 2026-05-30
 tags: [openclaw, nanobot, ai-agent, lightweight-implementation, prompt-engineering]
-related_entities: [[OpenClaw]], [[Nanobot]]
-related_topics: [[AI Agent 架构]], [[轻量级 LLM 应用]]
+related_entities: [[OpenClaw]], Nanobot
+related_topics: AI Agent 架构, 轻量级 LLM 应用
 ---
 
 # Nanobot（OpenClaw 轻量实现）的底层原理解析
@@ -90,8 +90,8 @@ Nanobot 本质是运行在用户终端的 Agent，核心运转逻辑：循环调
 
 ## 涉及实体
 - [[OpenClaw]] —— 开源 AI Agent 框架
-- [[Nanobot]] —— OpenClaw 的轻量实现
+- Nanobot —— OpenClaw 的轻量实现
 
 ## 涉及主题
-- [[AI Agent 架构]]
-- [[轻量级 LLM 应用]]
+- AI Agent 架构
+- 轻量级 LLM 应用

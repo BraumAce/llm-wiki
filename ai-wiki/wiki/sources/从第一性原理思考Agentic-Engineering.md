@@ -16,12 +16,12 @@ tags:
   - sdlc
   - human-ai-collaboration
 related_entities:
-  - "[[Agentic-Engineering-Framework]]"
-  - "[[LLM]]"
+  - "Agentic-Engineering-Framework"
+  - "LLM"
 related_topics:
   - "[[Agentic-Engineering]]"
-  - "[[Context-Engineering]]"
-  - "[[Vibe-Coding]]"
+  - "Context-Engineering"
+  - "Vibe-Coding"
 ---
 
 # 从第一性原理思考 Agentic Engineering
@@ -69,11 +69,11 @@ related_topics:
 
 ## 涉及实体
 
-- [[Agentic-Engineering-Framework]] —— 本文方法论的开源落地实现，基于 Skill 的模块化框架
-- [[LLM]] —— 作为 Agentic Engineering 核心引擎的大型语言模型，其三个本质特征（上下文决定性、概率性、工作记忆有限性与易失性）构成公理 2
+- Agentic-Engineering-Framework —— 本文方法论的开源落地实现，基于 Skill 的模块化框架
+- LLM —— 作为 Agentic Engineering 核心引擎的大型语言模型，其三个本质特征（上下文决定性、概率性、工作记忆有限性与易失性）构成公理 2
 
 ## 涉及主题
 
 - [[Agentic-Engineering]] —— 本文的核心主题，从第一性原理推导的工程师与 AI Agent 深度协作范式
-- [[Context-Engineering]] —— 上下文的质量和结构化程度决定 AI 输出上限，是 Agentic Engineering 的关键命题
-- [[Vibe-Coding]] —— 本文对照的反面范式，"用速度换取理解和控制"的原型验证模式
+- Context-Engineering —— 上下文的质量和结构化程度决定 AI 输出上限，是 Agentic Engineering 的关键命题
+- Vibe-Coding —— 本文对照的反面范式，"用速度换取理解和控制"的原型验证模式

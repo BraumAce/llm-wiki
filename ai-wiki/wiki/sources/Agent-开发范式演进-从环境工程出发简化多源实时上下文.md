@@ -8,7 +8,7 @@ author: "沈林（阿里云智能集团高级技术专家）/ 阿里云开发者
 ingested_at: 2026-05-30
 tags: [agent, context-engineering, multi-source-context, real-time-context, environment-engineering]
 related_entities: []
-related_topics: [[Agent开发范式]], [[上下文工程]], [[多源实时上下文]]
+related_topics: Agent开发范式, 上下文工程, 多源实时上下文
 ---
 
 # Agent 开发范式演进：从环境工程出发简化多源实时上下文
@@ -80,11 +80,11 @@ EventHouse 借鉴 CI/CD 工程方法，将 Agent 更新封装为可管理的"制
 > 企业级 Agent 的真正分水岭，正在从模型能力转向环境能力。谁能构建多源、实时、可信、可治理的上下文供给体系，谁就更有机会让 Agent 从"能演示"走向"能生产"。
 
 ## 涉及实体
-- [[阿里云]]（EventHouse）
-- [[Anthropic]]
-- [[沈林]]（阿里云智能集团高级技术专家）
+- 阿里云（EventHouse）
+- Anthropic
+- 沈林（阿里云智能集团高级技术专家）
 
 ## 涉及主题
-- [[Agent开发范式]]
-- [[上下文工程]]
-- [[多源实时上下文]]
+- Agent开发范式
+- 上下文工程
+- 多源实时上下文

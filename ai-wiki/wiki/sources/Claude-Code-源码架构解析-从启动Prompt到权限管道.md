@@ -7,8 +7,8 @@ source_url: "https://mp.weixin.qq.com/s/ibU8rAPPkcWrBKw3wArUFw"
 author: "架构师"
 ingested_at: 2026-05-30
 tags: [claude-code, source-code, architecture, prompt-engineering, permission-pipeline, cli-agent]
-related_entities: [[Claude Code]], [[Claude]], [[Anthropic]]
-related_topics: [[AI Agent Architecture]], [[Prompt Engineering]], [[Permission Model]]
+related_entities: Claude Code, Claude, Anthropic
+related_topics: AI Agent Architecture, Prompt Engineering, Permission Model
 ---
 
 # Claude Code 源码架构解析：从启动 Prompt 到权限管道
@@ -47,10 +47,10 @@ related_topics: [[AI Agent Architecture]], [[Prompt Engineering]], [[Permission 
 > Claude Code 这次更值得借鉴的，其实是它把很多原本只写在最佳实践文档里的东西，一步步推进成了代码里的系统约束。Prompt 分层装配、工具先声明边界、编辑尽量先读后改、权限做成决策链、长任务把"历史压缩"和"状态续写"分开处理。这些做法看起来都不新，但它们一旦真的被写进系统，产品体验通常就会稳定不少。
 
 ## 涉及实体
-- [[Claude Code]] —— 被分析的 CLI 工具
-- [[Anthropic]] —— Claude Code 的开发方
+- Claude Code —— 被分析的 CLI 工具
+- Anthropic —— Claude Code 的开发方
 
 ## 涉及主题
-- [[AI Agent Architecture]] —— Agent 工具的系统架构设计
-- [[Prompt Engineering]] —— 启动 Prompt 的组织与分层
-- [[Permission Model]] —— 工具调用的权限校验机制
+- AI Agent Architecture —— Agent 工具的系统架构设计
+- Prompt Engineering —— 启动 Prompt 的组织与分层
+- Permission Model —— 工具调用的权限校验机制

@@ -16,7 +16,7 @@ tags:
   - architecture
 related_entities:
   - "[[OpenClaw]]"
-  - "[[Anthropic-Claude-API]]"
+  - "Anthropic-Claude-API"
 related_topics:
   - "[[Agent架构演进-主题]]"
 ---
@@ -246,7 +246,7 @@ InboundMessage 数据结构包含四个字段：channel（消息通道）、send
 ## 涉及实体
 
 - [[OpenClaw]] —— 本文研究的 Agent 框架系统，覆盖其中 Tool、消息总线、子 Agent 管理三个核心模块的实现
-- [[Anthropic-Claude-API]] —— 框架底层依赖的 LLM API，input_schema 类型直接取自 @anthropic-ai/sdk
+- Anthropic-Claude-API —— 框架底层依赖的 LLM API，input_schema 类型直接取自 @anthropic-ai/sdk
 
 ## 涉及主题
 

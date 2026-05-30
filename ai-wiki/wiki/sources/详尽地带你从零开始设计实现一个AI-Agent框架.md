@@ -15,20 +15,20 @@ tags:
   - deepseek
   - tutorial
 related_entities:
-  - "[[LangChain]]"
-  - "[[LlamaIndex]]"
-  - "[[AutoGen]]"
-  - "[[CrewAI]]"
-  - "[[LangGraph]]"
-  - "[[Semantic-Kernel]]"
-  - "[[DeepSeek]]"
-  - "[[Manus]]"
+  - "LangChain"
+  - "LlamaIndex"
+  - "AutoGen"
+  - "CrewAI"
+  - "LangGraph"
+  - "Semantic-Kernel"
+  - "DeepSeek"
+  - "Manus"
   - "[[OpenClaw]]"
 related_topics:
-  - "[[AI-Agent框架设计]]"
-  - "[[ReAct模式]]"
-  - "[[Context-Engineering]]"
-  - "[[Agent-Loop]]"
+  - "AI-Agent框架设计"
+  - "ReAct模式"
+  - "Context-Engineering"
+  - "Agent-Loop"
 ---
 
 # 详尽地带你从零开始设计实现一个AI Agent框架
@@ -156,22 +156,22 @@ agent读取上下文 → 思考 → 决定行动
 
 ## 涉及实体
 
-- [[LangChain]] —— 最成熟和流行的 Agent 框架，提供丰富的工具链和集成，适合快速出 Agent 原型
-- [[LlamaIndex]] —— 专注于数据索引和检索，擅长 RAG 场景
-- [[AutoGen]] —— 微软推出的多 Agent 协作框架，支持多 Agent 间对话和协作
-- [[CrewAI]] —— 专注角色扮演型 Agent 协作框架，每个 Agent 有明确角色和目标
-- [[LangGraph]] —— LangChain 团队开发的状态图框架，提供更精细的流程控制
-- [[Semantic-Kernel]] —— 微软轻量级框架，与 Azure 集成良好，支持多种编程语言
-- [[DeepSeek]] —— 文章实践篇使用的 LLM 提供商，采用 deepseek-chat 模型
-- [[Manus]] —— Monica 发布的 Agent 产品，其首席科学家明确表示不使用 MCP，转而深耕上下文工程
+- LangChain —— 最成熟和流行的 Agent 框架，提供丰富的工具链和集成，适合快速出 Agent 原型
+- LlamaIndex —— 专注于数据索引和检索，擅长 RAG 场景
+- AutoGen —— 微软推出的多 Agent 协作框架，支持多 Agent 间对话和协作
+- CrewAI —— 专注角色扮演型 Agent 协作框架，每个 Agent 有明确角色和目标
+- LangGraph —— LangChain 团队开发的状态图框架，提供更精细的流程控制
+- Semantic-Kernel —— 微软轻量级框架，与 Azure 集成良好，支持多种编程语言
+- DeepSeek —— 文章实践篇使用的 LLM 提供商，采用 deepseek-chat 模型
+- Manus —— Monica 发布的 Agent 产品，其首席科学家明确表示不使用 MCP，转而深耕上下文工程
 - [[OpenClaw]] —— 年初火爆的 AI Agent 产品，为 Agent 带来新的想象空间
 
 ## 涉及主题
 
-- [[AI-Agent框架设计]] —— 本文核心主题，从理论到实践系统讲解 Agent 框架设计
-- [[ReAct模式]] —— 当前 AI Agent 理论中最具基础性与代表性的模式，推理+执行+观察循环
-- [[Context-Engineering]] —— Agent 框架的核心变量，上下文工程管理是 Agent 智能的关键
-- [[Agent-Loop]] —— 上下文工程的核心引擎，本质是 While 循环中的 LLM 推理+工具调用+上下文处理
+- AI-Agent框架设计 —— 本文核心主题，从理论到实践系统讲解 Agent 框架设计
+- ReAct模式 —— 当前 AI Agent 理论中最具基础性与代表性的模式，推理+执行+观察循环
+- Context-Engineering —— Agent 框架的核心变量，上下文工程管理是 Agent 智能的关键
+- Agent-Loop —— 上下文工程的核心引擎，本质是 While 循环中的 LLM 推理+工具调用+上下文处理
 
 ## 我的评注
 

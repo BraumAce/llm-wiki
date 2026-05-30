@@ -8,8 +8,8 @@ author: "炁源"
 publisher: "得物技术"
 ingested_at: 2026-05-30
 tags: [ai-agent, security-audit, gateway, api-gateway, route-security, automation, llm, e-commerce]
-related_entities: [[得物技术]]
-related_topics: [[AI Agent应用]], [[安全审计]], [[网关路由]]
+related_entities: 得物技术
+related_topics: AI Agent应用, 安全审计, 网关路由
 ---
 
 # 通用 AI Agent 驱动网关路由安全审计实践
@@ -92,11 +92,11 @@ Claude → Bash → mcp2cli → 工具执行
 > AI不是替代人工，而是放大安全工程师的能力：AI处理重复性筛查，人工聚焦深度分析和复杂判断。
 
 ## 涉及实体
-- [[得物技术]] —— 文章发布方，得物（Poizon）电商平台的技术团队，实践 AI Agent 驱动网关路由安全审计的落地单位
+- 得物技术 —— 文章发布方，得物（Poizon）电商平台的技术团队，实践 AI Agent 驱动网关路由安全审计的落地单位
 
 ## 涉及主题
-- [[AI Agent应用]] —— 利用 LLM 驱动的 Agent 实现安全审计自动化
-- [[安全审计]] —— API 网关路由配置的安全合规检查
-- [[网关路由]] —— 微服务架构下的 API 网关路由管理与安全风险识别
+- AI Agent应用 —— 利用 LLM 驱动的 Agent 实现安全审计自动化
+- 安全审计 —— API 网关路由配置的安全合规检查
+- 网关路由 —— 微服务架构下的 API 网关路由管理与安全风险识别
 
 ---

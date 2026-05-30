@@ -8,7 +8,7 @@ author: "动力节点教育"
 ingested_at: 2026-05-30
 tags: [ai-skill, enterprise-ai, capability-standardization, pluggable-architecture, auditability, ai-engineering]
 related_entities: []
-related_topics: [[AI Skill 体系]], [[企业级 AI 工程]], [[AI 能力标准化]], [[可插拔架构]], [[AI 审计与治理]]
+related_topics: AI Skill 体系, 企业级 AI 工程, AI 能力标准化, 可插拔架构, AI 审计与治理
 ---
 
 # AI Skill 体系全解：企业级 AI 能力标准化可插拔可审计
@@ -127,20 +127,20 @@ public ResponseEntity<?> updateSkill(
 > 绝大多数公司接入大模型后，都会遇到这 4 个致命问题：回答不可控（同样问题每次回答不一样）、专业度不够（没有行业知识，不懂业务规则）、无法沉淀（Prompt 散落在代码里，无法管理、无法版本、无法共享）、不合规（没有审批、没有审计、没有权限、没有安全边界）。
 
 ## 涉及实体
-- [[LLM 大模型]]
-- [[AI Agent]]
-- [[Skill 体系]]
-- [[Tool 层]]
-- [[SKILL.md 标准]]
-- [[SkillParser]]
-- [[双层存储架构]]
-- [[三阶段延迟加载]]
-- [[审计日志]]
-- [[AI 质检]]
+- LLM 大模型
+- AI Agent
+- Skill 体系
+- Tool 层
+- SKILL.md 标准
+- SkillParser
+- 双层存储架构
+- 三阶段延迟加载
+- 审计日志
+- AI 质检
 
 ## 涉及主题
-- [[AI Skill 体系]]
-- [[企业级 AI 工程]]
-- [[AI 能力标准化]]
-- [[可插拔架构]]
-- [[AI 审计与治理]]
+- AI Skill 体系
+- 企业级 AI 工程
+- AI 能力标准化
+- 可插拔架构
+- AI 审计与治理

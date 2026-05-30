@@ -7,8 +7,8 @@ source_url: "https://mp.weixin.qq.com/s/JDjXDArHdu1GVsg2y9J0cQ"
 author: "石臻说AI"
 ingested_at: 2026-05-30
 tags: [claude-code, source-code-analysis, ai-programming, anthropic, code-generation]
-related_entities: [[Claude Code]], [[Anthropic]]
-related_topics: [[AI编程工具]], [[代码生成]], [[源码分析]]
+related_entities: Claude Code, Anthropic
+related_topics: AI编程工具, 代码生成, 源码分析
 ---
 
 # Claude Code源码泄露深度解析：51.2万行代码里藏着怎样的AI编程系统
@@ -75,10 +75,10 @@ BUDDY（终端宠物系统）、KAIROS（持久后台）、KAIROS_DREAM（夜间
 > 模型只是 CPU，prompt 是内核策略，工具是外设，CLAUDE.md 是层叠配置，Coordinator 和 KAIROS 是进程系统，Buddy 则像那个写在 About 页面里、让你确认这东西真有人每天在用的签名。真正的竞争，正在从"谁更会答题"，切换到"谁能把 agent 变成可持续运行的软件系统"。
 
 ## 涉及实体
-- [[Claude Code]] —— 被分析的 AI 编程工具主体
-- [[Anthropic]] —— Claude Code 的开发公司
+- Claude Code —— 被分析的 AI 编程工具主体
+- Anthropic —— Claude Code 的开发公司
 
 ## 涉及主题
-- [[AI编程工具]]
-- [[代码生成]]
-- [[源码分析]]
+- AI编程工具
+- 代码生成
+- 源码分析

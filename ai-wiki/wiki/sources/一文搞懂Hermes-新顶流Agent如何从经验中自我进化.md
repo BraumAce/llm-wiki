@@ -81,7 +81,7 @@ cd hermes-agent
 
 ## 涉及实体
 - [[Hermes-Agent]] —— 本文主角，Nous Research 开源的自进化 AI Agent，具备学习闭环、Skill 自主创建与跨会话记忆
-- [[Nous-Research]] —— Hermes Agent 的开发团队，同时维护 Nous Portal 统一模型订阅平台
+- Nous-Research —— Hermes Agent 的开发团队，同时维护 Nous Portal 统一模型订阅平台
 - [[OpenClaw]] —— Hermes 的前身/竞品，Hermes 提供一键迁移工具 `hermes claw migrate`
 
 ## 涉及主题

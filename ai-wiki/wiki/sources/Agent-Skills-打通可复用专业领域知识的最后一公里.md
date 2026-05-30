@@ -157,17 +157,17 @@ if __name__ == "__main__":
 
 ## 涉及实体
 
-- [[Anthropic]] —— Agent Skills 标准的发起方，2025年10月推出 Skills 功能
-- [[Agent-Skills-Specification]] —— 2025年12月开源的 Agent Skills Specification V1.0
+- Anthropic —— Agent Skills 标准的发起方，2025年10月推出 Skills 功能
+- Agent-Skills-Specification —— 2025年12月开源的 Agent Skills Specification V1.0
 - [[Claude-Code]] —— Skills 运行的底座平台，终端形态的 AI 编程助手
-- [[MCP]] —— Model Context Protocol，与 Skills 互补的工具调用协议
-- [[Qoder-CLI]] —— 阿里系产品，兼容 Claude Code 的 SKILL 标准
+- MCP —— Model Context Protocol，与 Skills 互补的工具调用协议
+- Qoder-CLI —— 阿里系产品，兼容 Claude Code 的 SKILL 标准
 
 ## 涉及主题
 
-- [[Agent-Skills]] —— AI Agent 的技能/能力扩展机制
-- [[Domain-Knowledge-Engineering]] —— 专业领域知识的结构化与复用
-- [[Knowledge-Reusable]] —— 知识可复用性的设计与实践
+- Agent-Skills —— AI Agent 的技能/能力扩展机制
+- Domain-Knowledge-Engineering —— 专业领域知识的结构化与复用
+- Knowledge-Reusable —— 知识可复用性的设计与实践
 
 ## 我的评注
 

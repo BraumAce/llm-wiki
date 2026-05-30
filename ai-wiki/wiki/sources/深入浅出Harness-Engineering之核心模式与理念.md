@@ -8,7 +8,7 @@ author: "张碧泉"
 ingested_at: 2026-05-30
 tags: [harness-engineering, llm, prompt-engineering, ai-agent, core-patterns]
 related_entities: []
-related_topics: [[Harness Engineering]], [[LLM应用开发]], [[AI Agent]]
+related_topics: Harness Engineering, LLM应用开发, AI Agent
 ---
 
 # 深入浅出Harness Engineering之核心模式与理念
@@ -55,9 +55,9 @@ related_topics: [[Harness Engineering]], [[LLM应用开发]], [[AI Agent]]
 > 完成复杂任务（如涉及5次以上工具调用）后，自动生成SKILL.md文件，记录完整的解决步骤，形成可复用的流程。
 
 ## 涉及实体
-- [[Harness Engineering]] —— 核心主题，指系统性驾驭LLM的工程方法论
+- Harness Engineering —— 核心主题，指系统性驾驭LLM的工程方法论
 
 ## 涉及主题
-- [[Harness Engineering]]
-- [[LLM应用开发]]
-- [[AI Agent]]
+- Harness Engineering
+- LLM应用开发
+- AI Agent

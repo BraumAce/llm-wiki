@@ -8,7 +8,7 @@ author: "阿里云开发者"
 ingested_at: 2026-05-30
 tags: [ai-coding, spec-driven-development, prompt-engineering, workflow, best-practices]
 related_entities: []
-related_topics: [[AI编码]], [[Spec驱动开发]], [[提示工程]]
+related_topics: AI编码, Spec驱动开发, 提示工程
 ---
 
 # 2026 年 AI 编码的渐进式 Spec 实战指南
@@ -93,6 +93,6 @@ code_copilot/
 - Simon Willison（Agentic Engineering Patterns）
 
 ## 涉及主题
-- [[AI编码]]
-- [[Spec驱动开发]]
-- [[提示工程]]
+- AI编码
+- Spec驱动开发
+- 提示工程

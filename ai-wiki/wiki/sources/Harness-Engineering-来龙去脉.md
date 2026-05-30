@@ -18,8 +18,8 @@ related_entities:
   - "[[OpenClaw]]"
   - "[[Mitchell-Hashimoto]]"
   - "[[Hermes-Agent]]"
-  - "[[OpenAI-Codex]]"
-  - "[[Anthropic]]"
+  - "OpenAI-Codex"
+  - "Anthropic"
   - "[[Agent-Memory]]"
 related_topics:
   - "[[Harness-Engineering-主题]]"
@@ -99,8 +99,8 @@ Harness = Agent - Model
 - [[Mitchell-Hashimoto]] —— HashiCorp 联合创始人，2026.2.5 首次提出"Engineer the Harness"
 - [[OpenClaw]] —— 文章对比的两种 Harness 实现之一
 - [[Hermes-Agent]] —— 文章对比的两种 Harness 实现之一
-- [[OpenAI-Codex]] —— OpenAI 官方博客背书 Harness Engineering，内部 5 个月 100 万行代码实践
-- [[Anthropic]] —— "just-in-time retrieval" 和状态外化到文件系统的策略
+- OpenAI-Codex —— OpenAI 官方博客背书 Harness Engineering，内部 5 个月 100 万行代码实践
+- Anthropic —— "just-in-time retrieval" 和状态外化到文件系统的策略
 - [[Agent-Memory]] —— 第四层"记忆与状态"的核心，CLAUDE.md/.cursorrules 是长期记忆的典型实现
 
 ## 涉及主题

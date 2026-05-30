@@ -8,7 +8,7 @@ author: "腾讯技术工程"
 ingested_at: 2026-05-30
 tags: [vibe-coding, agentic-engineering, backend-development, ai-assisted-development, workflow-automation]
 related_entities: []
-related_topics: [[Vibe Coding]], [[Agentic Engineering]], [[AI辅助开发]], [[后台开发]]
+related_topics: Vibe Coding, Agentic Engineering, AI辅助开发, 后台开发
 ---
 
 # 从Vibe Coding到Agentic Engineering：重构后台开发全流程
@@ -62,17 +62,17 @@ related_topics: [[Vibe Coding]], [[Agentic Engineering]], [[AI辅助开发]], [[
 > AI 评审有对有错，人工审核不能省。AI 给出的评审意见不一定都是对的。它可能误判代码意图、遗漏业务上下文、或者给出看起来合理但实际不适用的建议。reviewer 拿到 AI 的审查结果后，每一条都要过脑子判断，该采纳的采纳，不靠谱的直接丢掉。
 
 ## 涉及实体
-- [[Claude Code]] —— Anthropic 的 AI 编程助手，本文的核心开发工具
-- [[GitPlatform]] —— 团队内部的 Git 代码托管平台（类似 GitLab）
-- [[Galileo]] —— 内部日志查询与分析平台
-- [[MCP (Model Context Protocol)]] —— 模型上下文协议，用于连接外部平台 API
-- [[Superpowers]] —— Claude Code 插件，提供结构化工作流 Skill（brainstorming、writing-plans、executing-plans 等）
-- [[trpc-go]] —— Go 语言的 tRPC 框架
-- [[dtools]] —— DevOps 平台 CLI 工具，支持包发布/二进制发布/镜像发布
-- [[PM (Project Management)]] —— 内部项目管理平台
+- Claude Code —— Anthropic 的 AI 编程助手，本文的核心开发工具
+- GitPlatform —— 团队内部的 Git 代码托管平台（类似 GitLab）
+- Galileo —— 内部日志查询与分析平台
+- MCP (Model Context Protocol) —— 模型上下文协议，用于连接外部平台 API
+- Superpowers —— Claude Code 插件，提供结构化工作流 Skill（brainstorming、writing-plans、executing-plans 等）
+- trpc-go —— Go 语言的 tRPC 框架
+- dtools —— DevOps 平台 CLI 工具，支持包发布/二进制发布/镜像发布
+- PM (Project Management) —— 内部项目管理平台
 
 ## 涉及主题
-- [[Vibe Coding]] —— 借助AI大模型快速生成代码的开发方式
-- [[Agentic Engineering]] —— 由AI Agent自主驱动软件工程全流程的进阶范式
-- [[AI辅助开发]] —— 利用AI工具提升开发效率的实践
-- [[后台开发]] —— 服务端/后端系统的开发工作流
+- Vibe Coding —— 借助AI大模型快速生成代码的开发方式
+- Agentic Engineering —— 由AI Agent自主驱动软件工程全流程的进阶范式
+- AI辅助开发 —— 利用AI工具提升开发效率的实践
+- 后台开发 —— 服务端/后端系统的开发工作流
