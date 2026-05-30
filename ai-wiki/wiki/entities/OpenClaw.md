@@ -26,6 +26,9 @@ sources:
   - "[[平平无奇的源码竟藏着Agent的核心秘密]]"
   - "[[Agent核心技术概念与范式发生了哪些演变]]"
   - "[[从0到1搭建Agent-原理分析及个人助手实践]]"
+  - "[[Harness-Engineering-来龙去脉]]"
+  - "[[800行代码实现OpenClaw的Tool消息总线子Agent管理架构]]"
+  - "[[Nanobot-OpenClaw轻量实现的底层原理解析]]"
 related_entities:
   - "[[OpenClaw-SandBox]]"
   - "[[OpenClaw-双源记忆系统]]"

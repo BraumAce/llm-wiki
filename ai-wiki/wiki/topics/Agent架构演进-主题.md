@@ -25,6 +25,7 @@ sources:
   - "[[平平无奇的源码竟藏着Agent的核心秘密]]"
   - "[[深度解析LLM-Wiki-Obsidian-Wiki-GBrain]]"
   - "[[从零设计生产级Multi-Agent-Harness]]"
+  - "[[Harness-Engineering-来龙去脉]]"
 ---
 
 # Agent 架构演进主题

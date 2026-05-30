@@ -21,6 +21,7 @@ sources:
   - "[[Harness不是目的-知识才是护城河]]"
   - "[[Harness的尽头不是缰绳是镜子]]"
   - "[[深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践]]"
+  - "[[Harness-Engineering-来龙去脉]]"
 ---
 
 # Harness Engineering 主题

@@ -3,17 +3,32 @@
 #
 # 用法（从任意位置）:
 #   bash .agents/skills/quartz-wiki/scripts/deploy.sh                # 完整流程
-#   bash .agents/skills/quartz-wiki/scripts/deploy.sh --skip-build   # 仅 rsync 已有 public/
-#   bash .agents/skills/quartz-wiki/scripts/deploy.sh --dry-run      # rsync 干跑（不实际传输）
+#   bash .agents/skills/quartz-wiki/scripts/deploy.sh --skip-build   # 仅上传已有的 public/
+#   bash .agents/skills/quartz-wiki/scripts/deploy.sh --dry-run      # 干跑（不实际传输）
 #
 # 环境变量（可覆盖默认值）:
 #   DEPLOY_HOST    SSH 目标，必填，例如 user@server.example.com
 #   DEPLOY_PATH    服务器路径，必填，例如 /var/www/llm-wiki
 #   DEPLOY_DOMAIN  验证域名，必填，例如 wiki.example.com
+#
+# .env 文件:
+#   自动加载仓库根目录的 .env（如果存在），无需手动 source。
+#   .env 中未设置的变量仍可通过 shell export 覆盖。
 
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "$0")/../../../.." && pwd)"
+
+# === 自动加载 .env ===
+ENV_FILE="$REPO_ROOT/.env"
+if [ -f "$ENV_FILE" ]; then
+  echo "加载 $ENV_FILE"
+  set -a
+  # shellcheck disable=SC1090
+  source "$ENV_FILE"
+  set +a
+fi
+
 DEPLOY_HOST="${DEPLOY_HOST:-}"
 DEPLOY_PATH="${DEPLOY_PATH:-}"
 DEPLOY_DOMAIN="${DEPLOY_DOMAIN:-}"
@@ -25,7 +40,7 @@ for arg in "$@"; do
     --skip-build) SKIP_BUILD=1 ;;
     --dry-run)    DRY_RUN=1 ;;
     -h|--help)
-      sed -n '2,15p' "$0"
+      sed -n '2,20p' "$0"
       exit 0
       ;;
   esac
@@ -36,7 +51,7 @@ require_env() {
   local value="${!name:-}"
   if [ -z "$value" ]; then
     echo "  ✗ 缺少环境变量 $name" >&2
-    echo "    请通过 shell export 或命令前缀设置。" >&2
+    echo "    请在 .env 文件或 shell export 中设置。" >&2
     return 1
   fi
 }
@@ -59,12 +74,25 @@ echo
 echo "[1/4] 前置检查"
 cd "$REPO_ROOT"
 
-for cmd in rsync npm ssh curl; do
+for cmd in npm ssh; do
   if ! command -v "$cmd" >/dev/null; then
     echo "  ✗ 未找到 $cmd" >&2
     exit 1
   fi
 done
+
+# 检测可用的远程传输工具
+UPLOAD_TOOL=""
+if command -v rsync >/dev/null 2>&1; then
+  UPLOAD_TOOL="rsync"
+  echo "  ✓ 传输工具: rsync"
+elif command -v scp >/dev/null 2>&1; then
+  UPLOAD_TOOL="scp"
+  echo "  ✓ 传输工具: scp（降级模式，不支持增量同步）"
+else
+  echo "  ✗ 未找到 rsync 或 scp，无法上传" >&2
+  exit 1
+fi
 
 if [ -n "$(git status --porcelain ai-wiki/ 2>/dev/null)" ]; then
   echo "  ⚠ ai-wiki/ 有未 commit 的修改:"
@@ -78,10 +106,12 @@ if [ -n "$(git status --porcelain ai-wiki/ 2>/dev/null)" ]; then
   fi
 fi
 
-if ! ssh -o BatchMode=yes -o ConnectTimeout=5 "$DEPLOY_HOST" 'command -v rsync >/dev/null'; then
-  echo "  ✗ 远程 $DEPLOY_HOST 未安装 rsync" >&2
-  echo "    修复: ssh $DEPLOY_HOST 'dnf install -y rsync'  (或 apt install rsync)" >&2
-  exit 1
+# 远程 rsync 检查（仅在本地用 rsync 时需要）
+if [ "$UPLOAD_TOOL" = "rsync" ]; then
+  if ! ssh -o BatchMode=yes -o ConnectTimeout=5 "$DEPLOY_HOST" 'command -v rsync >/dev/null'; then
+    echo "  ⚠ 远程未安装 rsync，降级为 scp 传输"
+    UPLOAD_TOOL="scp"
+  fi
 fi
 echo "  ✓ 环境检查通过"
 
@@ -93,7 +123,11 @@ if [ "$SKIP_BUILD" = "0" ]; then
   bash "$REPO_ROOT/.agents/skills/quartz-wiki/scripts/sync-content.sh"
   cd "$REPO_ROOT/quartz"
   rm -rf .quartz-cache public
-  npm run quartz -- build
+  if command -v npx >/dev/null 2>&1; then
+    npx quartz build
+  else
+    node quartz/bootstrap-cli.mjs build
+  fi
   cd "$REPO_ROOT"
 else
   echo "[2/4] 跳过 build（--skip-build）"
@@ -103,25 +137,35 @@ else
   }
 fi
 
-# === [3/4] Rsync ===
-echo "[3/4] rsync 到 $DEPLOY_HOST:$DEPLOY_PATH"
-RSYNC_FLAGS="-az --delete --exclude=.DS_Store"
-[ "$DRY_RUN" = "1" ] && RSYNC_FLAGS="$RSYNC_FLAGS --dry-run -v"
-
-if [ "$DRY_RUN" = "0" ]; then
-  ssh "$DEPLOY_HOST" "mkdir -p $DEPLOY_PATH"
-fi
-# shellcheck disable=SC2086
-rsync $RSYNC_FLAGS \
-  "$REPO_ROOT/quartz/public/" \
-  "$DEPLOY_HOST:$DEPLOY_PATH/"
-echo "  ✓ 已传输"
+# === [3/4] 上传 ===
+echo "[3/4] 上传到 $DEPLOY_HOST:$DEPLOY_PATH"
 
 if [ "$DRY_RUN" = "1" ]; then
+  echo "  （DRY RUN：仅列出待上传文件）"
+  if [ "$UPLOAD_TOOL" = "rsync" ]; then
+    rsync -az --delete --dry-run -v --exclude=.DS_Store \
+      "$REPO_ROOT/quartz/public/" \
+      "$DEPLOY_HOST:$DEPLOY_PATH/"
+  else
+    echo "  scp 模式不支持 dry-run，跳过"
+  fi
   echo
   echo "（DRY RUN：未实际写入服务器、未做 HTTP 验证）"
   exit 0
 fi
+
+if [ "$UPLOAD_TOOL" = "rsync" ]; then
+  ssh "$DEPLOY_HOST" "mkdir -p $DEPLOY_PATH"
+  rsync -az --delete --exclude=.DS_Store \
+    "$REPO_ROOT/quartz/public/" \
+    "$DEPLOY_HOST:$DEPLOY_PATH/"
+else
+  # scp 降级：先清空远程目录，再全量上传
+  echo "  ⚠ scp 模式：清空远程目录后全量上传（较慢）"
+  ssh "$DEPLOY_HOST" "rm -rf $DEPLOY_PATH/* && mkdir -p $DEPLOY_PATH"
+  scp -r "$REPO_ROOT/quartz/public/." "$DEPLOY_HOST:$DEPLOY_PATH/"
+fi
+echo "  ✓ 已传输"
 
 # === [4/4] HTTP 验证 ===
 echo "[4/4] HTTP 验证"
