@@ -17,6 +17,7 @@ related_entities:
   - "[[vLLM]]"
   - "[[OpenClaw-双源记忆系统]]"
   - "[[Agent-Memory]]"
+  - "[[LightRAG]]"
 ---
 
 # RAG
@@ -65,6 +66,7 @@ RAG 的全链路分为六个环节：
 - [[vLLM]] —— RAG 系统的底层推理通常由 vLLM 等推理框架提供
 - [[OpenClaw-双源记忆系统]] —— OpenClaw 的记忆系统结合了 RAG 和结构化存储两种思路
 - [[Agent-Memory]] —— RAG 可以看作 Agent Memory 的检索层
+- [[LightRAG]] —— LightRAG 是 RAG 的图增强扩展，通过知识图谱解决传统 RAG 的碎片化检索问题
 
 ## 参考来源
 
