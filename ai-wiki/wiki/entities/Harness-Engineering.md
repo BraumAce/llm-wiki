@@ -34,6 +34,7 @@ related_entities:
   - "[[OpenClaw]]"
   - "[[Spec-Driven-Development]]"
   - "[[OpenClaw-Skills]]"
+  - "[[OpenHarness]]"
 ---
 
 # Harness Engineering
