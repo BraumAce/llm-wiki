@@ -98,10 +98,10 @@ Harness 是一整套把大模型纳入工程体系的控制面，管理的核心
 > 想释放大模型的生产力，第一步是先建好约束和轨道。
 
 ## 涉及实体
-待补充
+
+- [[Claude-Code]] —— Claude Code 是 Harness Engineering 的典型实现
+- [[Harness-Engineering]] —— 本文的核心主题
 
 ## 涉及主题
-- AI Agent
-- Harness Engineering
-- Agent 工程化
-- Prompt Engineering
+
+- [[Harness-Engineering-主题]]

@@ -22,6 +22,12 @@ sources:
   - "[[Claude-Code-顶级开发团队设计的Harness工程项目源码什么样]]"
   - "[[Claude-Code源码泄露深度解析-51.2万行代码里藏着怎样的AI编程系统]]"
   - "[[Claude-Code-源码架构解析-从启动Prompt到权限管道]]"
+  - "[[你不知道的-Claude-Code-架构治理与工程实践]]"
+  - "[[Claude-Code-Skills-完全指南]]"
+  - "[[Claude-Code-最佳实践-可验证可治理可分层的工程现实]]"
+  - "[[Claude-Code-一篇带你从入门到精通]]"
+  - "[[从IDE到Terminal-适合后端宝宝体质的Claude-Code工作流]]"
+  - "[[开源Claude-Code工程级开发插件Superpowers完整上手攻略]]"
 ---
 
 # Claude Code 源码解析主题

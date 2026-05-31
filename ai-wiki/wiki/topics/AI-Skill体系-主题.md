@@ -22,6 +22,17 @@ sources:
   - "[[让Skill自己训练自己-8阶段Loop-3层评测-5维AND门控]]"
   - "[[大模型Agent-Skill功能在LLM-HTTP底层交互流中怎么承载]]"
   - "[[深度解析LLM-Wiki-Obsidian-Wiki-GBrain]]"
+  - "[[学习笔记-从-Agent-到-Skills-AI智能体架构的范式转变]]"
+  - "[[Claude-Code-Skills-完全指南]]"
+  - "[[Claude-Code-工程师亲授-OpenClaw-调教指南-Skills的工程化心法]]"
+  - "[[Agent-Skills-Teams架构演进过程及技术选型之道]]"
+  - "[[腾讯云-兄弟你真的懂-Skill-吗]]"
+  - "[[Skills开发技能指南-别脱离具体场景谈方案]]"
+  - "[[一文搞懂爆火的Skills原理及实践案例]]"
+  - "[[打造高可靠AI助手-Skill编排Workflow设计与Spec-Coding的深度实践]]"
+  - "[[Skills-从编程工具的配角到Agent研发的核心]]"
+  - "[[让AI变成Super员工的秘密-高效训练Skills]]"
+  - "[[AI编程的下半场来了-学会用Agent-Skill解决编程的痛点问题]]"
 ---
 
 # AI Skill 体系主题

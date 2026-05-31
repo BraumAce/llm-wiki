@@ -26,6 +26,11 @@ sources:
   - "[[深度解析LLM-Wiki-Obsidian-Wiki-GBrain]]"
   - "[[从零设计生产级Multi-Agent-Harness]]"
   - "[[Harness-Engineering-来龙去脉]]"
+  - "[[一文讲透从0构建AI-Agent]]"
+  - "[[企业级Agent多智能体架构与选型指南]]"
+  - "[[Agent-Skills-Teams架构演进过程及技术选型之道]]"
+  - "[[业务逻辑的坍塌-当应用层只剩下胶水代码]]"
+  - "[[AI-Agent在保险业务的落地实践]]"
 ---
 
 # Agent 架构演进主题

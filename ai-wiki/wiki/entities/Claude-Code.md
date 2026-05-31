@@ -25,6 +25,8 @@ sources:
   - "[[Claude-Code-顶级开发团队设计的Harness工程项目源码什么样]]"
   - "[[Claude-Code源码泄露深度解析-51.2万行代码里藏着怎样的AI编程系统]]"
   - "[[Claude-Code-源码架构解析-从启动Prompt到权限管道]]"
+  - "[[你不知道的-Claude-Code-架构治理与工程实践]]"
+  - "[[Claude-Code防封号指南-国内终极解决方案]]"
 related_entities:
   - "[[Harness-Engineering]]"
   - "[[OpenClaw]]"

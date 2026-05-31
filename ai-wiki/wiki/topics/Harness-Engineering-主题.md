@@ -22,6 +22,15 @@ sources:
   - "[[Harness的尽头不是缰绳是镜子]]"
   - "[[深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践]]"
   - "[[Harness-Engineering-来龙去脉]]"
+  - "[[Harness-Engineering-来了-SDD-还有意义吗]]"
+  - "[[Claude-Code-最佳实践-可验证可治理可分层的工程现实]]"
+  - "[[Claude-Code-加-OpenSpec-正在加速-AICoding-落地]]"
+  - "[[AI-Coding思考-从工具提效到范式变革]]"
+  - "[[规范驱动AI编程实战指南-OpenSpec-vs-Spec-Kit-vs-BMAD]]"
+  - "[[TRAE-2026企业级AI编程实践手册]]"
+  - "[[实战报告-AI-Coding已经能做交付了但前提苛刻]]"
+  - "[[如何让你的Agent更准确-MCP工具设计技巧]]"
+  - "[[你不知道的-Claude-Code-架构治理与工程实践]]"
 ---
 
 # Harness Engineering 主题

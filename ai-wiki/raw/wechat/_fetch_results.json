@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Harness-Engineering-来了-SDD-还有意义吗",
+    "url": "https://mp.weixin.qq.com/s/Laz4W0180y9yGW0b6EpUMQ",
+    "title": "Harness Engineering 来了，SDD 还有意义吗？",
+    "success": true
+  },
+  {
+    "name": "学习笔记-从-Agent-到-Skills",
+    "url": "https://mp.weixin.qq.com/s/RMh2JqHwkjonPTZlwVKxsw",
+    "title": "学习笔记：从 Agent 到 Skills — AI 智能体架构的范式转变",
+    "success": true
+  },
+  {
+    "name": "Claude-Code-Skills-完全指南",
+    "url": "https://mp.weixin.qq.com/s/M-K8cDwLhpID1gkcZOdUkQ",
+    "title": "Claude Code Skills 完全指南：从零打造你的生产级别 AI 编程助理工作流",
+    "success": true
+  },
+  {
+    "name": "JavaGuide-LLM基础扫盲",
+    "url": "https://mp.weixin.qq.com/s/ZAipp74rijevYjFkzbswjw",
+    "title": "面试官：“你一天烧几十个token也好意思面AI应用开发？”我镇定自若：“我烧的不是token，是我的热情。”面试官：“明天二面。”",
+    "success": true
+  },
+  {
+    "name": "一文讲透从0构建AI-Agent",
+    "url": "https://mp.weixin.qq.com/s/SAXIAnJ3NtVWPeA-oHIsQA",
+    "title": "零废话！一文讲透从0构建AI Agent",
+    "success": true
+  },
+  {
+    "name": "以OpenClaw为例介绍AI-Agent的运作原理",
+    "url": "https://mp.weixin.qq.com/s/78mBt_5efHrTD7tChBRcTw",
+    "title": "以 OpenClaw 为例介绍 AI Agent 的运作原理",
+    "success": true
+  },
+  {
+    "name": "龙虾大脑核心揭秘1",
+    "url": "https://mp.weixin.qq.com/s/29luo-js2RONAMJ2b7lXbQ",
+    "title": "【龙虾大脑核心揭秘-1】OpenClaw处理流程链路解析",
+    "success": true
+  },
+  {
+    "name": "业务逻辑的坍塌",
+    "url": "https://mp.weixin.qq.com/s/kVE6an0dqnO34SQnRXddWg",
+    "title": "业务逻辑的“坍塌”：当应用层只剩下胶水代码，在 AI Agent 时代，我们该构建什么",
+    "success": true
+  },
+  {
+    "name": "让AI变成Super员工的秘密",
+    "url": "https://mp.weixin.qq.com/s/JU_PmeOgSNUbNFdl-AIGKQ",
+    "title": "让AI变成Super员工的秘密：高效训练Skills",
+    "success": true
+  },
+  {
+    "name": "知识基座-让AI越用越懂业务",
+    "url": "https://mp.weixin.qq.com/s/P-p4-BH8AAOnTBRcpsoKeQ",
+    "title": "知识基座：让“AI 越用越懂业务”的团队经验实践【天猫AI Coding实践系列】",
+    "success": true
+  }
+]
