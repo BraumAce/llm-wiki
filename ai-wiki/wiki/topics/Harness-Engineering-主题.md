@@ -11,6 +11,7 @@ related_entities:
   - "[[Spec-Driven-Development]]"
   - "[[OpenClaw]]"
   - "[[OpenClaw-Skills]]"
+  - "[[OpenHarness]]"
 sources:
   - "[[从Prompt-Context到Harness-工程的三次进化与终局之战]]"
   - "[[Harness-Engineering-耗时一周将AI-Coding率提升至90]]"

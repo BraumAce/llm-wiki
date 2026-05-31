@@ -113,10 +113,12 @@ local、Docker、SSH、Singularity、Modal 和 Daytona。其中 Daytona 和 Moda
 - Claude Code —— 同系列深度解析对象，与 Hermes 有相似的 Prompt/Context/Harness 设计维度
 - Nous Research —— Hermes Agent 的开发团队，美国开源人工智能研究机构，同时维护 Nous Portal 统一模型订阅平台
 - [[Harness-Engineering]] —— Hermes 是 Harness 理念的实现载体之一，Agent = Model + Harness 的具体落地
-- Context-Engineering —— Hermes 与 OpenClaw/Claude Code 的共性设计维度，涉及上下文精细化管理和渐进式披露
+- Context-Engineering
+- [[SkillOpt]] —— Hermes 与 OpenClaw/Claude Code 的共性设计维度，涉及上下文精细化管理和渐进式披露
 - ShareGPT —— Hermes 自进化 Pipeline 使用的统一数据格式，LLaMA-Factory/FastChat/OpenChat 等生态均支持
 - LLaMA-Factory —— 支持 ShareGPT 格式的主流训练框架之一，用于 Hermes 的 RL 训练流程
 - Andrej Karpathy —— 其开源项目 AutoResearch 与 Hermes 的 RL 训练闭环有相似之处；其 LLM-Wiki 项目与 Hermes 的 Skill 自动沉淀理念相通
+- [[SkillOpt]] —— 同为 Skill 自动化领域的工具，路径不同：Hermes 通过 Skill Generation 从轨迹中自动沉淀新 Skill（外挂式），SkillOpt 通过训练循环系统化优化单份 Skill 文件（内省式）
 
 ## 参考来源
 
