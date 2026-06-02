@@ -12,9 +12,15 @@ date: 2026-06-02
 
 ### 2026-06-02
 
-新增来源：[[面向LLM的架构设计-什么是真正的AI-Friendly架构]] —— 大淘宝技术团队万字长文，系统阐述传统架构向 AI Friendly 架构演进的三范式（确定性→概率性、结构化→语义化、静态→动态），以及 Multi-Agent、Context Engineering、AI Friendly API、AI可观测等核心能力的落地实战。
+新增来源：[[面向LLM的架构设计-什么是真正的AI-Friendly架构]] —— 大淘宝技术团队万字长文，系统阐述传统架构向 AI Friendly 架构演进的三范式，以及 Multi-Agent、Context Engineering、AI Friendly API、AI可观测等核心能力的落地实战。
 
-新增实体：[[AI-Friendly架构]]、[[ReAct]]、[[Context-Engineering]]、[[AI-Friendly-API]]、[[AI可观测性]]
+新增来源：[[Agent核心技术概念与范式发生了哪些演变以及背后的思考]] —— 阿里技术飞樰系统梳理 Agent 从2023到2026年的四个发展阶段（被动式ReAct→工作流Agent→自主Agent→自进化Agent），深入分析 Prompt、Planning、Memory、Tools、Workflow、Environment 六大核心技术的前后演变逻辑。
+
+新增来源：[[深入解析Chromium的AI-Coding开发体系]] —— 腾讯QQ浏览器团队深入分析 Chromium 源码仓库中内建的 AI Agent 基础设施——四层 Prompt 分层组合架构、18+ 可复用 Skills、MCP 扩展、知识库、评估体系和大规模 AI 驱动项目。
+
+新增来源：[[AI软件工程范式革命的思考]] —— 腾讯云王鹏程从控制论和工程史视角论证软件工程过去五十年从未真正“工程化”，大模型第一次让“投入能源，另一头流出可工作的软件”成为可能。
+
+新增实体：[[AI-Friendly架构]]、[[ReAct]]、[[Context-Engineering]]、[[AI-Friendly-API]]、[[AI可观测性]]、[[自进化Agent]]、[[Chromium-AI-Coding]]、[[Prompt分层组合架构]]、[[Prompt评估体系]]、[[软件工程范式革命]]、[[AI-Native软件工程]]
 
 ### 2026-05-31
 
