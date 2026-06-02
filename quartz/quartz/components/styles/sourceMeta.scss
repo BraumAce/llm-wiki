@@ -1,0 +1,31 @@
+.source-meta {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
+  background: var(--lightgray);
+  border-radius: 6px;
+  border-left: 3px solid var(--secondary);
+
+  .source-meta-details {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--darkgray);
+  }
+
+  .source-meta-sep {
+    color: var(--gray);
+  }
+
+  .source-meta-link {
+    margin: 0.3rem 0 0;
+
+    a {
+      font-size: 0.85rem;
+      color: var(--secondary);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

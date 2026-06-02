@@ -1,7 +1,7 @@
 ---
 title: "LLM Wiki"
 type: index
-date: 2026-05-31
+date: 2026-06-02
 ---
 
 # LLM Wiki
@@ -9,6 +9,12 @@ date: 2026-05-31
 > 个人 AI 知识库 —— AI 编译过的百科全书
 
 ## 最近更新
+
+### 2026-06-02
+
+新增来源：[[面向LLM的架构设计-什么是真正的AI-Friendly架构]] —— 大淘宝技术团队万字长文，系统阐述传统架构向 AI Friendly 架构演进的三范式（确定性→概率性、结构化→语义化、静态→动态），以及 Multi-Agent、Context Engineering、AI Friendly API、AI可观测等核心能力的落地实战。
+
+新增实体：[[AI-Friendly架构]]、[[ReAct]]、[[Context-Engineering]]、[[AI-Friendly-API]]、[[AI可观测性]]
 
 ### 2026-05-31
 
