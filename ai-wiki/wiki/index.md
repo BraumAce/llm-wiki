@@ -1,7 +1,7 @@
 ---
 title: "LLM Wiki"
 type: index
-date: 2026-06-02
+date: 2026-06-03
 ---
 
 # LLM Wiki
@@ -9,6 +9,19 @@ date: 2026-06-02
 > 个人 AI 知识库 —— AI 编译过的百科全书
 
 ## 最近更新
+
+### 2026-06-03
+
+新增来源：[[Agent-Memory评测全景-基准评估与记忆系统]] —— 大淘宝技术阿元系统梳理 Agent 长期记忆评测全景，涵盖基准（MUSE、LOCOMO）、评估（MemoryAgentBench、LONGMEMEVAL、MemBench）与系统（THEANINE、RMM、M3-Agent、Mem0）三条主线，指出冲突解决是所有方法的短板（多跳场景最高仅6%）。
+
+新增来源：[[重新思考研发基础设施-当Agent成为第一公民]] —— 阿里技术晓斌提出意图驱动+代码沉淀统一框架，Agent 把循环速度从月级压缩到分钟级导致原有 infra 系统性失配，需要从 People-Oriented 重建为 Agent-Oriented 的四层设计原则。
+
+新增实体：[[Mem0]]、[[M3-Agent]]、[[LOCOMO]]、[[MemoryAgentBench]]、[[LONGMEMEVAL]]、[[MemBench]]、[[THEANINE]]、[[RMM]]、[[MUSE]] —— Agent Memory 评测全景 9 个实体。
+
+新增实体：[[Agent-Oriented-Infra]]、[[Credential-Brokering]]、[[Agent-DX]] —— 研发基础设施 Agent 化 3 个实体。
+
+更新实体：[[Agent-Memory]] —— 追加评测全景来源。
+更新实体：[[Harness-Engineering]] —— 追加来源，补充 Harness 平台化视角。
 
 ### 2026-06-02
 

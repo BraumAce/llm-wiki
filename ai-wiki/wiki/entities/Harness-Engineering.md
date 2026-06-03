@@ -30,11 +30,14 @@ sources:
   - "[[从玩具到生产力-用真实项目讲透AI-Agent的Harness-Engineering]]"
   - "[[一文讲透如何构建Harness-六大组件全解析]]"
   - "[[一文讲透-Harness-Engineering即控制论]]"
+  - "[[重新思考研发基础设施-当Agent成为第一公民]]"
 related_entities:
   - "[[OpenClaw]]"
   - "[[Spec-Driven-Development]]"
   - "[[OpenClaw-Skills]]"
   - "[[OpenHarness]]"
+  - "[[Agent-Oriented-Infra]]"
+  - "[[Credential-Brokering]]"
 ---
 
 # Harness Engineering
@@ -91,6 +94,14 @@ Harness Engineering 的核心是五类组件的协同：
 - **消除返工**：爱奇艺数据库团队用最小 harness（五类组件）终结"AI 瞎猜"式的无限返工
 - **全栈开发**：得物团队用 Harness + SDD + 多仓模式实现前后端并行开发，提效 50%+
 
+### Harness 平台化（Agent-Oriented Infra 视角）
+
+从「每个团队自己在云服务器上搭运行环境」变成平台的内建能力：
+- **Harness spec 声明式定义**：角色、工具、凭证、workspace、skill
+- **Handoff 时自动初始化，完成后自动回收**
+- **核心约束是即时供给**：并行 agent 数量对环境供给是乘法压力
+- Agent 需要的完整工作环境：workspace + 前序 artifact + 工具权限 + 隔离凭证 + skill + handoff 通道
+
 ### 局限与争议
 
 - **过度工程化风险**：Harness 过厚会降低开发速度，"合适厚度"需要团队自己摸索
@@ -113,3 +124,4 @@ Harness Engineering 的核心是五类组件的协同：
 - [[别让AI瞎猜了-用Harness-Engineering终结无限返工]] —— 爱奇艺，最小harness五类组件
 - [[Harness不是目的-知识才是护城河]] —— 腾讯团队，知识沉淀实践
 - [[深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践]] —— OpenClaw 的 Harness 设计
+- [[重新思考研发基础设施-当Agent成为第一公民]] —— Harness 平台化与 Agent-Oriented Infra

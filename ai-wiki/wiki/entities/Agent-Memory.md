@@ -17,10 +17,20 @@ sources:
   - "[[AI记忆的Git版本控制-Memoir-分层路径替代向量数据库]]"
   - "[[Spring-AI-Session-API-大多数人用ChatMemory用错了场景]]"
   - "[[从架构到代码-深入理解OpenClaw的双源记忆系统]]"
+  - "[[Agent-Memory评测全景-基准评估与记忆系统]]"
 related_entities:
   - "[[OpenClaw-双源记忆系统]]"
   - "[[OpenClaw]]"
   - "[[RAG]]"
+  - "[[Mem0]]"
+  - "[[M3-Agent]]"
+  - "[[LOCOMO]]"
+  - "[[MemoryAgentBench]]"
+  - "[[LONGMEMEVAL]]"
+  - "[[MemBench]]"
+  - "[[THEANINE]]"
+  - "[[RMM]]"
+  - "[[MUSE]]"
 ---
 
 # Agent Memory
@@ -63,12 +73,35 @@ Agent Memory 是 2026 年 AI 工程领域最活跃的研究方向之一。核心
 - **代码 Agent**：记住代码库结构、之前的修改决策、调试经验
 - **客服系统**：记住用户的历史问题和解决方案
 
+### 评测全景
+
+Agent Memory 评测沿三条主线推进：
+
+**Memory Benchmark（评什么）**：
+- LOCOMO — 长程对话记忆基准（UNC, ACL 2024, 被引 274），50 个对话 × 300 轮
+- MUSE — 多模态推荐数据集（Northeastern, ACL 2025），7k case / 8.3w 对话
+
+**Memory Evaluation（怎么评）**：
+- MemoryAgentBench — 四项核心能力：准确检索(AR)、测试时学习(TTL)、长程理解(LRU)、冲突解决(CR)
+- LONGMEMEVAL — 500 问题 × 500 会话，商业助手准确率下降 30%-60%
+- MemBench（华为）— 区分事实记忆 vs 反思记忆、参与场景 vs 观察场景
+
+**Memory System（怎么落地）**：
+- Mem0 / Mem0g — 动态提取 + 图形记忆表示，ECAI 2026，被引 222
+- M3-Agent（字节 Seed）— 多模态长期记忆，RL 训练，ICLR 2026
+- THEANINE — 基于时间线的记忆图 + 反事实评测
+- RMM（Google）— 前瞻性反思 + 回顾性反思（在线 RL）
+
+**核心结论**：现有评测有 4 个共性问题：① 增益难归因 ② 口径不统一 ③ 动态更新/遗忘覆盖不足 ④ 成本维度缺位。未来应同时覆盖：检索正确性、使用有效性、时间维度、成本维度。
+
 ### 局限与争议
 
 - **检索精度**：记忆越多，精准检索越困难
 - **遗忘策略**：什么该忘、什么该留？
 - **隐私风险**：长期记忆可能包含敏感信息
 - **上下文污染**：过时或错误的记忆会误导模型
+- **冲突解决**：所有方法在多跳冲突解决中准确率最高仅 6%
+- **评测口径不统一**：不同基准关注不同维度，难以横向比较
 
 ## 与其他实体的关系
 
@@ -83,3 +116,4 @@ Agent Memory 是 2026 年 AI 工程领域最活跃的研究方向之一。核心
 - [[AI记忆的Git版本控制-Memoir-分层路径替代向量数据库]] —— Memoir 版本控制记忆
 - [[Spring-AI-Session-API-大多数人用ChatMemory用错了场景]] —— Spring AI 双层架构
 - [[从架构到代码-深入理解OpenClaw的双源记忆系统]] —— OpenClaw 记忆系统
+- [[Agent-Memory评测全景-基准评估与记忆系统]] —— 评测全景梳理，涵盖 Benchmark/Evaluation/System 三条主线
