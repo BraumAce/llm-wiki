@@ -13,6 +13,8 @@ tags:
   - context-engineering
   - prompt-engineering
 sources:
+  - "[[如何写好Skill-一份终极实战经验手册]]"
+  - "[[基于顶级Agent的Harness工程搭建式业务Agent评测方案]]"
   - "[[从Prompt-Context到Harness-工程的三次进化与终局之战]]"
   - "[[Harness-Engineering-耗时一周将AI-Coding率提升至90]]"
   - "[[Claude-Code-Harness工程-数仓侧落地方案-得物技术]]"
@@ -102,6 +104,18 @@ Harness Engineering 的核心是五类组件的协同：
 - **核心约束是即时供给**：并行 agent 数量对环境供给是乘法压力
 - Agent 需要的完整工作环境：workspace + 前序 artifact + 工具权限 + 隔离凭证 + skill + handoff 通道
 
+### Harness 在评测领域的应用
+
+Harness Engineering 的理念可以扩展到 Agent 评测领域。阿里团队的实践表明，用一个顶级 Agent（Claude Code）搭建评测 Harness，将评测逻辑从 Python 脚本升级为 Agent 提示词，可以实现：
+
+- 评测方案设计从 1-2 天缩短到 10-30 分钟（~10x）
+- 评测脚本开发从 2-3 天缩短到 1-2 小时（~10x）
+- 单 Agent 全流程从 ~1.5 周压缩到 ~1-2 天（~5x）
+
+核心创新是**三层指标框架（L1/L2/L3）**和**评测 Agent 提示词模板**——把 `test_runner.py` 的逻辑用自然语言表达，让一个 Agent 评测另一个 Agent。
+
+同时，Skill 编写领域的工程化评估（Skill Creator 的触发评估 + 效果评估）也体现了 Harness 思维：不是靠感觉判断 Skill 好不好，而是用数据说话——触发准确率、召回率、效果通过率、相对提升率。
+
 ### 局限与争议
 
 - **过度工程化风险**：Harness 过厚会降低开发速度，"合适厚度"需要团队自己摸索
@@ -117,6 +131,8 @@ Harness Engineering 的核心是五类组件的协同：
 
 ## 参考来源
 
+- [[如何写好Skill-一份终极实战经验手册]] —— 腾讯工程师，Skill 编写全指南与工程化评估
+- [[基于顶级Agent的Harness工程搭建式业务Agent评测方案]] —— 阿里云开发者，用 CC 搭建评测 Harness
 - [[从Prompt-Context到Harness-工程的三次进化与终局之战]] —— 腾讯云开发者，三次进化框架
 - [[Harness-Engineering-耗时一周将AI-Coding率提升至90]] —— 阿里工程师，10万行Java存量应用实践
 - [[Claude-Code-Harness工程-数仓侧落地方案-得物技术]] —— 得物技术，数仓侧落地方案
