@@ -7,5 +7,13 @@
     "entities": 45,
     "sources": 140,
     "topics": 9
-  }
+  },
+  "sources": [
+    {
+      "title": "横向拆解六大Agent上下文压缩策略后我们做了第7个",
+      "file": "sources/横向拆解六大Agent上下文压缩策略后我们做了第7个.md",
+      "date": "2026-06-08",
+      "source_type": "wechat"
+    }
+  ]
 }

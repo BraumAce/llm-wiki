@@ -4,8 +4,8 @@ type: entity
 date: 2026-06-02
 also_known_as: [上下文工程, Context Engineering]
 tags: [工程化, Prompt, RAG, Agent]
-sources: [面向LLM的架构设计-什么是真正的AI-Friendly架构]
-related_entities: [AI-Friendly架构, RAG, Agentic-Engineering]
+sources: [面向LLM的架构设计-什么是真正的AI-Friendly架构, 横向拆解六大Agent上下文压缩策略后我们做了第7个]
+related_entities: [AI-Friendly架构, RAG, Agentic-Engineering, Agent-Memory]
 related_topics: []
 ---
 
@@ -96,9 +96,27 @@ Anthropic在其官方文档中系统性地介绍了Effective Context Engineering
 ### 应用场景
 
 - 多轮对话系统
-- 复杂Agent的上下文管理
+- 复杂 Agent 的上下文管理
 - 多知识源融合场景
-- Token窗口受限的优化场景
+- Token 窗口受限的优化场景
+
+### Agent 上下文压缩策略（第二代方案）
+
+上下文压缩是 Context Engineering 的核心子领域。2026 年主流 Agent 产品走向「分层 + 渐进」，但哲学各异：
+
+**按成本递增排列**：Claude Code 五段流水线（Budget Reduction → Snip → Microcompact → Context Collapse → Auto-Compact），前四步纯本地零 API 调用；Codex CLI 近期用户消息优先保护；OpenCode 可逆隐藏 + 回放最后一条指令；Cline 自动 + 手动双模式；Cursor 压缩 + 可回溯历史；Amp 不压缩换线程；MemGPT/Letta 操作系统级内存调度。
+
+**实践共识**：分层渐进不一刀切、成本严格递增、增量摘要优于全量摘要、用真实 token 别估算（text.length/3 在中英混合场景误差 30-50%）、用户消息有特权、保护近端、单调边界绝不滑窗（滑窗式 stub 替换会导致每步缓存前缀失效）。
+
+**四级水位线方案**（MUR AI 落地）：Tier 0 不做（<60%）→ Tier 1 Snip 截短老工具输出（60-80%，零 LLM）→ Tier 2 Prune 替换占位符（80-95%，零 LLM）→ Tier 3 增量摘要兜底（≥95%，调 LLM）。
+
+**云端特化设计**：存储分离（完整日志落盘，对话只留截断版）、工具差异化（四个梯度）、跨轮缓存 ReplacementCache（按 part ID 存 Redis，跨实例复用压缩决策）。
+
+### 限制与边界
+
+- 压缩系统最大的事故不是压不够，而是压错东西
+- 保护区内的消息、用户纯文本、PROTECTED_TOOLS 输出是红线
+- 跨会话记忆是另一个产品方向，不在单会话压缩范围内
 
 ### 局限与注意事项
 
