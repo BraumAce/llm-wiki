@@ -32,6 +32,8 @@ sources:
   - "[[实战报告-AI-Coding已经能做交付了但前提苛刻]]"
   - "[[如何让你的Agent更准确-MCP工具设计技巧]]"
   - "[[你不知道的-Claude-Code-架构治理与工程实践]]"
+  - "[[Harness-Engineering-长程自动化AI-Coding-Skills开发实践]]"
+  - "[[4000行代码撑起一个Agent框架-nanobot架构深度解析]]"
 ---
 
 # Harness Engineering 主题
