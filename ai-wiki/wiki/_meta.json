@@ -2,13 +2,25 @@
   "version": "1.0",
   "lang": "zh",
   "created_at": "2026-05-10T20:50:00+08:00",
-  "last_lint": "2026-05-31T12:00:00+08:00",
+  "last_lint": "2026-06-09T12:00:00+08:00",
   "stats": {
-    "entities": 45,
-    "sources": 140,
+    "entities": 47,
+    "sources": 142,
     "topics": 9
   },
   "sources": [
+    {
+      "title": "知识库分层编排：从 RAG 到 Agent-native Knowledge Context Layer",
+      "file": "sources/知识库分层编排-从RAG到Agent-native-Knowledge-Context-Layer.md",
+      "date": "2026-06-09",
+      "source_type": "wechat"
+    },
+    {
+      "title": "设计模式已死？",
+      "file": "sources/设计模式已死.md",
+      "date": "2026-06-09",
+      "source_type": "wechat"
+    },
     {
       "title": "横向拆解六大Agent上下文压缩策略后我们做了第7个",
       "file": "sources/横向拆解六大Agent上下文压缩策略后我们做了第7个.md",

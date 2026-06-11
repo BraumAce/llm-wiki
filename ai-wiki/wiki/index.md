@@ -10,6 +10,17 @@ date: 2026-06-03
 
 ## 最近更新
 
+### 2026-06-09
+
+新增来源：[[知识库分层编排-从RAG到Agent-native-Knowledge-Context-Layer]] —— 阿里云板牙系统梳理知识库四大范式（Naive RAG → LLM Wiki → Graphify → GraphRAG），提出金字塔知识库五层分层模型（原则→架构→规范→实现→经验），结合角色感知检索和图谱关联，Pyramid+RAG Hit@3=89% vs Naive RAG ~75%。
+
+新增来源：[[设计模式已死？]] —— 腾讯云王顺驰论证 AI 时代设计模式的永恒价值，10 个经典模式（单例、工厂、观察者、装饰者、策略、适配器、代理、命令、组合、迭代器）在 Agent 系统中自发重现。
+
+新增实体：[[GraphRAG]] —— Microsoft 提出的图谱增强检索，通过知识图谱 + Leiden 社区聚类 + 分层社区摘要解决传统 RAG 的碎片化检索和全局理解问题。
+新增实体：[[Pyramid-KB]] —— 金字塔知识库，五层分层 + 角色感知 + 图谱关联，Agent-native 的知识基座。
+
+更新实体：[[RAG]] —— 追加知识库分层编排来源，补充 GraphRAG、Pyramid-KB 关联。
+
 ### 2026-06-03
 
 新增来源：[[Agent-Memory评测全景-基准评估与记忆系统]] —— 大淘宝技术阿元系统梳理 Agent 长期记忆评测全景，涵盖基准（MUSE、LOCOMO）、评估（MemoryAgentBench、LONGMEMEVAL、MemBench）与系统（THEANINE、RMM、M3-Agent、Mem0）三条主线，指出冲突解决是所有方法的短板（多跳场景最高仅6%）。
