@@ -196,3 +196,4 @@ Claude Code 的 Hooks 系统是 Harness Engineering 的核心实践——将确�
 - [[Claude-code云端部署-魔改sdk实现http流式调用]] —— 云端部署的四层架构（离线打包、HTTP 服务化、镜像构建、沙箱隔离）
 - [[Claude-Code-Harness工程-数仓侧落地方案-得物技术]] —— 数仓场景下 Harness 工程的五层防御体系实践
 - [[OpenAI-Codex-Plugin-for-Claude-Code源码剖析]] —— OpenAI Codex 插件的桥接架构，将 Codex 集成为 Claude Code 的第二审阅者
+- [[让-Claude-Code-拥有自我进化和记忆系统]] —— 得物技术，Hook 机制驱动的自我学习系统

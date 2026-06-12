@@ -110,3 +110,4 @@ Credential Brokering（Agent 完全不接触凭证）
 ## 参考来源
 
 - [[重新思考研发基础设施-当Agent成为第一公民]] —— Credential Brokering 范式与行业趋同
+- [[面向-Agent-Skill的-CLI-SSO-鉴权体系]] —— sso-cli 实现的凭据代理模式

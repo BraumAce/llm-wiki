@@ -10,6 +10,27 @@ date: 2026-06-03
 
 ## 最近更新
 
+### 2026-06-12
+
+新增来源：[[如何构建一个更好的知识库]] —— 大淘宝技术系统讲解 RAG 知识库全链路优化，涵盖 RAGAS 评估、文档切分（Late Chunking）、混合检索（RRF 融合）、查询增强（HyDE/Multi-Query/EAR）、Cross-Encoder 重排序、AutoRAG 自动化、QuIM-RAG 问题倒排索引、OpenViking 文件系统范式。
+
+新增来源：[[面向-Agent-Skill的-CLI-SSO-鉴权体系]] —— 货拉拉技术为 Agent Skill 调用企业内部系统设计的 SSO 鉴权方案，keychain 主密钥 + 密文文件 + 飞书 Hook 登录 + Agent 轮询授权，实现 token 不落盘、多用户隔离、登录无感。
+
+新增来源：[[让-Claude-Code-拥有自我进化和记忆系统]] —— 得物技术为 Claude Code 构建持久化记忆与自我学习系统，Hook 机制 100% 捕获工具调用 → 统计+语义双路径提炼 Instinct 规则 → 向量检索+上下文注入，Token 消耗降低 78%，错误重复率下降 80%。
+
+新增来源：[[AI-不缺智商缺纪律：一场-Harness-工程化实践]] —— 阿里技术两个月 Harness 工程化复盘，五层 harness 分层结构、多 Agent 职责隔离、评测驱动迭代、4 条踩坑教训（prompt 是负债不是资产、过度拆分 Agent 代价大等）。
+
+新增来源：[[Harness-Engineering落地前先想清楚这几个问题]] —— 腾讯云开发者从数据中台 AI 助手 Dola 出发，讨论流式渲染架构改造和存量项目如何用 Harness Engineering 思路适配 AI Coding（规则机器可读、入口收敛、决策显式）。
+
+新增来源：[[Agent-skill-迭代式编写实战]] —— 大淘宝技术 Agent Skill 编写经验，三层渐进式披露架构、决策树替代模糊判断、执行后自查机制、内部+外部双重验证。
+
+新增实体：[[RAGAS]]、[[HyDE]]、[[Cross-Encoder]]、[[AutoRAG]]、[[QuIM-RAG]]、[[OpenViking]]、[[Late-Chunking]] —— RAG 全链路优化 7 个实体。
+新增实体：[[Agent-Skill-Auth]]、[[sso-cli]] —— Agent Skill 鉴权 2 个实体。
+新增实体：[[Hook-机制]]、[[Instinct-Engine]] —— Claude Code 自我学习系统 2 个实体。
+新增实体：[[Cursor]]、[[CodeBuddy]] —— AI Coding IDE 2 个实体。
+
+更新实体：[[RAG]]、[[Harness-Engineering]]、[[Claude-Code]]、[[Agent-Memory]]、[[Credential-Brokering]] —— 追加来源引用。
+
 ### 2026-06-09
 
 新增来源：[[知识库分层编排-从RAG到Agent-native-Knowledge-Context-Layer]] —— 阿里云板牙系统梳理知识库四大范式（Naive RAG → LLM Wiki → Graphify → GraphRAG），提出金字塔知识库五层分层模型（原则→架构→规范→实现→经验），结合角色感知检索和图谱关联，Pyramid+RAG Hit@3=89% vs Naive RAG ~75%。
@@ -88,7 +109,7 @@ date: 2026-06-03
 
 ## 状态
 
-- 实体数：22
-- 主题数：7
-- 来源数：131
-- 最后更新：2026-05-31
+- 实体数：61
+- 主题数：9
+- 来源数：151
+- 最后更新：2026-06-12

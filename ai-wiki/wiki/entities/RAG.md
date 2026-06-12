@@ -75,3 +75,4 @@ RAG 的全链路分为六个环节：
 
 - [[RAG全链路技术详解]] —— RAG 全链路工程实践
 - [[深度解析LLM-Wiki-Obsidian-Wiki-GBrain]] —— LLM Wiki vs RAG 对比
+- [[如何构建一个更好的知识库]] —— RAG 全链路优化技术详解

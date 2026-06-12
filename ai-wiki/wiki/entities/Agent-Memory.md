@@ -117,3 +117,4 @@ Agent Memory 评测沿三条主线推进：
 - [[Spring-AI-Session-API-大多数人用ChatMemory用错了场景]] —— Spring AI 双层架构
 - [[从架构到代码-深入理解OpenClaw的双源记忆系统]] —— OpenClaw 记忆系统
 - [[Agent-Memory评测全景-基准评估与记忆系统]] —— 评测全景梳理，涵盖 Benchmark/Evaluation/System 三条主线
+- [[让-Claude-Code-拥有自我进化和记忆系统]] —— 得物技术，Hook + Instinct + 向量检索的三层记忆架构

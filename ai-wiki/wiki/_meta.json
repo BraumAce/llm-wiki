@@ -2,13 +2,49 @@
   "version": "1.0",
   "lang": "zh",
   "created_at": "2026-05-10T20:50:00+08:00",
-  "last_lint": "2026-06-09T12:00:00+08:00",
+  "last_lint": "2026-06-12T23:30:00+08:00",
   "stats": {
-    "entities": 47,
-    "sources": 142,
+    "entities": 61,
+    "sources": 151,
     "topics": 9
   },
   "sources": [
+    {
+      "title": "如何构建一个更\"好\"的知识库？",
+      "file": "sources/如何构建一个更好的知识库.md",
+      "date": "2026-06-12",
+      "source_type": "wechat"
+    },
+    {
+      "title": "面向 Agent Skill 的 CLI/SSO 鉴权体系：安全、无感、可追溯",
+      "file": "sources/面向-Agent-Skill的-CLI-SSO-鉴权体系.md",
+      "date": "2026-06-12",
+      "source_type": "wechat"
+    },
+    {
+      "title": "让 Claude Code 拥有自我进化和记忆系统",
+      "file": "sources/让-Claude-Code-拥有自我进化和记忆系统.md",
+      "date": "2026-06-12",
+      "source_type": "wechat"
+    },
+    {
+      "title": "AI 不缺智商缺纪律：一场 Harness 工程化实践",
+      "file": "sources/AI-不缺智商缺纪律：一场-Harness-工程化实践.md",
+      "date": "2026-06-12",
+      "source_type": "wechat"
+    },
+    {
+      "title": "Harness Engineering落地前，先想清楚这几个问题",
+      "file": "sources/Harness-Engineering落地前先想清楚这几个问题.md",
+      "date": "2026-06-12",
+      "source_type": "wechat"
+    },
+    {
+      "title": "Agent skill 迭代式编写实战",
+      "file": "sources/Agent-skill-迭代式编写实战.md",
+      "date": "2026-06-12",
+      "source_type": "wechat"
+    },
     {
       "title": "知识库分层编排：从 RAG 到 Agent-native Knowledge Context Layer",
       "file": "sources/知识库分层编排-从RAG到Agent-native-Knowledge-Context-Layer.md",

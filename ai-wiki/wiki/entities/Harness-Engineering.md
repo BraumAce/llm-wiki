@@ -143,3 +143,5 @@ Harness Engineering 的理念可以扩展到 Agent 评测领域。阿里团队�
 - [[Harness不是目的-知识才是护城河]] —— 腾讯团队，知识沉淀实践
 - [[深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践]] —— OpenClaw 的 Harness 设计
 - [[重新思考研发基础设施-当Agent成为第一公民]] —— Harness 平台化与 Agent-Oriented Infra
+- [[AI-不缺智商缺纪律：一场-Harness-工程化实践]] —— 阿里技术，Harness 分层结构与评测驱动
+- [[Harness-Engineering落地前先想清楚这几个问题]] —— 腾讯云开发者，存量项目 AI Coding 适配
