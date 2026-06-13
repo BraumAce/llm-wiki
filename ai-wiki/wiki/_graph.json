@@ -1,18 +1,453 @@
 {
-  "generated_at": "2026-05-19T10:12:40+08:00",
+  "generated_at": "2026-06-13T23:28:31+08:00",
   "wiki_dir": "/Users/liuguang/Documents/Private/llm-wiki/ai-wiki/wiki",
   "stats": {
-    "nodes": 14,
-    "edges": 61,
-    "edge_weight_total": 177,
-    "orphan_links": [],
+    "nodes": 221,
+    "edges": 753,
+    "edge_weight_total": 1226,
+    "orphan_links": [
+      "Agent-Skill",
+      "CLI-Anything",
+      "Graphify",
+      "Harness-Engineering-AI能在出事会炸的后端系统里写代码",
+      "HiClaw",
+      "LLM-Wiki-Pattern",
+      "OpenSpec",
+      "Prompt-Cache",
+      "Qdrant",
+      "RAG知识库构建"
+    ],
     "by_type": {
-      "entity": 4,
-      "topic": 1,
-      "source": 9
+      "entity": 61,
+      "topic": 9,
+      "source": 151
     }
   },
   "nodes": [
+    {
+      "id": "AI-Friendly-API",
+      "type": "entity",
+      "title": "AI-Friendly-API",
+      "tags": [
+        "API设计",
+        "AI工程",
+        "工具"
+      ]
+    },
+    {
+      "id": "AI-Friendly架构",
+      "type": "entity",
+      "title": "AI-Friendly架构",
+      "tags": [
+        "架构",
+        "AI",
+        "Agent",
+        "工程化"
+      ]
+    },
+    {
+      "id": "AI-Native软件工程",
+      "type": "entity",
+      "title": "AI-Native软件工程",
+      "tags": [
+        "软件工程",
+        "AI-Native",
+        "范式"
+      ]
+    },
+    {
+      "id": "AI可观测性",
+      "type": "entity",
+      "title": "AI可观测性",
+      "tags": [
+        "工程化",
+        "监控",
+        "评测",
+        "AI"
+      ]
+    },
+    {
+      "id": "Agent-DX",
+      "type": "entity",
+      "title": "Agent-DX",
+      "tags": [
+        "developer-experience",
+        "ai-engineering",
+        "dx"
+      ]
+    },
+    {
+      "id": "Agent-Memory",
+      "type": "entity",
+      "title": "Agent Memory",
+      "tags": [
+        "memory",
+        "ai-agent",
+        "context-management",
+        "architecture"
+      ]
+    },
+    {
+      "id": "Agent-Oriented-Infra",
+      "type": "entity",
+      "title": "Agent-Oriented-Infra",
+      "tags": [
+        "infra",
+        "ai-engineering",
+        "architecture",
+        "design-principle"
+      ]
+    },
+    {
+      "id": "Agent-Skill-Auth",
+      "type": "entity",
+      "title": "Agent-Skill-Auth",
+      "tags": [
+        "Agent-Skill",
+        "security",
+        "authentication"
+      ]
+    },
+    {
+      "id": "Agentic-Engineering",
+      "type": "entity",
+      "title": "Agentic Engineering",
+      "tags": [
+        "agentic-engineering",
+        "ai-engineering",
+        "agent-architecture",
+        "software-engineering",
+        "context-engineering",
+        "multi-agent",
+        "sdlc"
+      ]
+    },
+    {
+      "id": "Anthropic",
+      "type": "entity",
+      "title": "Anthropic",
+      "tags": [
+        "company",
+        "ai",
+        "llm"
+      ]
+    },
+    {
+      "id": "AutoRAG",
+      "type": "entity",
+      "title": "AutoRAG",
+      "tags": [
+        "RAG",
+        "automation",
+        "optimization"
+      ]
+    },
+    {
+      "id": "Chromium-AI-Coding",
+      "type": "entity",
+      "title": "Chromium-AI-Coding",
+      "tags": [
+        "Chromium",
+        "AI-Coding",
+        "Prompt分层",
+        "Skills",
+        "评估体系"
+      ]
+    },
+    {
+      "id": "Claude-Code",
+      "type": "entity",
+      "title": "Claude Code",
+      "tags": [
+        "ai-coding",
+        "agent",
+        "cli-tool",
+        "anthropic",
+        "harness-engineering",
+        "context-engineering",
+        "replit"
+      ]
+    },
+    {
+      "id": "CodeBuddy",
+      "type": "entity",
+      "title": "CodeBuddy",
+      "tags": [
+        "AI-Coding",
+        "IDE",
+        "Tencent"
+      ]
+    },
+    {
+      "id": "Context-Engineering",
+      "type": "entity",
+      "title": "Context-Engineering",
+      "tags": [
+        "工程化",
+        "Prompt",
+        "RAG",
+        "Agent"
+      ]
+    },
+    {
+      "id": "Credential-Brokering",
+      "type": "entity",
+      "title": "Credential-Brokering",
+      "tags": [
+        "security",
+        "infra",
+        "ai-agent",
+        "authentication"
+      ]
+    },
+    {
+      "id": "Cross-Encoder",
+      "type": "entity",
+      "title": "Cross-Encoder",
+      "tags": [
+        "RAG",
+        "reranking",
+        "NLP"
+      ]
+    },
+    {
+      "id": "Cursor",
+      "type": "entity",
+      "title": "Cursor",
+      "tags": [
+        "AI-Coding",
+        "IDE",
+        "editor"
+      ]
+    },
+    {
+      "id": "DeepSeek-V4",
+      "type": "entity",
+      "title": "DeepSeek-V4",
+      "tags": [
+        "llm",
+        "moe",
+        "open-source",
+        "ai-infra",
+        "long-context",
+        "reasoning",
+        "chinese-ai"
+      ]
+    },
+    {
+      "id": "GraphRAG",
+      "type": "entity",
+      "title": "GraphRAG",
+      "tags": [
+        "ai-engineering",
+        "retrieval",
+        "knowledge-graph",
+        "RAG"
+      ]
+    },
+    {
+      "id": "Harness-Engineering",
+      "type": "entity",
+      "title": "Harness Engineering",
+      "tags": [
+        "ai-engineering",
+        "methodology",
+        "harness",
+        "context-engineering",
+        "prompt-engineering"
+      ]
+    },
+    {
+      "id": "Hermes-Agent",
+      "type": "entity",
+      "title": "Hermes Agent",
+      "tags": [
+        "agent",
+        "open-source",
+        "self-evolving",
+        "skill-generation",
+        "reinforcement-learning",
+        "harness-engineering",
+        "context-engineering",
+        "trajectory"
+      ]
+    },
+    {
+      "id": "Hook-机制",
+      "type": "entity",
+      "title": "Hook-机制",
+      "tags": [
+        "Claude-Code",
+        "Hook",
+        "automation"
+      ]
+    },
+    {
+      "id": "HyDE",
+      "type": "entity",
+      "title": "HyDE",
+      "tags": [
+        "RAG",
+        "query-enhancement",
+        "retrieval"
+      ]
+    },
+    {
+      "id": "Instinct-Engine",
+      "type": "entity",
+      "title": "Instinct-Engine",
+      "tags": [
+        "Claude-Code",
+        "self-learning",
+        "pattern-mining"
+      ]
+    },
+    {
+      "id": "LOCOMO",
+      "type": "entity",
+      "title": "LOCOMO",
+      "tags": [
+        "benchmark",
+        "memory",
+        "evaluation",
+        "long-context"
+      ]
+    },
+    {
+      "id": "LONGMEMEVAL",
+      "type": "entity",
+      "title": "LONGMEMEVAL",
+      "tags": [
+        "benchmark",
+        "evaluation",
+        "memory",
+        "long-context"
+      ]
+    },
+    {
+      "id": "Late-Chunking",
+      "type": "entity",
+      "title": "Late-Chunking",
+      "tags": [
+        "RAG",
+        "chunking",
+        "embedding"
+      ]
+    },
+    {
+      "id": "LightRAG",
+      "type": "entity",
+      "title": "LightRAG",
+      "tags": [
+        "ai-engineering",
+        "retrieval",
+        "knowledge-graph",
+        "rag",
+        "llm",
+        "graph-database",
+        "open-source"
+      ]
+    },
+    {
+      "id": "M3-Agent",
+      "type": "entity",
+      "title": "M3-Agent",
+      "tags": [
+        "memory",
+        "multimodal",
+        "reinforcement-learning",
+        "ai-agent"
+      ]
+    },
+    {
+      "id": "MCP",
+      "type": "entity",
+      "title": "MCP",
+      "tags": [
+        "protocol",
+        "agent",
+        "tool",
+        "context-engineering"
+      ]
+    },
+    {
+      "id": "MUSE",
+      "type": "entity",
+      "title": "MUSE",
+      "tags": [
+        "benchmark",
+        "multimodal",
+        "recommendation",
+        "memory"
+      ]
+    },
+    {
+      "id": "Mem0",
+      "type": "entity",
+      "title": "Mem0",
+      "tags": [
+        "memory",
+        "ai-agent",
+        "graph-memory",
+        "retrieval"
+      ]
+    },
+    {
+      "id": "MemBench",
+      "type": "entity",
+      "title": "MemBench",
+      "tags": [
+        "benchmark",
+        "evaluation",
+        "memory"
+      ]
+    },
+    {
+      "id": "MemoryAgentBench",
+      "type": "entity",
+      "title": "MemoryAgentBench",
+      "tags": [
+        "benchmark",
+        "evaluation",
+        "memory"
+      ]
+    },
+    {
+      "id": "MiniCPM5-1B",
+      "type": "entity",
+      "title": "MiniCPM5-1B",
+      "tags": [
+        "llm",
+        "small-language-model",
+        "on-device",
+        "open-source",
+        "openbmb",
+        "modelbest",
+        "tsinghua"
+      ]
+    },
+    {
+      "id": "Mitchell-Hashimoto",
+      "type": "entity",
+      "title": "Mitchell Hashimoto",
+      "tags": [
+        "person",
+        "hashicorp",
+        "infrastructure",
+        "harness-engineering"
+      ]
+    },
+    {
+      "id": "Nanobot",
+      "type": "entity",
+      "title": "Nanobot",
+      "tags": [
+        "ai-agent",
+        "lightweight-framework",
+        "react-loop",
+        "open-source"
+      ]
+    },
     {
       "id": "OpenClaw",
       "type": "entity",
@@ -58,6 +493,859 @@
       ]
     },
     {
+      "id": "OpenHarness",
+      "type": "entity",
+      "title": "OpenHarness",
+      "tags": [
+        "agent",
+        "open-source",
+        "harness-engineering",
+        "infrastructure",
+        "cli-tool",
+        "multi-agent",
+        "context-engineering"
+      ]
+    },
+    {
+      "id": "OpenViking",
+      "type": "entity",
+      "title": "OpenViking",
+      "tags": [
+        "RAG",
+        "knowledge-base",
+        "architecture"
+      ]
+    },
+    {
+      "id": "Prompt分层组合架构",
+      "type": "entity",
+      "title": "Prompt分层组合架构",
+      "tags": [
+        "Prompt",
+        "架构设计",
+        "渐进式加载"
+      ]
+    },
+    {
+      "id": "Prompt评估体系",
+      "type": "entity",
+      "title": "Prompt评估体系",
+      "tags": [
+        "Prompt",
+        "评估",
+        "质量保障"
+      ]
+    },
+    {
+      "id": "Pyramid-KB",
+      "type": "entity",
+      "title": "Pyramid-KB",
+      "tags": [
+        "ai-engineering",
+        "knowledge-management",
+        "RAG",
+        "Agent"
+      ]
+    },
+    {
+      "id": "QuIM-RAG",
+      "type": "entity",
+      "title": "QuIM-RAG",
+      "tags": [
+        "RAG",
+        "retrieval",
+        "index"
+      ]
+    },
+    {
+      "id": "RAG",
+      "type": "entity",
+      "title": "RAG",
+      "tags": [
+        "ai-engineering",
+        "retrieval",
+        "knowledge-management",
+        "llm"
+      ]
+    },
+    {
+      "id": "RAGAS",
+      "type": "entity",
+      "title": "RAGAS",
+      "tags": [
+        "evaluation",
+        "RAG",
+        "metrics"
+      ]
+    },
+    {
+      "id": "RMM",
+      "type": "entity",
+      "title": "RMM",
+      "tags": [
+        "memory",
+        "reinforcement-learning",
+        "personalization"
+      ]
+    },
+    {
+      "id": "ReAct",
+      "type": "entity",
+      "title": "ReAct",
+      "tags": [
+        "Agent",
+        "推理",
+        "范式"
+      ]
+    },
+    {
+      "id": "SkillOpt",
+      "type": "entity",
+      "title": "SkillOpt",
+      "tags": [
+        "agent",
+        "open-source",
+        "self-evolving",
+        "prompt-optimization",
+        "skill-optimization",
+        "microsoft",
+        "harness-engineering",
+        "context-engineering"
+      ]
+    },
+    {
+      "id": "Spec-Driven-Development",
+      "type": "entity",
+      "title": "Spec-Driven Development",
+      "tags": [
+        "methodology",
+        "ai-engineering",
+        "software-engineering",
+        "spec-driven"
+      ]
+    },
+    {
+      "id": "THEANINE",
+      "type": "entity",
+      "title": "THEANINE",
+      "tags": [
+        "memory",
+        "timeline",
+        "counterfactual-evaluation"
+      ]
+    },
+    {
+      "id": "sso-cli",
+      "type": "entity",
+      "title": "sso-cli",
+      "tags": [
+        "CLI",
+        "SSO",
+        "security",
+        "Agent"
+      ]
+    },
+    {
+      "id": "vLLM",
+      "type": "entity",
+      "title": "vLLM",
+      "tags": [
+        "ai-infra",
+        "inference",
+        "serving",
+        "open-source",
+        "gpu"
+      ]
+    },
+    {
+      "id": "wechat-cli",
+      "type": "entity",
+      "title": "wechat-cli",
+      "tags": [
+        "cli-tool",
+        "wechat",
+        "sqlcipher",
+        "decryption",
+        "memory-scanning",
+        "ai-agent-tool",
+        "python",
+        "local-first",
+        "privacy"
+      ]
+    },
+    {
+      "id": "消息总线",
+      "type": "entity",
+      "title": "消息总线",
+      "tags": [
+        "architecture",
+        "messaging",
+        "agent",
+        "event-driven",
+        "pub-sub",
+        "inter-agent-communication"
+      ]
+    },
+    {
+      "id": "自进化Agent",
+      "type": "entity",
+      "title": "自进化Agent",
+      "tags": [
+        "Agent",
+        "范式",
+        "自进化",
+        "持续学习"
+      ]
+    },
+    {
+      "id": "软件工程范式革命",
+      "type": "entity",
+      "title": "软件工程范式革命",
+      "tags": [
+        "软件工程",
+        "范式革命",
+        "控制论",
+        "AI-Native"
+      ]
+    },
+    {
+      "id": "2026年AI编码的渐进式Spec实战指南",
+      "type": "source",
+      "title": "2026 年 AI 编码的渐进式 Spec 实战指南",
+      "tags": [
+        "ai-coding",
+        "spec-driven-development",
+        "prompt-engineering",
+        "workflow",
+        "best-practices"
+      ]
+    },
+    {
+      "id": "4000行代码撑起一个Agent框架-nanobot架构深度解析",
+      "type": "source",
+      "title": "4000行代码撑起一个Agent框架？nanobot架构深度解析",
+      "tags": [
+        "nanobot",
+        "ai-agent",
+        "react-loop",
+        "skill-system",
+        "memory",
+        "subagent",
+        "mcp",
+        "lightweight-framework"
+      ]
+    },
+    {
+      "id": "800行代码实现OpenClaw的Tool消息总线子Agent管理架构",
+      "type": "source",
+      "title": "800行代码实现 Open Claw 的 Tool 消息总线 子Agent管理架构",
+      "tags": [
+        "openclaw",
+        "agent",
+        "tool-system",
+        "message-bus",
+        "subagent",
+        "typescript",
+        "architecture"
+      ]
+    },
+    {
+      "id": "97.9%采纳率-胶水编程-业务需求出码最佳实践",
+      "type": "source",
+      "title": "97.9%采纳率，胶水编程：业务需求出码最佳实践",
+      "tags": [
+        "code-generation",
+        "ai-assisted-coding",
+        "prompt-engineering",
+        "glue-programming",
+        "business-requirements",
+        "adoption-rate",
+        "best-practices"
+      ]
+    },
+    {
+      "id": "AI-Agent在保险业务的落地实践",
+      "type": "source",
+      "title": "AI Agent在保险业务的落地实践：技术实战分享",
+      "tags": [
+        "agent",
+        "enterprise",
+        "insurance",
+        "llm"
+      ]
+    },
+    {
+      "id": "AI-Coding前端实践后的复盘总结",
+      "type": "source",
+      "title": "AI Coding前端实践后的复盘总结",
+      "tags": [
+        "ai-coding",
+        "frontend",
+        "agent"
+      ]
+    },
+    {
+      "id": "AI-Coding思考-从工具提效到范式变革",
+      "type": "source",
+      "title": "AI Coding思考：从工具提效到范式变革，我们还缺什么？",
+      "tags": [
+        "ai-coding",
+        "spec-driven-development",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "AI-Infra入门干货总结-大模型是如何高效推理的",
+      "type": "source",
+      "title": "AI-Infra入门干货总结-大模型是如何高效推理的",
+      "tags": [
+        "ai-infra",
+        "vllm",
+        "paged-attention"
+      ]
+    },
+    {
+      "id": "AI-Native时代-研发组织何去何从",
+      "type": "source",
+      "title": "AI-Native时代-研发组织何去何从",
+      "tags": [
+        "ai-native",
+        "organization",
+        "management"
+      ]
+    },
+    {
+      "id": "AI-Skill体系全解-企业级AI能力标准化可插拔可审计",
+      "type": "source",
+      "title": "AI Skill 体系全解：企业级 AI 能力标准化可插拔可审计",
+      "tags": [
+        "ai-skill",
+        "enterprise-ai",
+        "capability-standardization",
+        "pluggable-architecture",
+        "auditability",
+        "ai-engineering"
+      ]
+    },
+    {
+      "id": "AI-不缺智商缺纪律：一场-Harness-工程化实践",
+      "type": "source",
+      "title": "AI 不缺智商缺纪律：一场 Harness 工程化实践",
+      "tags": [
+        "Harness-Engineering",
+        "AI-Coding",
+        "Claude-Code",
+        "多Agent"
+      ]
+    },
+    {
+      "id": "AI-答疑助手优化实践-从RAG到LightRAG的全链路升级",
+      "type": "source",
+      "title": "AI 答疑助手优化实践：从 RAG 到 LightRAG 的全链路升级",
+      "tags": [
+        "rag",
+        "lightrag",
+        "knowledge-graph",
+        "retrieval",
+        "ai-assistant",
+        "qa-system"
+      ]
+    },
+    {
+      "id": "AI实践-基于Spring-AI从0到1构建AI-Agent",
+      "type": "source",
+      "title": "AI实践：基于 Spring AI 从0到1构建 AI Agent",
+      "tags": [
+        "spring-ai",
+        "agent",
+        "ai-agent",
+        "java",
+        "spring-boot",
+        "tool-calling"
+      ]
+    },
+    {
+      "id": "AI研发自动化-Wiki知识库+技能包",
+      "type": "source",
+      "title": "AI研发自动化：Wiki知识库+技能包",
+      "tags": [
+        "ai-engineering",
+        "knowledge-base",
+        "agent-skill",
+        "evaluation-system",
+        "enterprise-ai",
+        "claude-code",
+        "wiki",
+        "automation",
+        "harness"
+      ]
+    },
+    {
+      "id": "AI编程的下半场来了-学会用Agent-Skill解决编程的痛点问题",
+      "type": "source",
+      "title": "AI编程的下半场来了？学会用Agent Skill解决编程的痛点问题",
+      "tags": [
+        "skills",
+        "agent",
+        "serverless"
+      ]
+    },
+    {
+      "id": "AI记忆的Git版本控制-Memoir-分层路径替代向量数据库",
+      "type": "source",
+      "title": "AI记忆的Git版本控制-Memoir-分层路径替代向量数据库",
+      "tags": [
+        "memory",
+        "memoir",
+        "prolltree",
+        "version-control"
+      ]
+    },
+    {
+      "id": "AI软件工程范式革命的思考",
+      "type": "source",
+      "title": "AI软件工程范式革命的思考",
+      "tags": [
+        "软件工程",
+        "范式革命",
+        "控制论",
+        "AI-Native",
+        "工程化"
+      ]
+    },
+    {
+      "id": "Agent-Memory评测全景-基准评估与记忆系统",
+      "type": "source",
+      "title": "Agent-Memory评测全景-基准评估与记忆系统",
+      "tags": [
+        "memory",
+        "benchmark",
+        "evaluation",
+        "agent-memory",
+        "locomo",
+        "mem0"
+      ]
+    },
+    {
+      "id": "Agent-Skills-Teams架构演进过程及技术选型之道",
+      "type": "source",
+      "title": "Agent/Skills/Teams 架构演进过程及技术选型之道",
+      "tags": [
+        "agent",
+        "skills",
+        "architecture",
+        "multi-agent"
+      ]
+    },
+    {
+      "id": "Agent-Skills-打通可复用专业领域知识的最后一公里",
+      "type": "source",
+      "title": "Agent Skills：打通可复用专业领域知识的最后一公里",
+      "tags": [
+        "agent",
+        "skill",
+        "domain-knowledge",
+        "reusable-knowledge",
+        "knowledge-engineering"
+      ]
+    },
+    {
+      "id": "Agent-skill-迭代式编写实战",
+      "type": "source",
+      "title": "Agent skill 迭代式编写实战",
+      "tags": [
+        "Agent-Skill",
+        "Skill编写",
+        "最佳实践"
+      ]
+    },
+    {
+      "id": "Agent-开发范式演进-从环境工程出发简化多源实时上下文",
+      "type": "source",
+      "title": "Agent 开发范式演进：从环境工程出发简化多源实时上下文",
+      "tags": [
+        "agent",
+        "context-engineering",
+        "multi-source-context",
+        "real-time-context",
+        "environment-engineering"
+      ]
+    },
+    {
+      "id": "Agent从一问一答到自主执行面临哪些挑战",
+      "type": "source",
+      "title": "Agent从一问一答到自主执行面临哪些挑战",
+      "tags": [
+        "agent",
+        "scheduling",
+        "production"
+      ]
+    },
+    {
+      "id": "Agent核心技术概念与范式发生了哪些演变",
+      "type": "source",
+      "title": "Agent核心技术概念与范式发生了哪些演变",
+      "tags": [
+        "agent",
+        "evolution",
+        "paradigm"
+      ]
+    },
+    {
+      "id": "Agent核心技术概念与范式发生了哪些演变以及背后的思考",
+      "type": "source",
+      "title": "Agent核心技术概念与范式发生了哪些演变以及背后的思考",
+      "tags": [
+        "Agent",
+        "范式演进",
+        "Prompt",
+        "Memory",
+        "Tools",
+        "Workflow"
+      ]
+    },
+    {
+      "id": "Anthropic-Effective-Context-Engineering-for-AI-Agents",
+      "type": "source",
+      "title": "Anthropic: Effective context engineering for AI agents",
+      "tags": [
+        "context-engineering",
+        "prompt-engineering",
+        "ai-agent",
+        "context-window",
+        "compaction",
+        "multi-agent",
+        "agentic-memory"
+      ]
+    },
+    {
+      "id": "Anthropic-Effective-harnesses-for-long-running-agents",
+      "type": "source",
+      "title": "Anthropic: Effective harnesses for long-running agents",
+      "tags": [
+        "harness-engineering",
+        "long-running-agent",
+        "multi-context-window",
+        "claude-agent-sdk",
+        "ai-coding",
+        "browser-automation"
+      ]
+    },
+    {
+      "id": "Claude-Code-Harness工程-数仓侧落地方案-得物技术",
+      "type": "source",
+      "title": "Claude-Code-Harness工程-数仓侧落地方案-得物技术",
+      "tags": [
+        "harness-engineering",
+        "claude-code",
+        "data-warehouse"
+      ]
+    },
+    {
+      "id": "Claude-Code-Skills-完全指南",
+      "type": "source",
+      "title": "Claude Code Skills 完全指南：从零打造你的生产级别 AI 编程助理工作流",
+      "tags": [
+        "claude-code",
+        "skills",
+        "hooks",
+        "context-engineering"
+      ]
+    },
+    {
+      "id": "Claude-Code-一篇带你从入门到精通",
+      "type": "source",
+      "title": "Claude Code 一篇带你从入门到精通",
+      "tags": [
+        "claude-code",
+        "skills",
+        "subagents",
+        "context-engineering"
+      ]
+    },
+    {
+      "id": "Claude-Code-加-OpenSpec-正在加速-AICoding-落地",
+      "type": "source",
+      "title": "Claude Code + OpenSpec 正在加速 AICoding 落地：从模型博弈到工程化的范式转移",
+      "tags": [
+        "claude-code",
+        "spec-driven-development",
+        "context-engineering",
+        "harness-engineering"
+      ]
+    },
+    {
+      "id": "Claude-Code-工程师亲授-OpenClaw-调教指南-Skills的工程化心法",
+      "type": "source",
+      "title": "Claude 工程师亲授 OpenClaw 调教指南：Skills 的工程化心法",
+      "tags": [
+        "skills",
+        "openclaw",
+        "context-engineering"
+      ]
+    },
+    {
+      "id": "Claude-Code-最佳实践-可验证可治理可分层的工程现实",
+      "type": "source",
+      "title": "Claude Code 最佳实践：可验证、可治理、可分层的工程现实",
+      "tags": [
+        "claude-code",
+        "harness-engineering",
+        "context-engineering"
+      ]
+    },
+    {
+      "id": "Claude-Code-源码拆解-从启动到多Agent扩展层",
+      "type": "source",
+      "title": "Claude Code 源码拆解：从启动到多 Agent 扩展层",
+      "tags": [
+        "claude-code",
+        "source-code-analysis",
+        "multi-agent",
+        "agentic-coding"
+      ]
+    },
+    {
+      "id": "Claude-Code-源码架构解析-从启动Prompt到权限管道",
+      "type": "source",
+      "title": "Claude Code 源码架构解析：从启动 Prompt 到权限管道",
+      "tags": [
+        "claude-code",
+        "source-code",
+        "architecture",
+        "prompt-engineering",
+        "permission-pipeline",
+        "cli-agent"
+      ]
+    },
+    {
+      "id": "Claude-Code-长任务为什么不容易跑偏",
+      "type": "source",
+      "title": "Claude Code 长任务为什么不容易跑偏",
+      "tags": [
+        "claude-code",
+        "long-task",
+        "task-orchestration",
+        "context-management",
+        "subagent",
+        "todo-driven-development"
+      ]
+    },
+    {
+      "id": "Claude-Code-顶级开发团队设计的Harness工程项目源码什么样",
+      "type": "source",
+      "title": "Claude Code：顶级开发团队设计的Harness工程项目源码什么样",
+      "tags": [
+        "claude-code",
+        "harness",
+        "source-code",
+        "engineering",
+        "agentic-coding"
+      ]
+    },
+    {
+      "id": "Claude-Code源码泄露深度解析-51.2万行代码里藏着怎样的AI编程系统",
+      "type": "source",
+      "title": "Claude Code源码泄露深度解析：51.2万行代码里藏着怎样的AI编程系统",
+      "tags": [
+        "claude-code",
+        "source-code-analysis",
+        "ai-programming",
+        "anthropic",
+        "code-generation"
+      ]
+    },
+    {
+      "id": "Claude-Code防封号指南-国内终极解决方案",
+      "type": "source",
+      "title": "Claude Code 防封号指南：国内终极解决方案",
+      "tags": [
+        "claude-code",
+        "persona",
+        "kyc",
+        "network",
+        "account-security"
+      ]
+    },
+    {
+      "id": "Claude-code云端部署-魔改sdk实现http流式调用",
+      "type": "source",
+      "title": "Claude-code云端部署-魔改sdk实现http流式调用",
+      "tags": [
+        "claude-code",
+        "cloud-deployment",
+        "sdk",
+        "sse"
+      ]
+    },
+    {
+      "id": "Harness-Engineering-AI能在出事会炸的后端系统里写代码吗",
+      "type": "source",
+      "title": "Harness Engineering：AI 能在出事会炸的后端系统里写代码吗",
+      "tags": [
+        "ai-coding",
+        "backend-engineering",
+        "reliability",
+        "production-systems",
+        "harness"
+      ]
+    },
+    {
+      "id": "Harness-Engineering-来了-SDD-还有意义吗",
+      "type": "source",
+      "title": "Harness Engineering 来了，SDD 还有意义吗？",
+      "tags": [
+        "harness-engineering",
+        "spec-driven-development",
+        "agent"
+      ]
+    },
+    {
+      "id": "Harness-Engineering-来龙去脉",
+      "type": "source",
+      "title": "Harness Engineering 来龙去脉",
+      "tags": [
+        "harness-engineering",
+        "prompt-engineering",
+        "context-engineering",
+        "agent",
+        "ai-engineering",
+        "interview"
+      ]
+    },
+    {
+      "id": "Harness-Engineering-耗时一周将AI-Coding率提升至90",
+      "type": "source",
+      "title": "Harness-Engineering-耗时一周将AI-Coding率提升至90",
+      "tags": [
+        "harness-engineering",
+        "ai-coding",
+        "java"
+      ]
+    },
+    {
+      "id": "Harness-Engineering-长程自动化AI-Coding-Skills开发实践",
+      "type": "source",
+      "title": "Harness Engineering：长程自动化 AI Coding / Skills 开发实践",
+      "tags": [
+        "harness-engineering",
+        "ai-coding",
+        "context-firewall",
+        "feedback-loop",
+        "group-intelligence",
+        "hiclaw",
+        "cli-anything"
+      ]
+    },
+    {
+      "id": "Harness-Engineering实践心得-如何高效驾驭AI",
+      "type": "source",
+      "title": "Harness Engineering实践心得：如何高效驾驭AI",
+      "tags": [
+        "harness-engineering",
+        "ai-engineering",
+        "prompt-engineering",
+        "llm",
+        "best-practices"
+      ]
+    },
+    {
+      "id": "Harness-Engineering落地前先想清楚这几个问题",
+      "type": "source",
+      "title": "Harness Engineering落地前，先想清楚这几个问题",
+      "tags": [
+        "Harness-Engineering",
+        "AI-Coding",
+        "前端架构",
+        "流式渲染"
+      ]
+    },
+    {
+      "id": "Harness不是目的-知识才是护城河",
+      "type": "source",
+      "title": "Harness不是目的-知识才是护城河",
+      "tags": [
+        "harness-engineering",
+        "knowledge-management"
+      ]
+    },
+    {
+      "id": "Harness的尽头不是缰绳是镜子",
+      "type": "source",
+      "title": "Harness的尽头不是缰绳是镜子",
+      "tags": [
+        "harness-engineering",
+        "philosophy",
+        "james-scott"
+      ]
+    },
+    {
+      "id": "JavaGuide-LLM基础扫盲",
+      "type": "source",
+      "title": "JavaGuide：LLM 基础扫盲",
+      "tags": [
+        "llm",
+        "fundamentals",
+        "token"
+      ]
+    },
+    {
+      "id": "MiniCPM5-1B-GitHub",
+      "type": "source",
+      "title": "MiniCPM5-1B GitHub",
+      "tags": [
+        "llm",
+        "small-language-model",
+        "on-device",
+        "open-source",
+        "openbmb"
+      ]
+    },
+    {
+      "id": "MySQL的SELECT-一定导致索引失效吗",
+      "type": "source",
+      "title": "MySQL 的 SELECT * 一定导致索引失效？",
+      "tags": [
+        "mysql",
+        "database",
+        "performance"
+      ]
+    },
+    {
+      "id": "MySQL索引优化填坑实录-从1秒到50ms再到28ms",
+      "type": "source",
+      "title": "MySQL索引优化填坑实录-从1秒到50ms再到28ms",
+      "tags": [
+        "mysql",
+        "indexing",
+        "optimization",
+        "sql"
+      ]
+    },
+    {
+      "id": "Nanobot-OpenClaw轻量实现的底层原理解析",
+      "type": "source",
+      "title": "Nanobot（OpenClaw 轻量实现）的底层原理解析",
+      "tags": [
+        "openclaw",
+        "nanobot",
+        "ai-agent",
+        "lightweight-implementation",
+        "prompt-engineering"
+      ]
+    },
+    {
+      "id": "OpenAI-Codex-Plugin-for-Claude-Code源码剖析",
+      "type": "source",
+      "title": "OpenAI-Codex-Plugin-for-Claude-Code源码剖析",
+      "tags": [
+        "claude-code",
+        "codex",
+        "plugin",
+        "openai"
+      ]
+    },
+    {
       "id": "OpenClaw-Agent与Skill架构详解",
       "type": "source",
       "title": "OpenClaw Agent与Skill架构详解",
@@ -79,12 +1367,375 @@
       ]
     },
     {
+      "id": "OpenHarness-GitHub",
+      "type": "source",
+      "title": "OpenHarness GitHub",
+      "tags": [
+        "agent",
+        "harness-engineering",
+        "open-source",
+        "infrastructure"
+      ]
+    },
+    {
+      "id": "QQ音乐Harness-Engineering实践",
+      "type": "source",
+      "title": "QQ音乐Harness-Engineering实践",
+      "tags": [
+        "harness-engineering",
+        "team-collaboration",
+        "microservice"
+      ]
+    },
+    {
+      "id": "RAG优化字典-20种RAG优化方法全解析",
+      "type": "source",
+      "title": "RAG优化字典：20种RAG优化方法全解析",
+      "tags": [
+        "rag",
+        "retrieval",
+        "embedding"
+      ]
+    },
+    {
+      "id": "RAG全链路技术详解",
+      "type": "source",
+      "title": "RAG全链路技术详解",
+      "tags": [
+        "rag",
+        "retrieval",
+        "chunking",
+        "reranking"
+      ]
+    },
+    {
+      "id": "SkillOpt-GitHub",
+      "type": "source",
+      "title": "SkillOpt GitHub",
+      "tags": [
+        "skill-optimization",
+        "agent",
+        "open-source",
+        "microsoft"
+      ]
+    },
+    {
+      "id": "Skills-从编程工具的配角到Agent研发的核心",
+      "type": "source",
+      "title": "Skills：从编程工具的配角到Agent研发的核心",
+      "tags": [
+        "skills",
+        "agent",
+        "context-engineering"
+      ]
+    },
+    {
+      "id": "Skills开发技能指南-别脱离具体场景谈方案",
+      "type": "source",
+      "title": "Skills开发技能指南：OpenClaw也好，Skills也好，都别脱离具体场景谈方案",
+      "tags": [
+        "skills",
+        "openclaw",
+        "vibe-coding"
+      ]
+    },
+    {
+      "id": "Spec-Driven-Development如何重新定义AI编程",
+      "type": "source",
+      "title": "Spec-Driven-Development如何重新定义AI编程",
+      "tags": [
+        "sdd",
+        "spec-driven",
+        "ai-coding"
+      ]
+    },
+    {
+      "id": "Spring-AI-Session-API-大多数人用ChatMemory用错了场景",
+      "type": "source",
+      "title": "Spring-AI-Session-API-大多数人用ChatMemory用错了场景",
+      "tags": [
+        "memory",
+        "spring-ai",
+        "session-api"
+      ]
+    },
+    {
+      "id": "TRAE-2026企业级AI编程实践手册",
+      "type": "source",
+      "title": "TRAE — 2026企业级AI编程实践手册",
+      "tags": [
+        "ai-coding",
+        "enterprise",
+        "context-engineering",
+        "skills"
+      ]
+    },
+    {
+      "id": "verify-data-一个端到端的数据验数Agent-Skill",
+      "type": "source",
+      "title": "verify-data-一个端到端的数据验数Agent-Skill",
+      "tags": [
+        "data-validation",
+        "agent-skill",
+        "sql",
+        "data-engineering"
+      ]
+    },
+    {
+      "id": "wechat-cli-源码剖析",
+      "type": "source",
+      "title": "wechat-cli 源码剖析",
+      "tags": [
+        "wechat",
+        "cli",
+        "source-code-analysis",
+        "wechat-api"
+      ]
+    },
+    {
+      "id": "一个文件让AI-Coding效率翻倍-AGENTS-实践指南",
+      "type": "source",
+      "title": "一个文件让AI-Coding效率翻倍-AGENTS-实践指南",
+      "tags": [
+        "agents-md",
+        "ai-coding",
+        "best-practice"
+      ]
+    },
+    {
+      "id": "一文搞懂Hermes-新顶流Agent如何从经验中自我进化",
+      "type": "source",
+      "title": "一文搞懂Hermes：新顶流Agent如何从经验中自我进化",
+      "tags": [
+        "hermes-agent",
+        "self-improving",
+        "learning-loop",
+        "skill-creation",
+        "agent-memory",
+        "multi-platform"
+      ]
+    },
+    {
+      "id": "一文搞懂爆火的Skills原理及实践案例",
+      "type": "source",
+      "title": "一文搞懂爆火的Skills原理及实践案例",
+      "tags": [
+        "skills",
+        "context-engineering"
+      ]
+    },
+    {
+      "id": "一文讲透-Harness-Engineering即控制论",
+      "type": "source",
+      "title": "一文讲透：Harness Engineering即控制论",
+      "tags": [
+        "harness-engineering",
+        "cybernetics",
+        "control-theory",
+        "ai-agent"
+      ]
+    },
+    {
+      "id": "一文讲透从0构建AI-Agent",
+      "type": "source",
+      "title": "腾讯云：一文讲透从0构建AI Agent",
+      "tags": [
+        "agent",
+        "llm",
+        "function-calling",
+        "react"
+      ]
+    },
+    {
+      "id": "一文讲透如何构建Harness-六大组件全解析",
+      "type": "source",
+      "title": "一文讲透如何构建Harness——六大组件全解析",
+      "tags": [
+        "harness",
+        "agent-framework",
+        "llm",
+        "prompt-engineering",
+        "agent-architecture",
+        "components"
+      ]
+    },
+    {
+      "id": "万字入门AI-Infra-深入理解大模型中的数学与Infra优化",
+      "type": "source",
+      "title": "万字入门AI-Infra-深入理解大模型中的数学与Infra优化",
+      "tags": [
+        "ai-infra",
+        "math",
+        "rmsnorm",
+        "softmax"
+      ]
+    },
+    {
+      "id": "万字干货-Harness-Engineering如何工程化落地",
+      "type": "source",
+      "title": "万字干货！Harness Engineering如何工程化落地",
+      "tags": [
+        "harness",
+        "engineering",
+        "ai-development",
+        "agent",
+        "workflow",
+        "rule",
+        "skill",
+        "mcp"
+      ]
+    },
+    {
+      "id": "业务逻辑的坍塌-当应用层只剩下胶水代码",
+      "type": "source",
+      "title": "业务逻辑的坍塌：当应用层只剩下胶水代码",
+      "tags": [
+        "agent",
+        "architecture",
+        "llm"
+      ]
+    },
+    {
+      "id": "串讲LLM和Agent的核心原理以及各种术语",
+      "type": "source",
+      "title": "串讲LLM和Agent的核心原理以及各种术语",
+      "tags": [
+        "llm",
+        "agent",
+        "tutorial",
+        "terminology"
+      ]
+    },
+    {
+      "id": "从0到1搭建Agent-原理分析及个人助手实践",
+      "type": "source",
+      "title": "从0到1搭建Agent-原理分析及个人助手实践",
+      "tags": [
+        "agent",
+        "tutorial",
+        "personal-assistant"
+      ]
+    },
+    {
+      "id": "从0开发大模型的17种Agent架构演进详细拆解",
+      "type": "source",
+      "title": "从0开发大模型的17种Agent架构演进详细拆解",
+      "tags": [
+        "agent",
+        "architecture",
+        "agno",
+        "17-architectures"
+      ]
+    },
+    {
+      "id": "从IDE到Terminal-适合后端宝宝体质的Claude-Code工作流",
+      "type": "source",
+      "title": "从IDE到Terminal：适合后端宝宝体质的Claude Code工作流",
+      "tags": [
+        "claude-code",
+        "workflow",
+        "agent"
+      ]
+    },
+    {
+      "id": "从Prompt-Context到Harness-工程的三次进化与终局之战",
+      "type": "source",
+      "title": "从Prompt-Context到Harness-工程的三次进化与终局之战",
+      "tags": [
+        "harness-engineering",
+        "prompt-engineering",
+        "context-engineering"
+      ]
+    },
+    {
+      "id": "从RAG到GraphRAG-货拉拉元数据检索应用实践",
+      "type": "source",
+      "title": "从RAG到GraphRAG：货拉拉元数据检索应用实践",
+      "tags": [
+        "rag",
+        "graphrag",
+        "retrieval",
+        "knowledge-graph"
+      ]
+    },
+    {
+      "id": "从Vibe-Coding到Agentic-Engineering-重构后台开发全流程",
+      "type": "source",
+      "title": "从Vibe Coding到Agentic Engineering：重构后台开发全流程",
+      "tags": [
+        "vibe-coding",
+        "agentic-engineering",
+        "backend-development",
+        "ai-assisted-development",
+        "workflow-automation"
+      ]
+    },
+    {
+      "id": "从多智能体编排到AI自主决策-资损防控体系的架构演进",
+      "type": "source",
+      "title": "从多智能体编排到AI自主决策：资损防控体系的架构演进",
+      "tags": [
+        "multi-agent",
+        "ai-decision-making",
+        "financial-loss-prevention",
+        "system-architecture",
+        "risk-control"
+      ]
+    },
+    {
       "id": "从架构到代码-深入理解OpenClaw的双源记忆系统",
       "type": "source",
       "title": "从架构到代码：深入理解 OpenClaw 的双源记忆系统",
       "tags": [
         "openclaw",
         "memory-system"
+      ]
+    },
+    {
+      "id": "从玩具到生产力-用真实项目讲透AI-Agent的Harness-Engineering",
+      "type": "source",
+      "title": "从玩具到生产力：用真实项目讲透 AI Agent 的 Harness Engineering",
+      "tags": [
+        "ai-agent",
+        "harness-engineering",
+        "engineering-practice",
+        "prompt-engineering",
+        "agent-framework"
+      ]
+    },
+    {
+      "id": "从第一性原理思考Agentic-Engineering",
+      "type": "source",
+      "title": "从第一性原理思考 Agentic Engineering",
+      "tags": [
+        "agentic-engineering",
+        "first-principles",
+        "software-engineering",
+        "llm",
+        "context-engineering",
+        "vibe-coding",
+        "sdlc",
+        "human-ai-collaboration"
+      ]
+    },
+    {
+      "id": "从语言涌现到协作涌现-如何让AI产生高质量决策",
+      "type": "source",
+      "title": "从语言涌现到协作涌现-如何让AI产生高质量决策",
+      "tags": [
+        "agent",
+        "collaboration",
+        "emergence"
+      ]
+    },
+    {
+      "id": "从零设计生产级Multi-Agent-Harness",
+      "type": "source",
+      "title": "从零设计生产级Multi-Agent-Harness",
+      "tags": [
+        "multi-agent",
+        "harness",
+        "production"
       ]
     },
     {
@@ -95,6 +1746,294 @@
         "openclaw",
         "ai-agent",
         "tutorial"
+      ]
+    },
+    {
+      "id": "企业级Agent多智能体架构与选型指南",
+      "type": "source",
+      "title": "企业级 Agent 多智能体架构与选型指南",
+      "tags": [
+        "agent",
+        "multi-agent",
+        "architecture",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "你不知道的-Claude-Code-架构治理与工程实践",
+      "type": "source",
+      "title": "你不知道的 Claude Code：架构、治理与工程实践",
+      "tags": [
+        "claude-code",
+        "harness-engineering",
+        "context-engineering",
+        "skills",
+        "hooks",
+        "subagents"
+      ]
+    },
+    {
+      "id": "你不知道的Agent-原理架构与工程实践",
+      "type": "source",
+      "title": "你不知道的 Agent：原理、架构与工程实践",
+      "tags": [
+        "agent",
+        "llm-agent",
+        "architecture",
+        "engineering-practice",
+        "prompt-engineering"
+      ]
+    },
+    {
+      "id": "几万字都讲不明白的Memory架构与思考",
+      "type": "source",
+      "title": "几万字都讲不明白的Memory架构与思考",
+      "tags": [
+        "memory",
+        "architecture",
+        "ai-agent",
+        "context-management"
+      ]
+    },
+    {
+      "id": "别让AI瞎猜了-用Harness-Engineering终结无限返工",
+      "type": "source",
+      "title": "别让AI瞎猜了-用Harness-Engineering终结无限返工",
+      "tags": [
+        "harness-engineering",
+        "database",
+        "rework"
+      ]
+    },
+    {
+      "id": "告别氛围编程-基于Harness治理和SDD的团队级AI研发范式",
+      "type": "source",
+      "title": "告别氛围编程-基于Harness治理和SDD的团队级AI研发范式",
+      "tags": [
+        "harness-engineering",
+        "sdd",
+        "vibe-coding"
+      ]
+    },
+    {
+      "id": "图文详解-如何设计一个亿级用户排行榜",
+      "type": "source",
+      "title": "图文详解：如何设计一个亿级用户排行榜？",
+      "tags": [
+        "system-design",
+        "architecture",
+        "redis"
+      ]
+    },
+    {
+      "id": "基于Cursor-Agent的流水线AI-CR实践",
+      "type": "source",
+      "title": "基于 Cursor Agent 的流水线 AI CR 实践",
+      "tags": [
+        "cursor",
+        "code-review",
+        "ai-coding"
+      ]
+    },
+    {
+      "id": "基于Harness加SDD加多仓管理模式的AI全栈开发实践",
+      "type": "source",
+      "title": "基于Harness加SDD加多仓管理模式的AI全栈开发实践",
+      "tags": [
+        "harness-engineering",
+        "sdd",
+        "full-stack"
+      ]
+    },
+    {
+      "id": "基于顶级Agent的Harness工程搭建式业务Agent评测方案",
+      "type": "source",
+      "title": "基于顶级 Agent（Claude Code）的 Harness 工程搭建式业务 Agent 评测方案",
+      "tags": [
+        "harness-engineering",
+        "agent-evaluation",
+        "claude-code",
+        "llm-as-judge",
+        "alibaba"
+      ]
+    },
+    {
+      "id": "大模型Agent-Skill功能在LLM-HTTP底层交互流中怎么承载",
+      "type": "source",
+      "title": "大模型Agent-Skill功能在LLM-HTTP底层交互流中怎么承载",
+      "tags": [
+        "skill",
+        "protocol",
+        "llm-http"
+      ]
+    },
+    {
+      "id": "如何写好Skill-一份终极实战经验手册",
+      "type": "source",
+      "title": "如何写好 Skill：一份终极实战经验手册",
+      "tags": [
+        "skill",
+        "agent",
+        "prompt-engineering",
+        "best-practice",
+        "tencent"
+      ]
+    },
+    {
+      "id": "如何构建一个更好的知识库",
+      "type": "source",
+      "title": "'如何构建一个更“好”的知识库？'",
+      "tags": [
+        "RAG",
+        "知识库",
+        "检索",
+        "向量数据库"
+      ]
+    },
+    {
+      "id": "如何让你的Agent更准确-MCP工具设计技巧",
+      "type": "source",
+      "title": "如何让你的 Agent 更准确：MCP 工具设计技巧",
+      "tags": [
+        "mcp",
+        "agent",
+        "tool-design",
+        "context-engineering"
+      ]
+    },
+    {
+      "id": "学习笔记-从-Agent-到-Skills-AI智能体架构的范式转变",
+      "type": "source",
+      "title": "学习笔记：从 Agent 到 Skills — AI 智能体架构的范式转变",
+      "tags": [
+        "skills",
+        "agent",
+        "mcp",
+        "context-engineering"
+      ]
+    },
+    {
+      "id": "实战报告-AI-Coding已经能做交付了但前提苛刻",
+      "type": "source",
+      "title": "【万字】实战报告：AI Coding 已经能做交付了，但前提苛刻",
+      "tags": [
+        "ai-coding",
+        "spec-driven-development",
+        "practice"
+      ]
+    },
+    {
+      "id": "工作流的Skill怎么写-从7个顶级Skill中提炼的模式与最佳实践",
+      "type": "source",
+      "title": "工作流的 Skill 怎么写",
+      "tags": [
+        "skill",
+        "workflow",
+        "agent",
+        "best-practices",
+        "prompt-engineering",
+        "llm"
+      ]
+    },
+    {
+      "id": "平平无奇的源码竟藏着Agent的核心秘密",
+      "type": "source",
+      "title": "平平无奇的源码竟藏着Agent的核心秘密",
+      "tags": [
+        "openclaw",
+        "agent",
+        "system-prompt",
+        "skill"
+      ]
+    },
+    {
+      "id": "开源Claude-Code工程级开发插件Superpowers完整上手攻略",
+      "type": "source",
+      "title": "开源 Claude Code 工程级开发插件 Superpowers 完整上手攻略",
+      "tags": [
+        "claude-code",
+        "plugin",
+        "subagents"
+      ]
+    },
+    {
+      "id": "当我把AI变成一个算法-Skill工程化设计的心路历程",
+      "type": "source",
+      "title": "当我把AI变成一个算法-Skill工程化设计的心路历程",
+      "tags": [
+        "skill",
+        "engineering",
+        "workflow"
+      ]
+    },
+    {
+      "id": "打造高可靠AI助手-Skill编排Workflow设计与Spec-Coding的深度实践",
+      "type": "source",
+      "title": "打造高可靠 AI 助手：Skill 编排、Workflow 设计与 Spec Coding 的深度实践",
+      "tags": [
+        "skills",
+        "workflow",
+        "spec-driven-development",
+        "context-engineering"
+      ]
+    },
+    {
+      "id": "拒绝重复造轮子-抽象80工作场景打造可复用的AI助手工厂",
+      "type": "source",
+      "title": "拒绝重复造轮子！抽象 80% 工作场景打造可复用的AI助手工厂",
+      "tags": [
+        "agent",
+        "tool-design",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "横向拆解六大Agent上下文压缩策略后我们做了第7个",
+      "type": "source",
+      "title": "横向拆解六大Agent上下文压缩策略后我们做了第7个",
+      "tags": [
+        "context-compaction",
+        "agent",
+        "context-engineering",
+        "prompt-cache",
+        "cloud-agent"
+      ]
+    },
+    {
+      "id": "淘天营销中后台生码工作流最佳实践",
+      "type": "source",
+      "title": "淘天营销中后台生码工作流最佳实践",
+      "tags": [
+        "taotian",
+        "marketing",
+        "code-generation",
+        "workflow",
+        "best-practices",
+        "mid-platform"
+      ]
+    },
+    {
+      "id": "深入浅出Harness-Engineering之核心模式与理念",
+      "type": "source",
+      "title": "深入浅出Harness Engineering之核心模式与理念",
+      "tags": [
+        "harness-engineering",
+        "llm",
+        "prompt-engineering",
+        "ai-agent",
+        "core-patterns"
+      ]
+    },
+    {
+      "id": "深入源码-Hermes-Agent如何实现Self-Improving",
+      "type": "source",
+      "title": "深入源码：Hermes Agent 如何实现 Self-Improving",
+      "tags": [
+        "agent",
+        "self-improving",
+        "source-code-analysis",
+        "llm-agent",
+        "hermes-agent"
       ]
     },
     {
@@ -120,6 +2059,56 @@
       ]
     },
     {
+      "id": "深入解析Chromium的AI-Coding开发体系",
+      "type": "source",
+      "title": "深入解析Chromium的AI-Coding开发体系",
+      "tags": [
+        "Chromium",
+        "AI-Coding",
+        "Prompt分层",
+        "Skills",
+        "评估体系",
+        "开源"
+      ]
+    },
+    {
+      "id": "深度解析Claude-Code在Prompt-Context-Harness的设计与实践",
+      "type": "source",
+      "title": "深度解析 Claude Code 在 Prompt / Context / Harness 的设计与实践",
+      "tags": [
+        "claude-code",
+        "prompt-engineering",
+        "context-engineering",
+        "harness-engineering",
+        "agent-system",
+        "context-compression"
+      ]
+    },
+    {
+      "id": "深度解析Hermes-Agent如何实现自进化",
+      "type": "source",
+      "title": "深度解析 Hermes Agent 如何实现自进化",
+      "tags": [
+        "hermes-agent",
+        "self-evolving",
+        "skill-generation",
+        "reinforcement-learning",
+        "agent-trajectory",
+        "context-engineering",
+        "prompt-engineering"
+      ]
+    },
+    {
+      "id": "深度解析LLM-Wiki-Obsidian-Wiki-GBrain",
+      "type": "source",
+      "title": "深度解析LLM-Wiki-Obsidian-Wiki-GBrain",
+      "tags": [
+        "llm-wiki",
+        "knowledge-engineering",
+        "gbrain"
+      ]
+    },
+    {
       "id": "深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践",
       "type": "source",
       "title": "深度解析 OpenClaw 在 Prompt / Context / Harness 三个维度中的设计哲学与实践",
@@ -128,6 +2117,26 @@
         "prompt-engineering",
         "context-engineering",
         "harness"
+      ]
+    },
+    {
+      "id": "深度解析腾讯云Agent-Memory-4层渐进式记忆管道",
+      "type": "source",
+      "title": "深度解析腾讯云Agent-Memory-4层渐进式记忆管道",
+      "tags": [
+        "memory",
+        "4-layer",
+        "progressive"
+      ]
+    },
+    {
+      "id": "火山引擎-OpenClaw内置Mem0",
+      "type": "source",
+      "title": "火山引擎：OpenClaw内置Mem0",
+      "tags": [
+        "openclaw",
+        "memory",
+        "mem0"
       ]
     },
     {
@@ -141,6 +2150,253 @@
       ]
     },
     {
+      "id": "用自然语言替代复杂代码-大淘宝技术",
+      "type": "source",
+      "title": "用自然语言替代复杂代码 | 大淘宝技术",
+      "tags": [
+        "ai-coding",
+        "agent",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "知识基座-让AI越用越懂业务的团队经验实践",
+      "type": "source",
+      "title": "知识基座：让AI越用越懂业务的团队经验实践",
+      "tags": [
+        "knowledge-base",
+        "ai-coding",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "知识库分层编排-从RAG到Agent-native-Knowledge-Context-Layer",
+      "type": "source",
+      "title": "知识库分层编排：从 RAG 到 Agent-native Knowledge Context Layer",
+      "tags": [
+        "RAG",
+        "知识库",
+        "GraphRAG",
+        "Agent",
+        "知识工程"
+      ]
+    },
+    {
+      "id": "缓存使用实践总结-以淘宝交易结算场景为例",
+      "type": "source",
+      "title": "缓存使用实践总结-以淘宝交易结算场景为例",
+      "tags": [
+        "cache",
+        "architecture",
+        "taobao",
+        "settlement"
+      ]
+    },
+    {
+      "id": "美团BI在指标平台和分析引擎上的探索和实践",
+      "type": "source",
+      "title": "美团 BI 在指标平台和分析引擎上的探索和实践",
+      "tags": [
+        "bi",
+        "data-engineering",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "腾讯云-兄弟你真的懂-Skill-吗",
+      "type": "source",
+      "title": "腾讯云开发者：兄弟！你真的懂 Skill 吗？",
+      "tags": [
+        "skills",
+        "openclaw",
+        "source-code-analysis"
+      ]
+    },
+    {
+      "id": "腾讯云Agent-Memory节省61-Percent-Token提升52-Percent成功率",
+      "type": "source",
+      "title": "腾讯云Agent-Memory节省61-Percent-Token提升52-Percent成功率",
+      "tags": [
+        "memory",
+        "token-saving",
+        "mermaid"
+      ]
+    },
+    {
+      "id": "规范驱动AI编程实战指南-OpenSpec-vs-Spec-Kit-vs-BMAD",
+      "type": "source",
+      "title": "规范驱动 AI 编程实战指南：OpenSpec vs Spec-Kit vs BMAD",
+      "tags": [
+        "spec-driven-development",
+        "ai-coding",
+        "tools"
+      ]
+    },
+    {
+      "id": "让-Claude-Code-拥有自我进化和记忆系统",
+      "type": "source",
+      "title": "让 Claude Code 拥有自我进化和记忆系统",
+      "tags": [
+        "Claude-Code",
+        "Agent-Memory",
+        "Hook",
+        "自我学习",
+        "向量检索"
+      ]
+    },
+    {
+      "id": "让AI变成Super员工的秘密-高效训练Skills",
+      "type": "source",
+      "title": "让AI变成Super员工的秘密：高效训练Skills",
+      "tags": [
+        "skills",
+        "agent",
+        "iteration"
+      ]
+    },
+    {
+      "id": "让Skill自己训练自己-8阶段Loop-3层评测-5维AND门控",
+      "type": "source",
+      "title": "让Skill自己训练自己-8阶段Loop-3层评测-5维AND门控",
+      "tags": [
+        "skill",
+        "self-evolution",
+        "training-loop"
+      ]
+    },
+    {
+      "id": "让项目管理也AI-Native-两个Git仓库干掉了周报",
+      "type": "source",
+      "title": "让项目管理也AI-Native-两个Git仓库干掉了周报",
+      "tags": [
+        "ai-native",
+        "project-management",
+        "git",
+        "automation"
+      ]
+    },
+    {
+      "id": "设计模式已死",
+      "type": "source",
+      "title": "设计模式已死？",
+      "tags": [
+        "设计模式",
+        "软件工程",
+        "Agent",
+        "多Agent系统"
+      ]
+    },
+    {
+      "id": "详尽地带你从零开始设计实现一个AI-Agent框架",
+      "type": "source",
+      "title": "详尽地带你从零开始设计实现一个AI Agent框架",
+      "tags": [
+        "ai-agent",
+        "agent-framework",
+        "react",
+        "context-engineering",
+        "deepseek",
+        "tutorial"
+      ]
+    },
+    {
+      "id": "读完这篇你就搞懂-DeepSeek-v4-了",
+      "type": "source",
+      "title": "读完这篇你就搞懂 DeepSeek v4 了",
+      "tags": [
+        "deepseek",
+        "deepseek-v4",
+        "llm",
+        "large-language-model",
+        "model-introduction"
+      ]
+    },
+    {
+      "id": "软件为何越做越乱-万字长文讲透软件的复杂性",
+      "type": "source",
+      "title": "软件为何越做越乱？万字长文讲透软件的复杂性",
+      "tags": [
+        "software-engineering",
+        "complexity",
+        "design"
+      ]
+    },
+    {
+      "id": "逆向深扒Claude-Code源码我发现了什么",
+      "type": "source",
+      "title": "逆向深扒Claude Code源码我发现了什么",
+      "tags": [
+        "claude-code",
+        "source-code-analysis",
+        "reverse-engineering",
+        "agent-architecture",
+        "tool-system"
+      ]
+    },
+    {
+      "id": "通用AI-Agent驱动网关路由安全审计实践",
+      "type": "source",
+      "title": "通用 AI Agent 驱动网关路由安全审计实践",
+      "tags": [
+        "ai-agent",
+        "security-audit",
+        "gateway",
+        "api-gateway",
+        "route-security",
+        "automation",
+        "llm",
+        "e-commerce"
+      ]
+    },
+    {
+      "id": "重新思考研发基础设施-当Agent成为第一公民",
+      "type": "source",
+      "title": "重新思考研发基础设施-当Agent成为第一公民",
+      "tags": [
+        "infra",
+        "agent-oriented",
+        "harness",
+        "credential-brokering",
+        "dry-run",
+        "dx"
+      ]
+    },
+    {
+      "id": "面向-Agent-Skill的-CLI-SSO-鉴权体系",
+      "type": "source",
+      "title": "面向 Agent Skill 的 CLI/SSO 鉴权体系：安全、无感、可追溯",
+      "tags": [
+        "Agent-Skill",
+        "SSO",
+        "CLI",
+        "鉴权",
+        "安全"
+      ]
+    },
+    {
+      "id": "面向LLM的架构设计-什么是真正的AI-Friendly架构",
+      "type": "source",
+      "title": "面向LLM的架构设计：什么是真正的AI Friendly架构",
+      "tags": [
+        "架构",
+        "AI-Friendly",
+        "Agent",
+        "Context-Engineering",
+        "Multi-Agent"
+      ]
+    },
+    {
+      "id": "高可用架构的工程智慧",
+      "type": "source",
+      "title": "高可用架构的工程智慧",
+      "tags": [
+        "high-availability",
+        "architecture",
+        "ecommerce",
+        "storage"
+      ]
+    },
+    {
       "id": "龙虾大脑核心揭秘1-OpenClaw处理流程链路解析",
       "type": "source",
       "title": "【龙虾大脑核心揭秘-1】OpenClaw处理流程链路解析",
@@ -151,6 +2407,92 @@
       ]
     },
     {
+      "id": "AI-Infra推理优化-主题",
+      "type": "topic",
+      "title": "AI Infra 推理优化主题",
+      "tags": [
+        "ai-infra",
+        "inference",
+        "optimization",
+        "gpu",
+        "vllm"
+      ]
+    },
+    {
+      "id": "AI-Skill体系-主题",
+      "type": "topic",
+      "title": "AI Skill 体系主题",
+      "tags": [
+        "ai-skill",
+        "skill-engineering",
+        "workflow",
+        "capability-standardization",
+        "pluggable-architecture",
+        "auditability",
+        "harness-engineering"
+      ]
+    },
+    {
+      "id": "Agentic-Engineering-主题",
+      "type": "topic",
+      "title": "Agentic Engineering 主题",
+      "tags": [
+        "agentic-engineering",
+        "vibe-coding",
+        "software-engineering",
+        "agent-architecture",
+        "context-engineering",
+        "harness-engineering",
+        "sdlc"
+      ]
+    },
+    {
+      "id": "Agent架构演进-主题",
+      "type": "topic",
+      "title": "Agent 架构演进主题",
+      "tags": [
+        "agent",
+        "architecture",
+        "evolution",
+        "multi-agent"
+      ]
+    },
+    {
+      "id": "Agent评测方法论",
+      "type": "topic",
+      "title": "Agent评测方法论",
+      "tags": [
+        "agent-evaluation",
+        "llm-as-judge",
+        "harness-engineering",
+        "quality-assurance"
+      ]
+    },
+    {
+      "id": "Claude-Code源码解析-主题",
+      "type": "topic",
+      "title": "Claude Code 源码解析主题",
+      "tags": [
+        "claude-code",
+        "source-code-analysis",
+        "agent-architecture",
+        "harness-engineering",
+        "context-engineering",
+        "prompt-engineering",
+        "typescript"
+      ]
+    },
+    {
+      "id": "Harness-Engineering-主题",
+      "type": "topic",
+      "title": "Harness Engineering 主题",
+      "tags": [
+        "harness-engineering",
+        "ai-engineering",
+        "methodology"
+      ]
+    },
+    {
       "id": "OpenClaw-digest-20260510",
       "type": "topic",
       "title": "OpenClaw 综合：架构总览、三大子系统的共同设计哲学与开放问题",
@@ -158,9 +2500,2235 @@
         "digest",
         "openclaw"
       ]
+    },
+    {
+      "id": "Skill开发最佳实践",
+      "type": "topic",
+      "title": "Skill开发最佳实践",
+      "tags": [
+        "skill",
+        "agent",
+        "best-practice",
+        "prompt-engineering"
+      ]
     }
   ],
   "edges": [
+    {
+      "from": "4000行代码撑起一个Agent框架-nanobot架构深度解析",
+      "to": "Agent架构演进-主题",
+      "weight": 2
+    },
+    {
+      "from": "4000行代码撑起一个Agent框架-nanobot架构深度解析",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "4000行代码撑起一个Agent框架-nanobot架构深度解析",
+      "to": "Nanobot",
+      "weight": 2
+    },
+    {
+      "from": "4000行代码撑起一个Agent框架-nanobot架构深度解析",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "800行代码实现OpenClaw的Tool消息总线子Agent管理架构",
+      "to": "Agent架构演进-主题",
+      "weight": 2
+    },
+    {
+      "from": "800行代码实现OpenClaw的Tool消息总线子Agent管理架构",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "AI-Agent在保险业务的落地实践",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "AI-Coding前端实践后的复盘总结",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "AI-Coding思考-从工具提效到范式变革",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "AI-Coding思考-从工具提效到范式变革",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "AI-Coding思考-从工具提效到范式变革",
+      "to": "Spec-Driven-Development",
+      "weight": 2
+    },
+    {
+      "from": "AI-Infra入门干货总结-大模型是如何高效推理的",
+      "to": "AI-Infra推理优化-主题",
+      "weight": 1
+    },
+    {
+      "from": "AI-Infra入门干货总结-大模型是如何高效推理的",
+      "to": "RAG",
+      "weight": 1
+    },
+    {
+      "from": "AI-Infra入门干货总结-大模型是如何高效推理的",
+      "to": "vLLM",
+      "weight": 1
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
+      "to": "AI-Infra入门干货总结-大模型是如何高效推理的",
+      "weight": 2
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
+      "to": "AI记忆的Git版本控制-Memoir-分层路径替代向量数据库",
+      "weight": 1
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
+      "to": "Agent-Memory",
+      "weight": 2
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
+      "to": "RAG",
+      "weight": 2
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
+      "to": "RAG全链路技术详解",
+      "weight": 2
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
+      "to": "Spring-AI-Session-API-大多数人用ChatMemory用错了场景",
+      "weight": 1
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
+      "to": "vLLM",
+      "weight": 2
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
+      "to": "万字入门AI-Infra-深入理解大模型中的数学与Infra优化",
+      "weight": 2
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
+      "to": "深度解析腾讯云Agent-Memory-4层渐进式记忆管道",
+      "weight": 1
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
+      "to": "腾讯云Agent-Memory节省61-Percent-Token提升52-Percent成功率",
+      "weight": 1
+    },
+    {
+      "from": "AI-Native时代-研发组织何去何从",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "AI-Native时代-研发组织何去何从",
+      "to": "Harness-Engineering-主题",
+      "weight": 1
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "AI-Skill体系全解-企业级AI能力标准化可插拔可审计",
+      "weight": 2
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "AI编程的下半场来了-学会用Agent-Skill解决编程的痛点问题",
+      "weight": 1
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "Agent-Skills-Teams架构演进过程及技术选型之道",
+      "weight": 1
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "Agent-Skills-打通可复用专业领域知识的最后一公里",
+      "weight": 2
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "Claude-Code-Skills-完全指南",
+      "weight": 1
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "Claude-Code-工程师亲授-OpenClaw-调教指南-Skills的工程化心法",
+      "weight": 1
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "Skills-从编程工具的配角到Agent研发的核心",
+      "weight": 1
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "Skills开发技能指南-别脱离具体场景谈方案",
+      "weight": 1
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "一文搞懂爆火的Skills原理及实践案例",
+      "weight": 1
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "大模型Agent-Skill功能在LLM-HTTP底层交互流中怎么承载",
+      "weight": 2
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "学习笔记-从-Agent-到-Skills-AI智能体架构的范式转变",
+      "weight": 1
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "工作流的Skill怎么写-从7个顶级Skill中提炼的模式与最佳实践",
+      "weight": 2
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "当我把AI变成一个算法-Skill工程化设计的心路历程",
+      "weight": 2
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "打造高可靠AI助手-Skill编排Workflow设计与Spec-Coding的深度实践",
+      "weight": 1
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "深度解析LLM-Wiki-Obsidian-Wiki-GBrain",
+      "weight": 1
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "腾讯云-兄弟你真的懂-Skill-吗",
+      "weight": 1
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "让AI变成Super员工的秘密-高效训练Skills",
+      "weight": 1
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "让Skill自己训练自己-8阶段Loop-3层评测-5维AND门控",
+      "weight": 2
+    },
+    {
+      "from": "AI-不缺智商缺纪律：一场-Harness-工程化实践",
+      "to": "Claude-Code",
+      "weight": 1
+    },
+    {
+      "from": "AI-不缺智商缺纪律：一场-Harness-工程化实践",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "AI-不缺智商缺纪律：一场-Harness-工程化实践",
+      "to": "Harness-Engineering-主题",
+      "weight": 1
+    },
+    {
+      "from": "AI-不缺智商缺纪律：一场-Harness-工程化实践",
+      "to": "OpenClaw",
+      "weight": 1
+    },
+    {
+      "from": "AI-不缺智商缺纪律：一场-Harness-工程化实践",
+      "to": "Skill开发最佳实践",
+      "weight": 1
+    },
+    {
+      "from": "AI-答疑助手优化实践-从RAG到LightRAG的全链路升级",
+      "to": "AI-Infra推理优化-主题",
+      "weight": 1
+    },
+    {
+      "from": "AI-答疑助手优化实践-从RAG到LightRAG的全链路升级",
+      "to": "RAG",
+      "weight": 1
+    },
+    {
+      "from": "AI研发自动化-Wiki知识库+技能包",
+      "to": "AI-Skill体系全解-企业级AI能力标准化可插拔可审计",
+      "weight": 1
+    },
+    {
+      "from": "AI研发自动化-Wiki知识库+技能包",
+      "to": "Agentic-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "AI研发自动化-Wiki知识库+技能包",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "AI编程的下半场来了-学会用Agent-Skill解决编程的痛点问题",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "AI编程的下半场来了-学会用Agent-Skill解决编程的痛点问题",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "AI编程的下半场来了-学会用Agent-Skill解决编程的痛点问题",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "AI记忆的Git版本控制-Memoir-分层路径替代向量数据库",
+      "to": "AI-Infra推理优化-主题",
+      "weight": 1
+    },
+    {
+      "from": "AI记忆的Git版本控制-Memoir-分层路径替代向量数据库",
+      "to": "Agent-Memory",
+      "weight": 1
+    },
+    {
+      "from": "Agent-DX",
+      "to": "AI-Friendly架构",
+      "weight": 2
+    },
+    {
+      "from": "Agent-DX",
+      "to": "Agent-Oriented-Infra",
+      "weight": 2
+    },
+    {
+      "from": "Agent-DX",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Agent-DX",
+      "to": "重新思考研发基础设施-当Agent成为第一公民",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Memory",
+      "to": "AI记忆的Git版本控制-Memoir-分层路径替代向量数据库",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Memory",
+      "to": "Agent-Memory评测全景-基准评估与记忆系统",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Memory",
+      "to": "LOCOMO",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Memory",
+      "to": "LONGMEMEVAL",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Memory",
+      "to": "M3-Agent",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Memory",
+      "to": "MUSE",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Memory",
+      "to": "Mem0",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Memory",
+      "to": "MemBench",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Memory",
+      "to": "MemoryAgentBench",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Memory",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Memory",
+      "to": "OpenClaw-双源记忆系统",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Memory",
+      "to": "RAG",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Memory",
+      "to": "RMM",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Memory",
+      "to": "Spring-AI-Session-API-大多数人用ChatMemory用错了场景",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Memory",
+      "to": "THEANINE",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Memory",
+      "to": "从架构到代码-深入理解OpenClaw的双源记忆系统",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Memory",
+      "to": "深度解析腾讯云Agent-Memory-4层渐进式记忆管道",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Memory",
+      "to": "腾讯云Agent-Memory节省61-Percent-Token提升52-Percent成功率",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Memory",
+      "to": "让-Claude-Code-拥有自我进化和记忆系统",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Memory评测全景-基准评估与记忆系统",
+      "to": "Agent-Memory",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Memory评测全景-基准评估与记忆系统",
+      "to": "LOCOMO",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Memory评测全景-基准评估与记忆系统",
+      "to": "LONGMEMEVAL",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Memory评测全景-基准评估与记忆系统",
+      "to": "M3-Agent",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Memory评测全景-基准评估与记忆系统",
+      "to": "MUSE",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Memory评测全景-基准评估与记忆系统",
+      "to": "Mem0",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Memory评测全景-基准评估与记忆系统",
+      "to": "MemBench",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Memory评测全景-基准评估与记忆系统",
+      "to": "MemoryAgentBench",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Memory评测全景-基准评估与记忆系统",
+      "to": "RMM",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Memory评测全景-基准评估与记忆系统",
+      "to": "THEANINE",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Oriented-Infra",
+      "to": "AI-Friendly架构",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Oriented-Infra",
+      "to": "Agent-DX",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Oriented-Infra",
+      "to": "Agentic-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Oriented-Infra",
+      "to": "Credential-Brokering",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Oriented-Infra",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Oriented-Infra",
+      "to": "重新思考研发基础设施-当Agent成为第一公民",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Skill-Auth",
+      "to": "Credential-Brokering",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Skill-Auth",
+      "to": "OpenClaw",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Skill-Auth",
+      "to": "sso-cli",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Skill-Auth",
+      "to": "面向-Agent-Skill的-CLI-SSO-鉴权体系",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Skills-Teams架构演进过程及技术选型之道",
+      "to": "AI-Skill体系-主题",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Skills-Teams架构演进过程及技术选型之道",
+      "to": "Agent架构演进-主题",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Skills-Teams架构演进过程及技术选型之道",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Skills-Teams架构演进过程及技术选型之道",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Skills-打通可复用专业领域知识的最后一公里",
+      "to": "Claude-Code",
+      "weight": 1
+    },
+    {
+      "from": "Agent-Skills-打通可复用专业领域知识的最后一公里",
+      "to": "OpenClaw-Skills",
+      "weight": 1
+    },
+    {
+      "from": "Agent-skill-迭代式编写实战",
+      "to": "Agentic-Engineering-主题",
+      "weight": 1
+    },
+    {
+      "from": "Agent-skill-迭代式编写实战",
+      "to": "Claude-Code",
+      "weight": 1
+    },
+    {
+      "from": "Agent-skill-迭代式编写实战",
+      "to": "MCP",
+      "weight": 1
+    },
+    {
+      "from": "Agent-skill-迭代式编写实战",
+      "to": "OpenClaw-Skills",
+      "weight": 1
+    },
+    {
+      "from": "Agent-skill-迭代式编写实战",
+      "to": "Skill开发最佳实践",
+      "weight": 1
+    },
+    {
+      "from": "Agentic-Engineering",
+      "to": "Agent从一问一答到自主执行面临哪些挑战",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering",
+      "to": "Agent核心技术概念与范式发生了哪些演变",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering",
+      "to": "Anthropic-Effective-Context-Engineering-for-AI-Agents",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering",
+      "to": "Anthropic-Effective-harnesses-for-long-running-agents",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering",
+      "to": "Hermes-Agent",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering",
+      "to": "Spec-Driven-Development",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering",
+      "to": "从0开发大模型的17种Agent架构演进详细拆解",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering",
+      "to": "从Vibe-Coding到Agentic-Engineering-重构后台开发全流程",
+      "weight": 1
+    },
+    {
+      "from": "Agentic-Engineering",
+      "to": "从第一性原理思考Agentic-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering",
+      "to": "从语言涌现到协作涌现-如何让AI产生高质量决策",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering",
+      "to": "从零设计生产级Multi-Agent-Harness",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "Agentic-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "Agent核心技术概念与范式发生了哪些演变",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "Anthropic-Effective-Context-Engineering-for-AI-Agents",
+      "weight": 1
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "Anthropic-Effective-harnesses-for-long-running-agents",
+      "weight": 1
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "Hermes-Agent",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "Spec-Driven-Development",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "从0开发大模型的17种Agent架构演进详细拆解",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "从Vibe-Coding到Agentic-Engineering-重构后台开发全流程",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "从第一性原理思考Agentic-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "从语言涌现到协作涌现-如何让AI产生高质量决策",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "从零设计生产级Multi-Agent-Harness",
+      "weight": 1
+    },
+    {
+      "from": "Agent从一问一答到自主执行面临哪些挑战",
+      "to": "Agent架构演进-主题",
+      "weight": 1
+    },
+    {
+      "from": "Agent从一问一答到自主执行面临哪些挑战",
+      "to": "OpenClaw",
+      "weight": 1
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "AI-Agent在保险业务的落地实践",
+      "weight": 1
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "Agent-Memory",
+      "weight": 2
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "Agent-Skills-Teams架构演进过程及技术选型之道",
+      "weight": 1
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "Agent从一问一答到自主执行面临哪些挑战",
+      "weight": 1
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "Agent核心技术概念与范式发生了哪些演变",
+      "weight": 2
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "Harness-Engineering-来龙去脉",
+      "weight": 1
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "OpenClaw-SandBox",
+      "weight": 2
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "一文讲透从0构建AI-Agent",
+      "weight": 1
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "业务逻辑的坍塌-当应用层只剩下胶水代码",
+      "weight": 1
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "从0到1搭建Agent-原理分析及个人助手实践",
+      "weight": 2
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "从0开发大模型的17种Agent架构演进详细拆解",
+      "weight": 2
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "从语言涌现到协作涌现-如何让AI产生高质量决策",
+      "weight": 1
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "从零设计生产级Multi-Agent-Harness",
+      "weight": 1
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "企业级Agent多智能体架构与选型指南",
+      "weight": 1
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "大模型Agent-Skill功能在LLM-HTTP底层交互流中怎么承载",
+      "weight": 1
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "平平无奇的源码竟藏着Agent的核心秘密",
+      "weight": 1
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "当我把AI变成一个算法-Skill工程化设计的心路历程",
+      "weight": 1
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "深度解析LLM-Wiki-Obsidian-Wiki-GBrain",
+      "weight": 1
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "让Skill自己训练自己-8阶段Loop-3层评测-5维AND门控",
+      "weight": 1
+    },
+    {
+      "from": "Agent核心技术概念与范式发生了哪些演变",
+      "to": "Agent架构演进-主题",
+      "weight": 1
+    },
+    {
+      "from": "Agent核心技术概念与范式发生了哪些演变",
+      "to": "OpenClaw",
+      "weight": 1
+    },
+    {
+      "from": "Agent核心技术概念与范式发生了哪些演变",
+      "to": "OpenClaw-Skills",
+      "weight": 1
+    },
+    {
+      "from": "Agent评测方法论",
+      "to": "Agent-Memory评测全景-基准评估与记忆系统",
+      "weight": 1
+    },
+    {
+      "from": "Agent评测方法论",
+      "to": "Anthropic",
+      "weight": 1
+    },
+    {
+      "from": "Agent评测方法论",
+      "to": "Claude-Code",
+      "weight": 1
+    },
+    {
+      "from": "Agent评测方法论",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "Agent评测方法论",
+      "to": "Prompt评估体系",
+      "weight": 1
+    },
+    {
+      "from": "Agent评测方法论",
+      "to": "基于顶级Agent的Harness工程搭建式业务Agent评测方案",
+      "weight": 1
+    },
+    {
+      "from": "Anthropic",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "Anthropic",
+      "to": "Claude-Code-源码拆解-从启动到多Agent扩展层",
+      "weight": 2
+    },
+    {
+      "from": "Anthropic",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Anthropic",
+      "to": "MCP",
+      "weight": 2
+    },
+    {
+      "from": "Anthropic",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "Anthropic",
+      "to": "你不知道的-Claude-Code-架构治理与工程实践",
+      "weight": 2
+    },
+    {
+      "from": "Anthropic-Effective-Context-Engineering-for-AI-Agents",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "Anthropic-Effective-harnesses-for-long-running-agents",
+      "to": "Agent架构演进-主题",
+      "weight": 1
+    },
+    {
+      "from": "Anthropic-Effective-harnesses-for-long-running-agents",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "Anthropic-Effective-harnesses-for-long-running-agents",
+      "to": "Harness-Engineering-主题",
+      "weight": 1
+    },
+    {
+      "from": "AutoRAG",
+      "to": "RAG",
+      "weight": 1
+    },
+    {
+      "from": "AutoRAG",
+      "to": "RAGAS",
+      "weight": 1
+    },
+    {
+      "from": "AutoRAG",
+      "to": "如何构建一个更好的知识库",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code",
+      "to": "Agent-Memory",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code",
+      "to": "Claude-Code-Harness工程-数仓侧落地方案-得物技术",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code",
+      "to": "Claude-Code-源码拆解-从启动到多Agent扩展层",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code",
+      "to": "Claude-Code-源码架构解析-从启动Prompt到权限管道",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code",
+      "to": "Claude-Code-长任务为什么不容易跑偏",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code",
+      "to": "Claude-Code-顶级开发团队设计的Harness工程项目源码什么样",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code",
+      "to": "Claude-Code源码泄露深度解析-51.2万行代码里藏着怎样的AI编程系统",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code",
+      "to": "Claude-Code防封号指南-国内终极解决方案",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code",
+      "to": "Claude-code云端部署-魔改sdk实现http流式调用",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code",
+      "to": "Hermes-Agent",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code",
+      "to": "OpenAI-Codex-Plugin-for-Claude-Code源码剖析",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code",
+      "to": "Spec-Driven-Development",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code",
+      "to": "你不知道的-Claude-Code-架构治理与工程实践",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code",
+      "to": "深度解析Claude-Code在Prompt-Context-Harness的设计与实践",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code",
+      "to": "让-Claude-Code-拥有自我进化和记忆系统",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code",
+      "to": "逆向深扒Claude-Code源码我发现了什么",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-Harness工程-数仓侧落地方案-得物技术",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code-Harness工程-数仓侧落地方案-得物技术",
+      "to": "Harness-Engineering-主题",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code-Skills-完全指南",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-Skills-完全指南",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-Skills-完全指南",
+      "to": "Claude-Code源码解析-主题",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-Skills-完全指南",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-一篇带你从入门到精通",
+      "to": "AI-Skill体系-主题",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code-一篇带你从入门到精通",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-一篇带你从入门到精通",
+      "to": "Claude-Code源码解析-主题",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-一篇带你从入门到精通",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-加-OpenSpec-正在加速-AICoding-落地",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-加-OpenSpec-正在加速-AICoding-落地",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-加-OpenSpec-正在加速-AICoding-落地",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-加-OpenSpec-正在加速-AICoding-落地",
+      "to": "Spec-Driven-Development",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-工程师亲授-OpenClaw-调教指南-Skills的工程化心法",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-工程师亲授-OpenClaw-调教指南-Skills的工程化心法",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-工程师亲授-OpenClaw-调教指南-Skills的工程化心法",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-最佳实践-可验证可治理可分层的工程现实",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-最佳实践-可验证可治理可分层的工程现实",
+      "to": "Claude-Code源码解析-主题",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-最佳实践-可验证可治理可分层的工程现实",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-最佳实践-可验证可治理可分层的工程现实",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-长任务为什么不容易跑偏",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "Claude-Code-Skills-完全指南",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "Claude-Code-一篇带你从入门到精通",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "Claude-Code-最佳实践-可验证可治理可分层的工程现实",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "Claude-Code-源码拆解-从启动到多Agent扩展层",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "Claude-Code-源码架构解析-从启动Prompt到权限管道",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "Claude-Code-长任务为什么不容易跑偏",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "Claude-Code-顶级开发团队设计的Harness工程项目源码什么样",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "Claude-Code源码泄露深度解析-51.2万行代码里藏着怎样的AI编程系统",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "从IDE到Terminal-适合后端宝宝体质的Claude-Code工作流",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "你不知道的-Claude-Code-架构治理与工程实践",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "开源Claude-Code工程级开发插件Superpowers完整上手攻略",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "深度解析Claude-Code在Prompt-Context-Harness的设计与实践",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "逆向深扒Claude-Code源码我发现了什么",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code防封号指南-国内终极解决方案",
+      "to": "Anthropic",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code防封号指南-国内终极解决方案",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "Claude-code云端部署-魔改sdk实现http流式调用",
+      "to": "Agent架构演进-主题",
+      "weight": 2
+    },
+    {
+      "from": "Claude-code云端部署-魔改sdk实现http流式调用",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Claude-code云端部署-魔改sdk实现http流式调用",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "CodeBuddy",
+      "to": "Claude-Code",
+      "weight": 1
+    },
+    {
+      "from": "CodeBuddy",
+      "to": "Cursor",
+      "weight": 1
+    },
+    {
+      "from": "CodeBuddy",
+      "to": "Harness-Engineering落地前先想清楚这几个问题",
+      "weight": 1
+    },
+    {
+      "from": "Credential-Brokering",
+      "to": "Agent-Oriented-Infra",
+      "weight": 2
+    },
+    {
+      "from": "Credential-Brokering",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Credential-Brokering",
+      "to": "重新思考研发基础设施-当Agent成为第一公民",
+      "weight": 2
+    },
+    {
+      "from": "Credential-Brokering",
+      "to": "面向-Agent-Skill的-CLI-SSO-鉴权体系",
+      "weight": 1
+    },
+    {
+      "from": "Cross-Encoder",
+      "to": "HyDE",
+      "weight": 1
+    },
+    {
+      "from": "Cross-Encoder",
+      "to": "RAG",
+      "weight": 1
+    },
+    {
+      "from": "Cross-Encoder",
+      "to": "RAGAS",
+      "weight": 1
+    },
+    {
+      "from": "Cross-Encoder",
+      "to": "如何构建一个更好的知识库",
+      "weight": 1
+    },
+    {
+      "from": "Cursor",
+      "to": "Claude-Code",
+      "weight": 1
+    },
+    {
+      "from": "Cursor",
+      "to": "CodeBuddy",
+      "weight": 1
+    },
+    {
+      "from": "Cursor",
+      "to": "Harness-Engineering落地前先想清楚这几个问题",
+      "weight": 1
+    },
+    {
+      "from": "DeepSeek-V4",
+      "to": "AI-Infra入门干货总结-大模型是如何高效推理的",
+      "weight": 2
+    },
+    {
+      "from": "DeepSeek-V4",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "DeepSeek-V4",
+      "to": "OpenClaw",
+      "weight": 1
+    },
+    {
+      "from": "DeepSeek-V4",
+      "to": "RAG",
+      "weight": 2
+    },
+    {
+      "from": "DeepSeek-V4",
+      "to": "vLLM",
+      "weight": 2
+    },
+    {
+      "from": "DeepSeek-V4",
+      "to": "串讲LLM和Agent的核心原理以及各种术语",
+      "weight": 2
+    },
+    {
+      "from": "GraphRAG",
+      "to": "LightRAG",
+      "weight": 2
+    },
+    {
+      "from": "GraphRAG",
+      "to": "Pyramid-KB",
+      "weight": 2
+    },
+    {
+      "from": "GraphRAG",
+      "to": "RAG",
+      "weight": 2
+    },
+    {
+      "from": "GraphRAG",
+      "to": "RAG全链路技术详解",
+      "weight": 1
+    },
+    {
+      "from": "GraphRAG",
+      "to": "从RAG到GraphRAG-货拉拉元数据检索应用实践",
+      "weight": 1
+    },
+    {
+      "from": "GraphRAG",
+      "to": "知识库分层编排-从RAG到Agent-native-Knowledge-Context-Layer",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "4000行代码撑起一个Agent框架-nanobot架构深度解析",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "AI-不缺智商缺纪律：一场-Harness-工程化实践",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "Agent-Oriented-Infra",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "Claude-Code-Harness工程-数仓侧落地方案-得物技术",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "Credential-Brokering",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "Harness-Engineering-来龙去脉",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "Harness-Engineering-耗时一周将AI-Coding率提升至90",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "Harness-Engineering-长程自动化AI-Coding-Skills开发实践",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "Harness-Engineering实践心得-如何高效驾驭AI",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "Harness-Engineering落地前先想清楚这几个问题",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "Harness不是目的-知识才是护城河",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "Harness的尽头不是缰绳是镜子",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "OpenHarness",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "QQ音乐Harness-Engineering实践",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "Spec-Driven-Development",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "一文讲透-Harness-Engineering即控制论",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "一文讲透如何构建Harness-六大组件全解析",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "万字干货-Harness-Engineering如何工程化落地",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "从Prompt-Context到Harness-工程的三次进化与终局之战",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "从玩具到生产力-用真实项目讲透AI-Agent的Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "别让AI瞎猜了-用Harness-Engineering终结无限返工",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "告别氛围编程-基于Harness治理和SDD的团队级AI研发范式",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "基于顶级Agent的Harness工程搭建式业务Agent评测方案",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "如何写好Skill-一份终极实战经验手册",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "深入浅出Harness-Engineering之核心模式与理念",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "重新思考研发基础设施-当Agent成为第一公民",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "4000行代码撑起一个Agent框架-nanobot架构深度解析",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "AI-Coding思考-从工具提效到范式变革",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "Claude-Code-Harness工程-数仓侧落地方案-得物技术",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "Claude-Code-加-OpenSpec-正在加速-AICoding-落地",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "Claude-Code-最佳实践-可验证可治理可分层的工程现实",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "Harness-Engineering-来了-SDD-还有意义吗",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "Harness-Engineering-来龙去脉",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "Harness-Engineering-耗时一周将AI-Coding率提升至90",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "Harness-Engineering-长程自动化AI-Coding-Skills开发实践",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "Harness不是目的-知识才是护城河",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "Harness的尽头不是缰绳是镜子",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "OpenHarness",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "QQ音乐Harness-Engineering实践",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "Spec-Driven-Development",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "TRAE-2026企业级AI编程实践手册",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "从Prompt-Context到Harness-工程的三次进化与终局之战",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "你不知道的-Claude-Code-架构治理与工程实践",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "别让AI瞎猜了-用Harness-Engineering终结无限返工",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "告别氛围编程-基于Harness治理和SDD的团队级AI研发范式",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "如何让你的Agent更准确-MCP工具设计技巧",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "实战报告-AI-Coding已经能做交付了但前提苛刻",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "规范驱动AI编程实战指南-OpenSpec-vs-Spec-Kit-vs-BMAD",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-来了-SDD-还有意义吗",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-来了-SDD-还有意义吗",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-来了-SDD-还有意义吗",
+      "to": "Mitchell-Hashimoto",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-来了-SDD-还有意义吗",
+      "to": "Spec-Driven-Development",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-来龙去脉",
+      "to": "Agent-Memory",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-来龙去脉",
+      "to": "Agent从一问一答到自主执行面临哪些挑战",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-来龙去脉",
+      "to": "Agent架构演进-主题",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-来龙去脉",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-来龙去脉",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-来龙去脉",
+      "to": "Hermes-Agent",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-来龙去脉",
+      "to": "Mitchell-Hashimoto",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-来龙去脉",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-来龙去脉",
+      "to": "从Prompt-Context到Harness-工程的三次进化与终局之战",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-耗时一周将AI-Coding率提升至90",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-耗时一周将AI-Coding率提升至90",
+      "to": "Harness-Engineering-主题",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-长程自动化AI-Coding-Skills开发实践",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-长程自动化AI-Coding-Skills开发实践",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-长程自动化AI-Coding-Skills开发实践",
+      "to": "OpenClaw",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering落地前先想清楚这几个问题",
+      "to": "AI-Native软件工程",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering落地前先想清楚这几个问题",
+      "to": "Claude-Code",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering落地前先想清楚这几个问题",
+      "to": "CodeBuddy",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering落地前先想清楚这几个问题",
+      "to": "Cursor",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering落地前先想清楚这几个问题",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering落地前先想清楚这几个问题",
+      "to": "Harness-Engineering-主题",
+      "weight": 1
+    },
+    {
+      "from": "Harness不是目的-知识才是护城河",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "Harness不是目的-知识才是护城河",
+      "to": "Harness-Engineering-主题",
+      "weight": 1
+    },
+    {
+      "from": "Harness的尽头不是缰绳是镜子",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "Harness的尽头不是缰绳是镜子",
+      "to": "Harness-Engineering-主题",
+      "weight": 1
+    },
+    {
+      "from": "Hermes-Agent",
+      "to": "Agent从一问一答到自主执行面临哪些挑战",
+      "weight": 2
+    },
+    {
+      "from": "Hermes-Agent",
+      "to": "Agent核心技术概念与范式发生了哪些演变",
+      "weight": 2
+    },
+    {
+      "from": "Hermes-Agent",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Hermes-Agent",
+      "to": "Harness-Engineering-来龙去脉",
+      "weight": 2
+    },
+    {
+      "from": "Hermes-Agent",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "Hermes-Agent",
+      "to": "SkillOpt",
+      "weight": 2
+    },
+    {
+      "from": "Hermes-Agent",
+      "to": "一文搞懂Hermes-新顶流Agent如何从经验中自我进化",
+      "weight": 2
+    },
+    {
+      "from": "Hermes-Agent",
+      "to": "深入源码-Hermes-Agent如何实现Self-Improving",
+      "weight": 1
+    },
+    {
+      "from": "Hermes-Agent",
+      "to": "深度解析Hermes-Agent如何实现自进化",
+      "weight": 2
+    },
+    {
+      "from": "Hermes-Agent",
+      "to": "深度解析LLM-Wiki-Obsidian-Wiki-GBrain",
+      "weight": 2
+    },
+    {
+      "from": "Hook-机制",
+      "to": "Claude-Code",
+      "weight": 1
+    },
+    {
+      "from": "Hook-机制",
+      "to": "Instinct-Engine",
+      "weight": 1
+    },
+    {
+      "from": "Hook-机制",
+      "to": "让-Claude-Code-拥有自我进化和记忆系统",
+      "weight": 1
+    },
+    {
+      "from": "HyDE",
+      "to": "Cross-Encoder",
+      "weight": 1
+    },
+    {
+      "from": "HyDE",
+      "to": "RAG",
+      "weight": 1
+    },
+    {
+      "from": "HyDE",
+      "to": "RAGAS",
+      "weight": 1
+    },
+    {
+      "from": "HyDE",
+      "to": "如何构建一个更好的知识库",
+      "weight": 1
+    },
+    {
+      "from": "Instinct-Engine",
+      "to": "Agent-Memory",
+      "weight": 1
+    },
+    {
+      "from": "Instinct-Engine",
+      "to": "Claude-Code",
+      "weight": 1
+    },
+    {
+      "from": "Instinct-Engine",
+      "to": "Hook-机制",
+      "weight": 1
+    },
+    {
+      "from": "Instinct-Engine",
+      "to": "让-Claude-Code-拥有自我进化和记忆系统",
+      "weight": 1
+    },
+    {
+      "from": "JavaGuide-LLM基础扫盲",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "LOCOMO",
+      "to": "Agent-Memory",
+      "weight": 2
+    },
+    {
+      "from": "LOCOMO",
+      "to": "Agent-Memory评测全景-基准评估与记忆系统",
+      "weight": 2
+    },
+    {
+      "from": "LOCOMO",
+      "to": "Mem0",
+      "weight": 2
+    },
+    {
+      "from": "LOCOMO",
+      "to": "MemoryAgentBench",
+      "weight": 2
+    },
+    {
+      "from": "LONGMEMEVAL",
+      "to": "Agent-Memory",
+      "weight": 2
+    },
+    {
+      "from": "LONGMEMEVAL",
+      "to": "Agent-Memory评测全景-基准评估与记忆系统",
+      "weight": 2
+    },
+    {
+      "from": "LONGMEMEVAL",
+      "to": "MemBench",
+      "weight": 2
+    },
+    {
+      "from": "LONGMEMEVAL",
+      "to": "MemoryAgentBench",
+      "weight": 2
+    },
+    {
+      "from": "Late-Chunking",
+      "to": "RAG",
+      "weight": 1
+    },
+    {
+      "from": "Late-Chunking",
+      "to": "如何构建一个更好的知识库",
+      "weight": 1
+    },
+    {
+      "from": "LightRAG",
+      "to": "AI-答疑助手优化实践-从RAG到LightRAG的全链路升级",
+      "weight": 2
+    },
+    {
+      "from": "LightRAG",
+      "to": "Agent-Memory",
+      "weight": 1
+    },
+    {
+      "from": "LightRAG",
+      "to": "RAG",
+      "weight": 2
+    },
+    {
+      "from": "LightRAG",
+      "to": "RAG全链路技术详解",
+      "weight": 2
+    },
+    {
+      "from": "LightRAG",
+      "to": "vLLM",
+      "weight": 2
+    },
+    {
+      "from": "M3-Agent",
+      "to": "Agent-Memory",
+      "weight": 2
+    },
+    {
+      "from": "M3-Agent",
+      "to": "Agent-Memory评测全景-基准评估与记忆系统",
+      "weight": 2
+    },
+    {
+      "from": "M3-Agent",
+      "to": "Mem0",
+      "weight": 2
+    },
+    {
+      "from": "MCP",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "MCP",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "MCP",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "MCP",
+      "to": "你不知道的-Claude-Code-架构治理与工程实践",
+      "weight": 2
+    },
+    {
+      "from": "MCP",
+      "to": "如何让你的Agent更准确-MCP工具设计技巧",
+      "weight": 2
+    },
+    {
+      "from": "MCP",
+      "to": "学习笔记-从-Agent-到-Skills-AI智能体架构的范式转变",
+      "weight": 2
+    },
+    {
+      "from": "MUSE",
+      "to": "Agent-Memory",
+      "weight": 2
+    },
+    {
+      "from": "MUSE",
+      "to": "Agent-Memory评测全景-基准评估与记忆系统",
+      "weight": 2
+    },
+    {
+      "from": "MUSE",
+      "to": "LOCOMO",
+      "weight": 2
+    },
+    {
+      "from": "Mem0",
+      "to": "Agent-Memory",
+      "weight": 2
+    },
+    {
+      "from": "Mem0",
+      "to": "Agent-Memory评测全景-基准评估与记忆系统",
+      "weight": 2
+    },
+    {
+      "from": "Mem0",
+      "to": "LOCOMO",
+      "weight": 2
+    },
+    {
+      "from": "Mem0",
+      "to": "M3-Agent",
+      "weight": 1
+    },
+    {
+      "from": "Mem0",
+      "to": "RAG",
+      "weight": 2
+    },
+    {
+      "from": "MemBench",
+      "to": "Agent-Memory",
+      "weight": 2
+    },
+    {
+      "from": "MemBench",
+      "to": "Agent-Memory评测全景-基准评估与记忆系统",
+      "weight": 2
+    },
+    {
+      "from": "MemBench",
+      "to": "LONGMEMEVAL",
+      "weight": 2
+    },
+    {
+      "from": "MemBench",
+      "to": "MemoryAgentBench",
+      "weight": 2
+    },
+    {
+      "from": "MemoryAgentBench",
+      "to": "Agent-Memory",
+      "weight": 2
+    },
+    {
+      "from": "MemoryAgentBench",
+      "to": "Agent-Memory评测全景-基准评估与记忆系统",
+      "weight": 2
+    },
+    {
+      "from": "MemoryAgentBench",
+      "to": "LOCOMO",
+      "weight": 2
+    },
+    {
+      "from": "MemoryAgentBench",
+      "to": "LONGMEMEVAL",
+      "weight": 2
+    },
+    {
+      "from": "MemoryAgentBench",
+      "to": "MemBench",
+      "weight": 2
+    },
+    {
+      "from": "MiniCPM5-1B",
+      "to": "MiniCPM5-1B-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "MiniCPM5-1B",
+      "to": "vLLM",
+      "weight": 2
+    },
+    {
+      "from": "MiniCPM5-1B-GitHub",
+      "to": "MiniCPM5-1B",
+      "weight": 2
+    },
+    {
+      "from": "Mitchell-Hashimoto",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Mitchell-Hashimoto",
+      "to": "Harness-Engineering-来龙去脉",
+      "weight": 2
+    },
+    {
+      "from": "Nanobot",
+      "to": "4000行代码撑起一个Agent框架-nanobot架构深度解析",
+      "weight": 1
+    },
+    {
+      "from": "Nanobot",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "Nanobot",
+      "to": "MCP",
+      "weight": 1
+    },
+    {
+      "from": "Nanobot",
+      "to": "Nanobot-OpenClaw轻量实现的底层原理解析",
+      "weight": 1
+    },
+    {
+      "from": "Nanobot",
+      "to": "OpenClaw",
+      "weight": 1
+    },
+    {
+      "from": "Nanobot",
+      "to": "OpenClaw-Skills",
+      "weight": 1
+    },
+    {
+      "from": "Nanobot",
+      "to": "ReAct",
+      "weight": 1
+    },
+    {
+      "from": "Nanobot-OpenClaw轻量实现的底层原理解析",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "OpenAI-Codex-Plugin-for-Claude-Code源码剖析",
+      "to": "Agent架构演进-主题",
+      "weight": 2
+    },
+    {
+      "from": "OpenAI-Codex-Plugin-for-Claude-Code源码剖析",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "OpenAI-Codex-Plugin-for-Claude-Code源码剖析",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw",
+      "to": "800行代码实现OpenClaw的Tool消息总线子Agent管理架构",
+      "weight": 1
+    },
+    {
+      "from": "OpenClaw",
+      "to": "Agent-Memory",
+      "weight": 1
+    },
+    {
+      "from": "OpenClaw",
+      "to": "Agent核心技术概念与范式发生了哪些演变",
+      "weight": 1
+    },
+    {
+      "from": "OpenClaw",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "OpenClaw",
+      "to": "Harness-Engineering-来龙去脉",
+      "weight": 1
+    },
+    {
+      "from": "OpenClaw",
+      "to": "Nanobot-OpenClaw轻量实现的底层原理解析",
+      "weight": 1
+    },
     {
       "from": "OpenClaw",
       "to": "OpenClaw-Agent与Skill架构详解",
@@ -193,6 +4761,11 @@
     },
     {
       "from": "OpenClaw",
+      "to": "从0到1搭建Agent-原理分析及个人助手实践",
+      "weight": 1
+    },
+    {
+      "from": "OpenClaw",
       "to": "从架构到代码-深入理解OpenClaw的双源记忆系统",
       "weight": 2
     },
@@ -200,6 +4773,11 @@
       "from": "OpenClaw",
       "to": "以OpenClaw为例介绍AI-Agent的运作原理",
       "weight": 2
+    },
+    {
+      "from": "OpenClaw",
+      "to": "平平无奇的源码竟藏着Agent的核心秘密",
+      "weight": 1
     },
     {
       "from": "OpenClaw",
@@ -402,6 +4980,581 @@
       "weight": 4
     },
     {
+      "from": "OpenHarness",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "OpenHarness",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "OpenHarness",
+      "to": "Hermes-Agent",
+      "weight": 1
+    },
+    {
+      "from": "OpenHarness",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "OpenHarness",
+      "to": "OpenHarness-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "OpenHarness-GitHub",
+      "to": "OpenHarness",
+      "weight": 2
+    },
+    {
+      "from": "OpenViking",
+      "to": "RAG",
+      "weight": 1
+    },
+    {
+      "from": "OpenViking",
+      "to": "如何构建一个更好的知识库",
+      "weight": 1
+    },
+    {
+      "from": "Pyramid-KB",
+      "to": "GraphRAG",
+      "weight": 2
+    },
+    {
+      "from": "Pyramid-KB",
+      "to": "LightRAG",
+      "weight": 1
+    },
+    {
+      "from": "Pyramid-KB",
+      "to": "RAG",
+      "weight": 2
+    },
+    {
+      "from": "Pyramid-KB",
+      "to": "知识库分层编排-从RAG到Agent-native-Knowledge-Context-Layer",
+      "weight": 1
+    },
+    {
+      "from": "QQ音乐Harness-Engineering实践",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "QQ音乐Harness-Engineering实践",
+      "to": "Harness-Engineering-主题",
+      "weight": 1
+    },
+    {
+      "from": "QuIM-RAG",
+      "to": "RAG",
+      "weight": 1
+    },
+    {
+      "from": "QuIM-RAG",
+      "to": "如何构建一个更好的知识库",
+      "weight": 1
+    },
+    {
+      "from": "RAG",
+      "to": "Agent-Memory",
+      "weight": 2
+    },
+    {
+      "from": "RAG",
+      "to": "GraphRAG",
+      "weight": 1
+    },
+    {
+      "from": "RAG",
+      "to": "LightRAG",
+      "weight": 2
+    },
+    {
+      "from": "RAG",
+      "to": "OpenClaw-双源记忆系统",
+      "weight": 2
+    },
+    {
+      "from": "RAG",
+      "to": "Pyramid-KB",
+      "weight": 1
+    },
+    {
+      "from": "RAG",
+      "to": "RAG全链路技术详解",
+      "weight": 2
+    },
+    {
+      "from": "RAG",
+      "to": "vLLM",
+      "weight": 2
+    },
+    {
+      "from": "RAG",
+      "to": "如何构建一个更好的知识库",
+      "weight": 1
+    },
+    {
+      "from": "RAG",
+      "to": "深度解析LLM-Wiki-Obsidian-Wiki-GBrain",
+      "weight": 2
+    },
+    {
+      "from": "RAG",
+      "to": "知识库分层编排-从RAG到Agent-native-Knowledge-Context-Layer",
+      "weight": 1
+    },
+    {
+      "from": "RAGAS",
+      "to": "AutoRAG",
+      "weight": 1
+    },
+    {
+      "from": "RAGAS",
+      "to": "Cross-Encoder",
+      "weight": 1
+    },
+    {
+      "from": "RAGAS",
+      "to": "HyDE",
+      "weight": 1
+    },
+    {
+      "from": "RAGAS",
+      "to": "RAG",
+      "weight": 1
+    },
+    {
+      "from": "RAGAS",
+      "to": "如何构建一个更好的知识库",
+      "weight": 1
+    },
+    {
+      "from": "RAG优化字典-20种RAG优化方法全解析",
+      "to": "AI-Infra推理优化-主题",
+      "weight": 2
+    },
+    {
+      "from": "RAG优化字典-20种RAG优化方法全解析",
+      "to": "LightRAG",
+      "weight": 2
+    },
+    {
+      "from": "RAG优化字典-20种RAG优化方法全解析",
+      "to": "RAG",
+      "weight": 2
+    },
+    {
+      "from": "RAG全链路技术详解",
+      "to": "AI-Infra推理优化-主题",
+      "weight": 1
+    },
+    {
+      "from": "RAG全链路技术详解",
+      "to": "RAG",
+      "weight": 1
+    },
+    {
+      "from": "RAG全链路技术详解",
+      "to": "vLLM",
+      "weight": 1
+    },
+    {
+      "from": "RMM",
+      "to": "Agent-Memory",
+      "weight": 2
+    },
+    {
+      "from": "RMM",
+      "to": "Agent-Memory评测全景-基准评估与记忆系统",
+      "weight": 2
+    },
+    {
+      "from": "RMM",
+      "to": "Mem0",
+      "weight": 2
+    },
+    {
+      "from": "RMM",
+      "to": "THEANINE",
+      "weight": 2
+    },
+    {
+      "from": "SkillOpt",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "SkillOpt",
+      "to": "Hermes-Agent",
+      "weight": 2
+    },
+    {
+      "from": "SkillOpt",
+      "to": "SkillOpt-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "SkillOpt-GitHub",
+      "to": "SkillOpt",
+      "weight": 2
+    },
+    {
+      "from": "Skills-从编程工具的配角到Agent研发的核心",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "Skills-从编程工具的配角到Agent研发的核心",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "Skills-从编程工具的配角到Agent研发的核心",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "Skills开发技能指南-别脱离具体场景谈方案",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "Skills开发技能指南-别脱离具体场景谈方案",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "Skill开发最佳实践",
+      "to": "Claude-Code-Skills-完全指南",
+      "weight": 1
+    },
+    {
+      "from": "Skill开发最佳实践",
+      "to": "Claude-Code-工程师亲授-OpenClaw-调教指南-Skills的工程化心法",
+      "weight": 1
+    },
+    {
+      "from": "Skill开发最佳实践",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "Skill开发最佳实践",
+      "to": "MCP",
+      "weight": 1
+    },
+    {
+      "from": "Skill开发最佳实践",
+      "to": "OpenClaw-Skills",
+      "weight": 1
+    },
+    {
+      "from": "Skill开发最佳实践",
+      "to": "Skills开发技能指南-别脱离具体场景谈方案",
+      "weight": 1
+    },
+    {
+      "from": "Skill开发最佳实践",
+      "to": "一文搞懂爆火的Skills原理及实践案例",
+      "weight": 1
+    },
+    {
+      "from": "Skill开发最佳实践",
+      "to": "如何写好Skill-一份终极实战经验手册",
+      "weight": 1
+    },
+    {
+      "from": "Spec-Driven-Development",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Spec-Driven-Development",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "Spec-Driven-Development",
+      "to": "Spec-Driven-Development如何重新定义AI编程",
+      "weight": 2
+    },
+    {
+      "from": "Spec-Driven-Development",
+      "to": "一个文件让AI-Coding效率翻倍-AGENTS-实践指南",
+      "weight": 2
+    },
+    {
+      "from": "Spec-Driven-Development",
+      "to": "告别氛围编程-基于Harness治理和SDD的团队级AI研发范式",
+      "weight": 2
+    },
+    {
+      "from": "Spec-Driven-Development",
+      "to": "基于Harness加SDD加多仓管理模式的AI全栈开发实践",
+      "weight": 2
+    },
+    {
+      "from": "Spec-Driven-Development如何重新定义AI编程",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "Spec-Driven-Development如何重新定义AI编程",
+      "to": "Harness-Engineering-主题",
+      "weight": 1
+    },
+    {
+      "from": "Spec-Driven-Development如何重新定义AI编程",
+      "to": "Spec-Driven-Development",
+      "weight": 1
+    },
+    {
+      "from": "Spring-AI-Session-API-大多数人用ChatMemory用错了场景",
+      "to": "AI-Infra推理优化-主题",
+      "weight": 1
+    },
+    {
+      "from": "Spring-AI-Session-API-大多数人用ChatMemory用错了场景",
+      "to": "Agent-Memory",
+      "weight": 1
+    },
+    {
+      "from": "THEANINE",
+      "to": "Agent-Memory",
+      "weight": 2
+    },
+    {
+      "from": "THEANINE",
+      "to": "Agent-Memory评测全景-基准评估与记忆系统",
+      "weight": 2
+    },
+    {
+      "from": "THEANINE",
+      "to": "RMM",
+      "weight": 2
+    },
+    {
+      "from": "TRAE-2026企业级AI编程实践手册",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "TRAE-2026企业级AI编程实践手册",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "TRAE-2026企业级AI编程实践手册",
+      "to": "Spec-Driven-Development",
+      "weight": 2
+    },
+    {
+      "from": "sso-cli",
+      "to": "Agent-Skill-Auth",
+      "weight": 1
+    },
+    {
+      "from": "sso-cli",
+      "to": "Credential-Brokering",
+      "weight": 1
+    },
+    {
+      "from": "sso-cli",
+      "to": "面向-Agent-Skill的-CLI-SSO-鉴权体系",
+      "weight": 1
+    },
+    {
+      "from": "vLLM",
+      "to": "AI-Infra入门干货总结-大模型是如何高效推理的",
+      "weight": 2
+    },
+    {
+      "from": "vLLM",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "vLLM",
+      "to": "RAG",
+      "weight": 2
+    },
+    {
+      "from": "vLLM",
+      "to": "万字入门AI-Infra-深入理解大模型中的数学与Infra优化",
+      "weight": 2
+    },
+    {
+      "from": "verify-data-一个端到端的数据验数Agent-Skill",
+      "to": "Agent架构演进-主题",
+      "weight": 2
+    },
+    {
+      "from": "verify-data-一个端到端的数据验数Agent-Skill",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "verify-data-一个端到端的数据验数Agent-Skill",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "wechat-cli",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "wechat-cli-源码剖析",
+      "to": "wechat-cli",
+      "weight": 2
+    },
+    {
+      "from": "一个文件让AI-Coding效率翻倍-AGENTS-实践指南",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "一个文件让AI-Coding效率翻倍-AGENTS-实践指南",
+      "to": "Harness-Engineering-主题",
+      "weight": 1
+    },
+    {
+      "from": "一个文件让AI-Coding效率翻倍-AGENTS-实践指南",
+      "to": "Spec-Driven-Development",
+      "weight": 1
+    },
+    {
+      "from": "一文搞懂Hermes-新顶流Agent如何从经验中自我进化",
+      "to": "Agent架构演进-主题",
+      "weight": 1
+    },
+    {
+      "from": "一文搞懂Hermes-新顶流Agent如何从经验中自我进化",
+      "to": "Hermes-Agent",
+      "weight": 1
+    },
+    {
+      "from": "一文搞懂Hermes-新顶流Agent如何从经验中自我进化",
+      "to": "OpenClaw",
+      "weight": 1
+    },
+    {
+      "from": "一文搞懂爆火的Skills原理及实践案例",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "一文搞懂爆火的Skills原理及实践案例",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "一文讲透-Harness-Engineering即控制论",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "一文讲透从0构建AI-Agent",
+      "to": "Agent架构演进-主题",
+      "weight": 2
+    },
+    {
+      "from": "一文讲透从0构建AI-Agent",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "万字入门AI-Infra-深入理解大模型中的数学与Infra优化",
+      "to": "AI-Infra推理优化-主题",
+      "weight": 1
+    },
+    {
+      "from": "万字入门AI-Infra-深入理解大模型中的数学与Infra优化",
+      "to": "vLLM",
+      "weight": 1
+    },
+    {
+      "from": "业务逻辑的坍塌-当应用层只剩下胶水代码",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "串讲LLM和Agent的核心原理以及各种术语",
+      "to": "Agent架构演进-主题",
+      "weight": 1
+    },
+    {
+      "from": "串讲LLM和Agent的核心原理以及各种术语",
+      "to": "OpenClaw",
+      "weight": 1
+    },
+    {
+      "from": "从0到1搭建Agent-原理分析及个人助手实践",
+      "to": "Agent架构演进-主题",
+      "weight": 1
+    },
+    {
+      "from": "从0到1搭建Agent-原理分析及个人助手实践",
+      "to": "OpenClaw",
+      "weight": 1
+    },
+    {
+      "from": "从0开发大模型的17种Agent架构演进详细拆解",
+      "to": "Agent架构演进-主题",
+      "weight": 1
+    },
+    {
+      "from": "从0开发大模型的17种Agent架构演进详细拆解",
+      "to": "OpenClaw",
+      "weight": 1
+    },
+    {
+      "from": "从IDE到Terminal-适合后端宝宝体质的Claude-Code工作流",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "从IDE到Terminal-适合后端宝宝体质的Claude-Code工作流",
+      "to": "Claude-Code源码解析-主题",
+      "weight": 2
+    },
+    {
+      "from": "从Prompt-Context到Harness-工程的三次进化与终局之战",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "从Prompt-Context到Harness-工程的三次进化与终局之战",
+      "to": "Harness-Engineering-主题",
+      "weight": 1
+    },
+    {
+      "from": "从Prompt-Context到Harness-工程的三次进化与终局之战",
+      "to": "OpenClaw",
+      "weight": 1
+    },
+    {
+      "from": "从RAG到GraphRAG-货拉拉元数据检索应用实践",
+      "to": "AI-Infra推理优化-主题",
+      "weight": 2
+    },
+    {
+      "from": "从RAG到GraphRAG-货拉拉元数据检索应用实践",
+      "to": "LightRAG",
+      "weight": 2
+    },
+    {
+      "from": "从RAG到GraphRAG-货拉拉元数据检索应用实践",
+      "to": "RAG",
+      "weight": 2
+    },
+    {
       "from": "从架构到代码-深入理解OpenClaw的双源记忆系统",
       "to": "OpenClaw",
       "weight": 3
@@ -417,9 +5570,399 @@
       "weight": 1
     },
     {
+      "from": "从玩具到生产力-用真实项目讲透AI-Agent的Harness-Engineering",
+      "to": "Claude-Code",
+      "weight": 1
+    },
+    {
+      "from": "从玩具到生产力-用真实项目讲透AI-Agent的Harness-Engineering",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "从玩具到生产力-用真实项目讲透AI-Agent的Harness-Engineering",
+      "to": "Harness-Engineering-主题",
+      "weight": 1
+    },
+    {
+      "from": "从第一性原理思考Agentic-Engineering",
+      "to": "Agentic-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "从语言涌现到协作涌现-如何让AI产生高质量决策",
+      "to": "Agent架构演进-主题",
+      "weight": 1
+    },
+    {
+      "from": "从语言涌现到协作涌现-如何让AI产生高质量决策",
+      "to": "OpenClaw",
+      "weight": 1
+    },
+    {
+      "from": "从零设计生产级Multi-Agent-Harness",
+      "to": "Agent-Memory",
+      "weight": 1
+    },
+    {
+      "from": "从零设计生产级Multi-Agent-Harness",
+      "to": "Agent架构演进-主题",
+      "weight": 1
+    },
+    {
+      "from": "从零设计生产级Multi-Agent-Harness",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "从零设计生产级Multi-Agent-Harness",
+      "to": "Harness-Engineering-主题",
+      "weight": 1
+    },
+    {
       "from": "以OpenClaw为例介绍AI-Agent的运作原理",
       "to": "OpenClaw",
       "weight": 3
+    },
+    {
+      "from": "企业级Agent多智能体架构与选型指南",
+      "to": "Agent架构演进-主题",
+      "weight": 2
+    },
+    {
+      "from": "企业级Agent多智能体架构与选型指南",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "你不知道的-Claude-Code-架构治理与工程实践",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "你不知道的-Claude-Code-架构治理与工程实践",
+      "to": "Claude-Code源码解析-主题",
+      "weight": 2
+    },
+    {
+      "from": "你不知道的-Claude-Code-架构治理与工程实践",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "你不知道的-Claude-Code-架构治理与工程实践",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "你不知道的-Claude-Code-架构治理与工程实践",
+      "to": "MCP",
+      "weight": 1
+    },
+    {
+      "from": "你不知道的-Claude-Code-架构治理与工程实践",
+      "to": "OpenClaw-Skills",
+      "weight": 1
+    },
+    {
+      "from": "几万字都讲不明白的Memory架构与思考",
+      "to": "Agent-Memory",
+      "weight": 2
+    },
+    {
+      "from": "几万字都讲不明白的Memory架构与思考",
+      "to": "从架构到代码-深入理解OpenClaw的双源记忆系统",
+      "weight": 1
+    },
+    {
+      "from": "几万字都讲不明白的Memory架构与思考",
+      "to": "腾讯云Agent-Memory节省61-Percent-Token提升52-Percent成功率",
+      "weight": 1
+    },
+    {
+      "from": "别让AI瞎猜了-用Harness-Engineering终结无限返工",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "别让AI瞎猜了-用Harness-Engineering终结无限返工",
+      "to": "Harness-Engineering-主题",
+      "weight": 1
+    },
+    {
+      "from": "告别氛围编程-基于Harness治理和SDD的团队级AI研发范式",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "告别氛围编程-基于Harness治理和SDD的团队级AI研发范式",
+      "to": "Harness-Engineering-主题",
+      "weight": 1
+    },
+    {
+      "from": "告别氛围编程-基于Harness治理和SDD的团队级AI研发范式",
+      "to": "Spec-Driven-Development",
+      "weight": 1
+    },
+    {
+      "from": "基于Cursor-Agent的流水线AI-CR实践",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "基于Harness加SDD加多仓管理模式的AI全栈开发实践",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "基于Harness加SDD加多仓管理模式的AI全栈开发实践",
+      "to": "Harness-Engineering-主题",
+      "weight": 1
+    },
+    {
+      "from": "基于Harness加SDD加多仓管理模式的AI全栈开发实践",
+      "to": "Spec-Driven-Development",
+      "weight": 1
+    },
+    {
+      "from": "基于顶级Agent的Harness工程搭建式业务Agent评测方案",
+      "to": "Agent评测方法论",
+      "weight": 2
+    },
+    {
+      "from": "基于顶级Agent的Harness工程搭建式业务Agent评测方案",
+      "to": "Anthropic",
+      "weight": 2
+    },
+    {
+      "from": "基于顶级Agent的Harness工程搭建式业务Agent评测方案",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "基于顶级Agent的Harness工程搭建式业务Agent评测方案",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "大模型Agent-Skill功能在LLM-HTTP底层交互流中怎么承载",
+      "to": "Agent架构演进-主题",
+      "weight": 1
+    },
+    {
+      "from": "大模型Agent-Skill功能在LLM-HTTP底层交互流中怎么承载",
+      "to": "OpenClaw-Skills",
+      "weight": 1
+    },
+    {
+      "from": "如何写好Skill-一份终极实战经验手册",
+      "to": "Anthropic",
+      "weight": 2
+    },
+    {
+      "from": "如何写好Skill-一份终极实战经验手册",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "如何写好Skill-一份终极实战经验手册",
+      "to": "MCP",
+      "weight": 2
+    },
+    {
+      "from": "如何写好Skill-一份终极实战经验手册",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "如何写好Skill-一份终极实战经验手册",
+      "to": "Skill开发最佳实践",
+      "weight": 2
+    },
+    {
+      "from": "如何构建一个更好的知识库",
+      "to": "AutoRAG",
+      "weight": 1
+    },
+    {
+      "from": "如何构建一个更好的知识库",
+      "to": "Cross-Encoder",
+      "weight": 1
+    },
+    {
+      "from": "如何构建一个更好的知识库",
+      "to": "HyDE",
+      "weight": 1
+    },
+    {
+      "from": "如何构建一个更好的知识库",
+      "to": "Late-Chunking",
+      "weight": 1
+    },
+    {
+      "from": "如何构建一个更好的知识库",
+      "to": "OpenViking",
+      "weight": 1
+    },
+    {
+      "from": "如何构建一个更好的知识库",
+      "to": "QuIM-RAG",
+      "weight": 1
+    },
+    {
+      "from": "如何构建一个更好的知识库",
+      "to": "RAG",
+      "weight": 1
+    },
+    {
+      "from": "如何构建一个更好的知识库",
+      "to": "RAGAS",
+      "weight": 1
+    },
+    {
+      "from": "如何让你的Agent更准确-MCP工具设计技巧",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "如何让你的Agent更准确-MCP工具设计技巧",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "学习笔记-从-Agent-到-Skills-AI智能体架构的范式转变",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "学习笔记-从-Agent-到-Skills-AI智能体架构的范式转变",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "学习笔记-从-Agent-到-Skills-AI智能体架构的范式转变",
+      "to": "MCP",
+      "weight": 1
+    },
+    {
+      "from": "学习笔记-从-Agent-到-Skills-AI智能体架构的范式转变",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "实战报告-AI-Coding已经能做交付了但前提苛刻",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "实战报告-AI-Coding已经能做交付了但前提苛刻",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "实战报告-AI-Coding已经能做交付了但前提苛刻",
+      "to": "Spec-Driven-Development",
+      "weight": 2
+    },
+    {
+      "from": "平平无奇的源码竟藏着Agent的核心秘密",
+      "to": "Agent架构演进-主题",
+      "weight": 2
+    },
+    {
+      "from": "平平无奇的源码竟藏着Agent的核心秘密",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "平平无奇的源码竟藏着Agent的核心秘密",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "开源Claude-Code工程级开发插件Superpowers完整上手攻略",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "开源Claude-Code工程级开发插件Superpowers完整上手攻略",
+      "to": "Claude-Code源码解析-主题",
+      "weight": 2
+    },
+    {
+      "from": "当我把AI变成一个算法-Skill工程化设计的心路历程",
+      "to": "Agent架构演进-主题",
+      "weight": 1
+    },
+    {
+      "from": "当我把AI变成一个算法-Skill工程化设计的心路历程",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "当我把AI变成一个算法-Skill工程化设计的心路历程",
+      "to": "OpenClaw-Skills",
+      "weight": 1
+    },
+    {
+      "from": "打造高可靠AI助手-Skill编排Workflow设计与Spec-Coding的深度实践",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "打造高可靠AI助手-Skill编排Workflow设计与Spec-Coding的深度实践",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "打造高可靠AI助手-Skill编排Workflow设计与Spec-Coding的深度实践",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "打造高可靠AI助手-Skill编排Workflow设计与Spec-Coding的深度实践",
+      "to": "Spec-Driven-Development",
+      "weight": 2
+    },
+    {
+      "from": "拒绝重复造轮子-抽象80工作场景打造可复用的AI助手工厂",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "横向拆解六大Agent上下文压缩策略后我们做了第7个",
+      "to": "Agent-Memory",
+      "weight": 1
+    },
+    {
+      "from": "横向拆解六大Agent上下文压缩策略后我们做了第7个",
+      "to": "Context-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "消息总线",
+      "to": "800行代码实现OpenClaw的Tool消息总线子Agent管理架构",
+      "weight": 2
+    },
+    {
+      "from": "消息总线",
+      "to": "Agent-Memory",
+      "weight": 2
+    },
+    {
+      "from": "消息总线",
+      "to": "OpenClaw",
+      "weight": 4
+    },
+    {
+      "from": "消息总线",
+      "to": "OpenClaw-Skills",
+      "weight": 1
+    },
+    {
+      "from": "消息总线",
+      "to": "深度解析Hermes-Agent如何实现自进化",
+      "weight": 2
     },
     {
       "from": "深入理解OpenClaw技术架构与实现原理-上",
@@ -437,6 +5980,31 @@
       "weight": 2
     },
     {
+      "from": "深度解析Claude-Code在Prompt-Context-Harness的设计与实践",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "深度解析Claude-Code在Prompt-Context-Harness的设计与实践",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "深度解析Hermes-Agent如何实现自进化",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "深度解析LLM-Wiki-Obsidian-Wiki-GBrain",
+      "to": "AI-Infra推理优化-主题",
+      "weight": 1
+    },
+    {
+      "from": "深度解析LLM-Wiki-Obsidian-Wiki-GBrain",
+      "to": "RAG",
+      "weight": 1
+    },
+    {
       "from": "深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践",
       "to": "OpenClaw",
       "weight": 3
@@ -452,6 +6020,31 @@
       "weight": 1
     },
     {
+      "from": "深度解析腾讯云Agent-Memory-4层渐进式记忆管道",
+      "to": "AI-Infra推理优化-主题",
+      "weight": 1
+    },
+    {
+      "from": "深度解析腾讯云Agent-Memory-4层渐进式记忆管道",
+      "to": "Agent-Memory",
+      "weight": 1
+    },
+    {
+      "from": "火山引擎-OpenClaw内置Mem0",
+      "to": "Agent-Memory",
+      "weight": 2
+    },
+    {
+      "from": "火山引擎-OpenClaw内置Mem0",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "火山引擎-OpenClaw内置Mem0",
+      "to": "OpenClaw-双源记忆系统",
+      "weight": 2
+    },
+    {
       "from": "玩转OpenClaw-核心架构-运作原理-Agent部署步骤",
       "to": "OpenClaw",
       "weight": 4
@@ -460,6 +6053,226 @@
       "from": "玩转OpenClaw-核心架构-运作原理-Agent部署步骤",
       "to": "OpenClaw-Skills",
       "weight": 2
+    },
+    {
+      "from": "用自然语言替代复杂代码-大淘宝技术",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "知识基座-让AI越用越懂业务的团队经验实践",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "知识库分层编排-从RAG到Agent-native-Knowledge-Context-Layer",
+      "to": "GraphRAG",
+      "weight": 1
+    },
+    {
+      "from": "知识库分层编排-从RAG到Agent-native-Knowledge-Context-Layer",
+      "to": "LightRAG",
+      "weight": 1
+    },
+    {
+      "from": "知识库分层编排-从RAG到Agent-native-Knowledge-Context-Layer",
+      "to": "Pyramid-KB",
+      "weight": 1
+    },
+    {
+      "from": "知识库分层编排-从RAG到Agent-native-Knowledge-Context-Layer",
+      "to": "RAG",
+      "weight": 1
+    },
+    {
+      "from": "腾讯云-兄弟你真的懂-Skill-吗",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "腾讯云-兄弟你真的懂-Skill-吗",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "腾讯云Agent-Memory节省61-Percent-Token提升52-Percent成功率",
+      "to": "AI-Infra推理优化-主题",
+      "weight": 1
+    },
+    {
+      "from": "腾讯云Agent-Memory节省61-Percent-Token提升52-Percent成功率",
+      "to": "Agent-Memory",
+      "weight": 1
+    },
+    {
+      "from": "腾讯云Agent-Memory节省61-Percent-Token提升52-Percent成功率",
+      "to": "OpenClaw-双源记忆系统",
+      "weight": 1
+    },
+    {
+      "from": "规范驱动AI编程实战指南-OpenSpec-vs-Spec-Kit-vs-BMAD",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "规范驱动AI编程实战指南-OpenSpec-vs-Spec-Kit-vs-BMAD",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "规范驱动AI编程实战指南-OpenSpec-vs-Spec-Kit-vs-BMAD",
+      "to": "Spec-Driven-Development",
+      "weight": 2
+    },
+    {
+      "from": "让-Claude-Code-拥有自我进化和记忆系统",
+      "to": "Agent-Memory",
+      "weight": 1
+    },
+    {
+      "from": "让-Claude-Code-拥有自我进化和记忆系统",
+      "to": "Agent架构演进-主题",
+      "weight": 1
+    },
+    {
+      "from": "让-Claude-Code-拥有自我进化和记忆系统",
+      "to": "Claude-Code",
+      "weight": 1
+    },
+    {
+      "from": "让-Claude-Code-拥有自我进化和记忆系统",
+      "to": "Hook-机制",
+      "weight": 1
+    },
+    {
+      "from": "让-Claude-Code-拥有自我进化和记忆系统",
+      "to": "Instinct-Engine",
+      "weight": 1
+    },
+    {
+      "from": "让AI变成Super员工的秘密-高效训练Skills",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "让AI变成Super员工的秘密-高效训练Skills",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "让Skill自己训练自己-8阶段Loop-3层评测-5维AND门控",
+      "to": "Agent架构演进-主题",
+      "weight": 1
+    },
+    {
+      "from": "让Skill自己训练自己-8阶段Loop-3层评测-5维AND门控",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "让Skill自己训练自己-8阶段Loop-3层评测-5维AND门控",
+      "to": "OpenClaw-Skills",
+      "weight": 1
+    },
+    {
+      "from": "让项目管理也AI-Native-两个Git仓库干掉了周报",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "让项目管理也AI-Native-两个Git仓库干掉了周报",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "让项目管理也AI-Native-两个Git仓库干掉了周报",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "设计模式已死",
+      "to": "Agentic-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "设计模式已死",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "详尽地带你从零开始设计实现一个AI-Agent框架",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "软件为何越做越乱-万字长文讲透软件的复杂性",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "逆向深扒Claude-Code源码我发现了什么",
+      "to": "Agent架构演进-主题",
+      "weight": 2
+    },
+    {
+      "from": "逆向深扒Claude-Code源码我发现了什么",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "逆向深扒Claude-Code源码我发现了什么",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "重新思考研发基础设施-当Agent成为第一公民",
+      "to": "Agent-DX",
+      "weight": 1
+    },
+    {
+      "from": "重新思考研发基础设施-当Agent成为第一公民",
+      "to": "Agent-Oriented-Infra",
+      "weight": 1
+    },
+    {
+      "from": "重新思考研发基础设施-当Agent成为第一公民",
+      "to": "Agentic-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "重新思考研发基础设施-当Agent成为第一公民",
+      "to": "Credential-Brokering",
+      "weight": 1
+    },
+    {
+      "from": "重新思考研发基础设施-当Agent成为第一公民",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "面向-Agent-Skill的-CLI-SSO-鉴权体系",
+      "to": "Agent-Skill-Auth",
+      "weight": 1
+    },
+    {
+      "from": "面向-Agent-Skill的-CLI-SSO-鉴权体系",
+      "to": "Credential-Brokering",
+      "weight": 1
+    },
+    {
+      "from": "面向-Agent-Skill的-CLI-SSO-鉴权体系",
+      "to": "OpenClaw",
+      "weight": 1
+    },
+    {
+      "from": "面向-Agent-Skill的-CLI-SSO-鉴权体系",
+      "to": "Skill开发最佳实践",
+      "weight": 1
+    },
+    {
+      "from": "面向-Agent-Skill的-CLI-SSO-鉴权体系",
+      "to": "sso-cli",
+      "weight": 1
     },
     {
       "from": "龙虾大脑核心揭秘1-OpenClaw处理流程链路解析",

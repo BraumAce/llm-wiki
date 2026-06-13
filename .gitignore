@@ -20,6 +20,9 @@ desktop.ini
 .idea/
 *.swp
 
+# Tooling artifacts
+.codegraph/
+
 # Quartz build artifacts / synced content
 quartz/.quartz-cache/
 quartz/public/
