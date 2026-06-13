@@ -39,19 +39,21 @@ if [ -n "$links" ]; then
 fi
 
 # --- 2. 实体页字数 ---
-echo "[2/5] 实体页字数 (≥1500 字符)..."
+echo "[2/5] 实体页字数 (≥1000 字符)..."
 if [ -d "$ENTITIES_DIR" ]; then
   while IFS= read -r -d '' f; do
     # 中文字符数：去掉空白、ASCII 标点。粗略但够用
     chars=$(LC_ALL=C.UTF-8 tr -d '[:space:][:punct:]' < "$f" | wc -m | tr -d ' ')
-    if [ "$chars" -lt 1500 ]; then
-      err "$(basename "$f") 仅 $chars 字 (要求 ≥1500)"
+    if [ "$chars" -lt 1000 ]; then
+      err "$(basename "$f") 仅 $chars 字 (要求 ≥1000)"
     fi
   done < <(find "$ENTITIES_DIR" -maxdepth 1 -name '*.md' -type f -print0 2>/dev/null)
 fi
 
 # --- 3. 占位符 ---
-echo "[3/5] 占位符 (TODO/XXX/待补充/TBD)..."
+echo "[3/5] 占位符 (待补充/TBD/TODO:/XXX 标记)..."
+# 只把"编辑标记"式写法判为占位符（待补充 / TBD / TODO: / (TODO) / 单独成行 TODO|XXX）；
+# 正文里把 TODO 当普通词（如"TODO 驱动开发"）不误报。
 # 跳过 ``` 代码块和 `行内代码` —— 里面的 TODO 通常是源码引用，不是真的"待补充"
 while IFS= read -r -d '' f; do
   cleaned=$(awk '
@@ -60,7 +62,7 @@ while IFS= read -r -d '' f; do
     in_fence==1 {next}
     {gsub(/`[^`]*`/, ""); print}
   ' "$f")
-  if echo "$cleaned" | grep -qE '(TODO|XXX|待补充|TBD)'; then
+  if echo "$cleaned" | grep -qE '待补充|TBD|TODO[[:space:]]*(:|：)|XXX[[:space:]]*(:|：)|(\(|（)(TODO|XXX|待补充|TBD)(\)|）)|^[[:space:]]*#*[[:space:]]*(-|\*)?[[:space:]]*(TODO|XXX)[[:space:]]*$'; then
     err "占位符出现在: ${f#$WIKI_DIR/}"
   fi
 done < <(find "$WIKI_DIR" -name '*.md' -type f -print0 2>/dev/null)

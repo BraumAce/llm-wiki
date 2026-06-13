@@ -53,7 +53,7 @@ related_entities: []
 - [[source_title_2]]
 
 <!-- 写作要点：
-1. 字数 ≥ 1500（中文字符）
+1. 字数 ≥ 1000（中文字符）
 2. 不允许出现 "TODO" / "XXX" / "待补充" / "TBD"
 3. 至少 1 个 [[related]]、≥ 1 个 sources，frontmatter sources 与正文一致
 4. 多次 ingest 同一实体时合并扩展，不覆盖
