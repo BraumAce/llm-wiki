@@ -80,7 +80,7 @@ Skill 适用场景：
 
 ## 涉及实体
 
-- [[Agent-Skill]] —— 本文核心，模块化领域知识资产
+- Agent Skill —— 本文核心，模块化领域知识资产
 - [[OpenClaw-Skills]] —— Skill 标准的实现之一
 - [[Claude-Code]] —— 支持 Skill 的 AI Coding 工具
 - [[MCP]] —— 提供工具操作能力的协议

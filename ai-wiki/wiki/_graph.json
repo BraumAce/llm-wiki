@@ -1,22 +1,11 @@
 {
-  "generated_at": "2026-06-13T23:28:31+08:00",
+  "generated_at": "2026-06-13T23:59:04+08:00",
   "wiki_dir": "/Users/liuguang/Documents/Private/llm-wiki/ai-wiki/wiki",
   "stats": {
     "nodes": 221,
-    "edges": 753,
-    "edge_weight_total": 1226,
-    "orphan_links": [
-      "Agent-Skill",
-      "CLI-Anything",
-      "Graphify",
-      "Harness-Engineering-AI能在出事会炸的后端系统里写代码",
-      "HiClaw",
-      "LLM-Wiki-Pattern",
-      "OpenSpec",
-      "Prompt-Cache",
-      "Qdrant",
-      "RAG知识库构建"
-    ],
+    "edges": 754,
+    "edge_weight_total": 1228,
+    "orphan_links": [],
     "by_type": {
       "entity": 61,
       "topic": 9,
@@ -3867,7 +3856,7 @@
     {
       "from": "GraphRAG",
       "to": "Pyramid-KB",
-      "weight": 2
+      "weight": 3
     },
     {
       "from": "GraphRAG",
@@ -3912,6 +3901,11 @@
     {
       "from": "Harness-Engineering",
       "to": "Credential-Brokering",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "Harness-Engineering-AI能在出事会炸的后端系统里写代码吗",
       "weight": 1
     },
     {

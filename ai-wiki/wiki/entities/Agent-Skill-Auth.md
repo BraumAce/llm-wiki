@@ -73,7 +73,7 @@ Agent-Skill-Auth 体系通过三层设计解决这些问题：登录层（Agent 
 
 ## 与其他实体的关系
 
-- [[Agent-Skill]] —— Agent-Skill-Auth 是 Skill 调用企业系统的鉴权保障
+- Agent Skill —— Agent-Skill-Auth 是 Skill 调用企业系统的鉴权保障
 - [[sso-cli]] —— Agent-Skill-Auth 的核心 CLI 工具
 - [[Credential-Brokering]] —— 凭据代理模式的实现
 - [[OpenClaw]] —— 支持 Agent-Skill-Auth 的 Agent 框架

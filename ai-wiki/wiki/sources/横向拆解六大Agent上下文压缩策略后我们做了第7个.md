@@ -105,4 +105,4 @@ related_topics: [Agentic-Engineering-主题]
 
 - [[Context-Engineering]] —— 上下文工程，压缩是其核心子领域
 - [[Agent-Memory]] —— Agent 记忆管理
-- [[Prompt-Cache]] —— Prompt Cache 命中率优化
+- Prompt Cache —— Prompt Cache 命中率优化

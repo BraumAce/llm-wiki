@@ -28,7 +28,7 @@ sources:
   - "[[深入浅出Harness-Engineering之核心模式与理念]]"
   - "[[万字干货-Harness-Engineering如何工程化落地]]"
   - "[[Harness-Engineering实践心得-如何高效驾驭AI]]"
-  - "[[Harness-Engineering-AI能在出事会炸的后端系统里写代码]]"
+  - "[[Harness-Engineering-AI能在出事会炸的后端系统里写代码吗]]"
   - "[[从玩具到生产力-用真实项目讲透AI-Agent的Harness-Engineering]]"
   - "[[一文讲透如何构建Harness-六大组件全解析]]"
   - "[[一文讲透-Harness-Engineering即控制论]]"

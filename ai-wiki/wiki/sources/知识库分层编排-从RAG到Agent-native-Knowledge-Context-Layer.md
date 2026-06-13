@@ -16,8 +16,6 @@ related_entities:
   - "[[GraphRAG]]"
   - "[[LightRAG]]"
   - "[[Pyramid-KB]]"
-  - "[[LLM-Wiki-Pattern]]"
-  - "[[Graphify]]"
 ---
 
 # 知识库分层编排：从 RAG 到 Agent-native Knowledge Context Layer

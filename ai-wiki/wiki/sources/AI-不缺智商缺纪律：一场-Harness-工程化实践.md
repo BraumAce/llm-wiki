@@ -76,7 +76,7 @@ AI Coding 的瓶颈从模型能力转移到流程工程，通过 harness 分层�
 
 - [[Harness-Engineering]] —— 本文核心，把 AI 该怎么干活固化成可执行框架
 - [[Claude-Code]] —— 逆向工程分析其记忆和上下文管理机制
-- [[OpenSpec]] —— 社区规范，提供 CLAUDE.md 模板和最佳实践
+- OpenSpec —— 社区规范，提供 CLAUDE.md 模板和最佳实践
 - [[OpenClaw]] —— Agent 框架，支持 skill 和多 agent 架构
 
 ## 涉及主题

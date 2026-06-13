@@ -9,8 +9,6 @@ ingested_at: 2026-06-10
 tags: [harness-engineering, ai-coding, context-firewall, feedback-loop, group-intelligence, hiclaw, cli-anything]
 related_entities:
   - "[[Harness-Engineering]]"
-  - "[[HiClaw]]"
-  - "[[CLI-Anything]]"
 related_topics:
   - "[[Harness-Engineering-主题]]"
 ---
@@ -44,8 +42,8 @@ related_topics:
 
 ## 涉及实体
 - [[Harness-Engineering]] —— 三阶段演进的最终形态
-- [[HiClaw]] —— 阿里开源的群体智能操作系统
-- [[CLI-Anything]] —— 港大的群体智能基础设施
+- HiClaw —— 阿里开源的群体智能操作系统
+- CLI-Anything —— 港大的群体智能基础设施
 - [[OpenClaw]] —— Harness Engineering 的载体之一
 
 ## 涉及主题

@@ -133,7 +133,7 @@ def deduplicate_instincts(instincts, sim_threshold=0.5):
 - [[Agent-Memory]] —— 持久化记忆系统设计
 - [[Hook-机制]] —— 确定性触发的关键，替代 Skill 依赖模型调用
 - [[Instinct-Engine]] —— 模式提炼层，统计 + AI 语义双路径
-- [[Qdrant]] —— 本地向量数据库，存储记忆嵌入
+- Qdrant —— 本地向量数据库，存储记忆嵌入
 
 ## 涉及主题
 
