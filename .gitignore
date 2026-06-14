@@ -24,7 +24,7 @@ desktop.ini
 .codegraph/
 
 # Quartz build artifacts / synced content
-quartz/.quartz-cache/
+.quartz-cache/
 quartz/public/
 quartz/node_modules/
 quartz/content/
