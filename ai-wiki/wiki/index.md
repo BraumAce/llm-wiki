@@ -4,9 +4,24 @@ type: index
 date: 2026-06-03
 ---
 
-# LLM Wiki
-
 > 个人 AI 知识库 —— AI 编译过的百科全书
+
+## 状态
+
+- 实体数：61 ｜ 主题数：9 ｜ 来源数：151
+- 最后更新：2026-06-12
+
+### 主题导航
+
+- [[Agent架构演进-主题|Agent 架构演进]] —— 从"一问一答"到"自主执行"的架构演进路径
+- [[Agentic-Engineering-主题|Agentic Engineering]] —— 从 Vibe Coding 到 AI 主导的工程范式
+- [[Harness-Engineering-主题|Harness Engineering]] —— 从"写好 prompt"到"设计好整个工程框架"
+- [[Claude-Code源码解析-主题|Claude Code 源码解析]] —— 社区对 Claude Code 的源码级深度分析
+- [[AI-Skill体系-主题|AI Skill 体系]] —— Skill 的标准化、工程化与自进化
+- [[Skill开发最佳实践|Skill 开发最佳实践]] —— Skill 迭代式编写与触发设计
+- [[Agent评测方法论|Agent 评测方法论]] —— 结构化评估规则 + 执行流程
+- [[AI-Infra推理优化-主题|AI Infra 推理优化]] —— 推理服务全栈：数学原理 → RAG / Memory
+- [[OpenClaw-digest-20260510|OpenClaw 综合]] —— 架构总览与三大子系统设计哲学
 
 ## 最近更新
 
@@ -106,10 +121,3 @@ date: 2026-06-03
 ### 2026-05-10
 
 首批入库。[[OpenClaw]] 9 篇来源 + 3 子实体（[[OpenClaw-双源记忆系统]]、[[OpenClaw-Skills]]、[[OpenClaw-SandBox]]）
-
-## 状态
-
-- 实体数：61
-- 主题数：9
-- 来源数：151
-- 最后更新：2026-06-12

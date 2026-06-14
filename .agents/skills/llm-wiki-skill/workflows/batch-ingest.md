@@ -10,14 +10,14 @@
 
 - `target`（可选）：
   - `_inbox`（默认）：读 `ai-wiki/raw/_inbox.md` 的待办行
-  - `<source_type>`：处理 `raw/<source_type>/` 下所有未在 `wiki/sources/` 出现的文件
+  - `<source_type>`：处理 `raw/<source_type>/` 下所有未在 `wiki/sources/`（含子目录）出现的文件
   - 路径：处理给定路径下所有文件
 
 ## 步骤
 
 1. **构建队列**
     - 列出候选文件
-    - 排除已存在 `ai-wiki/wiki/sources/<title>.md` 的文件（按文件名去重）
+    - 排除已存在的来源：`find ai-wiki/wiki/sources -name '<title>.md'`（递归查子目录，按文件名去重）
     - 输出预览给用户确认数量后再开始
 2. **顺序 ingest**
     - 对每个候选：调用 `ingest` workflow（不重复 lint，留到末尾）

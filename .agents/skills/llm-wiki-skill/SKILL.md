@@ -17,12 +17,28 @@ ai-wiki/
 │   ├── webpage/  x/  wechat/  xiaohongshu/  zhihu/  youtube/  pdf/  local/
 │   └── _inbox.md           # 待处理队列（init 创建）
 └── wiki/                   # 整理产出
-    ├── entities/           # 实体页（人/概念/工具/项目）
-    ├── topics/             # 主题页（聚合多个实体）
-    ├── sources/            # 来源摘要（每篇素材一份）
+    ├── entities/<分类>/     # 实体页，按 7 个域分子目录（见下「分类目录约定」）
+    ├── topics/             # 主题页（聚合多个实体，扁平不分类）
+    ├── sources/<分类>/      # 来源摘要，同 7 个域 +「通用工程实践」
     ├── _meta.json          # 元信息（语言/版本/上次 lint）
     └── index.md            # 总入口
 ```
+
+## 分类目录约定
+
+`entities/` 与 `sources/` 下按域分子目录（侧边栏据此折叠分组）。新建文件时**按主题归入对应子目录**；跨多个域取**主归属**一个目录，其余关联靠 `related_entities` / 关系图谱体现。`topics/` 不分子目录。
+
+实体与来源共用 7 个 AI 域：
+
+- `Agent架构与范式` — Agent 范式/协议/多 Agent（ReAct、MCP、自进化…）
+- `Agent记忆与评测` — 记忆系统与记忆/Agent 评测基准（Memory、Mem0、LOCOMO…）
+- `RAG与知识库` — 检索增强、知识库、重排/切分（RAG、GraphRAG、HyDE…）
+- `Harness与AI工程化` — Harness、AI 工程化方法论、AI-Friendly 架构
+- `Claude-Code与编码工具` — Claude Code / Cursor 等编码工具与源码解析、Prompt 体系
+- `Skill与鉴权` — Skill 体系、Agent 鉴权/凭证
+- `基础设施-模型-平台` — 推理框架、模型、Agent 平台/公司/人物（vLLM、DeepSeek、OpenClaw…）
+
+来源额外有 `通用工程实践`：非 AI 主题的后端/数据库/系统设计文章（MySQL、缓存、排行榜、BI 等）。
 
 ## 工作流路由器
 

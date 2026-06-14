@@ -1,3 +1,26 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// 侧边栏:文件条目前导符 + 悬挂缩进,治长标题换行后边界模糊
+.explorer-content li > a {
+  display: block;
+  position: relative;
+  padding-left: 1.1em; // 给圆点留出 gutter;换行第二行对齐到这里
+  padding-right: 0.4em;
+  padding-block: 2px; // 条目间多一丝呼吸,也给高亮行一点厚度
+  line-height: 1.4;
+  border-radius: 4px;
+  transition: background-color 0.15s ease;
+}
+.explorer-content li > a::before {
+  content: "•";
+  position: absolute;
+  left: 0.2em;
+  color: var(--gray); // 低调,不抢标题
+}
+
+// 侧边栏:悬浮 / 当前页 整行高亮
+.explorer-content li > a:hover,
+.explorer-content li > a.active {
+  background-color: var(--lightgray);
+  opacity: 1; // 盖掉默认 0.75,高亮时文字更实
+}

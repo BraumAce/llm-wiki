@@ -48,7 +48,7 @@ def parse_frontmatter(text):
 nodes = []
 node_ids = set()
 for subdir, ntype in TYPES.items():
-    for path in sorted(glob.glob(os.path.join(WIKI_DIR, subdir, '*.md'))):
+    for path in sorted(glob.glob(os.path.join(WIKI_DIR, subdir, '**', '*.md'), recursive=True)):
         nid = os.path.splitext(os.path.basename(path))[0]
         if nid.startswith('_'):
             continue
@@ -67,7 +67,7 @@ for subdir, ntype in TYPES.items():
 edges_count = {}
 orphan_links = set()
 for subdir in TYPES:
-    for path in sorted(glob.glob(os.path.join(WIKI_DIR, subdir, '*.md'))):
+    for path in sorted(glob.glob(os.path.join(WIKI_DIR, subdir, '**', '*.md'), recursive=True)):
         src = os.path.splitext(os.path.basename(path))[0]
         if src.startswith('_'):
             continue
@@ -76,7 +76,7 @@ for subdir in TYPES:
         # 跳过 frontmatter 头中的 [[link]]——这些是 sources/related_entities 字段引用，
         # 也算作边。保留全文扫描即可
         for m in re.finditer(r'\[\[([^\]\n]+)\]\]', text):
-            tgt = m.group(1).strip()
+            tgt = m.group(1).split('|')[0].strip()
             if tgt in SKIP_LINKS:
                 continue
             if tgt == src:

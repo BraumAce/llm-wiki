@@ -14,9 +14,9 @@
 
 1. **入口**：先读 `ai-wiki/wiki/index.md` 与 `_meta.json`，了解当前规模与语言
 2. **检索**（按优先级，先精确后泛化）
-    - **精确实体匹配**：`ai-wiki/wiki/entities/<question_keyword>.md` 是否存在
+    - **精确实体匹配**：`find ai-wiki/wiki/entities -name '<question_keyword>.md'`（递归查分类子目录）
     - **frontmatter 命中**：grep `tags:` / `also_known_as:` / `related_entities:`
-    - **正文 grep**：在 `entities/` `topics/` `sources/` 中按关键词搜索
+    - **正文 grep**：`grep -r` 递归搜 `entities/` `topics/` `sources/`（含分类子目录）
     - **wikilink 反向**：找出哪些页面 `[[link]]` 指向已命中的实体
 3. **读取**：把命中的文件**完整读取**，不要只看摘要
 4. **综合作答**

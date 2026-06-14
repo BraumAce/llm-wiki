@@ -24,7 +24,7 @@ echo "[1/5] 链接一致性..."
 links=$(
   find "$WIKI_DIR" -name '*.md' -type f -exec grep -oh '\[\[[^]]*\]\]' {} + 2>/dev/null \
     | sort -u \
-    | sed 's/^\[\[//; s/\]\]$//' \
+    | sed 's/^\[\[//; s/\]\]$//; s/|.*$//' \
     | grep -v '^$' || true
 )
 if [ -n "$links" ]; then
@@ -32,7 +32,7 @@ if [ -n "$links" ]; then
     [ -z "$link" ] && continue
     # 跳过分类索引（entities/topics/sources 是 index.md 的入口锚，不是实体）
     case "$link" in entities|topics|sources) continue ;; esac
-    if ! find "$ENTITIES_DIR" "$TOPICS_DIR" "$SOURCES_DIR" -maxdepth 1 -name "${link}.md" 2>/dev/null | grep -q .; then
+    if ! find "$ENTITIES_DIR" "$TOPICS_DIR" "$SOURCES_DIR" -name "${link}.md" 2>/dev/null | grep -q .; then
       err "孤儿链接 [[$link]] —— 找不到对应文件"
     fi
   done <<< "$links"
@@ -47,7 +47,7 @@ if [ -d "$ENTITIES_DIR" ]; then
     if [ "$chars" -lt 1000 ]; then
       err "$(basename "$f") 仅 $chars 字 (要求 ≥1000)"
     fi
-  done < <(find "$ENTITIES_DIR" -maxdepth 1 -name '*.md' -type f -print0 2>/dev/null)
+  done < <(find "$ENTITIES_DIR" -name '*.md' -type f -print0 2>/dev/null)
 fi
 
 # --- 3. 占位符 ---
@@ -87,7 +87,7 @@ for d in "$ENTITIES_DIR" "$TOPICS_DIR"; do
   [ -d "$d" ] || continue
   while IFS= read -r -d '' f; do
     check_sources "$f"
-  done < <(find "$d" -maxdepth 1 -name '*.md' -type f -print0 2>/dev/null)
+  done < <(find "$d" -name '*.md' -type f -print0 2>/dev/null)
 done
 
 # --- 5. 主题页核心要点 ≥5 ---

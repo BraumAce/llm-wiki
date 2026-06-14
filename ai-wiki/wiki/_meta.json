@@ -11,55 +11,55 @@
   "sources": [
     {
       "title": "如何构建一个更\"好\"的知识库？",
-      "file": "sources/如何构建一个更好的知识库.md",
+      "file": "sources/RAG与知识库/如何构建一个更好的知识库.md",
       "date": "2026-06-12",
       "source_type": "wechat"
     },
     {
       "title": "面向 Agent Skill 的 CLI/SSO 鉴权体系：安全、无感、可追溯",
-      "file": "sources/面向-Agent-Skill的-CLI-SSO-鉴权体系.md",
+      "file": "sources/Skill与鉴权/面向-Agent-Skill的-CLI-SSO-鉴权体系.md",
       "date": "2026-06-12",
       "source_type": "wechat"
     },
     {
       "title": "让 Claude Code 拥有自我进化和记忆系统",
-      "file": "sources/让-Claude-Code-拥有自我进化和记忆系统.md",
+      "file": "sources/Agent记忆与评测/让-Claude-Code-拥有自我进化和记忆系统.md",
       "date": "2026-06-12",
       "source_type": "wechat"
     },
     {
       "title": "AI 不缺智商缺纪律：一场 Harness 工程化实践",
-      "file": "sources/AI-不缺智商缺纪律：一场-Harness-工程化实践.md",
+      "file": "sources/Harness与AI工程化/AI-不缺智商缺纪律：一场-Harness-工程化实践.md",
       "date": "2026-06-12",
       "source_type": "wechat"
     },
     {
       "title": "Harness Engineering落地前，先想清楚这几个问题",
-      "file": "sources/Harness-Engineering落地前先想清楚这几个问题.md",
+      "file": "sources/Harness与AI工程化/Harness-Engineering落地前先想清楚这几个问题.md",
       "date": "2026-06-12",
       "source_type": "wechat"
     },
     {
       "title": "Agent skill 迭代式编写实战",
-      "file": "sources/Agent-skill-迭代式编写实战.md",
+      "file": "sources/Skill与鉴权/Agent-skill-迭代式编写实战.md",
       "date": "2026-06-12",
       "source_type": "wechat"
     },
     {
       "title": "知识库分层编排：从 RAG 到 Agent-native Knowledge Context Layer",
-      "file": "sources/知识库分层编排-从RAG到Agent-native-Knowledge-Context-Layer.md",
+      "file": "sources/RAG与知识库/知识库分层编排-从RAG到Agent-native-Knowledge-Context-Layer.md",
       "date": "2026-06-09",
       "source_type": "wechat"
     },
     {
       "title": "设计模式已死？",
-      "file": "sources/设计模式已死.md",
+      "file": "sources/Harness与AI工程化/设计模式已死.md",
       "date": "2026-06-09",
       "source_type": "wechat"
     },
     {
       "title": "横向拆解六大Agent上下文压缩策略后我们做了第7个",
-      "file": "sources/横向拆解六大Agent上下文压缩策略后我们做了第7个.md",
+      "file": "sources/Agent架构与范式/横向拆解六大Agent上下文压缩策略后我们做了第7个.md",
       "date": "2026-06-08",
       "source_type": "wechat"
     }

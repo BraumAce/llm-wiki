@@ -11,7 +11,7 @@ META="$WIKI_DIR/_meta.json"
 count_md() {
   local dir="$1"
   [ -d "$dir" ] || { echo 0; return; }
-  find "$dir" -maxdepth 1 -name '*.md' -type f 2>/dev/null | wc -l | tr -d ' '
+  find "$dir" -name '*.md' -type f 2>/dev/null | wc -l | tr -d ' '
 }
 
 count_chars() {

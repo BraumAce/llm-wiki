@@ -13984,7 +13984,10 @@ var defaultContentPageLayout = {
       condition: /* @__PURE__ */ __name((page) => page.fileData.slug !== "index", "condition")
     }),
     ArticleTitle_default(),
-    ContentMeta_default(),
+    ConditionalRender_default({
+      component: ContentMeta_default(),
+      condition: /* @__PURE__ */ __name((page) => page.fileData.slug !== "index", "condition")
+    }),
     SourceMeta_default(),
     TagList_default()
   ],

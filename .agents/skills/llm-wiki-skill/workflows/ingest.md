@@ -33,10 +33,10 @@
 
 1. **抽实体**（人 / 概念 / 工具 / 项目 / 公司），过滤掉一次性提及的边角实体
 2. 对每个实体：
-    - 检查 `ai-wiki/wiki/entities/<name>.md` 是否存在
+    - 检查实体是否已存在：`find ai-wiki/wiki/entities -name '<name>.md'`（递归查子目录）
     - **存在**：合并新内容到对应小节（详情/应用/局限），扩展但不覆盖；frontmatter `sources` 追加本 source
-    - **不存在**：基于 `templates/entity.md` 创建。**字数必须 ≥ 1000**——单篇素材撑不到 1000 字时，从该素材已有信息出发主动补背景知识填到 1000 字（标注哪些来自 source、哪些是补充的常识）
-3. **写来源摘要**：基于 `templates/source.md` 创建 `ai-wiki/wiki/sources/<title>.md`
+    - **不存在**：基于 `templates/entity.md` 创建到 `ai-wiki/wiki/entities/<分类>/<name>.md`（`<分类>` 见 SKILL.md「分类目录约定」，按主题取主归属域）。**字数必须 ≥ 1000**——单篇素材撑不到 1000 字时，从该素材已有信息出发主动补背景知识填到 1000 字（标注哪些来自 source、哪些是补充的常识）
+3. **写来源摘要**：基于 `templates/source.md` 创建 `ai-wiki/wiki/sources/<分类>/<title>.md`（`<分类>` 同上；非 AI 主题归 `通用工程实践`）
     - 必须含 ≥ 2 段 100 字摘录
     - **"实践内容"段**应收尽收以下原文片段（原样保留，不要总结掉）：
       - 代码 / prompt / 命令
@@ -53,7 +53,7 @@
 
 ### 4. 简化处理
 
-- 仅生成 `ai-wiki/wiki/sources/<title>.md`
+- 仅生成 `ai-wiki/wiki/sources/<分类>/<title>.md`
 - 文中提到的实体用 `[[entity]]` 链接，但**不**单独建实体页
 - 在 source frontmatter 加标签 `tags: [light]` 便于后续聚合
 
@@ -66,9 +66,9 @@
 
 ## 输出
 
-- `ai-wiki/wiki/sources/<title>.md`（必有）
-- `ai-wiki/wiki/entities/*.md`（完整处理时）
-- `ai-wiki/wiki/topics/<topic>.md`（命中规则时）
+- `ai-wiki/wiki/sources/<分类>/<title>.md`（必有）
+- `ai-wiki/wiki/entities/<分类>/*.md`（完整处理时）
+- `ai-wiki/wiki/topics/<topic>.md`（命中规则时，扁平不分类）
 - `_meta.json` 的 `stats` 更新
 
 ## 验证
