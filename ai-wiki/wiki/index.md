@@ -8,8 +8,8 @@ date: 2026-06-03
 
 ## 状态
 
-- 实体数：61 ｜ 主题数：9 ｜ 来源数：151
-- 最后更新：2026-06-12
+- 实体数：68 ｜ 主题数：9 ｜ 来源数：154
+- 最后更新：2026-06-16
 
 ### 主题导航
 
@@ -24,6 +24,21 @@ date: 2026-06-03
 - [[OpenClaw-digest-20260510|OpenClaw 综合]] —— 架构总览与三大子系统设计哲学
 
 ## 最近更新
+
+### 2026-06-16
+
+新增来源：[[Loop-Engineering循环工程橙皮书]] —— 花叔「橙皮书系列」第四本，把 loop engineering（循环工程）一次讲清：四层栈（prompt→context→harness→loop）、一个循环的五个动作、六个零件、四笔代价（验证债/理解腐烂/认知投降/token 失控）、Claude Code 的 /loop 与 /goal 原语。
+
+新增来源：[[一篇搞懂-AI-Coding-Agent的Token成本控制]] —— 腾讯技术工程 AI Coding Agent 降本完整指南，五层路径（使用习惯→模型路由→上下文压缩→代码图谱→Agent 架构），核心心智模型「账单大头是系统为了回答你重复搬运的上下文」。
+
+新增来源：[[后端架构AI-Friendly的标准与路径]] —— 阿里技术从后端分布式系统、面向 7×24 无人值守开发角度给出 14 节 AI Friendly 标准（六类事实、Architecture Map、Service Card、Harness 七层、Test-Gated、L0–L5 权限、Architecture as Code、Copilot→Coworker→Operator）。
+
+新增实体：[[Loop-Engineering]]、[[Generator-Evaluator]]、[[Stripe-Minions]]、[[Addy-Osmani]] —— Loop Engineering 循环工程 4 个实体。
+新增实体：[[Token成本控制]]、[[Prompt-Cache]]、[[Orchestrator-Worker模式]] —— AI Coding 成本优化 3 个实体。
+
+更新实体：[[AI-Friendly架构]] —— 补「后端分布式/无人值守」视角整节，关联 [[Harness-Engineering]]、[[AI-Native软件工程]]。
+更新实体：[[Harness-Engineering]] —— 关联 [[Loop-Engineering]]（harness 的上一层楼）。
+更新主题：[[Harness-Engineering-主题]] —— 四层栈对比矩阵补 Loop 列 + 核心要点。
 
 ### 2026-06-12
 
