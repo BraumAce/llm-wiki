@@ -2,13 +2,31 @@
   "version": "1.0",
   "lang": "zh",
   "created_at": "2026-05-10T20:50:00+08:00",
-  "last_lint": "2026-06-12T23:30:00+08:00",
+  "last_lint": "2026-06-16T00:05:00+08:00",
   "stats": {
-    "entities": 61,
-    "sources": 151,
+    "entities": 68,
+    "sources": 154,
     "topics": 9
   },
   "sources": [
+    {
+      "title": "一篇搞懂 AI Coding Agent 的 Token 成本控制",
+      "file": "sources/Harness与AI工程化/一篇搞懂-AI-Coding-Agent的Token成本控制.md",
+      "date": "2026-06-15",
+      "source_type": "wechat"
+    },
+    {
+      "title": "后端架构 AI Friendly 的标准与路径：面向无人值守开发时代的系统重构",
+      "file": "sources/Harness与AI工程化/后端架构AI-Friendly的标准与路径.md",
+      "date": "2026-06-15",
+      "source_type": "wechat"
+    },
+    {
+      "title": "别再问我什么是 Loop Engineering（循环工程橙皮书）",
+      "file": "sources/Harness与AI工程化/Loop-Engineering循环工程橙皮书.md",
+      "date": "2026-06-15",
+      "source_type": "pdf"
+    },
     {
       "title": "如何构建一个更\"好\"的知识库？",
       "file": "sources/RAG与知识库/如何构建一个更好的知识库.md",

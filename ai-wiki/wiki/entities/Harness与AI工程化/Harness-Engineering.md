@@ -37,6 +37,7 @@ sources:
   - "[[4000行代码撑起一个Agent框架-nanobot架构深度解析]]"
 related_entities:
   - "[[OpenClaw]]"
+  - "[[Loop-Engineering]]"
   - "[[Spec-Driven-Development]]"
   - "[[OpenClaw-Skills]]"
   - "[[OpenHarness]]"
@@ -128,6 +129,7 @@ Harness Engineering 的理念可以扩展到 Agent 评测领域。阿里团队�
 ## 与其他实体的关系
 
 - [[OpenClaw]] —— OpenClaw 的设计哲学本身就体现了 Harness 思维：CLAUDE.md 持久化状态、hooks 强制规范、Skills 封装领域知识
+- [[Loop-Engineering]] —— 循环工程是 harness 的"上一层楼"：harness 武装单次运行，loop 让这次运行在定时器上自动重来
 - [[Spec-Driven-Development]] —— SDD 是 Harness 在需求阶段的具体实践，两者经常组合使用
 - [[OpenClaw-Skills]] —— Skills 是 Harness 的能力封装层，Agent 按需加载领域知识包
 

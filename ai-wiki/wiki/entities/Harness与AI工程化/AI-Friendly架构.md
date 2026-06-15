@@ -4,8 +4,8 @@ type: entity
 date: 2026-06-02
 also_known_as: [AI Friendly Architecture, LLM-Friendly架构]
 tags: [架构, AI, Agent, 工程化]
-sources: [面向LLM的架构设计-什么是真正的AI-Friendly架构]
-related_entities: [ReAct, Context-Engineering, AI-Friendly-API, Multi-Agent, AI可观测性, Agentic-Engineering]
+sources: [面向LLM的架构设计-什么是真正的AI-Friendly架构, 后端架构AI-Friendly的标准与路径]
+related_entities: [ReAct, Context-Engineering, AI-Friendly-API, Multi-Agent, AI可观测性, Agentic-Engineering, Harness-Engineering, AI-Native软件工程]
 related_topics: [Agent架构演进-主题]
 ---
 
@@ -77,6 +77,25 @@ AI Friendly架构由大淘宝技术团队的久游在2026年提出，源于秒�
 - 仅需接入AI Workflow获取结果的系统
 - 将Agent当接口使用的简单调用场景
 - 不需要"为用AI而升级AI架构"
+
+### 后端分布式系统视角：无人值守开发的 AI Friendly 标准（阿里·刘瑞洲）
+
+上面是大淘宝技术从「前端/应用 Agent」视角提出的范式；阿里技术的刘瑞洲则从**后端分布式系统、面向 7×24 无人值守开发**的角度给出一套互补标准。核心命题：过去建设的是「可维护系统」，未来要建设「可被智能体维护的系统」——本质是把藏在人脑、群聊、口头约定、历史事故里的系统知识，**显式化、结构化、可检索化、可执行化、可验证化**。
+
+**第一原则·六类机器可读「事实」底座**：架构事实（全局架构地图）、服务事实（每服务的职责/依赖/接口/数据/消息）、领域事实（实体/状态机/不变量）、接口事实（幂等/重试/兼容/废弃策略）、数据事实（字段语义/枚举/分库分表/敏感字段）、运行事实（QPS/TP99/错误率/热点）。AI 对字段语义的猜测是自动化开发最危险的风险点之一。
+
+**关键工程资产**：
+- **Architecture Map**：可被人读、AI 检索、工具引用、CI 校验、Harness 执行的全局系统地图，让 AI 进入任一服务前先获得「系统级方向感」，避免把局部修复做成全局破坏。
+- **System Card / Service Card（服务身份证）**：每个微服务一张标准化卡片（定位/职责/实体/数据所有权/接口/消息/依赖/运行特征/变更约束/测试入口/发布回滚），部分自动生成（接口从 IDL/OpenAPI、依赖从调用链、表结构从 schema），由 CI 校验。
+- **Domain Clarity**：显式化不变量、状态机、幂等与一致性策略、风险等级，并补「跨域链路模型」保护系统级一致性。
+- **Skill-Based**：把高频工程任务（加字段灰度兼容、新增 consumer、排查 TP99…）沉淀为 [[Spec-Driven-Development]] 式的可调用 SKILL，把资深工程师经验变成可执行资产。
+- **Harness Augmentation**：为 AI 建安全执行轨道，七层——上下文装载、工具（权限边界，生产库默认只读）、计划、执行（独立分支/worktree/sandbox）、验证、审计、回滚；更进一步让 [[Harness-Engineering]] 成为「全局架构规则执行器」（Architecture Policy 自动校验分层/依赖方向/数据 owner）。
+- **Test-Gated AI Development**：测试从「防人出错」升级为「约束和指导 AI 行为」的红绿灯/checkpoint，含单测、契约测试、集成、回归用例库、数据迁移测试、性能测试、**架构级测试**（验证系统结构是否被破坏）。
+- **AI-Observable Architecture**：可观测性变成 AI 的眼睛——日志结构化（traceId/bizId/errorCode）、错误码有语义、Trace 关联业务实体、指标有业务含义、告警带 Runbook（详见 [[AI可观测性]]）。
+- **Tiered Access Control（L0–L5 分级权限）**：从「只读代码」到「执行生产修复（强审计+人类预授权）」，让 AI 在不同风险场景获得刚好足够的权限；数据安全要求脱敏、生产库只读限行限时全量审计、密钥经 secret manager。
+- **Docs/Architecture as Code**：文档与架构都进 CI——`architecture.yaml`/`ownership.yaml`/`critical-path.yaml`/`risk-policy.yaml` 让全局架构成为可被 AI 读取、CI 校验、Harness 执行的工程资产。
+
+**成熟度三阶段**：Copilot（辅助写代码）→ Coworker（独立完成中低风险任务，需 Service Card/SKILL/契约测试/CI）→ Operator（[[Loop-Engineering]] 式的「黑灯工厂」：接告警、定位、修复、回滚、复盘，需完整可观测/权限分级/审计/灰度）。落地路线的关键是「先追求可验证，再追求无人化」——逐步扩大 AI 的「可信半径」。
 
 ### 局限与注意事项
 

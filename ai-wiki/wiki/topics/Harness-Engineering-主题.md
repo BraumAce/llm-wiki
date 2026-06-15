@@ -8,11 +8,13 @@ tags:
   - methodology
 related_entities:
   - "[[Harness-Engineering]]"
+  - "[[Loop-Engineering]]"
   - "[[Spec-Driven-Development]]"
   - "[[OpenClaw]]"
   - "[[OpenClaw-Skills]]"
   - "[[OpenHarness]]"
 sources:
+  - "[[Loop-Engineering循环工程橙皮书]]"
   - "[[从Prompt-Context到Harness-工程的三次进化与终局之战]]"
   - "[[Harness-Engineering-耗时一周将AI-Coding率提升至90]]"
   - "[[Claude-Code-Harness工程-数仓侧落地方案-得物技术]]"
@@ -51,22 +53,25 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 5. **五类最小组件**：入口定义、执行依据、边界约束、验证机制、回写规则
 6. **AI 代码率可达 90%+**：阿里工程师在 10 万行 Java 存量应用中验证
 7. **Goodhart 定律的阴影**：当指标成为目标，AI 可能学会"满足检查"而非"做正确的事"
+8. **再上一层是 Loop Engineering**：harness 武装单次运行，[[Loop-Engineering]]（循环工程）让它在定时器上一遍遍自己跑、自己孵化子 agent、自我喂食——栈从"一次跑"延伸到"自己跑下去"
 
 ## 涉及实体
 
 - [[Harness-Engineering]] —— 核心概念实体
+- [[Loop-Engineering]] —— 四层栈最上层，坐在 harness 的"上一层楼"
 - [[Spec-Driven-Development]] —— SDD 是 Harness 在需求阶段的实践
 - [[OpenClaw]] —— OpenClaw 体现了 Harness 思维
 - [[OpenClaw-Skills]] —— Skills 是 Harness 的能力封装层
 
 ## 对比矩阵
 
-| 维度 | Prompt Engineering | Context Engineering | Harness Engineering |
-|------|---|---|---|
-| 关注点 | 说什么 | 知道什么 | 怎样可靠运行 |
-| 典型产物 | prompt 模板 | context 注入策略 | .harness/ + hooks + CI |
-| 可复用性 | 低 | 中 | 高 |
-| 团队协作 | 弱 | 中 | 强 |
+| 维度 | Prompt Engineering | Context Engineering | Harness Engineering | Loop Engineering |
+|------|---|---|---|---|
+| 关注点 | 说什么 | 知道什么 | 怎样可靠运行 | 怎样自己一遍遍跑 |
+| 典型产物 | prompt 模板 | context 注入策略 | .harness/ + hooks + CI | automation + worktree + evaluator + memory |
+| 可复用性 | 低 | 中 | 高 | 高 |
+| 团队协作 | 弱 | 中 | 强 | 强（一个人干一个团队的活） |
+| 管的范围 | 一句话 | 一个窗口 | 一次运行 | 让它自己跑下去 |
 
 ## 关键来源
 
