@@ -73,6 +73,7 @@ ai-wiki/
 ## 自动联动
 
 - **每次 ingest / batch-ingest 结束前**强制调用 `lint`，输出问题清单后再决定是否完成
+- **lint 通过后同步首页**：跑 `scripts/sync-index.sh` 刷新 `index.md` 状态区与 `_meta.json.stats`（机械计数，勿手改），并在 `index.md` 的「最近更新」追加本次条目（叙述，手动写）。详见各 workflow 末步
 - 出现 3+ 可对比实体（同 type 同 tag）→ 自动建对比小节到主题页
 - 同主题来源数 ≥ 5 → 自动建主题页 `wiki/topics/<topic>.md`
 
@@ -80,7 +81,7 @@ ai-wiki/
 
 - 内容模板：[templates/entity.md](templates/entity.md) [templates/topic.md](templates/topic.md) [templates/source.md](templates/source.md) [templates/index.md](templates/index.md)
 - 来源抓取约定：[references/sources/webpage.md](references/sources/webpage.md) [references/sources/local.md](references/sources/local.md)
-- 校验脚本：`scripts/lint.sh`、`scripts/status.sh`（必须可执行）
+- 校验脚本：`scripts/lint.sh`、`scripts/status.sh`、`scripts/sync-index.sh`（必须可执行）
 
 ## 多语言
 

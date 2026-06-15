@@ -25,19 +25,24 @@
 3. **末尾合并 lint**
     - 跑一次完整 `lint`
     - 修复跨 ingest 产生的链接不一致
-4. **更新 inbox**
+4. **同步首页 index.md**（各子 ingest 已跳过本步，这里统一做一次）
+    - 跑 `bash scripts/sync-index.sh` 刷新状态区 + `_meta.json.stats`
+    - 在「## 最近更新」为今天追加**一条合并条目**，汇总本批新增的 sources / entities / 更新项（不要每篇拆成一条）
+5. **更新 inbox**
     - 把已处理的 `[ ]` 行改为 `[x]` + 处理日期
-5. **生成报告**
+6. **生成报告**
     - 处理总数 / 成功 / 失败
     - 新增 entities / topics / sources 数
 
 ## 输出
 
 - 大批文件
+- `index.md` 状态区 + 一条合并的「最近更新」条目
 - 控制台报告
 
 ## 验证
 
 - [ ] 全部成功的项目最终 lint 通过
 - [ ] `_inbox.md` 状态更新
+- [ ] `index.md` 状态区与「最近更新」已刷新
 - [ ] `_meta.json.stats` 与实际文件数一致
