@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-14T00:49:23+08:00",
+  "generated_at": "2026-06-16T23:25:49+08:00",
   "wiki_dir": "/Users/liuguang/Documents/Private/llm-wiki/ai-wiki/wiki",
   "stats": {
-    "nodes": 221,
-    "edges": 754,
-    "edge_weight_total": 1228,
+    "nodes": 233,
+    "edges": 858,
+    "edge_weight_total": 1437,
     "orphan_links": [],
     "by_type": {
-      "entity": 61,
+      "entity": 68,
       "topic": 9,
-      "source": 151
+      "source": 156
     }
   },
   "nodes": [
@@ -53,6 +53,17 @@
         "监控",
         "评测",
         "AI"
+      ]
+    },
+    {
+      "id": "Addy-Osmani",
+      "type": "entity",
+      "title": "Addy Osmani",
+      "tags": [
+        "person",
+        "google-chrome",
+        "loop-engineering",
+        "ai-engineering"
       ]
     },
     {
@@ -224,6 +235,18 @@
       ]
     },
     {
+      "id": "Generator-Evaluator",
+      "type": "entity",
+      "title": "Generator-Evaluator",
+      "tags": [
+        "ai-engineering",
+        "verification",
+        "multi-agent",
+        "evaluation",
+        "harness"
+      ]
+    },
+    {
       "id": "GraphRAG",
       "type": "entity",
       "title": "GraphRAG",
@@ -335,6 +358,18 @@
         "llm",
         "graph-database",
         "open-source"
+      ]
+    },
+    {
+      "id": "Loop-Engineering",
+      "type": "entity",
+      "title": "Loop Engineering",
+      "tags": [
+        "ai-engineering",
+        "methodology",
+        "agent-orchestration",
+        "automation",
+        "harness"
       ]
     },
     {
@@ -506,6 +541,28 @@
       ]
     },
     {
+      "id": "Orchestrator-Worker模式",
+      "type": "entity",
+      "title": "Orchestrator-Worker模式",
+      "tags": [
+        "multi-agent",
+        "agent-architecture",
+        "orchestration",
+        "cost-optimization"
+      ]
+    },
+    {
+      "id": "Prompt-Cache",
+      "type": "entity",
+      "title": "Prompt-Cache",
+      "tags": [
+        "ai-engineering",
+        "cost-optimization",
+        "inference",
+        "context-engineering"
+      ]
+    },
+    {
       "id": "Prompt分层组合架构",
       "type": "entity",
       "title": "Prompt分层组合架构",
@@ -614,6 +671,18 @@
       ]
     },
     {
+      "id": "Stripe-Minions",
+      "type": "entity",
+      "title": "Stripe Minions",
+      "tags": [
+        "agent-platform",
+        "loop-engineering",
+        "case-study",
+        "stripe",
+        "automation"
+      ]
+    },
+    {
       "id": "THEANINE",
       "type": "entity",
       "title": "THEANINE",
@@ -621,6 +690,18 @@
         "memory",
         "timeline",
         "counterfactual-evaluation"
+      ]
+    },
+    {
+      "id": "Token成本控制",
+      "type": "entity",
+      "title": "Token成本控制",
+      "tags": [
+        "ai-engineering",
+        "cost-optimization",
+        "token",
+        "ai-coding",
+        "context-engineering"
       ]
     },
     {
@@ -753,6 +834,19 @@
       ]
     },
     {
+      "id": "AI-Agent-Skill-测评方案及落地实践",
+      "type": "source",
+      "title": "AI Agent & Skill 测评方案及落地实践",
+      "tags": [
+        "agent-evaluation",
+        "skill-evaluation",
+        "rubric",
+        "trace",
+        "baseline",
+        "TPerf"
+      ]
+    },
+    {
       "id": "AI-Agent在保险业务的落地实践",
       "type": "source",
       "title": "AI Agent在保险业务的落地实践：技术实战分享",
@@ -819,12 +913,25 @@
     {
       "id": "AI-不缺智商缺纪律：一场-Harness-工程化实践",
       "type": "source",
-      "title": "AI 不缺智商缺纪律：一场 Harness 工程化实践",
+      "title": "AI 不缺智商缺纪律：一场 / 我的 Harness 工程化实践",
       "tags": [
         "Harness-Engineering",
         "AI-Coding",
         "Claude-Code",
-        "多Agent"
+        "多Agent",
+        "Agent-Eval"
+      ]
+    },
+    {
+      "id": "AI-时代如何超过大多数人",
+      "type": "source",
+      "title": "AI 时代，如何超过大多数人？",
+      "tags": [
+        "AI-Literacy",
+        "Context-Engineering",
+        "Verification",
+        "Workflow",
+        "Judgment"
       ]
     },
     {
@@ -1279,6 +1386,17 @@
       ]
     },
     {
+      "id": "Loop-Engineering循环工程橙皮书",
+      "type": "source",
+      "title": "别再问我什么是 Loop Engineering（循环工程橙皮书）",
+      "tags": [
+        "loop-engineering",
+        "orange-book",
+        "ai-engineering",
+        "agent-orchestration"
+      ]
+    },
+    {
       "id": "MiniCPM5-1B-GitHub",
       "type": "source",
       "title": "MiniCPM5-1B GitHub",
@@ -1549,6 +1667,17 @@
       ]
     },
     {
+      "id": "一篇搞懂-AI-Coding-Agent的Token成本控制",
+      "type": "source",
+      "title": "一篇搞懂 AI Coding Agent 的 Token 成本控制",
+      "tags": [
+        "token",
+        "cost-optimization",
+        "ai-coding",
+        "context-engineering"
+      ]
+    },
+    {
       "id": "万字入门AI-Infra-深入理解大模型中的数学与Infra优化",
       "type": "source",
       "title": "万字入门AI-Infra-深入理解大模型中的数学与Infra优化",
@@ -1792,6 +1921,17 @@
         "harness-engineering",
         "database",
         "rework"
+      ]
+    },
+    {
+      "id": "后端架构AI-Friendly的标准与路径",
+      "type": "source",
+      "title": "后端架构 AI Friendly 的标准与路径：面向无人值守开发时代的系统重构",
+      "tags": [
+        "ai-friendly",
+        "backend-architecture",
+        "unattended-development",
+        "harness"
       ]
     },
     {
@@ -2534,6 +2674,36 @@
       "weight": 2
     },
     {
+      "from": "AI-Agent-Skill-测评方案及落地实践",
+      "to": "AI-Skill体系-主题",
+      "weight": 1
+    },
+    {
+      "from": "AI-Agent-Skill-测评方案及落地实践",
+      "to": "Agent评测方法论",
+      "weight": 1
+    },
+    {
+      "from": "AI-Agent-Skill-测评方案及落地实践",
+      "to": "Generator-Evaluator",
+      "weight": 1
+    },
+    {
+      "from": "AI-Agent-Skill-测评方案及落地实践",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "AI-Agent-Skill-测评方案及落地实践",
+      "to": "OpenClaw-Skills",
+      "weight": 1
+    },
+    {
+      "from": "AI-Agent-Skill-测评方案及落地实践",
+      "to": "Prompt评估体系",
+      "weight": 1
+    },
+    {
       "from": "AI-Agent在保险业务的落地实践",
       "to": "Claude-Code",
       "weight": 2
@@ -2557,6 +2727,26 @@
       "from": "AI-Coding思考-从工具提效到范式变革",
       "to": "Spec-Driven-Development",
       "weight": 2
+    },
+    {
+      "from": "AI-Friendly架构",
+      "to": "AI可观测性",
+      "weight": 1
+    },
+    {
+      "from": "AI-Friendly架构",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "AI-Friendly架构",
+      "to": "Loop-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "AI-Friendly架构",
+      "to": "Spec-Driven-Development",
+      "weight": 1
     },
     {
       "from": "AI-Infra入门干货总结-大模型是如何高效推理的",
@@ -2632,6 +2822,11 @@
       "from": "AI-Native时代-研发组织何去何从",
       "to": "Harness-Engineering-主题",
       "weight": 1
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "AI-Agent-Skill-测评方案及落地实践",
+      "weight": 2
     },
     {
       "from": "AI-Skill体系-主题",
@@ -2740,7 +2935,27 @@
     },
     {
       "from": "AI-不缺智商缺纪律：一场-Harness-工程化实践",
+      "to": "Agentic-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "AI-不缺智商缺纪律：一场-Harness-工程化实践",
+      "to": "Agent评测方法论",
+      "weight": 1
+    },
+    {
+      "from": "AI-不缺智商缺纪律：一场-Harness-工程化实践",
       "to": "Claude-Code",
+      "weight": 1
+    },
+    {
+      "from": "AI-不缺智商缺纪律：一场-Harness-工程化实践",
+      "to": "Context-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "AI-不缺智商缺纪律：一场-Harness-工程化实践",
+      "to": "Generator-Evaluator",
       "weight": 1
     },
     {
@@ -2755,12 +2970,37 @@
     },
     {
       "from": "AI-不缺智商缺纪律：一场-Harness-工程化实践",
-      "to": "OpenClaw",
+      "to": "Skill开发最佳实践",
       "weight": 1
     },
     {
-      "from": "AI-不缺智商缺纪律：一场-Harness-工程化实践",
-      "to": "Skill开发最佳实践",
+      "from": "AI-时代如何超过大多数人",
+      "to": "Agentic-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "AI-时代如何超过大多数人",
+      "to": "Agentic-Engineering-主题",
+      "weight": 1
+    },
+    {
+      "from": "AI-时代如何超过大多数人",
+      "to": "Context-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "AI-时代如何超过大多数人",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "AI-时代如何超过大多数人",
+      "to": "Harness-Engineering-主题",
+      "weight": 1
+    },
+    {
+      "from": "AI-时代如何超过大多数人",
+      "to": "RAG",
       "weight": 1
     },
     {
@@ -2811,6 +3051,36 @@
     {
       "from": "AI记忆的Git版本控制-Memoir-分层路径替代向量数据库",
       "to": "Agent-Memory",
+      "weight": 1
+    },
+    {
+      "from": "Addy-Osmani",
+      "to": "Anthropic",
+      "weight": 1
+    },
+    {
+      "from": "Addy-Osmani",
+      "to": "Generator-Evaluator",
+      "weight": 3
+    },
+    {
+      "from": "Addy-Osmani",
+      "to": "Harness-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "Addy-Osmani",
+      "to": "Loop-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "Addy-Osmani",
+      "to": "Loop-Engineering循环工程橙皮书",
+      "weight": 2
+    },
+    {
+      "from": "Addy-Osmani",
+      "to": "OpenClaw",
       "weight": 1
     },
     {
@@ -3085,6 +3355,11 @@
     },
     {
       "from": "Agentic-Engineering",
+      "to": "AI-时代如何超过大多数人",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering",
       "to": "Agent从一问一答到自主执行面临哪些挑战",
       "weight": 2
     },
@@ -3146,6 +3421,11 @@
     {
       "from": "Agentic-Engineering",
       "to": "从零设计生产级Multi-Agent-Harness",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "AI-时代如何超过大多数人",
       "weight": 2
     },
     {
@@ -3355,6 +3635,11 @@
     },
     {
       "from": "Agent评测方法论",
+      "to": "AI-Agent-Skill-测评方案及落地实践",
+      "weight": 1
+    },
+    {
+      "from": "Agent评测方法论",
       "to": "Agent-Memory评测全景-基准评估与记忆系统",
       "weight": 1
     },
@@ -3370,13 +3655,18 @@
     },
     {
       "from": "Agent评测方法论",
+      "to": "Generator-Evaluator",
+      "weight": 1
+    },
+    {
+      "from": "Agent评测方法论",
       "to": "Harness-Engineering",
       "weight": 1
     },
     {
       "from": "Agent评测方法论",
       "to": "Prompt评估体系",
-      "weight": 1
+      "weight": 2
     },
     {
       "from": "Agent评测方法论",
@@ -3764,6 +4054,21 @@
       "weight": 1
     },
     {
+      "from": "Context-Engineering",
+      "to": "AI-时代如何超过大多数人",
+      "weight": 2
+    },
+    {
+      "from": "Context-Engineering",
+      "to": "横向拆解六大Agent上下文压缩策略后我们做了第7个",
+      "weight": 2
+    },
+    {
+      "from": "Context-Engineering",
+      "to": "面向LLM的架构设计-什么是真正的AI-Friendly架构",
+      "weight": 2
+    },
+    {
       "from": "Credential-Brokering",
       "to": "Agent-Oriented-Infra",
       "weight": 2
@@ -3849,6 +4154,41 @@
       "weight": 2
     },
     {
+      "from": "Generator-Evaluator",
+      "to": "AI-Agent-Skill-测评方案及落地实践",
+      "weight": 2
+    },
+    {
+      "from": "Generator-Evaluator",
+      "to": "Anthropic",
+      "weight": 3
+    },
+    {
+      "from": "Generator-Evaluator",
+      "to": "Claude-Code",
+      "weight": 3
+    },
+    {
+      "from": "Generator-Evaluator",
+      "to": "Harness-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "Generator-Evaluator",
+      "to": "Loop-Engineering",
+      "weight": 4
+    },
+    {
+      "from": "Generator-Evaluator",
+      "to": "Loop-Engineering循环工程橙皮书",
+      "weight": 2
+    },
+    {
+      "from": "Generator-Evaluator",
+      "to": "Prompt评估体系",
+      "weight": 1
+    },
+    {
       "from": "GraphRAG",
       "to": "LightRAG",
       "weight": 2
@@ -3887,6 +4227,11 @@
       "from": "Harness-Engineering",
       "to": "AI-不缺智商缺纪律：一场-Harness-工程化实践",
       "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "AI-时代如何超过大多数人",
+      "weight": 2
     },
     {
       "from": "Harness-Engineering",
@@ -3942,6 +4287,11 @@
       "from": "Harness-Engineering",
       "to": "Harness的尽头不是缰绳是镜子",
       "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "Loop-Engineering",
+      "weight": 2
     },
     {
       "from": "Harness-Engineering",
@@ -4040,6 +4390,11 @@
     },
     {
       "from": "Harness-Engineering-主题",
+      "to": "AI-时代如何超过大多数人",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
       "to": "Claude-Code-Harness工程-数仓侧落地方案-得物技术",
       "weight": 1
     },
@@ -4086,6 +4441,16 @@
     {
       "from": "Harness-Engineering-主题",
       "to": "Harness的尽头不是缰绳是镜子",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "Loop-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "Loop-Engineering循环工程橙皮书",
       "weight": 1
     },
     {
@@ -4481,6 +4846,96 @@
     {
       "from": "LightRAG",
       "to": "vLLM",
+      "weight": 2
+    },
+    {
+      "from": "Loop-Engineering",
+      "to": "Addy-Osmani",
+      "weight": 3
+    },
+    {
+      "from": "Loop-Engineering",
+      "to": "Anthropic",
+      "weight": 1
+    },
+    {
+      "from": "Loop-Engineering",
+      "to": "Claude-Code",
+      "weight": 3
+    },
+    {
+      "from": "Loop-Engineering",
+      "to": "Context-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "Loop-Engineering",
+      "to": "Generator-Evaluator",
+      "weight": 3
+    },
+    {
+      "from": "Loop-Engineering",
+      "to": "Harness-Engineering",
+      "weight": 4
+    },
+    {
+      "from": "Loop-Engineering",
+      "to": "Loop-Engineering循环工程橙皮书",
+      "weight": 2
+    },
+    {
+      "from": "Loop-Engineering",
+      "to": "MCP",
+      "weight": 1
+    },
+    {
+      "from": "Loop-Engineering",
+      "to": "OpenClaw",
+      "weight": 1
+    },
+    {
+      "from": "Loop-Engineering",
+      "to": "Stripe-Minions",
+      "weight": 3
+    },
+    {
+      "from": "Loop-Engineering循环工程橙皮书",
+      "to": "Addy-Osmani",
+      "weight": 2
+    },
+    {
+      "from": "Loop-Engineering循环工程橙皮书",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "Loop-Engineering循环工程橙皮书",
+      "to": "Generator-Evaluator",
+      "weight": 2
+    },
+    {
+      "from": "Loop-Engineering循环工程橙皮书",
+      "to": "Harness-Engineering",
+      "weight": 4
+    },
+    {
+      "from": "Loop-Engineering循环工程橙皮书",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "Loop-Engineering循环工程橙皮书",
+      "to": "Loop-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Loop-Engineering循环工程橙皮书",
+      "to": "MCP",
+      "weight": 2
+    },
+    {
+      "from": "Loop-Engineering循环工程橙皮书",
+      "to": "Stripe-Minions",
       "weight": 2
     },
     {
@@ -5014,6 +5469,66 @@
       "weight": 1
     },
     {
+      "from": "Orchestrator-Worker模式",
+      "to": "CodeBuddy",
+      "weight": 1
+    },
+    {
+      "from": "Orchestrator-Worker模式",
+      "to": "Loop-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "Orchestrator-Worker模式",
+      "to": "MCP",
+      "weight": 2
+    },
+    {
+      "from": "Orchestrator-Worker模式",
+      "to": "Stripe-Minions",
+      "weight": 3
+    },
+    {
+      "from": "Orchestrator-Worker模式",
+      "to": "Token成本控制",
+      "weight": 3
+    },
+    {
+      "from": "Orchestrator-Worker模式",
+      "to": "一篇搞懂-AI-Coding-Agent的Token成本控制",
+      "weight": 2
+    },
+    {
+      "from": "Prompt-Cache",
+      "to": "Anthropic",
+      "weight": 3
+    },
+    {
+      "from": "Prompt-Cache",
+      "to": "Context-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Prompt-Cache",
+      "to": "Token成本控制",
+      "weight": 3
+    },
+    {
+      "from": "Prompt-Cache",
+      "to": "一篇搞懂-AI-Coding-Agent的Token成本控制",
+      "weight": 2
+    },
+    {
+      "from": "Prompt评估体系",
+      "to": "AI-Agent-Skill-测评方案及落地实践",
+      "weight": 1
+    },
+    {
+      "from": "Prompt评估体系",
+      "to": "深入解析Chromium的AI-Coding开发体系",
+      "weight": 1
+    },
+    {
       "from": "Pyramid-KB",
       "to": "GraphRAG",
       "weight": 2
@@ -5319,6 +5834,31 @@
       "weight": 1
     },
     {
+      "from": "Stripe-Minions",
+      "to": "Addy-Osmani",
+      "weight": 1
+    },
+    {
+      "from": "Stripe-Minions",
+      "to": "Generator-Evaluator",
+      "weight": 3
+    },
+    {
+      "from": "Stripe-Minions",
+      "to": "Loop-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "Stripe-Minions",
+      "to": "Loop-Engineering循环工程橙皮书",
+      "weight": 2
+    },
+    {
+      "from": "Stripe-Minions",
+      "to": "MCP",
+      "weight": 3
+    },
+    {
       "from": "THEANINE",
       "to": "Agent-Memory",
       "weight": 2
@@ -5346,6 +5886,46 @@
     {
       "from": "TRAE-2026企业级AI编程实践手册",
       "to": "Spec-Driven-Development",
+      "weight": 2
+    },
+    {
+      "from": "Token成本控制",
+      "to": "CodeBuddy",
+      "weight": 3
+    },
+    {
+      "from": "Token成本控制",
+      "to": "Context-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Token成本控制",
+      "to": "Cursor",
+      "weight": 1
+    },
+    {
+      "from": "Token成本控制",
+      "to": "DeepSeek-V4",
+      "weight": 2
+    },
+    {
+      "from": "Token成本控制",
+      "to": "MCP",
+      "weight": 3
+    },
+    {
+      "from": "Token成本控制",
+      "to": "Orchestrator-Worker模式",
+      "weight": 3
+    },
+    {
+      "from": "Token成本控制",
+      "to": "Prompt-Cache",
+      "weight": 3
+    },
+    {
+      "from": "Token成本控制",
+      "to": "一篇搞懂-AI-Coding-Agent的Token成本控制",
       "weight": 2
     },
     {
@@ -5461,6 +6041,46 @@
     {
       "from": "一文讲透从0构建AI-Agent",
       "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "一篇搞懂-AI-Coding-Agent的Token成本控制",
+      "to": "CodeBuddy",
+      "weight": 2
+    },
+    {
+      "from": "一篇搞懂-AI-Coding-Agent的Token成本控制",
+      "to": "Context-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "一篇搞懂-AI-Coding-Agent的Token成本控制",
+      "to": "DeepSeek-V4",
+      "weight": 2
+    },
+    {
+      "from": "一篇搞懂-AI-Coding-Agent的Token成本控制",
+      "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "一篇搞懂-AI-Coding-Agent的Token成本控制",
+      "to": "MCP",
+      "weight": 2
+    },
+    {
+      "from": "一篇搞懂-AI-Coding-Agent的Token成本控制",
+      "to": "Orchestrator-Worker模式",
+      "weight": 2
+    },
+    {
+      "from": "一篇搞懂-AI-Coding-Agent的Token成本控制",
+      "to": "Prompt-Cache",
+      "weight": 2
+    },
+    {
+      "from": "一篇搞懂-AI-Coding-Agent的Token成本控制",
+      "to": "Token成本控制",
       "weight": 2
     },
     {
@@ -5682,6 +6302,46 @@
       "from": "别让AI瞎猜了-用Harness-Engineering终结无限返工",
       "to": "Harness-Engineering-主题",
       "weight": 1
+    },
+    {
+      "from": "后端架构AI-Friendly的标准与路径",
+      "to": "AI-Friendly-API",
+      "weight": 2
+    },
+    {
+      "from": "后端架构AI-Friendly的标准与路径",
+      "to": "AI-Friendly架构",
+      "weight": 3
+    },
+    {
+      "from": "后端架构AI-Friendly的标准与路径",
+      "to": "AI-Native软件工程",
+      "weight": 2
+    },
+    {
+      "from": "后端架构AI-Friendly的标准与路径",
+      "to": "AI可观测性",
+      "weight": 2
+    },
+    {
+      "from": "后端架构AI-Friendly的标准与路径",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "后端架构AI-Friendly的标准与路径",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "后端架构AI-Friendly的标准与路径",
+      "to": "Loop-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "后端架构AI-Friendly的标准与路径",
+      "to": "Spec-Driven-Development",
+      "weight": 2
     },
     {
       "from": "告别氛围编程-基于Harness治理和SDD的团队级AI研发范式",

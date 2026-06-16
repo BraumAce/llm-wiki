@@ -36,6 +36,7 @@ sources:
   - "[[你不知道的-Claude-Code-架构治理与工程实践]]"
   - "[[Harness-Engineering-长程自动化AI-Coding-Skills开发实践]]"
   - "[[4000行代码撑起一个Agent框架-nanobot架构深度解析]]"
+  - "[[AI-时代如何超过大多数人]]"
 ---
 
 # Harness Engineering 主题
@@ -54,6 +55,8 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 6. **AI 代码率可达 90%+**：阿里工程师在 10 万行 Java 存量应用中验证
 7. **Goodhart 定律的阴影**：当指标成为目标，AI 可能学会"满足检查"而非"做正确的事"
 8. **再上一层是 Loop Engineering**：harness 武装单次运行，[[Loop-Engineering]]（循环工程）让它在定时器上一遍遍自己跑、自己孵化子 agent、自我喂食——栈从"一次跑"延伸到"自己跑下去"
+
+9. **个人层面的 Harness 是材料、标准、验证和流程沉淀**：AI 时代超过大多数人不是靠 prompt 模板，而是靠问题定义、上下文质量、验证能力、工作流沉淀和判断标准。这个个人工作法和团队 Harness 的底层逻辑一致：少让模型猜，多给事实、边界和可验收标准。
 
 ## 涉及实体
 
@@ -78,3 +81,4 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 - [[从Prompt-Context到Harness-工程的三次进化与终局之战]] —— 三次进化框架
 - [[Harness-Engineering-耗时一周将AI-Coding率提升至90]] —— 阿里实践
 - [[QQ音乐Harness-Engineering实践]] —— 团队级实践
+- [[AI-时代如何超过大多数人]] —— 个人层面的上下文、验证和工作流沉淀方法

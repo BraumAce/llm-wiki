@@ -8,7 +8,7 @@ date: 2026-06-03
 
 ## 状态
 
-- 实体数：68 ｜ 主题数：9 ｜ 来源数：154
+- 实体数：68 ｜ 主题数：9 ｜ 来源数：156
 - 最后更新：2026-06-16
 
 ### 主题导航
@@ -26,6 +26,14 @@ date: 2026-06-03
 ## 最近更新
 
 ### 2026-06-16
+
+新增来源：[[AI-Agent-Skill-测评方案及落地实践]] —— 腾讯技术工程网关测试团队的生产级 Agent/Skill 测评框架，覆盖三类评分器（确定性/Rubric/人工）、五大维度、四类用例、Trace、基线和 TPerf 性能分析 Agent 落地。
+
+新增来源：[[AI-时代如何超过大多数人]] —— 拓跋阿秀从个人 AI 使用方法切入，把差距归结为问题定义、上下文质量、验证能力、工作流沉淀和判断标准，而不是 prompt 模板或模型榜单。
+
+更新来源：[[AI-不缺智商缺纪律：一场-Harness-工程化实践]] —— 合并新 URL「我的 Harness 工程化实践」版本，补充 dispatcher 状态机、G1-G8 门禁、Hook 拦截、七维确定性评分和评测平台边界。
+
+更新实体/主题：[[Prompt评估体系]]、[[Generator-Evaluator]]、[[Harness-Engineering]]、[[Context-Engineering]]、[[Agentic-Engineering]]、[[Agent评测方法论]]、[[AI-Skill体系-主题]]、[[Harness-Engineering-主题]]、[[Agentic-Engineering-主题]] —— 追加 Agent/Skill 测评、个人上下文质量和验证工作流视角。
 
 新增来源：[[Loop-Engineering循环工程橙皮书]] —— 花叔「橙皮书系列」第四本，把 loop engineering（循环工程）一次讲清：四层栈（prompt→context→harness→loop）、一个循环的五个动作、六个零件、四笔代价（验证债/理解腐烂/认知投降/token 失控）、Claude Code 的 /loop 与 /goal 原语。
 

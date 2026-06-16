@@ -11,10 +11,13 @@ sources:
   - "[[基于顶级Agent的Harness工程搭建式业务Agent评测方案]]"
   - "[[Prompt评估体系]]"
   - "[[Agent-Memory评测全景-基准评估与记忆系统]]"
+  - "[[AI-Agent-Skill-测评方案及落地实践]]"
 related_entities:
   - "[[Harness-Engineering]]"
   - "[[Claude-Code]]"
   - "[[Anthropic]]"
+  - "[[Prompt评估体系]]"
+  - "[[Generator-Evaluator]]"
 ---
 
 # Agent 评测方法论
@@ -40,3 +43,7 @@ related_entities:
 9. **与 OpenAI Evals 的关系**——理念类似，但 Harness 式评测更轻量、更灵活、无需工程部署。
 
 10. **适用场景**——Prompt 迭代验证（⭐⭐⭐⭐⭐）、多 Agent 横向对比（⭐⭐⭐⭐⭐）、新 Agent 上线前验收（⭐⭐⭐⭐）、线上问题复盘（⭐⭐⭐）。
+
+11. **Agent/Skill 生产级评测要同时覆盖过程与结果**：腾讯技术工程把评测拆成确定性评分器、Rubric 评分器、人工评分器三类角色，并要求被测 Agent/Skill 输出结构化 Trace。没有 Trace，就无法做工具调用检查、过程对比、基线对比，只能退化为看最终答案。
+
+12. **基线不是手写答案，而是人工确认过的一次真实执行快照**：用例先跑一轮，人工确认过程和结果可接受后，把工具调用序列、中间产物、最终报告、Token/耗时等固化为基线。后续回归时既能用程序判断步骤/产物是否偏离，也能用 Rubric 让模型比较语义差异。

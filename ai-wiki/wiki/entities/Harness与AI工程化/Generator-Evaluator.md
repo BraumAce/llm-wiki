@@ -15,11 +15,13 @@ tags:
   - harness
 sources:
   - "[[Loop-Engineering循环工程橙皮书]]"
+  - "[[AI-Agent-Skill-测评方案及落地实践]]"
 related_entities:
   - "[[Loop-Engineering]]"
   - "[[Harness-Engineering]]"
   - "[[Claude-Code]]"
   - "[[Anthropic]]"
+  - "[[Prompt评估体系]]"
 ---
 
 # Generator-Evaluator
@@ -50,6 +52,18 @@ Generator-Evaluator（生成器与评判器）是一种把"写东西的 agent"�
 2. **把评判器调成怀疑论者**：社区常见措辞是让评判器默认"这段代码是坏的，除非被证明能跑"（assume the code is broken until proven otherwise）。生成器已经够信任自己了，评判器再客气，loop 就等于自己跟自己点头。
 3. **让评判器会动手验证，而不只是读**：Rajasekaran 在前端任务里给 evaluator 接上 Playwright MCP，自己打开页面、点按钮、截图、查 DOM，像真人 QA 一样去用——判断依据从"我觉得这段 JSX 没问题"变成"我点了登录按钮，页面跳转了，截图在这"。一个会动手的评判器看的是行为，不是意图。
 4. **判定权交给一个没参与干活的 fresh 模型**：Addy 还顺手换了模型（sometimes a different model）——同一个模型哪怕换了指令，思维盲区往往还在原地。
+
+### 评分器形态
+
+在生产级 Agent/Skill 测评里，Generator-Evaluator 不一定只表现为另一个 Agent，也可以拆成三类评分器共同承担独立评判：
+
+```
+确定性评分器：负责所有能用代码判断的事，例如文件存在、JSON Schema、工具调用序列、Token 和耗时阈值
+Rubric 评分器：负责开放式语义判断，例如推理是否合理、报告是否完整、建议质量是否接近基线
+人工评分器：负责校准、诊断和高风险兜底，例如通过率 0%/100% 异常、红队测试、医疗/金融/安全场景复核
+```
+
+这个结构延续了 maker-checker 原则：被测 Agent 负责执行，评分器负责判定。尤其在 Skill 测评里，负向触发用例、工具调用顺序和异常容错都不能交给被测 Skill 自报，否则最容易出现"结果看起来对，过程已经跑偏"的假阳性。
 
 ### 落到产品：/goal 的停止条件
 
@@ -83,3 +97,4 @@ Generator-Evaluator（生成器与评判器）是一种把"写东西的 agent"�
 ## 参考来源
 
 - [[Loop-Engineering循环工程橙皮书]] —— 花叔，§05 生成器与评判器
+- [[AI-Agent-Skill-测评方案及落地实践]] —— 腾讯技术工程，三类评分器 + Trace + 基线的 Agent/Skill 测评框架

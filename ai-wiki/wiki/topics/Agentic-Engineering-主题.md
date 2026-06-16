@@ -26,6 +26,7 @@ sources:
   - "[[Anthropic-Effective-harnesses-for-long-running-agents]]"
   - "[[从零设计生产级Multi-Agent-Harness]]"
   - "[[从语言涌现到协作涌现-如何让AI产生高质量决策]]"
+  - "[[AI-时代如何超过大多数人]]"
 ---
 
 # Agentic Engineering 主题
@@ -49,6 +50,8 @@ Agentic Engineering 涵盖从"Vibe Coding"（借助 AI 快速生成代码片段�
 6. **生成能力与验证能力的张力是核心矛盾**：2025 至 2026 年间，AI 生成代码的速度远快于人类审查的速度，验证代码正确性的成本并未同步降低。这一矛盾是 Agentic Engineering 诞生的根本驱动力——Harness Engineering 提供了验证闭环（lint / 自动测试 / 数据比对 / 四道门禁），Spec-Driven Development 提供了需求阶段的结构化规格约束
 
 7. **Agent 架构的本质是控制流设计而非 prompt engineering**：从单次生成到反思闭环，再到工具交互、观察-行动循环、显式规划、验证驱动重规划、多 Agent 编排、长期记忆系统，直至搜索与涌现计算——每一次架构升级都在回答同一组问题：什么时候该停？什么时候该继续？什么时候该重试？什么时候该换角色？
+
+8. **个人协作能力仍然决定 Agent 上限**：AI Agent 可以加速执行，但问题定义、上下文质量、验证能力、工作流沉淀和判断标准仍由人提供。把 AI 当外包会放大幻觉；把 AI 当需要材料、边界、标准和复核的协作者，才接近 Agentic Engineering 的正确使用方式。
 
 ## 涉及实体
 
@@ -76,3 +79,4 @@ Agentic Engineering 涵盖从"Vibe Coding"（借助 AI 快速生成代码片段�
 - [[Agent核心技术概念与范式发生了哪些演变]] —— Agent 发展四阶段（被动式 ReAct → 工作流 Agent → 自主 Agent → 自进化 Agent）
 - [[从0开发大模型的17种Agent架构演进详细拆解]] —— 17 种 Agent 架构的控制流设计分析
 - [[从语言涌现到协作涌现-如何让AI产生高质量决策]] —— Agent Room 协作涌现模型
+- [[AI-时代如何超过大多数人]] —— AI 时代个人问题定义、上下文、验证和判断力方法

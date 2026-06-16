@@ -4,8 +4,11 @@ type: entity
 date: 2026-06-02
 also_known_as: [上下文工程, Context Engineering]
 tags: [工程化, Prompt, RAG, Agent]
-sources: [面向LLM的架构设计-什么是真正的AI-Friendly架构, 横向拆解六大Agent上下文压缩策略后我们做了第7个]
-related_entities: [AI-Friendly架构, RAG, Agentic-Engineering, Agent-Memory]
+sources:
+  - "[[面向LLM的架构设计-什么是真正的AI-Friendly架构]]"
+  - "[[横向拆解六大Agent上下文压缩策略后我们做了第7个]]"
+  - "[[AI-时代如何超过大多数人]]"
+related_entities: [AI-Friendly架构, RAG, Agentic-Engineering, Agent-Memory, Harness-Engineering]
 related_topics: []
 ---
 
@@ -89,6 +92,10 @@ Context Engineering：
 - 动态加载：根据当前任务动态加载相关上下文
 - Token预算管理：为不同上下文来源分配Token预算配额
 
+**6. 个人工作流中的上下文质量**
+
+在个人使用 AI 的场景中，上下文工程不一定表现为复杂系统，最小形态是"给材料、给边界、给标准"：把会议记录、用户反馈、代码仓库、竞品页面、历史文档、数据表、错误日志等真实材料交给模型，再明确目标、约束、反例和验收标准。信息越具体，AI 越像帮手；信息越少，AI 越像在猜。
+
 ### 业界实践
 
 Anthropic在其官方文档中系统性地介绍了Effective Context Engineering for AI Agents，将上下文工程视为提升Agent表现的关键手段，强调"精心挑选、组织、压缩上下文信息"的重要性，与本文中Context Engineering的定义高度一致。
@@ -124,3 +131,9 @@ Anthropic在其官方文档中系统性地介绍了Effective Context Engineering
 - 每个AI应用所需的上下文工程能力不一而足
 - 过度优化可能导致信息丢失，需要平衡压缩与完整性
 - 评测成本高，需要建立可持续的评测链路
+
+## 参考来源
+
+- [[面向LLM的架构设计-什么是真正的AI-Friendly架构]]
+- [[横向拆解六大Agent上下文压缩策略后我们做了第7个]]
+- [[AI-时代如何超过大多数人]]

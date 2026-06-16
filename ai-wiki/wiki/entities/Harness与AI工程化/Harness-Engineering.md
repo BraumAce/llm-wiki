@@ -35,6 +35,7 @@ sources:
   - "[[重新思考研发基础设施-当Agent成为第一公民]]"
   - "[[Harness-Engineering-长程自动化AI-Coding-Skills开发实践]]"
   - "[[4000行代码撑起一个Agent框架-nanobot架构深度解析]]"
+  - "[[AI-时代如何超过大多数人]]"
 related_entities:
   - "[[OpenClaw]]"
   - "[[Loop-Engineering]]"
@@ -98,6 +99,7 @@ Harness Engineering 的核心是五类组件的协同：
 - **团队协作**：QQ 音乐在 50+ 微服务拓扑中用服务矩阵 + 五阶段流程 + 四道门禁实现可审计的 AI 协作
 - **消除返工**：爱奇艺数据库团队用最小 harness（五类组件）终结"AI 瞎猜"式的无限返工
 - **全栈开发**：得物团队用 Harness + SDD + 多仓模式实现前后端并行开发，提效 50%+
+- **个人工作流**：把一次性 AI 对话沉淀为材料、标准、验证和复用流程。问题定义、上下文质量、验证能力、工作流沉淀和判断标准，是个人层面最小 Harness 的五个抓手
 
 ### Harness 平台化（Agent-Oriented Infra 视角）
 
@@ -147,3 +149,4 @@ Harness Engineering 的理念可以扩展到 Agent 评测领域。阿里团队�
 - [[重新思考研发基础设施-当Agent成为第一公民]] —— Harness 平台化与 Agent-Oriented Infra
 - [[AI-不缺智商缺纪律：一场-Harness-工程化实践]] —— 阿里技术，Harness 分层结构与评测驱动
 - [[Harness-Engineering落地前先想清楚这几个问题]] —— 腾讯云开发者，存量项目 AI Coding 适配
+- [[AI-时代如何超过大多数人]] —— 个人层面的材料、标准、验证和流程沉淀

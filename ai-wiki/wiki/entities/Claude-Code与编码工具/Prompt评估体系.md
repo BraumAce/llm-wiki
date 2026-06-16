@@ -4,8 +4,10 @@ type: entity
 date: 2026-06-02
 also_known_as: [Prompt Eval, 提示词评估]
 tags: [Prompt, 评估, 质量保障]
-sources: [深入解析Chromium的AI-Coding开发体系]
-related_entities: [Prompt分层组合架构, Context-Engineering, AI可观测性]
+sources:
+  - "[[深入解析Chromium的AI-Coding开发体系]]"
+  - "[[AI-Agent-Skill-测评方案及落地实践]]"
+related_entities: [Prompt分层组合架构, Context-Engineering, AI可观测性, Generator-Evaluator, Harness-Engineering]
 related_topics: []
 ---
 
@@ -107,6 +109,19 @@ AI评测（更宏观）：
 
 **A/B测试法**：在生产环境中同时运行两版Prompt，通过实际用户反馈来判断优劣。适合大规模部署前的最终验证。
 
+### Agent / Skill 测评扩展
+
+腾讯技术工程的实践把 Prompt 评估扩展到 Agent/Skill 层，关键变化是评估对象从"最终文本输出"变成"输入、执行过程、Trace、中间产物、最终结果和成本"的完整链路。这个扩展要求被测系统输出稳定结构的 Trace，否则工具调用检查、过程对比、基线对比都无法落地。
+
+```
+Agent/Skill 测评三类评分器：
+1. 确定性评分器：脚本 / 断言 / Lint / AST，检查文件存在、工具调用、字段格式、Token 和耗时
+2. Rubric 评分器：LLM-as-Judge + Prompt + JSON Schema，检查推理合理性、语义完整性、建议质量
+3. 人工评分器：专家校准、诊断 0%/100% 异常、红队和高风险兜底
+```
+
+基线方法也更接近软件回归测试：先执行一次真实用例，人工确认其过程和结果可接受后，把工具调用序列、报告、输出文件、耗时与 Token 固化成快照。后续每次变更都和基线对比，判断是否退化。这让 Prompt 评估从"场景样例打分"变成可进 CI 的回归系统。
+
 ### 行业实践
 
 **Chromium的评估实践**：
@@ -120,3 +135,8 @@ AI评测（更宏观）：
 - 评测时间超过Agent构建时间的两倍以上
 - 采用"线上数据采样 → 样本集构建 → 评测 → 优化 → AB实验 → 指标观测"的闭环
 - 历史审核案例库向量检索带来8%准确率提升，混合审核决策带来10%以上提升
+
+**腾讯技术工程 Agent/Skill 测评实践**：
+- 以功能正确性、过程质量、效率成本、鲁棒性安全、体验对齐五大维度组织指标
+- 用触发条件、核心逻辑、产物质量、异常容错四类场景设计用例
+- TPerf 性能分析 Agent 通过 Knot AG-UI 事件流采集 Trace，用 LCS 对齐工具调用步骤，用 CodeBuddy CLI 做报告语义评分

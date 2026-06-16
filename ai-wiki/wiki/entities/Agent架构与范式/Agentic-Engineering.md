@@ -24,6 +24,7 @@ sources:
   - "[[从零设计生产级Multi-Agent-Harness]]"
   - "[[从语言涌现到协作涌现-如何让AI产生高质量决策]]"
   - "[[Agent从一问一答到自主执行面临哪些挑战]]"
+  - "[[AI-时代如何超过大多数人]]"
 related_entities:
   - "[[Harness-Engineering]]"
   - "Context-Engineering"
@@ -91,6 +92,7 @@ Agentic Engineering 建立在三条公理之上：
 - **生产级 Agent 平台**：腾讯团队提出 Multi-Agent Harness 作为 Agent 的"操作系统"，包含架构编排、工具治理、状态与记忆、评估体系、成本控制五大模块，将 Agent 从 Demo 推进到生产
 - **定时调度与自进化**：阿里云 MSE AI 任务调度将定时调度从 Agent 内部抽离，由统一平台管理，支持弹性伸缩、任务批处理，并通过历史信息动态调整 prompt 实现自进化
 - **存量代码改造**：通过 Harness + SDD 组合，在 10 万行以上的企业级应用中搭建 Agentic 工程框架，AI 代码率从 24% 提升至 90%+
+- **个人 Agentic 工作流**：把 AI 当成需要材料、边界、标准和复核的协作者，而不是外包。问题定义、上下文质量、验证能力、工作流沉淀和判断标准决定了人和 Agent 协作的上限
 
 ### 局限与争议
 
@@ -119,3 +121,4 @@ Agentic Engineering 建立在三条公理之上：
 - [[从零设计生产级Multi-Agent-Harness]] —— 生产级 Multi-Agent Harness 五大模块：架构编排、工具治理、状态与记忆、评估体系、成本控制
 - [[从语言涌现到协作涌现-如何让AI产生高质量决策]] —— Agent Room 协作涌现模型、上下文编排 vs 任务编排、Memory/DAG/产出物系统
 - [[Agent从一问一答到自主执行面临哪些挑战]] —— Agent 定时调度痛点、高可用任务调度平台设计
+- [[AI-时代如何超过大多数人]] —— 个人层面的 AI 协作能力、上下文质量和验证能力
