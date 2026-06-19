@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-16T23:25:49+08:00",
+  "generated_at": "2026-06-19T23:47:01+08:00",
   "wiki_dir": "/Users/liuguang/Documents/Private/llm-wiki/ai-wiki/wiki",
   "stats": {
-    "nodes": 233,
-    "edges": 858,
-    "edge_weight_total": 1437,
+    "nodes": 239,
+    "edges": 948,
+    "edge_weight_total": 1618,
     "orphan_links": [],
     "by_type": {
-      "entity": 68,
+      "entity": 69,
       "topic": 9,
-      "source": 156
+      "source": 161
     }
   },
   "nodes": [
@@ -312,6 +312,17 @@
         "Claude-Code",
         "self-learning",
         "pattern-mining"
+      ]
+    },
+    {
+      "id": "KV-Cache",
+      "type": "entity",
+      "title": "KV-Cache",
+      "tags": [
+        "ai-infra",
+        "inference",
+        "cache",
+        "attention"
       ]
     },
     {
@@ -1386,6 +1397,18 @@
       ]
     },
     {
+      "id": "Loop Engineering 概念解析、思考与实践",
+      "type": "source",
+      "title": "Loop Engineering 概念解析、思考与实践",
+      "tags": [
+        "loop-engineering",
+        "automation",
+        "agent-loop",
+        "human-in-the-loop",
+        "skill"
+      ]
+    },
+    {
       "id": "Loop-Engineering循环工程橙皮书",
       "type": "source",
       "title": "别再问我什么是 Loop Engineering（循环工程橙皮书）",
@@ -1620,6 +1643,18 @@
         "skill-creation",
         "agent-memory",
         "multi-platform"
+      ]
+    },
+    {
+      "id": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
+      "type": "source",
+      "title": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
+      "tags": [
+        "token-cost",
+        "prompt-cache",
+        "kv-cache",
+        "context-engineering",
+        "skill-cost"
       ]
     },
     {
@@ -2107,6 +2142,19 @@
       ]
     },
     {
+      "id": "拆解大模型几项核心操作背后的数学与 Infra 优化逻辑",
+      "type": "source",
+      "title": "拆解大模型几项核心操作背后的数学与 Infra 优化逻辑",
+      "tags": [
+        "ai-infra",
+        "inference",
+        "flashattention",
+        "softmax",
+        "kv-cache",
+        "vllm"
+      ]
+    },
+    {
       "id": "拒绝重复造轮子-抽象80工作场景打造可复用的AI助手工厂",
       "type": "source",
       "title": "拒绝重复造轮子！抽象 80% 工作场景打造可复用的AI助手工厂",
@@ -2114,6 +2162,18 @@
         "agent",
         "tool-design",
         "enterprise"
+      ]
+    },
+    {
+      "id": "更可靠的主播助理：淘宝主播Agent的Harness工程实战",
+      "type": "source",
+      "title": "更可靠的主播助理：淘宝主播Agent的Harness工程实战",
+      "tags": [
+        "harness-engineering",
+        "live-commerce-agent",
+        "agent-memory",
+        "safety",
+        "evaluation"
       ]
     },
     {
@@ -2515,6 +2575,18 @@
       ]
     },
     {
+      "id": "面向Skills编程-淘宝企业购端对端研发提效实践",
+      "type": "source",
+      "title": "面向Skills编程-淘宝企业购端对端研发提效实践",
+      "tags": [
+        "skills",
+        "sdd",
+        "ai-coding",
+        "knowledge-base",
+        "enterprise-procurement"
+      ]
+    },
+    {
       "id": "高可用架构的工程智慧",
       "type": "source",
       "title": "高可用架构的工程智慧",
@@ -2780,6 +2852,11 @@
     },
     {
       "from": "AI-Infra推理优化-主题",
+      "to": "KV-Cache",
+      "weight": 2
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
       "to": "RAG",
       "weight": 2
     },
@@ -2801,6 +2878,11 @@
     {
       "from": "AI-Infra推理优化-主题",
       "to": "万字入门AI-Infra-深入理解大模型中的数学与Infra优化",
+      "weight": 2
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
+      "to": "拆解大模型几项核心操作背后的数学与 Infra 优化逻辑",
       "weight": 2
     },
     {
@@ -2885,6 +2967,16 @@
     },
     {
       "from": "AI-Skill体系-主题",
+      "to": "Token成本控制",
+      "weight": 1
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
+      "weight": 2
+    },
+    {
+      "from": "AI-Skill体系-主题",
       "to": "一文搞懂爆火的Skills原理及实践案例",
       "weight": 1
     },
@@ -2931,6 +3023,11 @@
     {
       "from": "AI-Skill体系-主题",
       "to": "让Skill自己训练自己-8阶段Loop-3层评测-5维AND门控",
+      "weight": 2
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "面向Skills编程-淘宝企业购端对端研发提效实践",
       "weight": 2
     },
     {
@@ -3380,6 +3477,11 @@
     },
     {
       "from": "Agentic-Engineering",
+      "to": "Context-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering",
       "to": "Harness-Engineering",
       "weight": 2
     },
@@ -3390,7 +3492,22 @@
     },
     {
       "from": "Agentic-Engineering",
+      "to": "Loop Engineering 概念解析、思考与实践",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering",
+      "to": "Loop-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering",
       "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering",
+      "to": "OpenClaw-Skills",
       "weight": 2
     },
     {
@@ -3421,6 +3538,11 @@
     {
       "from": "Agentic-Engineering",
       "to": "从零设计生产级Multi-Agent-Harness",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering",
+      "to": "面向Skills编程-淘宝企业购端对端研发提效实践",
       "weight": 2
     },
     {
@@ -3465,8 +3587,23 @@
     },
     {
       "from": "Agentic-Engineering-主题",
+      "to": "Loop Engineering 概念解析、思考与实践",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "Loop-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
       "to": "OpenClaw",
       "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "OpenClaw-Skills",
+      "weight": 1
     },
     {
       "from": "Agentic-Engineering-主题",
@@ -3497,6 +3634,11 @@
       "from": "Agentic-Engineering-主题",
       "to": "从零设计生产级Multi-Agent-Harness",
       "weight": 1
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "面向Skills编程-淘宝企业购端对端研发提效实践",
+      "weight": 2
     },
     {
       "from": "Agent从一问一答到自主执行面临哪些挑战",
@@ -4060,12 +4202,27 @@
     },
     {
       "from": "Context-Engineering",
+      "to": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
+      "weight": 2
+    },
+    {
+      "from": "Context-Engineering",
+      "to": "更可靠的主播助理：淘宝主播Agent的Harness工程实战",
+      "weight": 2
+    },
+    {
+      "from": "Context-Engineering",
       "to": "横向拆解六大Agent上下文压缩策略后我们做了第7个",
       "weight": 2
     },
     {
       "from": "Context-Engineering",
       "to": "面向LLM的架构设计-什么是真正的AI-Friendly架构",
+      "weight": 2
+    },
+    {
+      "from": "Context-Engineering",
+      "to": "面向Skills编程-淘宝企业购端对端研发提效实践",
       "weight": 2
     },
     {
@@ -4235,6 +4392,11 @@
     },
     {
       "from": "Harness-Engineering",
+      "to": "AI可观测性",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
       "to": "Agent-Oriented-Infra",
       "weight": 1
     },
@@ -4287,6 +4449,11 @@
       "from": "Harness-Engineering",
       "to": "Harness的尽头不是缰绳是镜子",
       "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "Loop Engineering 概念解析、思考与实践",
+      "weight": 2
     },
     {
       "from": "Harness-Engineering",
@@ -4365,6 +4532,11 @@
     },
     {
       "from": "Harness-Engineering",
+      "to": "更可靠的主播助理：淘宝主播Agent的Harness工程实战",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
       "to": "深入浅出Harness-Engineering之核心模式与理念",
       "weight": 1
     },
@@ -4376,6 +4548,11 @@
     {
       "from": "Harness-Engineering",
       "to": "重新思考研发基础设施-当Agent成为第一公民",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "面向Skills编程-淘宝企业购端对端研发提效实践",
       "weight": 2
     },
     {
@@ -4392,6 +4569,11 @@
       "from": "Harness-Engineering-主题",
       "to": "AI-时代如何超过大多数人",
       "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "AI可观测性",
+      "weight": 1
     },
     {
       "from": "Harness-Engineering-主题",
@@ -4445,6 +4627,11 @@
     },
     {
       "from": "Harness-Engineering-主题",
+      "to": "Loop Engineering 概念解析、思考与实践",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
       "to": "Loop-Engineering",
       "weight": 3
     },
@@ -4485,6 +4672,11 @@
     },
     {
       "from": "Harness-Engineering-主题",
+      "to": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
       "to": "从Prompt-Context到Harness-工程的三次进化与终局之战",
       "weight": 2
     },
@@ -4515,6 +4707,11 @@
     },
     {
       "from": "Harness-Engineering-主题",
+      "to": "更可靠的主播助理：淘宝主播Agent的Harness工程实战",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
       "to": "深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践",
       "weight": 1
     },
@@ -4522,6 +4719,11 @@
       "from": "Harness-Engineering-主题",
       "to": "规范驱动AI编程实战指南-OpenSpec-vs-Spec-Kit-vs-BMAD",
       "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "面向Skills编程-淘宝企业购端对端研发提效实践",
+      "weight": 2
     },
     {
       "from": "Harness-Engineering-来了-SDD-还有意义吗",
@@ -4774,6 +4976,41 @@
       "weight": 2
     },
     {
+      "from": "KV-Cache",
+      "to": "AI-Infra入门干货总结-大模型是如何高效推理的",
+      "weight": 2
+    },
+    {
+      "from": "KV-Cache",
+      "to": "Prompt-Cache",
+      "weight": 4
+    },
+    {
+      "from": "KV-Cache",
+      "to": "Token成本控制",
+      "weight": 2
+    },
+    {
+      "from": "KV-Cache",
+      "to": "vLLM",
+      "weight": 4
+    },
+    {
+      "from": "KV-Cache",
+      "to": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
+      "weight": 2
+    },
+    {
+      "from": "KV-Cache",
+      "to": "万字入门AI-Infra-深入理解大模型中的数学与Infra优化",
+      "weight": 2
+    },
+    {
+      "from": "KV-Cache",
+      "to": "拆解大模型几项核心操作背后的数学与 Infra 优化逻辑",
+      "weight": 2
+    },
+    {
       "from": "LOCOMO",
       "to": "Agent-Memory",
       "weight": 2
@@ -4849,6 +5086,51 @@
       "weight": 2
     },
     {
+      "from": "Loop Engineering 概念解析、思考与实践",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "Loop Engineering 概念解析、思考与实践",
+      "to": "Agentic-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "Loop Engineering 概念解析、思考与实践",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "Loop Engineering 概念解析、思考与实践",
+      "to": "Generator-Evaluator",
+      "weight": 2
+    },
+    {
+      "from": "Loop Engineering 概念解析、思考与实践",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Loop Engineering 概念解析、思考与实践",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "Loop Engineering 概念解析、思考与实践",
+      "to": "Loop-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "Loop Engineering 概念解析、思考与实践",
+      "to": "MCP",
+      "weight": 3
+    },
+    {
+      "from": "Loop Engineering 概念解析、思考与实践",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
       "from": "Loop-Engineering",
       "to": "Addy-Osmani",
       "weight": 3
@@ -4877,6 +5159,11 @@
       "from": "Loop-Engineering",
       "to": "Harness-Engineering",
       "weight": 4
+    },
+    {
+      "from": "Loop-Engineering",
+      "to": "Loop Engineering 概念解析、思考与实践",
+      "weight": 2
     },
     {
       "from": "Loop-Engineering",
@@ -5285,6 +5572,11 @@
     },
     {
       "from": "OpenClaw-Skills",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw-Skills",
       "to": "OpenClaw",
       "weight": 4
     },
@@ -5310,6 +5602,21 @@
     },
     {
       "from": "OpenClaw-Skills",
+      "to": "Spec-Driven-Development",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw-Skills",
+      "to": "Token成本控制",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw-Skills",
+      "to": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw-Skills",
       "to": "深入理解OpenClaw技术架构与实现原理-下",
       "weight": 2
     },
@@ -5321,6 +5628,11 @@
     {
       "from": "OpenClaw-Skills",
       "to": "玩转OpenClaw-核心架构-运作原理-Agent部署步骤",
+      "weight": 2
+    },
+    {
+      "from": "OpenClaw-Skills",
+      "to": "面向Skills编程-淘宝企业购端对端研发提效实践",
       "weight": 2
     },
     {
@@ -5510,8 +5822,18 @@
     },
     {
       "from": "Prompt-Cache",
+      "to": "KV-Cache",
+      "weight": 3
+    },
+    {
+      "from": "Prompt-Cache",
       "to": "Token成本控制",
       "weight": 3
+    },
+    {
+      "from": "Prompt-Cache",
+      "to": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
+      "weight": 2
     },
     {
       "from": "Prompt-Cache",
@@ -5770,12 +6092,27 @@
     },
     {
       "from": "Skill开发最佳实践",
+      "to": "Token成本控制",
+      "weight": 1
+    },
+    {
+      "from": "Skill开发最佳实践",
+      "to": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
+      "weight": 1
+    },
+    {
+      "from": "Skill开发最佳实践",
       "to": "一文搞懂爆火的Skills原理及实践案例",
       "weight": 1
     },
     {
       "from": "Skill开发最佳实践",
       "to": "如何写好Skill-一份终极实战经验手册",
+      "weight": 1
+    },
+    {
+      "from": "Skill开发最佳实践",
+      "to": "面向Skills编程-淘宝企业购端对端研发提效实践",
       "weight": 1
     },
     {
@@ -5786,6 +6123,11 @@
     {
       "from": "Spec-Driven-Development",
       "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "Spec-Driven-Development",
+      "to": "OpenClaw-Skills",
       "weight": 2
     },
     {
@@ -5806,6 +6148,11 @@
     {
       "from": "Spec-Driven-Development",
       "to": "基于Harness加SDD加多仓管理模式的AI全栈开发实践",
+      "weight": 2
+    },
+    {
+      "from": "Spec-Driven-Development",
+      "to": "面向Skills编程-淘宝企业购端对端研发提效实践",
       "weight": 2
     },
     {
@@ -5910,8 +6257,18 @@
     },
     {
       "from": "Token成本控制",
+      "to": "KV-Cache",
+      "weight": 2
+    },
+    {
+      "from": "Token成本控制",
       "to": "MCP",
       "weight": 3
+    },
+    {
+      "from": "Token成本控制",
+      "to": "OpenClaw-Skills",
+      "weight": 2
     },
     {
       "from": "Token成本控制",
@@ -5922,6 +6279,11 @@
       "from": "Token成本控制",
       "to": "Prompt-Cache",
       "weight": 3
+    },
+    {
+      "from": "Token成本控制",
+      "to": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
+      "weight": 2
     },
     {
       "from": "Token成本控制",
@@ -5955,12 +6317,22 @@
     },
     {
       "from": "vLLM",
+      "to": "KV-Cache",
+      "weight": 2
+    },
+    {
+      "from": "vLLM",
       "to": "RAG",
       "weight": 2
     },
     {
       "from": "vLLM",
       "to": "万字入门AI-Infra-深入理解大模型中的数学与Infra优化",
+      "weight": 2
+    },
+    {
+      "from": "vLLM",
+      "to": "拆解大模型几项核心操作背后的数学与 Infra 优化逻辑",
       "weight": 2
     },
     {
@@ -6017,6 +6389,56 @@
       "from": "一文搞懂Hermes-新顶流Agent如何从经验中自我进化",
       "to": "OpenClaw",
       "weight": 1
+    },
+    {
+      "from": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
+      "to": "Context-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
+      "to": "KV-Cache",
+      "weight": 2
+    },
+    {
+      "from": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
+      "to": "MCP",
+      "weight": 2
+    },
+    {
+      "from": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
+      "to": "Orchestrator-Worker模式",
+      "weight": 2
+    },
+    {
+      "from": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
+      "to": "Prompt-Cache",
+      "weight": 2
+    },
+    {
+      "from": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
+      "to": "Skill开发最佳实践",
+      "weight": 2
+    },
+    {
+      "from": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
+      "to": "Token成本控制",
+      "weight": 2
     },
     {
       "from": "一文搞懂爆火的Skills原理及实践案例",
@@ -6579,8 +7001,63 @@
       "weight": 2
     },
     {
+      "from": "拆解大模型几项核心操作背后的数学与 Infra 优化逻辑",
+      "to": "AI-Infra推理优化-主题",
+      "weight": 2
+    },
+    {
+      "from": "拆解大模型几项核心操作背后的数学与 Infra 优化逻辑",
+      "to": "KV-Cache",
+      "weight": 2
+    },
+    {
+      "from": "拆解大模型几项核心操作背后的数学与 Infra 优化逻辑",
+      "to": "Token成本控制",
+      "weight": 2
+    },
+    {
+      "from": "拆解大模型几项核心操作背后的数学与 Infra 优化逻辑",
+      "to": "vLLM",
+      "weight": 2
+    },
+    {
       "from": "拒绝重复造轮子-抽象80工作场景打造可复用的AI助手工厂",
       "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "更可靠的主播助理：淘宝主播Agent的Harness工程实战",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "更可靠的主播助理：淘宝主播Agent的Harness工程实战",
+      "to": "AI可观测性",
+      "weight": 2
+    },
+    {
+      "from": "更可靠的主播助理：淘宝主播Agent的Harness工程实战",
+      "to": "Agent-Oriented-Infra",
+      "weight": 2
+    },
+    {
+      "from": "更可靠的主播助理：淘宝主播Agent的Harness工程实战",
+      "to": "Context-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "更可靠的主播助理：淘宝主播Agent的Harness工程实战",
+      "to": "Harness-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "更可靠的主播助理：淘宝主播Agent的Harness工程实战",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "更可靠的主播助理：淘宝主播Agent的Harness工程实战",
+      "to": "OpenClaw-Skills",
       "weight": 2
     },
     {
@@ -6927,6 +7404,51 @@
       "from": "面向-Agent-Skill的-CLI-SSO-鉴权体系",
       "to": "sso-cli",
       "weight": 1
+    },
+    {
+      "from": "面向Skills编程-淘宝企业购端对端研发提效实践",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "面向Skills编程-淘宝企业购端对端研发提效实践",
+      "to": "Agentic-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "面向Skills编程-淘宝企业购端对端研发提效实践",
+      "to": "Agentic-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "面向Skills编程-淘宝企业购端对端研发提效实践",
+      "to": "Context-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "面向Skills编程-淘宝企业购端对端研发提效实践",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "面向Skills编程-淘宝企业购端对端研发提效实践",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "面向Skills编程-淘宝企业购端对端研发提效实践",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "面向Skills编程-淘宝企业购端对端研发提效实践",
+      "to": "Skill开发最佳实践",
+      "weight": 2
+    },
+    {
+      "from": "面向Skills编程-淘宝企业购端对端研发提效实践",
+      "to": "Spec-Driven-Development",
+      "weight": 2
     },
     {
       "from": "龙虾大脑核心揭秘1-OpenClaw处理流程链路解析",

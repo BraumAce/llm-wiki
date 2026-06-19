@@ -16,9 +16,11 @@ sources:
   - "[[告别氛围编程-基于Harness治理和SDD的团队级AI研发范式]]"
   - "[[基于Harness加SDD加多仓管理模式的AI全栈开发实践]]"
   - "[[一个文件让AI-Coding效率翻倍-AGENTS-实践指南]]"
+  - "[[面向Skills编程-淘宝企业购端对端研发提效实践]]"
 related_entities:
   - "[[Harness-Engineering]]"
   - "[[OpenClaw]]"
+  - "[[OpenClaw-Skills]]"
 ---
 
 # Spec-Driven Development
@@ -61,6 +63,7 @@ Spec Kit 三件套：
 - **多团队协作**：得物用 SDD 双文档对齐前后端接口契约，避免集成时的"接口对不上"
 - **存量改造**：高德团队用 SDD + Harness 四支柱解决存量代码的 AI 改造问题
 - **消除氛围编程**：把"AI 凭感觉写代码"变成"AI 按规格写代码"
+- **领域 Skill 前置输入**：淘宝企业购实践中，SDD 把客户接口对接的评估报告和技术方案结构化，但规模化瓶颈来自领域经验仍在个人脑中；后续通过 Skill references 和约束把这些经验固化
 
 ### 局限与争议
 
@@ -73,6 +76,7 @@ Spec Kit 三件套：
 
 - [[Harness-Engineering]] —— SDD 是 Harness 在需求阶段的具体实践。Harness 提供整体框架，SDD 负责"入口"的规格化
 - [[OpenClaw]] —— OpenClaw 的 Skills 定义本身就是一种 Spec：SKILL.md 定义了 Agent 能力的边界和约束
+- [[OpenClaw-Skills]] —— 领域 Skill 可以承接 SDD 中反复出现的规格、模板和约束
 
 ## 参考来源
 
@@ -80,3 +84,4 @@ Spec Kit 三件套：
 - [[告别氛围编程-基于Harness治理和SDD的团队级AI研发范式]] —— 高德团队 SDD + Harness 实践
 - [[基于Harness加SDD加多仓管理模式的AI全栈开发实践]] —— 得物团队全栈方法论
 - [[一个文件让AI-Coding效率翻倍-AGENTS-实践指南]] —— AGENTS.md 实践指南
+- [[面向Skills编程-淘宝企业购端对端研发提效实践]] —— 大淘宝技术，SDD 作为从 Prompt 模板到领域 Skill 的中间阶段

@@ -13,6 +13,7 @@ tags:
   - harness
 sources:
   - "[[Loop-Engineering循环工程橙皮书]]"
+  - "[[Loop Engineering 概念解析、思考与实践]]"
 related_entities:
   - "[[Harness-Engineering]]"
   - "[[Context-Engineering]]"
@@ -63,6 +64,12 @@ Loop Engineering（循环工程）是把"那个负责 prompt agent 的人"从你
 4. **持久化（persistence）**：把状态写到对话之外的磁盘上——PR、工单、markdown 状态文件。"agent 会忘，仓库不会。"
 5. **调度（decide next / scheduling）**："Automations are what make a loop an actual loop and not just one run you did once." 没有调度，前四步做得再漂亮也只是一次性手工活。
 
+### Agent Loop 与 Loop Engineering 的边界
+
+阿里技术的中文实践文进一步明确了一个容易混淆的边界：Agent Loop 是底层执行循环，负责把模型输出的 function call、工具执行结果和下一轮输入串起来；Loop Engineering 是 Harness 之上的外部闭环，负责把需求、执行、验证、反馈、调优和能力沉淀自动化。前者是 Agent 能跑起来的基础设施，后者是把"人机反复催改"重构成"自动化验收闭环"。
+
+这个边界带来一个实践判断：固定流程、无需模型每天重新推理时，应沉淀为脚本；确实需要模型动态判断时，才做成 Skill 或定时 Loop；需求和验证标准仍然模糊时，Human-in-the-Loop 反而更稳、更省成本。
+
 ### 六个零件：搭一个 Loop 需要什么
 
 动作描述"转一圈发生了什么"，零件描述"你手里得攥着哪些东西"，两者一一对应：
@@ -107,3 +114,4 @@ Connector 决定 loop 的"视野半径"——"A loop that can only see the files
 ## 参考来源
 
 - [[Loop-Engineering循环工程橙皮书]] —— 花叔，循环工程橙皮书第一版（v260615）
+- [[Loop Engineering 概念解析、思考与实践]] —— 阿里技术，中文语境下区分 Agent Loop 与 Loop Engineering，并给出普通任务的实践边界

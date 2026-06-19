@@ -14,6 +14,7 @@ tags:
   - context-engineering
 sources:
   - "[[一篇搞懂-AI-Coding-Agent的Token成本控制]]"
+  - "[[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]]"
 related_entities:
   - "[[Prompt-Cache]]"
   - "[[Orchestrator-Worker模式]]"
@@ -21,6 +22,8 @@ related_entities:
   - "[[CodeBuddy]]"
   - "[[MCP]]"
   - "[[DeepSeek-V4]]"
+  - "[[KV-Cache]]"
+  - "[[OpenClaw-Skills]]"
 ---
 
 # Token成本控制
@@ -42,6 +45,21 @@ Token 成本控制是 AI Coding Agent 的成本优化方法论，核心心智模
 Token 不等于"字数"，Agent 场景至少五类开销：输入 Token（每轮重复携带，最大头）、输出 Token（回答越啰嗦越贵）、推理 Token / thinking budget（简单任务走高推理档会溢价）、工具往返成本（一次工具调用常比原问题还长）、重试成本（第一次不合格→整包上下文再付一遍）。最易被低估的是后两项——"减少重试"本身就是硬核降本手段。
 
 近似公式：`总成本 ≈ 固定前缀 + 会话历史 + 运行时检索 + 工具往返 + 模型输出`。
+
+### 缓存链与四类配置税
+
+新一轮成本分析把缓存链说得更细：缓存只能从前缀开始连续命中，系统指令、工具定义、Rules/Memory、历史消息任何中间节点变化，都会让后续内容重新计价。切换模型更会让 KV 张量不互通，整条链从头全价。
+
+AI Coding 工具中的四类配置成本不同：
+
+| 层级 | 成本形态 | 使用建议 |
+|------|---|---|
+| Memory | 全量常驻，改动会打断缓存链 | 只放一句话偏好和短约定 |
+| Rules | 常驻或触发式 | 高频规则常驻，低频规则触发加载 |
+| Skills | 加载前只有 description，加载后 SKILL.md 留在历史 | 用于完整工作流，避免无谓加载 |
+| MCP | Schema 常驻，返回结果留在历史 | 低频能力优先 CLI/脚本，避免闲置工具税 |
+
+因此 Token 优化不是单纯"少写 prompt"，而是维护稳定前缀、控制配置抖动、减少长工具结果进入主上下文。
 
 ### 五层优化路径
 
@@ -69,7 +87,10 @@ Token 不等于"字数"，Agent 场景至少五类开销：输入 Token（每轮
 - [[CodeBuddy]] —— 文中主要示范的 AI Coding Agent（SKILL.md 绑模型、subagent、worktree）
 - [[MCP]] —— 工具治理对象；"CLI 优先于 MCP"的权衡
 - [[DeepSeek-V4]] —— 执行类任务常绑定的便宜模型示例
+- [[KV-Cache]] —— 缓存命中的底层机制；Prompt Cache 是产品层对稳定前缀复用的抽象
+- [[OpenClaw-Skills]] —— Skill 的渐进式披露有助于未加载时省成本，但加载后会成为长期历史
 
 ## 参考来源
 
 - [[一篇搞懂-AI-Coding-Agent的Token成本控制]] —— 腾讯技术工程 devinyzeng，五层降本框架
+- [[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]] —— 腾讯云开发者，缓存链、四类配置成本与 Sub-Agent 冷启动经济学

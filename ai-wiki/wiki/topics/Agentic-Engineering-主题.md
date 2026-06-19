@@ -27,6 +27,8 @@ sources:
   - "[[从零设计生产级Multi-Agent-Harness]]"
   - "[[从语言涌现到协作涌现-如何让AI产生高质量决策]]"
   - "[[AI-时代如何超过大多数人]]"
+  - "[[面向Skills编程-淘宝企业购端对端研发提效实践]]"
+  - "[[Loop Engineering 概念解析、思考与实践]]"
 ---
 
 # Agentic Engineering 主题
@@ -53,6 +55,10 @@ Agentic Engineering 涵盖从"Vibe Coding"（借助 AI 快速生成代码片段�
 
 8. **个人协作能力仍然决定 Agent 上限**：AI Agent 可以加速执行，但问题定义、上下文质量、验证能力、工作流沉淀和判断标准仍由人提供。把 AI 当外包会放大幻觉；把 AI 当需要材料、边界、标准和复核的协作者，才接近 Agentic Engineering 的正确使用方式。
 
+9. **从提需求到定义闭环**：[[Loop-Engineering]] 把"提需求、AI 干活、人再纠偏"升级为"开发、验证、反馈、调优、沉淀"的自动化闭环。它要求人提前写清需求和验收标准，而不是中途靠频繁反馈纠偏。
+
+10. **从写代码到写能力单元**：面向 Skills 编程把人的经验、领域知识和交付流程产品化为 Skill。工程师的工作重心从实现适配逻辑转向定义不变量、拆分上下文、写约束和验证生成结果。
+
 ## 涉及实体
 
 - [[Agentic-Engineering]] —— 核心概念实体，定义了"人与 AI Agent 协作"的范式框架
@@ -61,6 +67,8 @@ Agentic Engineering 涵盖从"Vibe Coding"（借助 AI 快速生成代码片段�
 - [[Claude-Code]] —— Agentic Engineering 理念的标杆工程实现
 - [[OpenClaw]] —— Agentic Engineering 理念的开源实践载体
 - [[Hermes-Agent]] —— 代表了 Agentic Engineering 的自进化方向
+- [[Loop-Engineering]] —— 外部自动化闭环，减少人在执行过程中的反复纠偏
+- [[OpenClaw-Skills]] —— 领域经验与工作流的能力封装单元
 
 ## 对比矩阵
 
@@ -80,3 +88,5 @@ Agentic Engineering 涵盖从"Vibe Coding"（借助 AI 快速生成代码片段�
 - [[从0开发大模型的17种Agent架构演进详细拆解]] —— 17 种 Agent 架构的控制流设计分析
 - [[从语言涌现到协作涌现-如何让AI产生高质量决策]] —— Agent Room 协作涌现模型
 - [[AI-时代如何超过大多数人]] —— AI 时代个人问题定义、上下文、验证和判断力方法
+- [[面向Skills编程-淘宝企业购端对端研发提效实践]] —— 从 Vibe Coding 到面向 Skills 编程的组织级实践
+- [[Loop Engineering 概念解析、思考与实践]] —— Agent Loop 与 Loop Engineering 的边界、实践和适用条件

@@ -37,6 +37,10 @@ sources:
   - "[[Harness-Engineering-长程自动化AI-Coding-Skills开发实践]]"
   - "[[4000行代码撑起一个Agent框架-nanobot架构深度解析]]"
   - "[[AI-时代如何超过大多数人]]"
+  - "[[更可靠的主播助理：淘宝主播Agent的Harness工程实战]]"
+  - "[[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]]"
+  - "[[面向Skills编程-淘宝企业购端对端研发提效实践]]"
+  - "[[Loop Engineering 概念解析、思考与实践]]"
 ---
 
 # Harness Engineering 主题
@@ -58,6 +62,10 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 
 9. **个人层面的 Harness 是材料、标准、验证和流程沉淀**：AI 时代超过大多数人不是靠 prompt 模板，而是靠问题定义、上下文质量、验证能力、工作流沉淀和判断标准。这个个人工作法和团队 Harness 的底层逻辑一致：少让模型猜，多给事实、边界和可验收标准。
 
+10. **生产业务 Agent 把 Harness 变成安全边界**：淘宝主播 Agent 的直播间场景要求操作即时生效、错误不可撤回、主播无法逐条核验，因此上下文、状态、Hook、幂等、安全审批、评测和记忆对账都必须由框架层兜住。
+
+11. **Skill 与 Token 经济学决定 Harness 厚度**：Skill 可以封装流程和领域知识，但加载后会进入历史上下文；MCP Schema、工具结果、Memory/Rules 抖动都会影响缓存命中。生产 Harness 需要同时治理质量与成本。
+
 ## 涉及实体
 
 - [[Harness-Engineering]] —— 核心概念实体
@@ -65,6 +73,7 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 - [[Spec-Driven-Development]] —— SDD 是 Harness 在需求阶段的实践
 - [[OpenClaw]] —— OpenClaw 体现了 Harness 思维
 - [[OpenClaw-Skills]] —— Skills 是 Harness 的能力封装层
+- [[AI可观测性]] —— Harness 的评测与 trace 观测能力
 
 ## 对比矩阵
 
@@ -82,3 +91,6 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 - [[Harness-Engineering-耗时一周将AI-Coding率提升至90]] —— 阿里实践
 - [[QQ音乐Harness-Engineering实践]] —— 团队级实践
 - [[AI-时代如何超过大多数人]] —— 个人层面的上下文、验证和工作流沉淀方法
+- [[更可靠的主播助理：淘宝主播Agent的Harness工程实战]] —— 高风险直播业务 Agent 的 Harness 实战
+- [[面向Skills编程-淘宝企业购端对端研发提效实践]] —— Skill 流水线与端到端生码平台
+- [[Loop Engineering 概念解析、思考与实践]] —— Loop 作为 Harness 之上的自动化验收闭环

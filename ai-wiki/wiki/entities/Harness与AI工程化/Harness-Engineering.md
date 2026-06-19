@@ -36,6 +36,9 @@ sources:
   - "[[Harness-Engineering-长程自动化AI-Coding-Skills开发实践]]"
   - "[[4000行代码撑起一个Agent框架-nanobot架构深度解析]]"
   - "[[AI-时代如何超过大多数人]]"
+  - "[[更可靠的主播助理：淘宝主播Agent的Harness工程实战]]"
+  - "[[面向Skills编程-淘宝企业购端对端研发提效实践]]"
+  - "[[Loop Engineering 概念解析、思考与实践]]"
 related_entities:
   - "[[OpenClaw]]"
   - "[[Loop-Engineering]]"
@@ -44,6 +47,7 @@ related_entities:
   - "[[OpenHarness]]"
   - "[[Agent-Oriented-Infra]]"
   - "[[Credential-Brokering]]"
+  - "[[AI可观测性]]"
 ---
 
 # Harness Engineering
@@ -100,6 +104,8 @@ Harness Engineering 的核心是五类组件的协同：
 - **消除返工**：爱奇艺数据库团队用最小 harness（五类组件）终结"AI 瞎猜"式的无限返工
 - **全栈开发**：得物团队用 Harness + SDD + 多仓模式实现前后端并行开发，提效 50%+
 - **个人工作流**：把一次性 AI 对话沉淀为材料、标准、验证和复用流程。问题定义、上下文质量、验证能力、工作流沉淀和判断标准，是个人层面最小 Harness 的五个抓手
+- **高风险业务 Agent**：淘宝主播 Agent 把 Harness 推到直播间场景，要求操作即时生效、错误不可撤回、主播无法逐条复核、会话长且可中断。框架层负责上下文、状态、Hook、安全、评测和记忆，业务方只用 Skill 声明能力边界、风险等级和参数校验
+- **端到端研发流水线**：淘宝企业购把客户定制对接沉淀为 Skill 工作流，脚本承担接口提取等高精度环节，references 承载领域知识，子 Skill 拆分长文档与单接口生成，把不可控对话变成可复现流水线
 
 ### Harness 平台化（Agent-Oriented Infra 视角）
 
@@ -108,6 +114,12 @@ Harness Engineering 的核心是五类组件的协同：
 - **Handoff 时自动初始化，完成后自动回收**
 - **核心约束是即时供给**：并行 agent 数量对环境供给是乘法压力
 - Agent 需要的完整工作环境：workspace + 前序 artifact + 工具权限 + 隔离凭证 + skill + handoff 通道
+
+### 生产级 Agent 的状态、Hook 与评测
+
+直播场景补充了一个重要视角：Harness 不只是 AI Coding 的质量辅助，而是高风险业务操作的安全边界。主播 Agent 的实现把状态更新从模型里拿出来，采用 Reducer 模式：模型只产生 Action，确定性的 Reducer 负责更新结构化 State，每轮再通过 system-hint 注入最新状态。这样既减少工具 JSON 污染上下文，也让状态可回放、可审计。
+
+Lifecycle Hook 则把强规则放到模型循环的关键节点：`PreReasoning` 注入状态和记忆，`PreToolCall` 校验能力边界、幂等键和审批，`PostToolCall` 校验结果并更新状态，`PostReasoning` 检测幻觉，`LiveEnd` 触发记忆回写。评测层不只看最终答案，还看工具成功率、审批通过率、主播干预率、端到端延迟和会话满意度。
 
 ### Harness 在评测领域的应用
 
@@ -134,6 +146,7 @@ Harness Engineering 的理念可以扩展到 Agent 评测领域。阿里团队�
 - [[Loop-Engineering]] —— 循环工程是 harness 的"上一层楼"：harness 武装单次运行，loop 让这次运行在定时器上自动重来
 - [[Spec-Driven-Development]] —— SDD 是 Harness 在需求阶段的具体实践，两者经常组合使用
 - [[OpenClaw-Skills]] —— Skills 是 Harness 的能力封装层，Agent 按需加载领域知识包
+- [[AI可观测性]] —— 生产级 Agent 需要 trace、离线评测、在线指标和人工满意度共同判断质量
 
 ## 参考来源
 
@@ -150,3 +163,6 @@ Harness Engineering 的理念可以扩展到 Agent 评测领域。阿里团队�
 - [[AI-不缺智商缺纪律：一场-Harness-工程化实践]] —— 阿里技术，Harness 分层结构与评测驱动
 - [[Harness-Engineering落地前先想清楚这几个问题]] —— 腾讯云开发者，存量项目 AI Coding 适配
 - [[AI-时代如何超过大多数人]] —— 个人层面的材料、标准、验证和流程沉淀
+- [[更可靠的主播助理：淘宝主播Agent的Harness工程实战]] —— 阿里云开发者，直播间高风险 Agent 的 Harness 六元组、Reducer 状态、Hook、评测和记忆对账
+- [[面向Skills编程-淘宝企业购端对端研发提效实践]] —— 大淘宝技术，企业购客户对接从 Prompt/SDD 演进到 Skill 流水线
+- [[Loop Engineering 概念解析、思考与实践]] —— 阿里技术，区分底层 Agent Loop 与 Harness 之上的自动化验收闭环

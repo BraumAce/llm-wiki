@@ -13,8 +13,10 @@ tags:
 sources:
   - "[[AI-Infra入门干货总结-大模型是如何高效推理的]]"
   - "[[万字入门AI-Infra-深入理解大模型中的数学与Infra优化]]"
+  - "[[拆解大模型几项核心操作背后的数学与 Infra 优化逻辑]]"
 related_entities:
   - "[[RAG]]"
+  - "[[KV-Cache]]"
 ---
 
 # vLLM
@@ -45,6 +47,10 @@ Continuous Batching 则解决了另一个问题：传统 Static Batching 要等�
 
 vLLM 内部用 Flattened 布局管理所有请求的 KV Cache Block，通过 `slot_mapping` 映射逻辑位置到物理位置，`cu_seqlens` 累积序列长度用于请求隔离。
 
+**Gumbel-Max Sampling**：
+
+vLLM 的采样实现可以用 Gumbel-Max Trick 把传统 multinomial sampling 的前缀和与查找，改写成 element-wise 噪声生成、向量除法和 `argmax` 规约。这样贪心采样和随机采样的执行流更统一，也更适合超大词表和张量并行下的多卡规约。
+
 ### 应用 / 使用场景
 
 - **生产 API 服务**：为 ChatBot、Agent 等应用提供高吞吐推理
@@ -61,8 +67,10 @@ vLLM 内部用 Flattened 布局管理所有请求的 KV Cache Block，通过 `sl
 
 - [[RAG]] —— RAG 系统的底层推理通常由 vLLM 提供服务
 - [[Harness-Engineering]] —— AI Infra 是 Harness 的基础设施层
+- [[KV-Cache]] —— vLLM 的 PagedAttention、block table 和 continuous batching 都围绕 KV-Cache 管理展开
 
 ## 参考来源
 
 - [[AI-Infra入门干货总结-大模型是如何高效推理的]] —— vLLM 源码深度解读
 - [[万字入门AI-Infra-深入理解大模型中的数学与Infra优化]] —— 大模型核心操作的数学原理
+- [[拆解大模型几项核心操作背后的数学与 Infra 优化逻辑]] —— RMSNorm、Online Softmax、FlashAttention、Gumbel-Max 等数学与 Kernel 优化逻辑

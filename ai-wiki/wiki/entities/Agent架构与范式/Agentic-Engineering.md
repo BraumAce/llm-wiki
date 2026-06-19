@@ -25,12 +25,16 @@ sources:
   - "[[从语言涌现到协作涌现-如何让AI产生高质量决策]]"
   - "[[Agent从一问一答到自主执行面临哪些挑战]]"
   - "[[AI-时代如何超过大多数人]]"
+  - "[[面向Skills编程-淘宝企业购端对端研发提效实践]]"
+  - "[[Loop Engineering 概念解析、思考与实践]]"
 related_entities:
   - "[[Harness-Engineering]]"
-  - "Context-Engineering"
+  - "[[Context-Engineering]]"
   - "[[Spec-Driven-Development]]"
   - "[[OpenClaw]]"
   - "[[Hermes-Agent]]"
+  - "[[Loop-Engineering]]"
+  - "[[OpenClaw-Skills]]"
 ---
 
 # Agentic Engineering
@@ -93,6 +97,8 @@ Agentic Engineering 建立在三条公理之上：
 - **定时调度与自进化**：阿里云 MSE AI 任务调度将定时调度从 Agent 内部抽离，由统一平台管理，支持弹性伸缩、任务批处理，并通过历史信息动态调整 prompt 实现自进化
 - **存量代码改造**：通过 Harness + SDD 组合，在 10 万行以上的企业级应用中搭建 Agentic 工程框架，AI 代码率从 24% 提升至 90%+
 - **个人 Agentic 工作流**：把 AI 当成需要材料、边界、标准和复核的协作者，而不是外包。问题定义、上下文质量、验证能力、工作流沉淀和判断标准决定了人和 Agent 协作的上限
+- **面向 Skills 的研发组织化**：淘宝企业购的路径显示，Agentic Engineering 不止是让 AI 写代码，而是把领域经验、工作流、代码模板、审查规则沉淀为可版本化 Skill，让人从实现逻辑转向定义能力单元
+- **Loop 化验收闭环**：Loop Engineering 把人机反复纠偏改造成自动化验证与反馈循环，要求需求和验收标准更清晰。它把 Agentic Engineering 从"提需求让 Agent 做"推进到"定义一套闭环让 Agent 自己验收和迭代"
 
 ### 局限与争议
 
@@ -106,10 +112,12 @@ Agentic Engineering 建立在三条公理之上：
 ## 与其他实体的关系
 
 - [[Harness-Engineering]] —— Harness Engineering 是 Agentic Engineering 在工程落地层面的核心方法论。Agentic Engineering 定义了"人与 AI Agent 协作"的范式框架，Harness Engineering 提供了具体的工程骨架（Rules、Skills、Wiki、Changes），两者在实践中高度融合
-- Context-Engineering —— Context Engineering 是 Agentic Engineering 的关键子命题。上下文的质量和结构化程度决定 AI 输出上限，Compaction、JIT 检索、子 Agent 架构等策略是 Agentic Engineering 的核心技术手段
+- [[Context-Engineering]] —— Context Engineering 是 Agentic Engineering 的关键子命题。上下文的质量和结构化程度决定 AI 输出上限，Compaction、JIT 检索、子 Agent 架构等策略是 Agentic Engineering 的核心技术手段
 - [[Spec-Driven-Development]] —— SDD 是 Agentic Engineering 在需求阶段的具体实践。通过结构化文档固化需求边界、接口契约和成功指标，让 Agent 按规格实现而非凭直觉创造
 - [[OpenClaw]] —— OpenClaw 是 Agentic Engineering 理念的开源实践载体，其 CLAUDE.md 持久化状态、hooks 强制规范、Skills 封装领域知识的设计哲学体现了 Agentic Engineering 的核心思想
 - [[Hermes-Agent]] —— Hermes Agent 代表了 Agentic Engineering 的自进化方向，通过记忆模块、反馈循环和自我反思机制实现"越用越好用"
+- [[Loop-Engineering]] —— 外部闭环让 Agent 自动执行、验证、反馈和沉淀
+- [[OpenClaw-Skills]] —— Skill 是 Agentic Engineering 中沉淀领域经验和流程的能力单元
 
 ## 参考来源
 
@@ -122,3 +130,5 @@ Agentic Engineering 建立在三条公理之上：
 - [[从语言涌现到协作涌现-如何让AI产生高质量决策]] —— Agent Room 协作涌现模型、上下文编排 vs 任务编排、Memory/DAG/产出物系统
 - [[Agent从一问一答到自主执行面临哪些挑战]] —— Agent 定时调度痛点、高可用任务调度平台设计
 - [[AI-时代如何超过大多数人]] —— 个人层面的 AI 协作能力、上下文质量和验证能力
+- [[面向Skills编程-淘宝企业购端对端研发提效实践]] —— 大淘宝技术，面向 Skills 编程与端到端研发流水线
+- [[Loop Engineering 概念解析、思考与实践]] —— 阿里技术，把 Human-in-the-Loop 纠偏改造成自动化验收闭环

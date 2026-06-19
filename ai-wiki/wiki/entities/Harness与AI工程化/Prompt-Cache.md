@@ -13,10 +13,12 @@ tags:
   - context-engineering
 sources:
   - "[[一篇搞懂-AI-Coding-Agent的Token成本控制]]"
+  - "[[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]]"
 related_entities:
   - "[[Token成本控制]]"
   - "[[Context-Engineering]]"
   - "[[Anthropic]]"
+  - "[[KV-Cache]]"
 ---
 
 # Prompt-Cache
@@ -47,6 +49,10 @@ Prompt Cache 是 AI Coding Agent 一切上下文优化的基础（见 [[Token成
 2. **不是"写短"，而是"写稳"**：天天改 System Prompt、天天调 Skill Prompt，缓存理论上存在、实践里很难命中。
 3. **缓存优化和上下文治理是一回事**：减少前缀抖动、把稳定内容前置、把变化内容后置，都在提升可复用比例。
 
+### 缓存链断裂
+
+Prompt Cache 的关键限制是"从头连续匹配"。最省的路径是只追加新消息；如果中途修改 Rules/Memory，修改点之后的历史都要重新计算；如果切换模型，底层 [[KV-Cache]] 张量不互通，整段前缀都无法复用。这个机制解释了为什么长会话中途改工具、改规则、换模型会突然变慢、变贵。
+
 工程实践层面，headroom 这类工具内部专门有 CacheAligner 组件来"稳定前缀、帮助 Prompt Cache 命中"。
 
 ### 应用 / 使用场景
@@ -66,7 +72,9 @@ Prompt Cache 是 AI Coding Agent 一切上下文优化的基础（见 [[Token成
 - [[Token成本控制]] —— Prompt Cache 是其五层优化路径中 Context 工程一层的底层依据
 - [[Context-Engineering]] —— "把稳定内容前置"既是缓存命中条件，也是上下文工程实践
 - [[Anthropic]] —— 官方《Prompt caching》《Token-saving updates》文档说明长前缀命中后成本与延迟下降
+- [[KV-Cache]] —— Prompt Cache 是产品层抽象，KV-Cache 是模型/推理引擎内部缓存的张量机制
 
 ## 参考来源
 
 - [[一篇搞懂-AI-Coding-Agent的Token成本控制]] —— 腾讯技术工程 devinyzeng，§1.4 Prompt Cache
+- [[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]] —— 腾讯云开发者，缓存链断裂、三档计价与配置层成本

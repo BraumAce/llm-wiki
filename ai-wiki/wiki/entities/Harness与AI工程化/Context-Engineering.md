@@ -8,6 +8,9 @@ sources:
   - "[[面向LLM的架构设计-什么是真正的AI-Friendly架构]]"
   - "[[横向拆解六大Agent上下文压缩策略后我们做了第7个]]"
   - "[[AI-时代如何超过大多数人]]"
+  - "[[更可靠的主播助理：淘宝主播Agent的Harness工程实战]]"
+  - "[[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]]"
+  - "[[面向Skills编程-淘宝企业购端对端研发提效实践]]"
 related_entities: [AI-Friendly架构, RAG, Agentic-Engineering, Agent-Memory, Harness-Engineering]
 related_topics: []
 ---
@@ -96,6 +99,10 @@ Context Engineering：
 
 在个人使用 AI 的场景中，上下文工程不一定表现为复杂系统，最小形态是"给材料、给边界、给标准"：把会议记录、用户反馈、代码仓库、竞品页面、历史文档、数据表、错误日志等真实材料交给模型，再明确目标、约束、反例和验收标准。信息越具体，AI 越像帮手；信息越少，AI 越像在猜。
 
+**7. 状态外置与按需加载**
+
+生产级 Agent 的上下文治理不是只做摘要压缩。淘宝主播 Agent 用 Reducer 维护结构化 State，模型只产生 Action，每轮通过 system-hint 读最新状态，避免完整工具 JSON 堆进历史；淘宝企业购 Skill 流水线用索引、references 和子 Skill 按需加载单接口上下文；Token 经济学进一步说明，Memory、Rules、Skills、MCP 的加载策略本身就是上下文成本控制的一部分。
+
 ### 业界实践
 
 Anthropic在其官方文档中系统性地介绍了Effective Context Engineering for AI Agents，将上下文工程视为提升Agent表现的关键手段，强调"精心挑选、组织、压缩上下文信息"的重要性，与本文中Context Engineering的定义高度一致。
@@ -137,3 +144,6 @@ Anthropic在其官方文档中系统性地介绍了Effective Context Engineering
 - [[面向LLM的架构设计-什么是真正的AI-Friendly架构]]
 - [[横向拆解六大Agent上下文压缩策略后我们做了第7个]]
 - [[AI-时代如何超过大多数人]]
+- [[更可靠的主播助理：淘宝主播Agent的Harness工程实战]]
+- [[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]]
+- [[面向Skills编程-淘宝企业购端对端研发提效实践]]

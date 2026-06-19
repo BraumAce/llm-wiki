@@ -8,8 +8,8 @@ date: 2026-06-03
 
 ## 状态
 
-- 实体数：68 ｜ 主题数：9 ｜ 来源数：156
-- 最后更新：2026-06-16
+- 实体数：69 ｜ 主题数：9 ｜ 来源数：161
+- 最后更新：2026-06-19
 
 ### 主题导航
 
@@ -24,6 +24,14 @@ date: 2026-06-03
 - [[OpenClaw-digest-20260510|OpenClaw 综合]] —— 架构总览与三大子系统设计哲学
 
 ## 最近更新
+
+### 2026-06-19
+
+新增来源：[[更可靠的主播助理：淘宝主播Agent的Harness工程实战]]、[[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]]、[[面向Skills编程-淘宝企业购端对端研发提效实践]]、[[拆解大模型几项核心操作背后的数学与 Infra 优化逻辑]]、[[Loop Engineering 概念解析、思考与实践]] —— 批量补充生产级主播 Agent Harness、Token 缓存经济学、企业购 Skill 流水线、AI Infra 数学优化和 Loop Engineering 实践边界。
+
+新增实体：[[KV-Cache]] —— 解释自回归推理中历史 Key/Value 张量缓存、Prompt Cache 产品抽象、vLLM PagedAttention 与长上下文 Serving 的关系。
+
+更新实体/主题：[[Harness-Engineering]]、[[Loop-Engineering]]、[[Token成本控制]]、[[Prompt-Cache]]、[[OpenClaw-Skills]]、[[vLLM]]、[[Context-Engineering]]、[[Spec-Driven-Development]]、[[Agentic-Engineering]]、[[Harness-Engineering-主题]]、[[AI-Skill体系-主题]]、[[Skill开发最佳实践]]、[[Agentic-Engineering-主题]]、[[AI-Infra推理优化-主题]] —— 合并本批来源中的生产安全边界、Skill 组织化、缓存链成本和推理算子优化视角。
 
 ### 2026-06-16
 

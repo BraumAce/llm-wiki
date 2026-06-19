@@ -14,8 +14,13 @@ sources:
   - "[[OpenClaw-Agent与Skill架构详解]]"
   - "[[玩转OpenClaw-核心架构-运作原理-Agent部署步骤]]"
   - "[[深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践]]"
+  - "[[面向Skills编程-淘宝企业购端对端研发提效实践]]"
+  - "[[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]]"
 related_entities:
   - "[[OpenClaw]]"
+  - "[[Harness-Engineering]]"
+  - "[[Spec-Driven-Development]]"
+  - "[[Token成本控制]]"
 ---
 
 # OpenClaw-Skills
@@ -121,6 +126,12 @@ SkillSnapshot = {
 
 二者不是替代关系而是互补——Agent 可以读取 Skill 获得知识后，再创建多个子 Agent 并行执行。
 
+### 面向 Skills 编程
+
+淘宝企业购实践把 Skill 从"工具使用说明"推进到"研发流水线的能力单元"：SKILL.md 写工作流，references 放领域知识和代码模板，scripts 承担确定性抽取和校验。客户定制对接中的不变量（文档评估、方案设计、代码生成顺序、SPU/SKU 约束、推拉模式判断）被沉淀为 Skill，变化的客户文档作为输入。
+
+这类实践说明，Skill 的质量瓶颈不在模型，而在知识工程：高精度环节要脚本化，长上下文要拆成子 Skill，反复犯错要进入约束和回归验证。Skill 也不是免费的，加载前只有 description 成本很低，但 SKILL.md 一旦进入对话历史，就会成为长期上下文负担。
+
 ### CLI 实操
 
 ```bash
@@ -135,6 +146,9 @@ openclaw skill sync             # 同步并备份
 - [[OpenClaw]] —— 父系统；Skills 是 [[OpenClaw]] 16 大模块之一（章节 3.10）
 - [[OpenClaw-SandBox]] —— 平行子系统；SandBox 的工具策略可以禁用某些 Skill 触发的工具
 - [[OpenClaw-双源记忆系统]] —— 平行子系统；都用"文件即真相"的设计哲学（一个用 SKILL.md，一个用 MEMORY.md）
+- [[Harness-Engineering]] —— Skill 是 Harness 的能力封装层，也是把不确定模型纳入确定流程的载体
+- [[Spec-Driven-Development]] —— 领域 Skill 常以结构化 Spec/方案为前置输入
+- [[Token成本控制]] —— Skill 未加载时成本低，加载后需要靠缓存命中降低后续边际成本
 
 ## 参考来源
 
@@ -142,6 +156,8 @@ openclaw skill sync             # 同步并备份
 - [[OpenClaw-Agent与Skill架构详解]]（最详尽源码级解析）
 - [[玩转OpenClaw-核心架构-运作原理-Agent部署步骤]]（CLI 实操段）
 - [[深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践]]（System Prompt 第 6 个模块）
+- [[面向Skills编程-淘宝企业购端对端研发提效实践]] —— 大淘宝技术，企业购端到端研发 Skill 流水线
+- [[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]] —— 腾讯云开发者，Skill 加载成本与缓存链影响
 
 ## 相关综合
 
