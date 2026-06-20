@@ -13,9 +13,11 @@ tags:
   - ai-coding
   - context-engineering
 sources:
+  - "[[AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家]]"
   - "[[一篇搞懂-AI-Coding-Agent的Token成本控制]]"
   - "[[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]]"
 related_entities:
+  - "[[Headroom]]"
   - "[[Prompt-Cache]]"
   - "[[Orchestrator-Worker模式]]"
   - "[[Context-Engineering]]"
@@ -65,7 +67,7 @@ AI Coding 工具中的四类配置成本不同：
 
 1. **使用习惯（零工程投入，收益最大）**：一个 Session 只服务一个目标；长会话及时 `/compact`（把完整历史压成可继续工作的状态）；聊天记录不是数据库，长期信息外置到文档/Memory/Repo Map；指定输出格式（直接给 diff/结论/JSON）减少废话与重试；Skill/MCP 高频常驻、低频按需加载；**CLI 优先于 MCP**（能 CLI/脚本解决就不挂一套 MCP 说明，如 tapd-ai-cli、gongfeng-cli 专为 Agent 输出格式优化）；引用文件带完整 `@路径`（省掉一整条搜索链路）；意图一次说完，别聊天式拆碎。
 2. **模型路由**：匹配优先而非便宜优先——写 UT/commit 用便宜模型，Code Review 用中高档，架构设计/复杂 Bug 用强模型，批量分类/摘要走低价或 Batch；先过便宜模型再按需升级（级联工作流）；调预算旋钮（reasoning effort / thinking budget / verbosity / max output）；Skill/Agent/Command 都绑定默认模型（CodeBuddy 的 SKILL.md 头部可声明 `model:` 与 `context: fork`）。
-3. **上下文压缩（Context 工程）**：把一定会进上下文的内容压短。代表工具——RTK（压终端命令输出，~89%）、Caveman（压 AI 回复输出，65-75%）、headroom（压所有进上下文内容，可逆压缩+按需还原，47-92%）、context-mode（沙箱化 MCP 工具输出 98%+跨 compact 会话连续性）。
+3. **上下文压缩（Context 工程）**：把一定会进上下文的内容压短。代表工具——RTK（压终端命令输出，~89%）、Caveman（压 AI 回复输出，65-75%）、[[Headroom]]（压所有进上下文内容，可逆压缩+按需还原，47-92%）、context-mode（沙箱化 MCP 工具输出 98%+跨 compact 会话连续性）。
 4. **代码图谱**：真正贵的是"找代码"不是"读代码"。让 AI 动手前就知道该读哪里——Graphify（Tree-sitter 建图，官方称比直接读文件省 71.5× Token）、CodeGraph（MCP+持久化图库，7 仓库 benchmark 平均省 47% Token、58% Tool Call）。
 5. **Agent 架构**：别让所有任务都挤进同一个上下文，用 [[Orchestrator-Worker模式]] 把臃肿长任务拆成有分工的流水线，每个 Worker 只看当前步骤所需内容，便宜模型干执行、强模型做规划。
 
@@ -81,6 +83,7 @@ AI Coding 工具中的四类配置成本不同：
 
 ## 与其他实体的关系
 
+- [[Headroom]] —— 上下文压缩、可逆检索、预算观测和跨会话记忆的运行时治理层
 - [[Prompt-Cache]] —— 所有上下文优化的基础：稳定前缀命中缓存，省的是重复成本
 - [[Orchestrator-Worker模式]] —— 第五层 Agent 架构优化的核心范式
 - [[Context-Engineering]] —— 上下文压缩与"减少重复上下文"本质同源
@@ -92,5 +95,6 @@ AI Coding 工具中的四类配置成本不同：
 
 ## 参考来源
 
+- [[AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家]] —— 知识星球文章，Headroom 个人实测、压缩触发条件和团队落地路径
 - [[一篇搞懂-AI-Coding-Agent的Token成本控制]] —— 腾讯技术工程 devinyzeng，五层降本框架
 - [[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]] —— 腾讯云开发者，缓存链、四类配置成本与 Sub-Agent 冷启动经济学

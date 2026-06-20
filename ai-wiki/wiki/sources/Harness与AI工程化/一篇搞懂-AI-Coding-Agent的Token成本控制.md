@@ -12,6 +12,7 @@ tags:
   - ai-coding
   - context-engineering
 related_entities:
+  - "[[Headroom]]"
   - "[[Token成本控制]]"
   - "[[Prompt-Cache]]"
   - "[[Orchestrator-Worker模式]]"
@@ -70,7 +71,7 @@ rtk discover              # 扫描哪些命令还没用 RTK
 # Caveman —— 压 AI 回复输出（65-75%；lite/full/ultra/wenyan 四模式）
 git clone https://github.com/studyzy/caveman && cd caveman && ./install.sh
 
-# headroom —— 压所有进上下文内容（47-92%，可逆压缩+按需还原；内置 CacheAligner 稳前缀）
+# Headroom —— 压所有进上下文内容（47-92%，可逆压缩+按需还原；内置 CacheAligner 稳前缀）
 pip install "headroom-ai[all]"
 headroom wrap codebuddy --memory --code-graph
 
@@ -94,6 +95,7 @@ npm install -g context-mode
 ## 涉及实体
 
 - [[Token成本控制]] —— 全文方法论主体
+- [[Headroom]] —— 上下文压缩四工具之一，覆盖所有进入上下文的内容
 - [[Prompt-Cache]] —— §1.4，所有优化的基础
 - [[Orchestrator-Worker模式]] —— §6 多 Agent 协作核心范式
 - [[Context-Engineering]] —— 上下文压缩与"减少重复上下文"

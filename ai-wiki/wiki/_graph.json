@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-19T23:47:01+08:00",
+  "generated_at": "2026-06-20T23:36:02+08:00",
   "wiki_dir": "/Users/liuguang/Documents/Private/llm-wiki/ai-wiki/wiki",
   "stats": {
-    "nodes": 239,
-    "edges": 948,
-    "edge_weight_total": 1618,
+    "nodes": 241,
+    "edges": 976,
+    "edge_weight_total": 1689,
     "orphan_links": [],
     "by_type": {
-      "entity": 69,
+      "entity": 70,
       "topic": 9,
-      "source": 161
+      "source": 162
     }
   },
   "nodes": [
@@ -267,6 +267,18 @@
         "harness",
         "context-engineering",
         "prompt-engineering"
+      ]
+    },
+    {
+      "id": "Headroom",
+      "type": "entity",
+      "title": "Headroom",
+      "tags": [
+        "context-engineering",
+        "token-cost",
+        "ai-coding",
+        "observability",
+        "agent-memory"
       ]
     },
     {
@@ -985,6 +997,18 @@
         "wiki",
         "automation",
         "harness"
+      ]
+    },
+    {
+      "id": "AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家",
+      "type": "source",
+      "title": "AI编程实践第18节：使用Headroom代理，帮我省下Token的\\\"隐形管家\\\"",
+      "tags": [
+        "headroom",
+        "token-cost",
+        "context-engineering",
+        "ai-coding",
+        "observability"
       ]
     },
     {
@@ -3126,6 +3150,56 @@
       "weight": 1
     },
     {
+      "from": "AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家",
+      "to": "AI可观测性",
+      "weight": 2
+    },
+    {
+      "from": "AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家",
+      "to": "Agent-Memory",
+      "weight": 2
+    },
+    {
+      "from": "AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家",
+      "to": "Claude-Code",
+      "weight": 5
+    },
+    {
+      "from": "AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家",
+      "to": "Context-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家",
+      "to": "Cursor",
+      "weight": 4
+    },
+    {
+      "from": "AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家",
+      "to": "Headroom",
+      "weight": 3
+    },
+    {
+      "from": "AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家",
+      "to": "MCP",
+      "weight": 2
+    },
+    {
+      "from": "AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家",
+      "to": "Prompt-Cache",
+      "weight": 2
+    },
+    {
+      "from": "AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家",
+      "to": "Token成本控制",
+      "weight": 3
+    },
+    {
       "from": "AI编程的下半场来了-学会用Agent-Skill解决编程的痛点问题",
       "to": "AI-Skill体系-主题",
       "weight": 2
@@ -4202,6 +4276,21 @@
     },
     {
       "from": "Context-Engineering",
+      "to": "AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家",
+      "weight": 2
+    },
+    {
+      "from": "Context-Engineering",
+      "to": "Headroom",
+      "weight": 1
+    },
+    {
+      "from": "Context-Engineering",
+      "to": "MCP",
+      "weight": 1
+    },
+    {
+      "from": "Context-Engineering",
       "to": "一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制",
       "weight": 2
     },
@@ -4577,6 +4666,11 @@
     },
     {
       "from": "Harness-Engineering-主题",
+      "to": "AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
       "to": "Claude-Code-Harness工程-数仓侧落地方案-得物技术",
       "weight": 1
     },
@@ -4624,6 +4718,11 @@
       "from": "Harness-Engineering-主题",
       "to": "Harness的尽头不是缰绳是镜子",
       "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "Headroom",
+      "weight": 3
     },
     {
       "from": "Harness-Engineering-主题",
@@ -4864,6 +4963,56 @@
       "from": "Harness的尽头不是缰绳是镜子",
       "to": "Harness-Engineering-主题",
       "weight": 1
+    },
+    {
+      "from": "Headroom",
+      "to": "AI可观测性",
+      "weight": 2
+    },
+    {
+      "from": "Headroom",
+      "to": "AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家",
+      "weight": 2
+    },
+    {
+      "from": "Headroom",
+      "to": "Agent-Memory",
+      "weight": 2
+    },
+    {
+      "from": "Headroom",
+      "to": "Claude-Code",
+      "weight": 4
+    },
+    {
+      "from": "Headroom",
+      "to": "Context-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "Headroom",
+      "to": "Cursor",
+      "weight": 4
+    },
+    {
+      "from": "Headroom",
+      "to": "MCP",
+      "weight": 3
+    },
+    {
+      "from": "Headroom",
+      "to": "Prompt-Cache",
+      "weight": 3
+    },
+    {
+      "from": "Headroom",
+      "to": "Token成本控制",
+      "weight": 3
+    },
+    {
+      "from": "Headroom",
+      "to": "一篇搞懂-AI-Coding-Agent的Token成本控制",
+      "weight": 2
     },
     {
       "from": "Hermes-Agent",
@@ -6237,6 +6386,11 @@
     },
     {
       "from": "Token成本控制",
+      "to": "AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家",
+      "weight": 2
+    },
+    {
+      "from": "Token成本控制",
       "to": "CodeBuddy",
       "weight": 3
     },
@@ -6254,6 +6408,11 @@
       "from": "Token成本控制",
       "to": "DeepSeek-V4",
       "weight": 2
+    },
+    {
+      "from": "Token成本控制",
+      "to": "Headroom",
+      "weight": 3
     },
     {
       "from": "Token成本控制",
@@ -6484,6 +6643,11 @@
       "from": "一篇搞懂-AI-Coding-Agent的Token成本控制",
       "to": "Harness-Engineering",
       "weight": 1
+    },
+    {
+      "from": "一篇搞懂-AI-Coding-Agent的Token成本控制",
+      "to": "Headroom",
+      "weight": 2
     },
     {
       "from": "一篇搞懂-AI-Coding-Agent的Token成本控制",

@@ -11,7 +11,8 @@ sources:
   - "[[更可靠的主播助理：淘宝主播Agent的Harness工程实战]]"
   - "[[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]]"
   - "[[面向Skills编程-淘宝企业购端对端研发提效实践]]"
-related_entities: [AI-Friendly架构, RAG, Agentic-Engineering, Agent-Memory, Harness-Engineering]
+  - "[[AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家]]"
+related_entities: [AI-Friendly架构, RAG, Agentic-Engineering, Agent-Memory, Harness-Engineering, Headroom]
 related_topics: []
 ---
 
@@ -122,6 +123,8 @@ Anthropic在其官方文档中系统性地介绍了Effective Context Engineering
 
 **实践共识**：分层渐进不一刀切、成本严格递增、增量摘要优于全量摘要、用真实 token 别估算（text.length/3 在中英混合场景误差 30-50%）、用户消息有特权、保护近端、单调边界绝不滑窗（滑窗式 stub 替换会导致每步缓存前缀失效）。
 
+**旁路代理式压缩**：[[Headroom]] 代表另一类实现，把压缩层放在 Agent 与模型 API 之间，而不是只内嵌在某个 Agent 产品里。它通过 SDK、HTTP proxy、CLI wrap 或 [[MCP]] 形态接入，对工具输出、日志、RAG 文档和长会话历史做可逆压缩，并用 `/stats`、Prometheus、预算和审计导出把上下文成本变成可观测对象。
+
 **四级水位线方案**（MUR AI 落地）：Tier 0 不做（<60%）→ Tier 1 Snip 截短老工具输出（60-80%，零 LLM）→ Tier 2 Prune 替换占位符（80-95%，零 LLM）→ Tier 3 增量摘要兜底（≥95%，调 LLM）。
 
 **云端特化设计**：存储分离（完整日志落盘，对话只留截断版）、工具差异化（四个梯度）、跨轮缓存 ReplacementCache（按 part ID 存 Redis，跨实例复用压缩决策）。
@@ -147,3 +150,4 @@ Anthropic在其官方文档中系统性地介绍了Effective Context Engineering
 - [[更可靠的主播助理：淘宝主播Agent的Harness工程实战]]
 - [[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]]
 - [[面向Skills编程-淘宝企业购端对端研发提效实践]]
+- [[AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家]]

@@ -13,6 +13,7 @@ related_entities:
   - "[[OpenClaw]]"
   - "[[OpenClaw-Skills]]"
   - "[[OpenHarness]]"
+  - "[[Headroom]]"
 sources:
   - "[[Loop-Engineering循环工程橙皮书]]"
   - "[[从Prompt-Context到Harness-工程的三次进化与终局之战]]"
@@ -41,6 +42,7 @@ sources:
   - "[[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]]"
   - "[[面向Skills编程-淘宝企业购端对端研发提效实践]]"
   - "[[Loop Engineering 概念解析、思考与实践]]"
+  - "[[AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家]]"
 ---
 
 # Harness Engineering 主题
@@ -66,6 +68,8 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 
 11. **Skill 与 Token 经济学决定 Harness 厚度**：Skill 可以封装流程和领域知识，但加载后会进入历史上下文；MCP Schema、工具结果、Memory/Rules 抖动都会影响缓存命中。生产 Harness 需要同时治理质量与成本。
 
+12. **上下文治理可以外置成运行时中间层**：[[Headroom]] 这类工具把压缩、可逆检索、预算、审计和跨会话记忆放在 Agent 与模型 API 之间，说明 Harness 不只存在于仓库规则和工作流里，也可以成为流量侧的成本与上下文控制面。
+
 ## 涉及实体
 
 - [[Harness-Engineering]] —— 核心概念实体
@@ -74,6 +78,7 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 - [[OpenClaw]] —— OpenClaw 体现了 Harness 思维
 - [[OpenClaw-Skills]] —— Skills 是 Harness 的能力封装层
 - [[AI可观测性]] —— Harness 的评测与 trace 观测能力
+- [[Headroom]] —— Agent 上下文压缩与成本治理中间层
 
 ## 对比矩阵
 
@@ -94,3 +99,4 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 - [[更可靠的主播助理：淘宝主播Agent的Harness工程实战]] —— 高风险直播业务 Agent 的 Harness 实战
 - [[面向Skills编程-淘宝企业购端对端研发提效实践]] —— Skill 流水线与端到端生码平台
 - [[Loop Engineering 概念解析、思考与实践]] —— Loop 作为 Harness 之上的自动化验收闭环
+- [[AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家]] —— Headroom 作为流量侧上下文治理和成本控制面的实践
