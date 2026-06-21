@@ -8,8 +8,8 @@ date: 2026-06-03
 
 ## 状态
 
-- 实体数：70 ｜ 主题数：9 ｜ 来源数：162
-- 最后更新：2026-06-20
+- 实体数：72 ｜ 主题数：9 ｜ 来源数：164
+- 最后更新：2026-06-22
 
 ### 主题导航
 
@@ -24,6 +24,14 @@ date: 2026-06-03
 - [[OpenClaw-digest-20260510|OpenClaw 综合]] —— 架构总览与三大子系统设计哲学
 
 ## 最近更新
+
+### 2026-06-22
+
+新增来源：[[Progressive-Disclosure-Claude-Mem]]、[[Context-Engineering-for-AI-Agents]] —— claude-mem 官方文档两篇，分别阐述「渐进式披露」上下文预热哲学与 Anthropic 上下文工程框架（含 JIT 检索、长程任务三技术、场景速查表）。
+
+新增实体：[[Progressive-Disclosure]]、[[claude-mem]] —— 前者归 Harness与AI工程化（跨切面信息架构模式），后者归 Agent记忆与评测（Claude Code 渐进式披露记忆系统）。
+
+更新实体/主题：[[Context-Engineering]] —— 补入 Anthropic 框架四要素、三种检索策略对照表与长程任务三技术，并关联 [[Progressive-Disclosure]]、[[claude-mem]]。
 
 ### 2026-06-20
 

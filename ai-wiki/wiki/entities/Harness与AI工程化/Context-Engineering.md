@@ -12,7 +12,8 @@ sources:
   - "[[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]]"
   - "[[面向Skills编程-淘宝企业购端对端研发提效实践]]"
   - "[[AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家]]"
-related_entities: [AI-Friendly架构, RAG, Agentic-Engineering, Agent-Memory, Harness-Engineering, Headroom]
+  - "[[Context-Engineering-for-AI-Agents]]"
+related_entities: [AI-Friendly架构, RAG, Agentic-Engineering, Agent-Memory, Harness-Engineering, Headroom, Progressive-Disclosure, claude-mem]
 related_topics: []
 ---
 
@@ -108,6 +109,34 @@ Context Engineering：
 
 Anthropic在其官方文档中系统性地介绍了Effective Context Engineering for AI Agents，将上下文工程视为提升Agent表现的关键手段，强调"精心挑选、组织、压缩上下文信息"的重要性，与本文中Context Engineering的定义高度一致。
 
+### Anthropic 框架：核心原则与四大要素（claude-mem 文档复述）
+
+[[claude-mem]] 文档系统复述了 Anthropic《Effective context engineering for AI agents》（2025-09）的框架，可作为本实体的方法论骨架。其**核心原则**是：寻找能最大化目标达成概率的、尽可能小的高信号 token 集合（optimize signal-to-noise ratio）。病灶是「上下文腐烂（context rot）」——每个 token 都与其他所有 token 建立 n² 关系，上下文越长模型准确率越低，须把上下文当作边际收益递减的有限资源。四大可调要素：
+
+**1. 系统提示找「正确海拔」（Goldilocks Zone）**：太死板（硬编码 if-else，脆弱难维护）❌；太空泛（高层指引无具体信号，假设共享上下文）❌；刚刚好（足够具体以引导行为、足够灵活以提供强启发，用最小信息集完整勾勒预期行为）✅。最佳实践：简单直接的语言；用 `<background_information>`、`<instructions>`、`## Tool guidance` 等 XML 标签或 Markdown 分节组织；从最小提示起步、按失败模式增补；注意「极简 ≠ 短」（该给的信息要一次给足）。
+
+**2. 工具极简而清晰**：自包含（单一明确职责）、容错、意图无歧义、token 高效、参数命名无歧义（用 `user_id` 而非 `user`）。关键准则——**如果一个人类工程师都无法明确指出某情境该用哪个工具，AI Agent 不可能做得更好**。要避免：臃肿的工具集、职责重叠的工具、模糊的工具选择决策点。
+
+**3. 示例「多样而非穷举」**：精选一组多样、典型的范例（"一图胜千言"）✅；不要堆砌边界情况清单、试图穷举每条规则 ❌。
+
+### 三种上下文检索策略
+
+| 策略 | 做法 | 何时用 |
+|------|------|--------|
+| **Just-In-Time（推荐给 Agent）** | 只维护轻量标识符（文件路径、查询、链接），运行时动态加载 | 需动态探索；天然支持[[Progressive-Disclosure\|渐进式披露]]，避免上下文污染 |
+| **预检索（传统 RAG）** | 推理前用 embedding 召回上下文 | 交互期间不变的静态内容 |
+| **混合策略** | 部分数据预取 + 必要时自主探索 | 多数场景；如 Claude Code 预加载 CLAUDE.md，再用 glob/grep 做 JIT 检索 |
+
+JIT 的代价是比预取慢、且需要良好的工具指引以免走进死胡同；经验法则是「做能跑通的最简单的事（do the simplest thing that works）」。
+
+### 长程任务三技术
+
+1. **压缩（Compaction）**：接近窗口上限时把对话摘要后重新初始化。先最大化召回（抓全相关信息）、再提升精度（剔除冗余）；优先清理旧的工具调用与结果（low-hanging fruit）；保留架构决策、bug、实现细节。适合需大量来回的任务。
+2. **结构化笔记（Agentic Memory）**：Agent 把笔记持久化到上下文窗口外（to-do、NOTES.md、游戏状态、进度日志），之后再取回。开销极小却能维持跨工具调用的关键上下文，支撑多小时连贯策略（文档举 Pokémon 训练 1,234 步追踪为例）。适合有明确里程碑的迭代开发。
+3. **子 Agent 架构**：专职子 Agent 在干净上下文里做聚焦任务——主 Agent 协调高层计划，子 Agent 深入探索（数万 token）后只回传 1,000–2,000 token 的浓缩摘要，细节上下文隔离。适合复杂研究与分析。
+
+**决策速查**：静态内容→预检索/混合；需动态探索→JIT；长来回→压缩；迭代开发→结构化笔记；复杂研究→子 Agent；模型快速进步→做最简单能跑通的事。其中 [[Progressive-Disclosure]] 是 JIT 策略的信息架构实现，[[claude-mem]] 则把 JIT + 结构化笔记落到 Claude Code 的记忆层。
+
 ### 应用场景
 
 - 多轮对话系统
@@ -151,3 +180,4 @@ Anthropic在其官方文档中系统性地介绍了Effective Context Engineering
 - [[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]]
 - [[面向Skills编程-淘宝企业购端对端研发提效实践]]
 - [[AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家]]
+- [[Context-Engineering-for-AI-Agents]]
