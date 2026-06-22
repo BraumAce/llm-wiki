@@ -8,7 +8,7 @@ date: 2026-06-03
 
 ## 状态
 
-- 实体数：72 ｜ 主题数：9 ｜ 来源数：164
+- 实体数：72 ｜ 主题数：9 ｜ 来源数：166
 - 最后更新：2026-06-22
 
 ### 主题导航
@@ -32,6 +32,10 @@ date: 2026-06-03
 新增实体：[[Progressive-Disclosure]]、[[claude-mem]] —— 前者归 Harness与AI工程化（跨切面信息架构模式），后者归 Agent记忆与评测（Claude Code 渐进式披露记忆系统）。
 
 更新实体/主题：[[Context-Engineering]] —— 补入 Anthropic 框架四要素、三种检索策略对照表与长程任务三技术，并关联 [[Progressive-Disclosure]]、[[claude-mem]]。
+
+新增来源：[[Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统]]、[[一文吃透Java并发基础-从三类问题到线程状态机]] —— 前者（腾讯技术工程）把 Loop Engineering 落到 CodeBuddy 的 `/goal`/`/loop`/Automations 命令面并厘清与 ReAct 的 Inner/Outer Loop 边界；后者（码农SharkChili）系统梳理 Java 并发三类问题（安全性/活跃性/性能）与 JVM 线程模型，归入「通用工程实践」。
+
+更新实体/主题：[[Loop-Engineering]]、[[CodeBuddy]]、[[ReAct]] —— 补入 Inner/Outer Loop 框架、CodeBuddy 六要素命令映射、`/goal` 小模型评估器对抗验证等落地细节。
 
 ### 2026-06-20
 

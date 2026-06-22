@@ -4,8 +4,8 @@ type: entity
 date: 2026-06-02
 also_known_as: [Reasoning+Acting, ReAct范式]
 tags: [Agent, 推理, 范式]
-sources: [面向LLM的架构设计-什么是真正的AI-Friendly架构]
-related_entities: [AI-Friendly架构, Multi-Agent, Agentic-Engineering]
+sources: [面向LLM的架构设计-什么是真正的AI-Friendly架构, Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统]
+related_entities: [AI-Friendly架构, Multi-Agent, Agentic-Engineering, Loop-Engineering, CodeBuddy]
 related_topics: [Agent架构演进-主题]
 ---
 
@@ -69,6 +69,12 @@ ReAct每次都是基于当前信息推理下一步的最佳行动，这种单步
 | Plan | 全局规划后执行 | 全局最优、可复用计划 | 计划质量依赖模型能力 |
 | CoT | 纯推理链 | 简单高效 | 无法与外部交互 |
 | Reflexion | 反思+自我修正 | 可从错误中学习 | 额外推理开销 |
+
+### 与 Loop Engineering 的关系：Inner Loop
+
+腾讯技术工程在 CodeBuddy 的实践中把 ReAct 明确定位为 [[Loop-Engineering]] 的 **Inner Loop**——ReAct 负责"单次任务内怎么一步步做"（思考→行动→观察），外层 Loop Engineering 作为 **Outer Loop** 负责"跨任务做什么、谁来做、何时停、怎么续"。
+
+两者不是替代而是叠加：在 [[CodeBuddy]] 里用 `/goal` 设一个可验证条件后，每一轮内部 AI 仍以 ReAct 模式思考-行动，而 `/goal` 的独立评估器在 Outer Loop 层面判断整体进度是否达成。ReAct 的几个固有局限（上下文窗口有限会遗忘、同模型自我检查有盲区、无跨任务进度记录、单 Agent 串行）正是 Loop Engineering 用状态外置、对抗验证、断点续跑、多 Agent 并行来补位的。演进链可记为 `Prompt（怎么问）→ ReAct（怎么做）→ Loop Engineering（怎么管）`。
 
 ### 在大淘宝技术中的实践
 

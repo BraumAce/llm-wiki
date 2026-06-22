@@ -6,8 +6,8 @@ also_known_as:
   - "腾讯 CodeBuddy"
   - "腾讯云 AI 编程助手"
 tags: [AI-Coding, IDE, Tencent]
-sources: [Harness-Engineering落地前先想清楚这几个问题]
-related_entities: [Cursor, Claude-Code]
+sources: [Harness-Engineering落地前先想清楚这几个问题, Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统]
+related_entities: [Cursor, Claude-Code, Loop-Engineering, ReAct, MCP]
 ---
 
 # CodeBuddy
@@ -58,6 +58,22 @@ CodeBuddy 核心能力：
    - 可以生成腾讯云相关的代码
    - 支持云资源的管理操作
 ```
+
+### Loop Engineering 实现：三种循环驱动
+
+CodeBuddy 把 [[Loop-Engineering]] 从理念落成了三个可用的命令，分别对应不同的循环驱动模式：
+
+```
+/goal <完成条件>   —— 条件驱动：跨多轮自动工作直到可验证条件满足
+/loop [间隔] <指令> —— 时间驱动：按固定间隔重复执行（监控/巡检）
+Automations        —— 跨会话定时：Recurring(cron) / Once，不随会话消失
+```
+
+- **`/goal`** 是最贴近 Loop Engineering 本义的实现。条件写法讲究三要素 + 兜底：可度量终态（`all tests in test/auth pass`）、可证明方式（`npm test` exits 0）、不可破坏约束（`no other test file is modified`）、`or stop after N turns` 防无限循环（条件 ≤ 4000 字符）。每轮结束由**独立小模型评估器**（如 gemini-2.5-flash，只看 transcript 不调工具）三态判定：`ok:true`（达成清除）/ `ok:false`（reason 注入 history 继续）/ `impossible:true`（不可达立即清除）。评估器与执行 Agent 用不同模型，天然构成对抗验证。支持 `--resume` 断点续跑。
+- **`/loop`** 时间驱动，约束：最小间隔 1 分钟、每会话上限 50 个任务、3 天自动过期、会话级生命周期、仅会话空闲时触发。不会自动停止，需手动取消。
+- **Automations** 持久化定时任务，跨会话存活，适合每日构建检查、每周代码审查汇总等长期监控。
+
+Loop Engineering 六要素在 CodeBuddy 的完整映射：自动化→`/goal`/`/loop`/Automations；工作树→Git worktree + Team 模式；技能→Skills（SKILL.md）；连接器→[[MCP]] 协议；子智能体→Task 工具 + Team 模式（planner/coder/reviewer 三角分工）；状态文件→Memory、CODEBUDDY.md、Rules（状态外置，每轮从全新上下文读取）。每轮内部仍以 [[ReAct]] 模式思考-行动，`/goal` 评估器在 Outer Loop 判断整体进度。
 
 ### 存量项目适配挑战
 
@@ -117,8 +133,12 @@ CodeBuddy 核心能力：
 ## 与其他实体的关系
 
 - [[Cursor]] —— 同类 AI Coding IDE 产品
-- [[Claude-Code]] —— 同类 AI Coding 工具
+- [[Claude-Code]] —— 同类 AI Coding 工具，`/goal`/`/loop`/worktree/subagent 等 loop 原语与 CodeBuddy 高度对应
+- [[Loop-Engineering]] —— CodeBuddy 用 `/goal`/`/loop`/Automations/Team 落地了循环工程的六要素
+- [[ReAct]] —— CodeBuddy 每轮内部的 Inner Loop 推理-行动模式
+- [[MCP]] —— CodeBuddy 的「连接器」要素，打通 issue/CI/数据库工具链
 
 ## 参考来源
 
 - [[Harness-Engineering落地前先想清楚这几个问题]]
+- [[Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统]] —— 腾讯技术工程，CodeBuddy 上 Loop Engineering 的命令面与实践片段

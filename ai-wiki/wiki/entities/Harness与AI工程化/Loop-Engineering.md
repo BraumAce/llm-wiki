@@ -14,6 +14,7 @@ tags:
 sources:
   - "[[Loop-Engineering循环工程橙皮书]]"
   - "[[Loop Engineering 概念解析、思考与实践]]"
+  - "[[Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统]]"
 related_entities:
   - "[[Harness-Engineering]]"
   - "[[Context-Engineering]]"
@@ -21,6 +22,8 @@ related_entities:
   - "[[Stripe-Minions]]"
   - "[[Addy-Osmani]]"
   - "[[Claude-Code]]"
+  - "[[ReAct]]"
+  - "[[CodeBuddy]]"
 ---
 
 # Loop Engineering
@@ -85,6 +88,38 @@ Loop Engineering（循环工程）是把"那个负责 prompt agent 的人"从你
 
 Connector 决定 loop 的"视野半径"——"A loop that can only see the filesystem is a tiny loop."
 
+### ReAct 与 Loop Engineering：Inner Loop / Outer Loop
+
+腾讯技术工程的实践文给了一个比"四层栈"更直观的边界：[[ReAct]] 是 Loop Engineering 的 **Inner Loop**，Loop Engineering 是套在外面的 **Outer Loop**。
+
+```
+Loop Engineering（Outer Loop）
+  目标拆解 → 任务分配 → 结果汇总 → 再计划
+  ┌──────────────────────────────────────┐
+  │ ReAct（Inner Loop）                  │
+  │ 思考 → 行动 → 观察 → 思考 → 行动 ... │
+  └──────────────────────────────────────┘
+```
+
+- ReAct 解决"单次任务内怎么一步步做"，Loop Engineering 解决"跨任务做什么、谁来做、何时停、怎么续"。
+- 关键差异落在四件事上：状态（窗口内记忆 vs 外置到文件/库、每轮全新上下文）、停止条件（模型自判 vs 独立评估器验证可度量条件）、验证（自我检查 vs 对抗验证）、恢复（同上下文重试 vs 断点续跑跨会话恢复）。
+- 演进链：`Prompt（怎么问）→ ReAct（怎么做）→ Loop Engineering（怎么管）`。两者不是替代而是叠加——每一轮内部仍跑 ReAct，外层评估器在 Outer Loop 判断整体进度。
+
+### CodeBuddy 的落地映射
+
+腾讯 [[CodeBuddy]] 把六要素翻译成了具体命令面，是目前少见的"理念→工具命令"完整落地：
+
+| Loop Engineering 要素 | CodeBuddy 实现 |
+|------|------|
+| 自动化（心跳） | `/goal`（条件驱动）、`/loop`（时间驱动）、Automations（跨会话 cron） |
+| 工作树 | Git worktree + Team 模式 |
+| 技能 | Skills（SKILL.md） |
+| 连接器 | [[MCP]] 协议 |
+| 子智能体 | Task 工具 + Team 模式（planner/coder/reviewer） |
+| 状态文件 | Memory、CODEBUDDY.md、Rules |
+
+其中 `/goal` 最贴近 Loop Engineering 本义：设一个可验证条件（含可度量终态 / 可证明方式 / 不可破坏约束 / `or stop after N turns` 兜底），每轮由**独立小模型评估器**（如 gemini-2.5-flash，只看 transcript 不调工具）三态判定 `ok:true` / `ok:false` / `impossible:true`。评估器与执行 Agent 用不同模型，天然构成 [[Generator-Evaluator]] 式对抗验证。
+
 ### 应用 / 使用场景
 
 - **个人早间分诊**：Addy 的 triage loop，每天早上 automation 自动读 CI 失败 / open issue / 最近 commit，开 worktree，子 agent 起草+审查，过了自动开 PR，没把握的进收件箱。
@@ -110,8 +145,11 @@ Connector 决定 loop 的"视野半径"——"A loop that can only see the files
 - [[Stripe-Minions]] —— loop 推到企业规模的真实案例
 - [[Addy-Osmani]] —— 命名并系统化循环工程的人
 - [[Claude-Code]] —— 提供 `/loop`、`/goal`、worktree、subagent 等 loop 原语
+- [[ReAct]] —— Loop Engineering 的 Inner Loop；外层编排内层的推理-行动循环
+- [[CodeBuddy]] —— 腾讯工具侧的完整落地，把六要素翻成 `/goal`、`/loop`、Automations、Team 等命令
 
 ## 参考来源
 
 - [[Loop-Engineering循环工程橙皮书]] —— 花叔，循环工程橙皮书第一版（v260615）
 - [[Loop Engineering 概念解析、思考与实践]] —— 阿里技术，中文语境下区分 Agent Loop 与 Loop Engineering，并给出普通任务的实践边界
+- [[Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统]] —— 腾讯技术工程，落到 CodeBuddy 的命令面（`/goal`/`/loop`/Automations/Team），并厘清 ReAct 与 Loop Engineering 的 Inner/Outer Loop 边界
