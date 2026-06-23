@@ -15,6 +15,8 @@ sources:
   - "[[Loop-Engineering循环工程橙皮书]]"
   - "[[Loop Engineering 概念解析、思考与实践]]"
   - "[[Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统]]"
+  - "[[重磅！Loop Engineering 实操手册公开]]"
+  - "[[一文搞懂！Loop Engineering的进化史和本质]]"
 related_entities:
   - "[[Harness-Engineering]]"
   - "[[Context-Engineering]]"
@@ -88,6 +90,12 @@ Loop Engineering（循环工程）是把"那个负责 prompt agent 的人"从你
 
 Connector 决定 loop 的"视野半径"——"A loop that can only see the filesystem is a tiny loop."
 
+### 动手前的五个门槛
+
+不是每个任务都值得做成 loop。Datawhale 转述的实操清单把门槛讲得很明确：任务必须**重复出现**，必须有**自动化验收器**（测试 / 类型检查 / linter / 构建），token 预算要能扛住探索和重试的浪费，agent 要能运行并观察自己的产出，而最容易被忽略的一条是——**人仍然要愿意 review 结果**。如果不 review，就不该建 loop。
+
+这组门槛把 loop 从“看起来很酷的自动化”收回到成本核算问题：一次性的活、没有硬闸门的活、瓶颈在 review 而不在执行速度的活，往往更适合用 prompt、skill 或脚本，而不是直接套一层持续自转的 loop。
+
 ### ReAct 与 Loop Engineering：Inner Loop / Outer Loop
 
 腾讯技术工程的实践文给了一个比"四层栈"更直观的边界：[[ReAct]] 是 Loop Engineering 的 **Inner Loop**，Loop Engineering 是套在外面的 **Outer Loop**。
@@ -120,6 +128,12 @@ Loop Engineering（Outer Loop）
 
 其中 `/goal` 最贴近 Loop Engineering 本义：设一个可验证条件（含可度量终态 / 可证明方式 / 不可破坏约束 / `or stop after N turns` 兜底），每轮由**独立小模型评估器**（如 gemini-2.5-flash，只看 transcript 不调工具）三态判定 `ok:true` / `ok:false` / `impossible:true`。评估器与执行 Agent 用不同模型，天然构成 [[Generator-Evaluator]] 式对抗验证。
 
+### 控制论视角：传感器决定收敛速度
+
+另一篇 Datawhale 文章把 Loop Engineering 解释成一个控制论闭环：控制器负责读偏差并决定下一步，执行器把动作落到真实世界，传感器测量结果并把误差信号送回去。映射到 agent 系统里，Skills + State 更像控制器的“知识与记忆”，文件编辑 / shell / MCP 是执行器，而测试、断言、审阅 agent 和规则系统则是传感器。
+
+这个视角把一个常见误解纠正得很彻底：决定 loop 是否收敛的，往往不是生成模型有多强，而是传感器有多好。只返回 `pass/fail` 的验证器会让控制器近乎盲修；能指出“哪个用例挂了、哪个断言失败了、哪个 diff 引入了问题”的验证器，才能真正压缩搜索空间。这也是为什么 **strong verification 比 strong prompt 更关键**。
+
 ### 应用 / 使用场景
 
 - **个人早间分诊**：Addy 的 triage loop，每天早上 automation 自动读 CI 失败 / open issue / 最近 commit，开 worktree，子 agent 起草+审查，过了自动开 PR，没把握的进收件箱。
@@ -134,6 +148,7 @@ Loop Engineering（Outer Loop）
 - **理解腐烂**：loop 交付你没写的代码越快，"实际存在"和"你真正理解"的差距越大；它平时不报警，只在你最需要理解时让你发现理解没了。
 - **认知投降**：循环跑顺了人就懒得有意见，"执行可外包，拿主意不行"。
 - **token 失控**：用量剧烈波动，取决于你是 token 富人还是穷人；上线前要钉死单次/每日预算和重试上限。
+- **错误收敛**：最危险的不是 loop 一直跑不完，而是验证器太弱，导致它带着“已经通过”的错觉停下来。
 
 书的结论是一句态度："Build the loop. But build it like someone who intends to stay the engineer, not just the person who presses go."——AI 生成不再稀缺，稀缺的是判断力。
 
@@ -153,3 +168,5 @@ Loop Engineering（Outer Loop）
 - [[Loop-Engineering循环工程橙皮书]] —— 花叔，循环工程橙皮书第一版（v260615）
 - [[Loop Engineering 概念解析、思考与实践]] —— 阿里技术，中文语境下区分 Agent Loop 与 Loop Engineering，并给出普通任务的实践边界
 - [[Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统]] —— 腾讯技术工程，落到 CodeBuddy 的命令面（`/goal`/`/loop`/Automations/Team），并厘清 ReAct 与 Loop Engineering 的 Inner/Outer Loop 边界
+- [[重磅！Loop Engineering 实操手册公开]] —— Datawhale，总结 loop 的适用门槛、五个核心构件和 14 步最小落地路线
+- [[一文搞懂！Loop Engineering的进化史和本质]] —— Datawhale，把 loop 放回 Prompt / Context / Harness / Loop 演进链，并用控制论解释为什么传感器决定收敛速度

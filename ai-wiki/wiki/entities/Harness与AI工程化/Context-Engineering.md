@@ -123,7 +123,7 @@ Anthropic在其官方文档中系统性地介绍了Effective Context Engineering
 
 | 策略 | 做法 | 何时用 |
 |------|------|--------|
-| **Just-In-Time（推荐给 Agent）** | 只维护轻量标识符（文件路径、查询、链接），运行时动态加载 | 需动态探索；天然支持[[Progressive-Disclosure\|渐进式披露]]，避免上下文污染 |
+| **Just-In-Time（推荐给 Agent）** | 只维护轻量标识符（文件路径、查询、链接），运行时动态加载 | 需动态探索；天然支持[[Progressive-Disclosure|渐进式披露]]，避免上下文污染 |
 | **预检索（传统 RAG）** | 推理前用 embedding 召回上下文 | 交互期间不变的静态内容 |
 | **混合策略** | 部分数据预取 + 必要时自主探索 | 多数场景；如 Claude Code 预加载 CLAUDE.md，再用 glob/grep 做 JIT 检索 |
 

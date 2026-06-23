@@ -43,6 +43,8 @@ sources:
   - "[[面向Skills编程-淘宝企业购端对端研发提效实践]]"
   - "[[Loop Engineering 概念解析、思考与实践]]"
   - "[[AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家]]"
+  - "[[重磅！Loop Engineering 实操手册公开]]"
+  - "[[一文搞懂！Loop Engineering的进化史和本质]]"
 ---
 
 # Harness Engineering 主题
@@ -69,6 +71,10 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 11. **Skill 与 Token 经济学决定 Harness 厚度**：Skill 可以封装流程和领域知识，但加载后会进入历史上下文；MCP Schema、工具结果、Memory/Rules 抖动都会影响缓存命中。生产 Harness 需要同时治理质量与成本。
 
 12. **上下文治理可以外置成运行时中间层**：[[Headroom]] 这类工具把压缩、可逆检索、预算、审计和跨会话记忆放在 Agent 与模型 API 之间，说明 Harness 不只存在于仓库规则和工作流里，也可以成为流量侧的成本与上下文控制面。
+
+13. **不是所有团队都该立刻上 Loop**：Loop 只有在任务重复、验证可自动化、token 预算可承受、日志可观测、且人仍愿意 review 产出的前提下才值得搭。否则它更像一个昂贵的自动返工器，而不是生产力放大器。
+
+14. **在 Loop 时代，验证器比更强的生成模型更关键**：从控制论视角看，loop 是否收敛取决于传感器给控制器喂回来的偏差信号质量。`strong verification > strong prompt`，这也是 Harness 为什么必须把评测、断言、审查和门禁前置成系统能力。
 
 ## 涉及实体
 
@@ -100,3 +106,5 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 - [[面向Skills编程-淘宝企业购端对端研发提效实践]] —— Skill 流水线与端到端生码平台
 - [[Loop Engineering 概念解析、思考与实践]] —— Loop 作为 Harness 之上的自动化验收闭环
 - [[AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家]] —— Headroom 作为流量侧上下文治理和成本控制面的实践
+- [[重磅！Loop Engineering 实操手册公开]] —— Loop 的五个核心构件、最小落地配方与上线安全红线
+- [[一文搞懂！Loop Engineering的进化史和本质]] —— 从 Prompt / Context / Harness 到 Loop 的演进链，以及控制论视角下的验证器中心论

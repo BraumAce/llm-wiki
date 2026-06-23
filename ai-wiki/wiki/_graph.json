@@ -1,18 +1,831 @@
 {
-  "generated_at": "2026-06-22T00:06:34+08:00",
+  "generated_at": "2026-06-23T23:12:56+08:00",
   "wiki_dir": "/Users/liuguang/Documents/Private/llm-wiki/ai-wiki/wiki",
   "stats": {
-    "nodes": 245,
-    "edges": 1013,
-    "edge_weight_total": 1770,
+    "nodes": 251,
+    "edges": 1053,
+    "edge_weight_total": 1858,
     "orphan_links": [],
     "by_type": {
       "entity": 72,
       "topic": 9,
-      "source": 164
+      "source": 170
     }
   },
   "nodes": [
+    {
+      "id": "AI-Friendly-API",
+      "type": "entity",
+      "title": "AI-Friendly-API",
+      "tags": [
+        "API设计",
+        "AI工程",
+        "工具"
+      ]
+    },
+    {
+      "id": "AI-Friendly架构",
+      "type": "entity",
+      "title": "AI-Friendly架构",
+      "tags": [
+        "架构",
+        "AI",
+        "Agent",
+        "工程化"
+      ]
+    },
+    {
+      "id": "AI-Native软件工程",
+      "type": "entity",
+      "title": "AI-Native软件工程",
+      "tags": [
+        "软件工程",
+        "AI-Native",
+        "范式"
+      ]
+    },
+    {
+      "id": "AI可观测性",
+      "type": "entity",
+      "title": "AI可观测性",
+      "tags": [
+        "工程化",
+        "监控",
+        "评测",
+        "AI"
+      ]
+    },
+    {
+      "id": "Addy-Osmani",
+      "type": "entity",
+      "title": "Addy Osmani",
+      "tags": [
+        "person",
+        "google-chrome",
+        "loop-engineering",
+        "ai-engineering"
+      ]
+    },
+    {
+      "id": "Agent-DX",
+      "type": "entity",
+      "title": "Agent-DX",
+      "tags": [
+        "developer-experience",
+        "ai-engineering",
+        "dx"
+      ]
+    },
+    {
+      "id": "Agent-Memory",
+      "type": "entity",
+      "title": "Agent Memory",
+      "tags": [
+        "memory",
+        "ai-agent",
+        "context-management",
+        "architecture"
+      ]
+    },
+    {
+      "id": "Agent-Oriented-Infra",
+      "type": "entity",
+      "title": "Agent-Oriented-Infra",
+      "tags": [
+        "infra",
+        "ai-engineering",
+        "architecture",
+        "design-principle"
+      ]
+    },
+    {
+      "id": "Agent-Skill-Auth",
+      "type": "entity",
+      "title": "Agent-Skill-Auth",
+      "tags": [
+        "Agent-Skill",
+        "security",
+        "authentication"
+      ]
+    },
+    {
+      "id": "Agentic-Engineering",
+      "type": "entity",
+      "title": "Agentic Engineering",
+      "tags": [
+        "agentic-engineering",
+        "ai-engineering",
+        "agent-architecture",
+        "software-engineering",
+        "context-engineering",
+        "multi-agent",
+        "sdlc"
+      ]
+    },
+    {
+      "id": "Anthropic",
+      "type": "entity",
+      "title": "Anthropic",
+      "tags": [
+        "company",
+        "ai",
+        "llm"
+      ]
+    },
+    {
+      "id": "AutoRAG",
+      "type": "entity",
+      "title": "AutoRAG",
+      "tags": [
+        "RAG",
+        "automation",
+        "optimization"
+      ]
+    },
+    {
+      "id": "Chromium-AI-Coding",
+      "type": "entity",
+      "title": "Chromium-AI-Coding",
+      "tags": [
+        "Chromium",
+        "AI-Coding",
+        "Prompt分层",
+        "Skills",
+        "评估体系"
+      ]
+    },
+    {
+      "id": "Claude-Code",
+      "type": "entity",
+      "title": "Claude Code",
+      "tags": [
+        "ai-coding",
+        "agent",
+        "cli-tool",
+        "anthropic",
+        "harness-engineering",
+        "context-engineering",
+        "replit"
+      ]
+    },
+    {
+      "id": "CodeBuddy",
+      "type": "entity",
+      "title": "CodeBuddy",
+      "tags": [
+        "AI-Coding",
+        "IDE",
+        "Tencent"
+      ]
+    },
+    {
+      "id": "Context-Engineering",
+      "type": "entity",
+      "title": "Context-Engineering",
+      "tags": [
+        "工程化",
+        "Prompt",
+        "RAG",
+        "Agent"
+      ]
+    },
+    {
+      "id": "Credential-Brokering",
+      "type": "entity",
+      "title": "Credential-Brokering",
+      "tags": [
+        "security",
+        "infra",
+        "ai-agent",
+        "authentication"
+      ]
+    },
+    {
+      "id": "Cross-Encoder",
+      "type": "entity",
+      "title": "Cross-Encoder",
+      "tags": [
+        "RAG",
+        "reranking",
+        "NLP"
+      ]
+    },
+    {
+      "id": "Cursor",
+      "type": "entity",
+      "title": "Cursor",
+      "tags": [
+        "AI-Coding",
+        "IDE",
+        "editor"
+      ]
+    },
+    {
+      "id": "DeepSeek-V4",
+      "type": "entity",
+      "title": "DeepSeek-V4",
+      "tags": [
+        "llm",
+        "moe",
+        "open-source",
+        "ai-infra",
+        "long-context",
+        "reasoning",
+        "chinese-ai"
+      ]
+    },
+    {
+      "id": "Generator-Evaluator",
+      "type": "entity",
+      "title": "Generator-Evaluator",
+      "tags": [
+        "ai-engineering",
+        "verification",
+        "multi-agent",
+        "evaluation",
+        "harness"
+      ]
+    },
+    {
+      "id": "GraphRAG",
+      "type": "entity",
+      "title": "GraphRAG",
+      "tags": [
+        "ai-engineering",
+        "retrieval",
+        "knowledge-graph",
+        "RAG"
+      ]
+    },
+    {
+      "id": "Harness-Engineering",
+      "type": "entity",
+      "title": "Harness Engineering",
+      "tags": [
+        "ai-engineering",
+        "methodology",
+        "harness",
+        "context-engineering",
+        "prompt-engineering"
+      ]
+    },
+    {
+      "id": "Headroom",
+      "type": "entity",
+      "title": "Headroom",
+      "tags": [
+        "context-engineering",
+        "token-cost",
+        "ai-coding",
+        "observability",
+        "agent-memory"
+      ]
+    },
+    {
+      "id": "Hermes-Agent",
+      "type": "entity",
+      "title": "Hermes Agent",
+      "tags": [
+        "agent",
+        "open-source",
+        "self-evolving",
+        "skill-generation",
+        "reinforcement-learning",
+        "harness-engineering",
+        "context-engineering",
+        "trajectory"
+      ]
+    },
+    {
+      "id": "Hook-机制",
+      "type": "entity",
+      "title": "Hook-机制",
+      "tags": [
+        "Claude-Code",
+        "Hook",
+        "automation"
+      ]
+    },
+    {
+      "id": "HyDE",
+      "type": "entity",
+      "title": "HyDE",
+      "tags": [
+        "RAG",
+        "query-enhancement",
+        "retrieval"
+      ]
+    },
+    {
+      "id": "Instinct-Engine",
+      "type": "entity",
+      "title": "Instinct-Engine",
+      "tags": [
+        "Claude-Code",
+        "self-learning",
+        "pattern-mining"
+      ]
+    },
+    {
+      "id": "KV-Cache",
+      "type": "entity",
+      "title": "KV-Cache",
+      "tags": [
+        "ai-infra",
+        "inference",
+        "cache",
+        "attention"
+      ]
+    },
+    {
+      "id": "LOCOMO",
+      "type": "entity",
+      "title": "LOCOMO",
+      "tags": [
+        "benchmark",
+        "memory",
+        "evaluation",
+        "long-context"
+      ]
+    },
+    {
+      "id": "LONGMEMEVAL",
+      "type": "entity",
+      "title": "LONGMEMEVAL",
+      "tags": [
+        "benchmark",
+        "evaluation",
+        "memory",
+        "long-context"
+      ]
+    },
+    {
+      "id": "Late-Chunking",
+      "type": "entity",
+      "title": "Late-Chunking",
+      "tags": [
+        "RAG",
+        "chunking",
+        "embedding"
+      ]
+    },
+    {
+      "id": "LightRAG",
+      "type": "entity",
+      "title": "LightRAG",
+      "tags": [
+        "ai-engineering",
+        "retrieval",
+        "knowledge-graph",
+        "rag",
+        "llm",
+        "graph-database",
+        "open-source"
+      ]
+    },
+    {
+      "id": "Loop-Engineering",
+      "type": "entity",
+      "title": "Loop Engineering",
+      "tags": [
+        "ai-engineering",
+        "methodology",
+        "agent-orchestration",
+        "automation",
+        "harness"
+      ]
+    },
+    {
+      "id": "M3-Agent",
+      "type": "entity",
+      "title": "M3-Agent",
+      "tags": [
+        "memory",
+        "multimodal",
+        "reinforcement-learning",
+        "ai-agent"
+      ]
+    },
+    {
+      "id": "MCP",
+      "type": "entity",
+      "title": "MCP",
+      "tags": [
+        "protocol",
+        "agent",
+        "tool",
+        "context-engineering"
+      ]
+    },
+    {
+      "id": "MUSE",
+      "type": "entity",
+      "title": "MUSE",
+      "tags": [
+        "benchmark",
+        "multimodal",
+        "recommendation",
+        "memory"
+      ]
+    },
+    {
+      "id": "Mem0",
+      "type": "entity",
+      "title": "Mem0",
+      "tags": [
+        "memory",
+        "ai-agent",
+        "graph-memory",
+        "retrieval"
+      ]
+    },
+    {
+      "id": "MemBench",
+      "type": "entity",
+      "title": "MemBench",
+      "tags": [
+        "benchmark",
+        "evaluation",
+        "memory"
+      ]
+    },
+    {
+      "id": "MemoryAgentBench",
+      "type": "entity",
+      "title": "MemoryAgentBench",
+      "tags": [
+        "benchmark",
+        "evaluation",
+        "memory"
+      ]
+    },
+    {
+      "id": "MiniCPM5-1B",
+      "type": "entity",
+      "title": "MiniCPM5-1B",
+      "tags": [
+        "llm",
+        "small-language-model",
+        "on-device",
+        "open-source",
+        "openbmb",
+        "modelbest",
+        "tsinghua"
+      ]
+    },
+    {
+      "id": "Mitchell-Hashimoto",
+      "type": "entity",
+      "title": "Mitchell Hashimoto",
+      "tags": [
+        "person",
+        "hashicorp",
+        "infrastructure",
+        "harness-engineering"
+      ]
+    },
+    {
+      "id": "Nanobot",
+      "type": "entity",
+      "title": "Nanobot",
+      "tags": [
+        "ai-agent",
+        "lightweight-framework",
+        "react-loop",
+        "open-source"
+      ]
+    },
+    {
+      "id": "OpenClaw",
+      "type": "entity",
+      "title": "OpenClaw",
+      "tags": [
+        "ai-agent",
+        "personal-assistant",
+        "local-first",
+        "open-source",
+        "agentic"
+      ]
+    },
+    {
+      "id": "OpenClaw-SandBox",
+      "type": "entity",
+      "title": "OpenClaw-SandBox",
+      "tags": [
+        "security",
+        "docker",
+        "sandbox",
+        "openclaw-module"
+      ]
+    },
+    {
+      "id": "OpenClaw-Skills",
+      "type": "entity",
+      "title": "OpenClaw-Skills",
+      "tags": [
+        "skills",
+        "openclaw-module",
+        "knowledge-pack"
+      ]
+    },
+    {
+      "id": "OpenClaw-双源记忆系统",
+      "type": "entity",
+      "title": "OpenClaw-双源记忆系统",
+      "tags": [
+        "memory",
+        "openclaw-module",
+        "sqlite",
+        "hybrid-search"
+      ]
+    },
+    {
+      "id": "OpenHarness",
+      "type": "entity",
+      "title": "OpenHarness",
+      "tags": [
+        "agent",
+        "open-source",
+        "harness-engineering",
+        "infrastructure",
+        "cli-tool",
+        "multi-agent",
+        "context-engineering"
+      ]
+    },
+    {
+      "id": "OpenViking",
+      "type": "entity",
+      "title": "OpenViking",
+      "tags": [
+        "RAG",
+        "knowledge-base",
+        "architecture"
+      ]
+    },
+    {
+      "id": "Orchestrator-Worker模式",
+      "type": "entity",
+      "title": "Orchestrator-Worker模式",
+      "tags": [
+        "multi-agent",
+        "agent-architecture",
+        "orchestration",
+        "cost-optimization"
+      ]
+    },
+    {
+      "id": "Progressive-Disclosure",
+      "type": "entity",
+      "title": "Progressive-Disclosure",
+      "tags": [
+        "context-engineering",
+        "信息架构",
+        "agent-memory",
+        "token-cost",
+        "skill"
+      ]
+    },
+    {
+      "id": "Prompt-Cache",
+      "type": "entity",
+      "title": "Prompt-Cache",
+      "tags": [
+        "ai-engineering",
+        "cost-optimization",
+        "inference",
+        "context-engineering"
+      ]
+    },
+    {
+      "id": "Prompt分层组合架构",
+      "type": "entity",
+      "title": "Prompt分层组合架构",
+      "tags": [
+        "Prompt",
+        "架构设计",
+        "渐进式加载"
+      ]
+    },
+    {
+      "id": "Prompt评估体系",
+      "type": "entity",
+      "title": "Prompt评估体系",
+      "tags": [
+        "Prompt",
+        "评估",
+        "质量保障"
+      ]
+    },
+    {
+      "id": "Pyramid-KB",
+      "type": "entity",
+      "title": "Pyramid-KB",
+      "tags": [
+        "ai-engineering",
+        "knowledge-management",
+        "RAG",
+        "Agent"
+      ]
+    },
+    {
+      "id": "QuIM-RAG",
+      "type": "entity",
+      "title": "QuIM-RAG",
+      "tags": [
+        "RAG",
+        "retrieval",
+        "index"
+      ]
+    },
+    {
+      "id": "RAG",
+      "type": "entity",
+      "title": "RAG",
+      "tags": [
+        "ai-engineering",
+        "retrieval",
+        "knowledge-management",
+        "llm"
+      ]
+    },
+    {
+      "id": "RAGAS",
+      "type": "entity",
+      "title": "RAGAS",
+      "tags": [
+        "evaluation",
+        "RAG",
+        "metrics"
+      ]
+    },
+    {
+      "id": "RMM",
+      "type": "entity",
+      "title": "RMM",
+      "tags": [
+        "memory",
+        "reinforcement-learning",
+        "personalization"
+      ]
+    },
+    {
+      "id": "ReAct",
+      "type": "entity",
+      "title": "ReAct",
+      "tags": [
+        "Agent",
+        "推理",
+        "范式"
+      ]
+    },
+    {
+      "id": "SkillOpt",
+      "type": "entity",
+      "title": "SkillOpt",
+      "tags": [
+        "agent",
+        "open-source",
+        "self-evolving",
+        "prompt-optimization",
+        "skill-optimization",
+        "microsoft",
+        "harness-engineering",
+        "context-engineering"
+      ]
+    },
+    {
+      "id": "Spec-Driven-Development",
+      "type": "entity",
+      "title": "Spec-Driven Development",
+      "tags": [
+        "methodology",
+        "ai-engineering",
+        "software-engineering",
+        "spec-driven"
+      ]
+    },
+    {
+      "id": "Stripe-Minions",
+      "type": "entity",
+      "title": "Stripe Minions",
+      "tags": [
+        "agent-platform",
+        "loop-engineering",
+        "case-study",
+        "stripe",
+        "automation"
+      ]
+    },
+    {
+      "id": "THEANINE",
+      "type": "entity",
+      "title": "THEANINE",
+      "tags": [
+        "memory",
+        "timeline",
+        "counterfactual-evaluation"
+      ]
+    },
+    {
+      "id": "Token成本控制",
+      "type": "entity",
+      "title": "Token成本控制",
+      "tags": [
+        "ai-engineering",
+        "cost-optimization",
+        "token",
+        "ai-coding",
+        "context-engineering"
+      ]
+    },
+    {
+      "id": "claude-mem",
+      "type": "entity",
+      "title": "claude-mem",
+      "tags": [
+        "agent-memory",
+        "claude-code",
+        "mcp",
+        "context-engineering",
+        "progressive-disclosure",
+        "hook"
+      ]
+    },
+    {
+      "id": "sso-cli",
+      "type": "entity",
+      "title": "sso-cli",
+      "tags": [
+        "CLI",
+        "SSO",
+        "security",
+        "Agent"
+      ]
+    },
+    {
+      "id": "vLLM",
+      "type": "entity",
+      "title": "vLLM",
+      "tags": [
+        "ai-infra",
+        "inference",
+        "serving",
+        "open-source",
+        "gpu"
+      ]
+    },
+    {
+      "id": "wechat-cli",
+      "type": "entity",
+      "title": "wechat-cli",
+      "tags": [
+        "cli-tool",
+        "wechat",
+        "sqlcipher",
+        "decryption",
+        "memory-scanning",
+        "ai-agent-tool",
+        "python",
+        "local-first",
+        "privacy"
+      ]
+    },
+    {
+      "id": "消息总线",
+      "type": "entity",
+      "title": "消息总线",
+      "tags": [
+        "architecture",
+        "messaging",
+        "agent",
+        "event-driven",
+        "pub-sub",
+        "inter-agent-communication"
+      ]
+    },
+    {
+      "id": "自进化Agent",
+      "type": "entity",
+      "title": "自进化Agent",
+      "tags": [
+        "Agent",
+        "范式",
+        "自进化",
+        "持续学习"
+      ]
+    },
+    {
+      "id": "软件工程范式革命",
+      "type": "entity",
+      "title": "软件工程范式革命",
+      "tags": [
+        "软件工程",
+        "范式革命",
+        "控制论",
+        "AI-Native"
+      ]
+    },
     {
       "id": "2026年AI编码的渐进式Spec实战指南",
       "type": "source",
@@ -69,6 +882,18 @@
       ]
     },
     {
+      "id": "AI Evals的一些实践：如何从 0 到 1 构建 agent 的评测系统？",
+      "type": "source",
+      "title": "AI Evals的一些实践：如何从 0 到 1 构建 agent 的评测系统？",
+      "tags": [
+        "agent-evaluation",
+        "llm-as-judge",
+        "golden-dataset",
+        "prompt-eval",
+        "rubric"
+      ]
+    },
+    {
       "id": "AI-Agent-Skill-测评方案及落地实践",
       "type": "source",
       "title": "AI Agent & Skill 测评方案及落地实践",
@@ -113,27 +938,6 @@
       ]
     },
     {
-      "id": "AI-Friendly-API",
-      "type": "entity",
-      "title": "AI-Friendly-API",
-      "tags": [
-        "API设计",
-        "AI工程",
-        "工具"
-      ]
-    },
-    {
-      "id": "AI-Friendly架构",
-      "type": "entity",
-      "title": "AI-Friendly架构",
-      "tags": [
-        "架构",
-        "AI",
-        "Agent",
-        "工程化"
-      ]
-    },
-    {
       "id": "AI-Infra入门干货总结-大模型是如何高效推理的",
       "type": "source",
       "title": "AI-Infra入门干货总结-大模型是如何高效推理的",
@@ -144,18 +948,6 @@
       ]
     },
     {
-      "id": "AI-Infra推理优化-主题",
-      "type": "topic",
-      "title": "AI Infra 推理优化主题",
-      "tags": [
-        "ai-infra",
-        "inference",
-        "optimization",
-        "gpu",
-        "vllm"
-      ]
-    },
-    {
       "id": "AI-Native时代-研发组织何去何从",
       "type": "source",
       "title": "AI-Native时代-研发组织何去何从",
@@ -163,30 +955,6 @@
         "ai-native",
         "organization",
         "management"
-      ]
-    },
-    {
-      "id": "AI-Native软件工程",
-      "type": "entity",
-      "title": "AI-Native软件工程",
-      "tags": [
-        "软件工程",
-        "AI-Native",
-        "范式"
-      ]
-    },
-    {
-      "id": "AI-Skill体系-主题",
-      "type": "topic",
-      "title": "AI Skill 体系主题",
-      "tags": [
-        "ai-skill",
-        "skill-engineering",
-        "workflow",
-        "capability-standardization",
-        "pluggable-architecture",
-        "auditability",
-        "harness-engineering"
       ]
     },
     {
@@ -240,17 +1008,6 @@
       ]
     },
     {
-      "id": "AI可观测性",
-      "type": "entity",
-      "title": "AI可观测性",
-      "tags": [
-        "工程化",
-        "监控",
-        "评测",
-        "AI"
-      ]
-    },
-    {
       "id": "AI实践-基于Spring-AI从0到1构建AI-Agent",
       "type": "source",
       "title": "AI实践：基于 Spring AI 从0到1构建 AI Agent",
@@ -282,7 +1039,7 @@
     {
       "id": "AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家",
       "type": "source",
-      "title": "AI编程实践第18节：使用Headroom代理，帮我省下Token的\\\"隐形管家\\",
+      "title": "AI编程实践第18节：使用Headroom代理，帮我省下Token的\\\"隐形管家\\\"",
       "tags": [
         "headroom",
         "token-cost",
@@ -325,38 +1082,6 @@
       ]
     },
     {
-      "id": "Addy-Osmani",
-      "type": "entity",
-      "title": "Addy Osmani",
-      "tags": [
-        "person",
-        "google-chrome",
-        "loop-engineering",
-        "ai-engineering"
-      ]
-    },
-    {
-      "id": "Agent-DX",
-      "type": "entity",
-      "title": "Agent-DX",
-      "tags": [
-        "developer-experience",
-        "ai-engineering",
-        "dx"
-      ]
-    },
-    {
-      "id": "Agent-Memory",
-      "type": "entity",
-      "title": "Agent Memory",
-      "tags": [
-        "memory",
-        "ai-agent",
-        "context-management",
-        "architecture"
-      ]
-    },
-    {
       "id": "Agent-Memory评测全景-基准评估与记忆系统",
       "type": "source",
       "title": "Agent-Memory评测全景-基准评估与记忆系统",
@@ -367,27 +1092,6 @@
         "agent-memory",
         "locomo",
         "mem0"
-      ]
-    },
-    {
-      "id": "Agent-Oriented-Infra",
-      "type": "entity",
-      "title": "Agent-Oriented-Infra",
-      "tags": [
-        "infra",
-        "ai-engineering",
-        "architecture",
-        "design-principle"
-      ]
-    },
-    {
-      "id": "Agent-Skill-Auth",
-      "type": "entity",
-      "title": "Agent-Skill-Auth",
-      "tags": [
-        "Agent-Skill",
-        "security",
-        "authentication"
       ]
     },
     {
@@ -436,34 +1140,6 @@
       ]
     },
     {
-      "id": "Agentic-Engineering",
-      "type": "entity",
-      "title": "Agentic Engineering",
-      "tags": [
-        "agentic-engineering",
-        "ai-engineering",
-        "agent-architecture",
-        "software-engineering",
-        "context-engineering",
-        "multi-agent",
-        "sdlc"
-      ]
-    },
-    {
-      "id": "Agentic-Engineering-主题",
-      "type": "topic",
-      "title": "Agentic Engineering 主题",
-      "tags": [
-        "agentic-engineering",
-        "vibe-coding",
-        "software-engineering",
-        "agent-architecture",
-        "context-engineering",
-        "harness-engineering",
-        "sdlc"
-      ]
-    },
-    {
       "id": "Agent从一问一答到自主执行面临哪些挑战",
       "type": "source",
       "title": "Agent从一问一答到自主执行面临哪些挑战",
@@ -471,17 +1147,6 @@
         "agent",
         "scheduling",
         "production"
-      ]
-    },
-    {
-      "id": "Agent架构演进-主题",
-      "type": "topic",
-      "title": "Agent 架构演进主题",
-      "tags": [
-        "agent",
-        "architecture",
-        "evolution",
-        "multi-agent"
       ]
     },
     {
@@ -505,27 +1170,6 @@
         "Memory",
         "Tools",
         "Workflow"
-      ]
-    },
-    {
-      "id": "Agent评测方法论",
-      "type": "topic",
-      "title": "Agent评测方法论",
-      "tags": [
-        "agent-evaluation",
-        "llm-as-judge",
-        "harness-engineering",
-        "quality-assurance"
-      ]
-    },
-    {
-      "id": "Anthropic",
-      "type": "entity",
-      "title": "Anthropic",
-      "tags": [
-        "company",
-        "ai",
-        "llm"
       ]
     },
     {
@@ -553,42 +1197,6 @@
         "claude-agent-sdk",
         "ai-coding",
         "browser-automation"
-      ]
-    },
-    {
-      "id": "AutoRAG",
-      "type": "entity",
-      "title": "AutoRAG",
-      "tags": [
-        "RAG",
-        "automation",
-        "optimization"
-      ]
-    },
-    {
-      "id": "Chromium-AI-Coding",
-      "type": "entity",
-      "title": "Chromium-AI-Coding",
-      "tags": [
-        "Chromium",
-        "AI-Coding",
-        "Prompt分层",
-        "Skills",
-        "评估体系"
-      ]
-    },
-    {
-      "id": "Claude-Code",
-      "type": "entity",
-      "title": "Claude Code",
-      "tags": [
-        "ai-coding",
-        "agent",
-        "cli-tool",
-        "anthropic",
-        "harness-engineering",
-        "context-engineering",
-        "replit"
       ]
     },
     {
@@ -716,20 +1324,6 @@
       ]
     },
     {
-      "id": "Claude-Code源码解析-主题",
-      "type": "topic",
-      "title": "Claude Code 源码解析主题",
-      "tags": [
-        "claude-code",
-        "source-code-analysis",
-        "agent-architecture",
-        "harness-engineering",
-        "context-engineering",
-        "prompt-engineering",
-        "typescript"
-      ]
-    },
-    {
       "id": "Claude-Code防封号指南-国内终极解决方案",
       "type": "source",
       "title": "Claude Code 防封号指南：国内终极解决方案",
@@ -753,27 +1347,6 @@
       ]
     },
     {
-      "id": "CodeBuddy",
-      "type": "entity",
-      "title": "CodeBuddy",
-      "tags": [
-        "AI-Coding",
-        "IDE",
-        "Tencent"
-      ]
-    },
-    {
-      "id": "Context-Engineering",
-      "type": "entity",
-      "title": "Context-Engineering",
-      "tags": [
-        "工程化",
-        "Prompt",
-        "RAG",
-        "Agent"
-      ]
-    },
-    {
       "id": "Context-Engineering-for-AI-Agents",
       "type": "source",
       "title": "Context Engineering for AI Agents (Claude-Mem)",
@@ -786,86 +1359,6 @@
       ]
     },
     {
-      "id": "Credential-Brokering",
-      "type": "entity",
-      "title": "Credential-Brokering",
-      "tags": [
-        "security",
-        "infra",
-        "ai-agent",
-        "authentication"
-      ]
-    },
-    {
-      "id": "Cross-Encoder",
-      "type": "entity",
-      "title": "Cross-Encoder",
-      "tags": [
-        "RAG",
-        "reranking",
-        "NLP"
-      ]
-    },
-    {
-      "id": "Cursor",
-      "type": "entity",
-      "title": "Cursor",
-      "tags": [
-        "AI-Coding",
-        "IDE",
-        "editor"
-      ]
-    },
-    {
-      "id": "DeepSeek-V4",
-      "type": "entity",
-      "title": "DeepSeek-V4",
-      "tags": [
-        "llm",
-        "moe",
-        "open-source",
-        "ai-infra",
-        "long-context",
-        "reasoning",
-        "chinese-ai"
-      ]
-    },
-    {
-      "id": "Generator-Evaluator",
-      "type": "entity",
-      "title": "Generator-Evaluator",
-      "tags": [
-        "ai-engineering",
-        "verification",
-        "multi-agent",
-        "evaluation",
-        "harness"
-      ]
-    },
-    {
-      "id": "GraphRAG",
-      "type": "entity",
-      "title": "GraphRAG",
-      "tags": [
-        "ai-engineering",
-        "retrieval",
-        "knowledge-graph",
-        "RAG"
-      ]
-    },
-    {
-      "id": "Harness-Engineering",
-      "type": "entity",
-      "title": "Harness Engineering",
-      "tags": [
-        "ai-engineering",
-        "methodology",
-        "harness",
-        "context-engineering",
-        "prompt-engineering"
-      ]
-    },
-    {
       "id": "Harness-Engineering-AI能在出事会炸的后端系统里写代码吗",
       "type": "source",
       "title": "Harness Engineering：AI 能在出事会炸的后端系统里写代码吗",
@@ -875,16 +1368,6 @@
         "reliability",
         "production-systems",
         "harness"
-      ]
-    },
-    {
-      "id": "Harness-Engineering-主题",
-      "type": "topic",
-      "title": "Harness Engineering 主题",
-      "tags": [
-        "harness-engineering",
-        "ai-engineering",
-        "methodology"
       ]
     },
     {
@@ -977,63 +1460,6 @@
       ]
     },
     {
-      "id": "Headroom",
-      "type": "entity",
-      "title": "Headroom",
-      "tags": [
-        "context-engineering",
-        "token-cost",
-        "ai-coding",
-        "observability",
-        "agent-memory"
-      ]
-    },
-    {
-      "id": "Hermes-Agent",
-      "type": "entity",
-      "title": "Hermes Agent",
-      "tags": [
-        "agent",
-        "open-source",
-        "self-evolving",
-        "skill-generation",
-        "reinforcement-learning",
-        "harness-engineering",
-        "context-engineering",
-        "trajectory"
-      ]
-    },
-    {
-      "id": "Hook-机制",
-      "type": "entity",
-      "title": "Hook-机制",
-      "tags": [
-        "Claude-Code",
-        "Hook",
-        "automation"
-      ]
-    },
-    {
-      "id": "HyDE",
-      "type": "entity",
-      "title": "HyDE",
-      "tags": [
-        "RAG",
-        "query-enhancement",
-        "retrieval"
-      ]
-    },
-    {
-      "id": "Instinct-Engine",
-      "type": "entity",
-      "title": "Instinct-Engine",
-      "tags": [
-        "Claude-Code",
-        "self-learning",
-        "pattern-mining"
-      ]
-    },
-    {
       "id": "JavaGuide-LLM基础扫盲",
       "type": "source",
       "title": "JavaGuide：LLM 基础扫盲",
@@ -1041,63 +1467,6 @@
         "llm",
         "fundamentals",
         "token"
-      ]
-    },
-    {
-      "id": "KV-Cache",
-      "type": "entity",
-      "title": "KV-Cache",
-      "tags": [
-        "ai-infra",
-        "inference",
-        "cache",
-        "attention"
-      ]
-    },
-    {
-      "id": "LOCOMO",
-      "type": "entity",
-      "title": "LOCOMO",
-      "tags": [
-        "benchmark",
-        "memory",
-        "evaluation",
-        "long-context"
-      ]
-    },
-    {
-      "id": "LONGMEMEVAL",
-      "type": "entity",
-      "title": "LONGMEMEVAL",
-      "tags": [
-        "benchmark",
-        "evaluation",
-        "memory",
-        "long-context"
-      ]
-    },
-    {
-      "id": "Late-Chunking",
-      "type": "entity",
-      "title": "Late-Chunking",
-      "tags": [
-        "RAG",
-        "chunking",
-        "embedding"
-      ]
-    },
-    {
-      "id": "LightRAG",
-      "type": "entity",
-      "title": "LightRAG",
-      "tags": [
-        "ai-engineering",
-        "retrieval",
-        "knowledge-graph",
-        "rag",
-        "llm",
-        "graph-database",
-        "open-source"
       ]
     },
     {
@@ -1113,15 +1482,14 @@
       ]
     },
     {
-      "id": "Loop-Engineering",
-      "type": "entity",
-      "title": "Loop Engineering",
+      "id": "Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统",
+      "type": "source",
+      "title": "Loop Engineering 实践指南：在 Code Buddy 中构建自主循环系统",
       "tags": [
+        "loop-engineering",
         "ai-engineering",
-        "methodology",
         "agent-orchestration",
-        "automation",
-        "harness"
+        "CodeBuddy"
       ]
     },
     {
@@ -1136,84 +1504,6 @@
       ]
     },
     {
-      "id": "M3-Agent",
-      "type": "entity",
-      "title": "M3-Agent",
-      "tags": [
-        "memory",
-        "multimodal",
-        "reinforcement-learning",
-        "ai-agent"
-      ]
-    },
-    {
-      "id": "MCP",
-      "type": "entity",
-      "title": "MCP",
-      "tags": [
-        "protocol",
-        "agent",
-        "tool",
-        "context-engineering"
-      ]
-    },
-    {
-      "id": "MUSE",
-      "type": "entity",
-      "title": "MUSE",
-      "tags": [
-        "benchmark",
-        "multimodal",
-        "recommendation",
-        "memory"
-      ]
-    },
-    {
-      "id": "Mem0",
-      "type": "entity",
-      "title": "Mem0",
-      "tags": [
-        "memory",
-        "ai-agent",
-        "graph-memory",
-        "retrieval"
-      ]
-    },
-    {
-      "id": "MemBench",
-      "type": "entity",
-      "title": "MemBench",
-      "tags": [
-        "benchmark",
-        "evaluation",
-        "memory"
-      ]
-    },
-    {
-      "id": "MemoryAgentBench",
-      "type": "entity",
-      "title": "MemoryAgentBench",
-      "tags": [
-        "benchmark",
-        "evaluation",
-        "memory"
-      ]
-    },
-    {
-      "id": "MiniCPM5-1B",
-      "type": "entity",
-      "title": "MiniCPM5-1B",
-      "tags": [
-        "llm",
-        "small-language-model",
-        "on-device",
-        "open-source",
-        "openbmb",
-        "modelbest",
-        "tsinghua"
-      ]
-    },
-    {
       "id": "MiniCPM5-1B-GitHub",
       "type": "source",
       "title": "MiniCPM5-1B GitHub",
@@ -1223,17 +1513,6 @@
         "on-device",
         "open-source",
         "openbmb"
-      ]
-    },
-    {
-      "id": "Mitchell-Hashimoto",
-      "type": "entity",
-      "title": "Mitchell Hashimoto",
-      "tags": [
-        "person",
-        "hashicorp",
-        "infrastructure",
-        "harness-engineering"
       ]
     },
     {
@@ -1255,17 +1534,6 @@
         "indexing",
         "optimization",
         "sql"
-      ]
-    },
-    {
-      "id": "Nanobot",
-      "type": "entity",
-      "title": "Nanobot",
-      "tags": [
-        "ai-agent",
-        "lightweight-framework",
-        "react-loop",
-        "open-source"
       ]
     },
     {
@@ -1292,18 +1560,6 @@
       ]
     },
     {
-      "id": "OpenClaw",
-      "type": "entity",
-      "title": "OpenClaw",
-      "tags": [
-        "ai-agent",
-        "personal-assistant",
-        "local-first",
-        "open-source",
-        "agentic"
-      ]
-    },
-    {
       "id": "OpenClaw-Agent与Skill架构详解",
       "type": "source",
       "title": "OpenClaw Agent与Skill架构详解",
@@ -1312,47 +1568,6 @@
         "agent",
         "skill",
         "subagent"
-      ]
-    },
-    {
-      "id": "OpenClaw-SandBox",
-      "type": "entity",
-      "title": "OpenClaw-SandBox",
-      "tags": [
-        "security",
-        "docker",
-        "sandbox",
-        "openclaw-module"
-      ]
-    },
-    {
-      "id": "OpenClaw-Skills",
-      "type": "entity",
-      "title": "OpenClaw-Skills",
-      "tags": [
-        "skills",
-        "openclaw-module",
-        "knowledge-pack"
-      ]
-    },
-    {
-      "id": "OpenClaw-digest-20260510",
-      "type": "topic",
-      "title": "OpenClaw 综合：架构总览、三大子系统的共同设计哲学与开放问题",
-      "tags": [
-        "digest",
-        "openclaw"
-      ]
-    },
-    {
-      "id": "OpenClaw-双源记忆系统",
-      "type": "entity",
-      "title": "OpenClaw-双源记忆系统",
-      "tags": [
-        "memory",
-        "openclaw-module",
-        "sqlite",
-        "hybrid-search"
       ]
     },
     {
@@ -1366,20 +1581,6 @@
       ]
     },
     {
-      "id": "OpenHarness",
-      "type": "entity",
-      "title": "OpenHarness",
-      "tags": [
-        "agent",
-        "open-source",
-        "harness-engineering",
-        "infrastructure",
-        "cli-tool",
-        "multi-agent",
-        "context-engineering"
-      ]
-    },
-    {
       "id": "OpenHarness-GitHub",
       "type": "source",
       "title": "OpenHarness GitHub",
@@ -1388,39 +1589,6 @@
         "harness-engineering",
         "open-source",
         "infrastructure"
-      ]
-    },
-    {
-      "id": "OpenViking",
-      "type": "entity",
-      "title": "OpenViking",
-      "tags": [
-        "RAG",
-        "knowledge-base",
-        "architecture"
-      ]
-    },
-    {
-      "id": "Orchestrator-Worker模式",
-      "type": "entity",
-      "title": "Orchestrator-Worker模式",
-      "tags": [
-        "multi-agent",
-        "agent-architecture",
-        "orchestration",
-        "cost-optimization"
-      ]
-    },
-    {
-      "id": "Progressive-Disclosure",
-      "type": "entity",
-      "title": "Progressive-Disclosure",
-      "tags": [
-        "context-engineering",
-        "信息架构",
-        "agent-memory",
-        "token-cost",
-        "skill"
       ]
     },
     {
@@ -1436,48 +1604,6 @@
       ]
     },
     {
-      "id": "Prompt-Cache",
-      "type": "entity",
-      "title": "Prompt-Cache",
-      "tags": [
-        "ai-engineering",
-        "cost-optimization",
-        "inference",
-        "context-engineering"
-      ]
-    },
-    {
-      "id": "Prompt分层组合架构",
-      "type": "entity",
-      "title": "Prompt分层组合架构",
-      "tags": [
-        "Prompt",
-        "架构设计",
-        "渐进式加载"
-      ]
-    },
-    {
-      "id": "Prompt评估体系",
-      "type": "entity",
-      "title": "Prompt评估体系",
-      "tags": [
-        "Prompt",
-        "评估",
-        "质量保障"
-      ]
-    },
-    {
-      "id": "Pyramid-KB",
-      "type": "entity",
-      "title": "Pyramid-KB",
-      "tags": [
-        "ai-engineering",
-        "knowledge-management",
-        "RAG",
-        "Agent"
-      ]
-    },
-    {
       "id": "QQ音乐Harness-Engineering实践",
       "type": "source",
       "title": "QQ音乐Harness-Engineering实践",
@@ -1485,37 +1611,6 @@
         "harness-engineering",
         "team-collaboration",
         "microservice"
-      ]
-    },
-    {
-      "id": "QuIM-RAG",
-      "type": "entity",
-      "title": "QuIM-RAG",
-      "tags": [
-        "RAG",
-        "retrieval",
-        "index"
-      ]
-    },
-    {
-      "id": "RAG",
-      "type": "entity",
-      "title": "RAG",
-      "tags": [
-        "ai-engineering",
-        "retrieval",
-        "knowledge-management",
-        "llm"
-      ]
-    },
-    {
-      "id": "RAGAS",
-      "type": "entity",
-      "title": "RAGAS",
-      "tags": [
-        "evaluation",
-        "RAG",
-        "metrics"
       ]
     },
     {
@@ -1537,41 +1632,6 @@
         "retrieval",
         "chunking",
         "reranking"
-      ]
-    },
-    {
-      "id": "RMM",
-      "type": "entity",
-      "title": "RMM",
-      "tags": [
-        "memory",
-        "reinforcement-learning",
-        "personalization"
-      ]
-    },
-    {
-      "id": "ReAct",
-      "type": "entity",
-      "title": "ReAct",
-      "tags": [
-        "Agent",
-        "推理",
-        "范式"
-      ]
-    },
-    {
-      "id": "SkillOpt",
-      "type": "entity",
-      "title": "SkillOpt",
-      "tags": [
-        "agent",
-        "open-source",
-        "self-evolving",
-        "prompt-optimization",
-        "skill-optimization",
-        "microsoft",
-        "harness-engineering",
-        "context-engineering"
       ]
     },
     {
@@ -1606,28 +1666,6 @@
       ]
     },
     {
-      "id": "Skill开发最佳实践",
-      "type": "topic",
-      "title": "Skill开发最佳实践",
-      "tags": [
-        "skill",
-        "agent",
-        "best-practice",
-        "prompt-engineering"
-      ]
-    },
-    {
-      "id": "Spec-Driven-Development",
-      "type": "entity",
-      "title": "Spec-Driven Development",
-      "tags": [
-        "methodology",
-        "ai-engineering",
-        "software-engineering",
-        "spec-driven"
-      ]
-    },
-    {
       "id": "Spec-Driven-Development如何重新定义AI编程",
       "type": "source",
       "title": "Spec-Driven-Development如何重新定义AI编程",
@@ -1648,28 +1686,6 @@
       ]
     },
     {
-      "id": "Stripe-Minions",
-      "type": "entity",
-      "title": "Stripe Minions",
-      "tags": [
-        "agent-platform",
-        "loop-engineering",
-        "case-study",
-        "stripe",
-        "automation"
-      ]
-    },
-    {
-      "id": "THEANINE",
-      "type": "entity",
-      "title": "THEANINE",
-      "tags": [
-        "memory",
-        "timeline",
-        "counterfactual-evaluation"
-      ]
-    },
-    {
       "id": "TRAE-2026企业级AI编程实践手册",
       "type": "source",
       "title": "TRAE — 2026企业级AI编程实践手册",
@@ -1681,54 +1697,6 @@
       ]
     },
     {
-      "id": "Token成本控制",
-      "type": "entity",
-      "title": "Token成本控制",
-      "tags": [
-        "ai-engineering",
-        "cost-optimization",
-        "token",
-        "ai-coding",
-        "context-engineering"
-      ]
-    },
-    {
-      "id": "claude-mem",
-      "type": "entity",
-      "title": "claude-mem",
-      "tags": [
-        "agent-memory",
-        "claude-code",
-        "mcp",
-        "context-engineering",
-        "progressive-disclosure",
-        "hook"
-      ]
-    },
-    {
-      "id": "sso-cli",
-      "type": "entity",
-      "title": "sso-cli",
-      "tags": [
-        "CLI",
-        "SSO",
-        "security",
-        "Agent"
-      ]
-    },
-    {
-      "id": "vLLM",
-      "type": "entity",
-      "title": "vLLM",
-      "tags": [
-        "ai-infra",
-        "inference",
-        "serving",
-        "open-source",
-        "gpu"
-      ]
-    },
-    {
       "id": "verify-data-一个端到端的数据验数Agent-Skill",
       "type": "source",
       "title": "verify-data-一个端到端的数据验数Agent-Skill",
@@ -1737,22 +1705,6 @@
         "agent-skill",
         "sql",
         "data-engineering"
-      ]
-    },
-    {
-      "id": "wechat-cli",
-      "type": "entity",
-      "title": "wechat-cli",
-      "tags": [
-        "cli-tool",
-        "wechat",
-        "sqlcipher",
-        "decryption",
-        "memory-scanning",
-        "ai-agent-tool",
-        "python",
-        "local-first",
-        "privacy"
       ]
     },
     {
@@ -1774,6 +1726,17 @@
         "agents-md",
         "ai-coding",
         "best-practice"
+      ]
+    },
+    {
+      "id": "一文吃透Java并发基础-从三类问题到线程状态机",
+      "type": "source",
+      "title": "一文吃透Java并发基础：从三类问题到线程状态机",
+      "tags": [
+        "java",
+        "concurrency",
+        "jvm",
+        "通用工程实践"
       ]
     },
     {
@@ -1808,6 +1771,18 @@
       "tags": [
         "skills",
         "context-engineering"
+      ]
+    },
+    {
+      "id": "一文搞懂！Loop Engineering的进化史和本质",
+      "type": "source",
+      "title": "一文搞懂！Loop Engineering的进化史和本质",
+      "tags": [
+        "loop-engineering",
+        "control-theory",
+        "feedback",
+        "verification",
+        "automation"
       ]
     },
     {
@@ -1986,6 +1961,18 @@
       "tags": [
         "openclaw",
         "memory-system"
+      ]
+    },
+    {
+      "id": "从源码到生产-Java线程池原理与AI代码审查",
+      "type": "source",
+      "title": "从源码到生产-Java线程池原理与AI代码审查",
+      "tags": [
+        "java",
+        "concurrency",
+        "thread-pool",
+        "ai-code-review",
+        "通用工程实践"
       ]
     },
     {
@@ -2190,7 +2177,7 @@
     {
       "id": "如何构建一个更好的知识库",
       "type": "source",
-      "title": "如何构建一个更“好”的知识库？",
+      "title": "'如何构建一个更“好”的知识库？'",
       "tags": [
         "RAG",
         "知识库",
@@ -2330,19 +2317,6 @@
         "context-engineering",
         "prompt-cache",
         "cloud-agent"
-      ]
-    },
-    {
-      "id": "消息总线",
-      "type": "entity",
-      "title": "消息总线",
-      "tags": [
-        "architecture",
-        "messaging",
-        "agent",
-        "event-driven",
-        "pub-sub",
-        "inter-agent-communication"
       ]
     },
     {
@@ -2569,17 +2543,6 @@
       ]
     },
     {
-      "id": "自进化Agent",
-      "type": "entity",
-      "title": "自进化Agent",
-      "tags": [
-        "Agent",
-        "范式",
-        "自进化",
-        "持续学习"
-      ]
-    },
-    {
       "id": "规范驱动AI编程实战指南-OpenSpec-vs-Spec-Kit-vs-BMAD",
       "type": "source",
       "title": "规范驱动 AI 编程实战指南：OpenSpec vs Spec-Kit vs BMAD",
@@ -2679,17 +2642,6 @@
       ]
     },
     {
-      "id": "软件工程范式革命",
-      "type": "entity",
-      "title": "软件工程范式革命",
-      "tags": [
-        "软件工程",
-        "范式革命",
-        "控制论",
-        "AI-Native"
-      ]
-    },
-    {
       "id": "逆向深扒Claude-Code源码我发现了什么",
       "type": "source",
       "title": "逆向深扒Claude Code源码我发现了什么",
@@ -2727,6 +2679,18 @@
         "credential-brokering",
         "dry-run",
         "dx"
+      ]
+    },
+    {
+      "id": "重磅！Loop Engineering 实操手册公开",
+      "type": "source",
+      "title": "重磅！Loop Engineering 实操手册公开",
+      "tags": [
+        "loop-engineering",
+        "automation",
+        "worktree",
+        "skill",
+        "sub-agents"
       ]
     },
     {
@@ -2785,6 +2749,112 @@
         "architecture",
         "react-loop"
       ]
+    },
+    {
+      "id": "AI-Infra推理优化-主题",
+      "type": "topic",
+      "title": "AI Infra 推理优化主题",
+      "tags": [
+        "ai-infra",
+        "inference",
+        "optimization",
+        "gpu",
+        "vllm"
+      ]
+    },
+    {
+      "id": "AI-Skill体系-主题",
+      "type": "topic",
+      "title": "AI Skill 体系主题",
+      "tags": [
+        "ai-skill",
+        "skill-engineering",
+        "workflow",
+        "capability-standardization",
+        "pluggable-architecture",
+        "auditability",
+        "harness-engineering"
+      ]
+    },
+    {
+      "id": "Agentic-Engineering-主题",
+      "type": "topic",
+      "title": "Agentic Engineering 主题",
+      "tags": [
+        "agentic-engineering",
+        "vibe-coding",
+        "software-engineering",
+        "agent-architecture",
+        "context-engineering",
+        "harness-engineering",
+        "sdlc"
+      ]
+    },
+    {
+      "id": "Agent架构演进-主题",
+      "type": "topic",
+      "title": "Agent 架构演进主题",
+      "tags": [
+        "agent",
+        "architecture",
+        "evolution",
+        "multi-agent"
+      ]
+    },
+    {
+      "id": "Agent评测方法论",
+      "type": "topic",
+      "title": "Agent评测方法论",
+      "tags": [
+        "agent-evaluation",
+        "llm-as-judge",
+        "harness-engineering",
+        "quality-assurance"
+      ]
+    },
+    {
+      "id": "Claude-Code源码解析-主题",
+      "type": "topic",
+      "title": "Claude Code 源码解析主题",
+      "tags": [
+        "claude-code",
+        "source-code-analysis",
+        "agent-architecture",
+        "harness-engineering",
+        "context-engineering",
+        "prompt-engineering",
+        "typescript"
+      ]
+    },
+    {
+      "id": "Harness-Engineering-主题",
+      "type": "topic",
+      "title": "Harness Engineering 主题",
+      "tags": [
+        "harness-engineering",
+        "ai-engineering",
+        "methodology"
+      ]
+    },
+    {
+      "id": "OpenClaw-digest-20260510",
+      "type": "topic",
+      "title": "OpenClaw 综合：架构总览、三大子系统的共同设计哲学与开放问题",
+      "tags": [
+        "digest",
+        "openclaw"
+      ]
+    },
+    {
+      "id": "Skill开发最佳实践",
+      "type": "topic",
+      "title": "Skill开发最佳实践",
+      "tags": [
+        "skill",
+        "agent",
+        "best-practice",
+        "prompt-engineering"
+      ]
     }
   ],
   "edges": [
@@ -2817,6 +2887,26 @@
       "from": "800行代码实现OpenClaw的Tool消息总线子Agent管理架构",
       "to": "OpenClaw",
       "weight": 2
+    },
+    {
+      "from": "AI Evals的一些实践：如何从 0 到 1 构建 agent 的评测系统？",
+      "to": "Agent评测方法论",
+      "weight": 3
+    },
+    {
+      "from": "AI Evals的一些实践：如何从 0 到 1 构建 agent 的评测系统？",
+      "to": "Generator-Evaluator",
+      "weight": 2
+    },
+    {
+      "from": "AI Evals的一些实践：如何从 0 到 1 构建 agent 的评测系统？",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "AI Evals的一些实践：如何从 0 到 1 构建 agent 的评测系统？",
+      "to": "Prompt评估体系",
+      "weight": 3
     },
     {
       "from": "AI-Agent-Skill-测评方案及落地实践",
@@ -3900,6 +3990,11 @@
     },
     {
       "from": "Agent评测方法论",
+      "to": "AI Evals的一些实践：如何从 0 到 1 构建 agent 的评测系统？",
+      "weight": 1
+    },
+    {
+      "from": "Agent评测方法论",
       "to": "AI-Agent-Skill-测评方案及落地实践",
       "weight": 1
     },
@@ -4317,6 +4412,26 @@
       "from": "CodeBuddy",
       "to": "Harness-Engineering落地前先想清楚这几个问题",
       "weight": 1
+    },
+    {
+      "from": "CodeBuddy",
+      "to": "Loop-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "CodeBuddy",
+      "to": "Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统",
+      "weight": 1
+    },
+    {
+      "from": "CodeBuddy",
+      "to": "MCP",
+      "weight": 2
+    },
+    {
+      "from": "CodeBuddy",
+      "to": "ReAct",
+      "weight": 2
     },
     {
       "from": "Context-Engineering",
@@ -4880,6 +4995,11 @@
     },
     {
       "from": "Harness-Engineering-主题",
+      "to": "一文搞懂！Loop Engineering的进化史和本质",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
       "to": "从Prompt-Context到Harness-工程的三次进化与终局之战",
       "weight": 2
     },
@@ -4922,6 +5042,11 @@
       "from": "Harness-Engineering-主题",
       "to": "规范驱动AI编程实战指南-OpenSpec-vs-Spec-Kit-vs-BMAD",
       "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "重磅！Loop Engineering 实操手册公开",
+      "weight": 2
     },
     {
       "from": "Harness-Engineering-主题",
@@ -5400,13 +5525,18 @@
     },
     {
       "from": "Loop-Engineering",
+      "to": "CodeBuddy",
+      "weight": 3
+    },
+    {
+      "from": "Loop-Engineering",
       "to": "Context-Engineering",
       "weight": 3
     },
     {
       "from": "Loop-Engineering",
       "to": "Generator-Evaluator",
-      "weight": 3
+      "weight": 4
     },
     {
       "from": "Loop-Engineering",
@@ -5420,13 +5550,18 @@
     },
     {
       "from": "Loop-Engineering",
+      "to": "Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统",
+      "weight": 2
+    },
+    {
+      "from": "Loop-Engineering",
       "to": "Loop-Engineering循环工程橙皮书",
       "weight": 2
     },
     {
       "from": "Loop-Engineering",
       "to": "MCP",
-      "weight": 1
+      "weight": 2
     },
     {
       "from": "Loop-Engineering",
@@ -5435,8 +5570,58 @@
     },
     {
       "from": "Loop-Engineering",
+      "to": "ReAct",
+      "weight": 3
+    },
+    {
+      "from": "Loop-Engineering",
       "to": "Stripe-Minions",
       "weight": 3
+    },
+    {
+      "from": "Loop-Engineering",
+      "to": "一文搞懂！Loop Engineering的进化史和本质",
+      "weight": 2
+    },
+    {
+      "from": "Loop-Engineering",
+      "to": "重磅！Loop Engineering 实操手册公开",
+      "weight": 2
+    },
+    {
+      "from": "Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统",
+      "to": "Addy-Osmani",
+      "weight": 2
+    },
+    {
+      "from": "Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统",
+      "to": "CodeBuddy",
+      "weight": 3
+    },
+    {
+      "from": "Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统",
+      "to": "Generator-Evaluator",
+      "weight": 1
+    },
+    {
+      "from": "Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统",
+      "to": "Loop-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统",
+      "to": "MCP",
+      "weight": 3
+    },
+    {
+      "from": "Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统",
+      "to": "ReAct",
+      "weight": 4
     },
     {
       "from": "Loop-Engineering循环工程橙皮书",
@@ -6170,6 +6355,11 @@
     },
     {
       "from": "Prompt评估体系",
+      "to": "AI Evals的一些实践：如何从 0 到 1 构建 agent 的评测系统？",
+      "weight": 1
+    },
+    {
+      "from": "Prompt评估体系",
       "to": "AI-Agent-Skill-测评方案及落地实践",
       "weight": 1
     },
@@ -6342,6 +6532,16 @@
       "from": "RMM",
       "to": "THEANINE",
       "weight": 2
+    },
+    {
+      "from": "ReAct",
+      "to": "CodeBuddy",
+      "weight": 1
+    },
+    {
+      "from": "ReAct",
+      "to": "Loop-Engineering",
+      "weight": 1
     },
     {
       "from": "SkillOpt",
@@ -6842,6 +7042,41 @@
       "from": "一文搞懂爆火的Skills原理及实践案例",
       "to": "OpenClaw-Skills",
       "weight": 2
+    },
+    {
+      "from": "一文搞懂！Loop Engineering的进化史和本质",
+      "to": "Addy-Osmani",
+      "weight": 2
+    },
+    {
+      "from": "一文搞懂！Loop Engineering的进化史和本质",
+      "to": "Agentic-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "一文搞懂！Loop Engineering的进化史和本质",
+      "to": "Anthropic",
+      "weight": 2
+    },
+    {
+      "from": "一文搞懂！Loop Engineering的进化史和本质",
+      "to": "Generator-Evaluator",
+      "weight": 2
+    },
+    {
+      "from": "一文搞懂！Loop Engineering的进化史和本质",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "一文搞懂！Loop Engineering的进化史和本质",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "一文搞懂！Loop Engineering的进化史和本质",
+      "to": "Loop-Engineering",
+      "weight": 3
     },
     {
       "from": "一文讲透-Harness-Engineering即控制论",
@@ -7777,6 +8012,41 @@
       "from": "重新思考研发基础设施-当Agent成为第一公民",
       "to": "Harness-Engineering",
       "weight": 1
+    },
+    {
+      "from": "重磅！Loop Engineering 实操手册公开",
+      "to": "Agentic-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "重磅！Loop Engineering 实操手册公开",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "重磅！Loop Engineering 实操手册公开",
+      "to": "Generator-Evaluator",
+      "weight": 2
+    },
+    {
+      "from": "重磅！Loop Engineering 实操手册公开",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "重磅！Loop Engineering 实操手册公开",
+      "to": "Harness-Engineering-主题",
+      "weight": 3
+    },
+    {
+      "from": "重磅！Loop Engineering 实操手册公开",
+      "to": "Loop-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "重磅！Loop Engineering 实操手册公开",
+      "to": "MCP",
+      "weight": 2
     },
     {
       "from": "面向-Agent-Skill的-CLI-SSO-鉴权体系",
