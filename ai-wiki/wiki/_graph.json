@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-23T23:12:56+08:00",
+  "generated_at": "2026-06-26T00:22:53+08:00",
   "wiki_dir": "/Users/liuguang/Documents/Private/llm-wiki/ai-wiki/wiki",
   "stats": {
-    "nodes": 251,
-    "edges": 1053,
-    "edge_weight_total": 1858,
+    "nodes": 265,
+    "edges": 1159,
+    "edge_weight_total": 2069,
     "orphan_links": [],
     "by_type": {
-      "entity": 72,
+      "entity": 79,
       "topic": 9,
-      "source": 170
+      "source": 177
     }
   },
   "nodes": [
@@ -208,6 +208,18 @@
         "RAG",
         "reranking",
         "NLP"
+      ]
+    },
+    {
+      "id": "Cua",
+      "type": "entity",
+      "title": "Cua",
+      "tags": [
+        "computer-use-agent",
+        "desktop-automation",
+        "sandbox",
+        "benchmark",
+        "mcp"
       ]
     },
     {
@@ -485,6 +497,18 @@
       ]
     },
     {
+      "id": "Multica",
+      "type": "entity",
+      "title": "Multica",
+      "tags": [
+        "managed-agents",
+        "coding-agent",
+        "platform",
+        "squad",
+        "runtime"
+      ]
+    },
+    {
       "id": "Nanobot",
       "type": "entity",
       "title": "Nanobot",
@@ -493,6 +517,18 @@
         "lightweight-framework",
         "react-loop",
         "open-source"
+      ]
+    },
+    {
+      "id": "OfficeCLI",
+      "type": "entity",
+      "title": "OfficeCLI",
+      "tags": [
+        "office",
+        "cli",
+        "document-automation",
+        "agent-tool",
+        "render-look-fix"
       ]
     },
     {
@@ -572,6 +608,18 @@
         "agent-architecture",
         "orchestration",
         "cost-optimization"
+      ]
+    },
+    {
+      "id": "Ponytail",
+      "type": "entity",
+      "title": "Ponytail",
+      "tags": [
+        "coding-agent",
+        "skill",
+        "plugin",
+        "yagni",
+        "minimalism"
       ]
     },
     {
@@ -670,6 +718,18 @@
       ]
     },
     {
+      "id": "RMUX",
+      "type": "entity",
+      "title": "RMUX",
+      "tags": [
+        "terminal",
+        "multiplexer",
+        "agent-runtime",
+        "cli",
+        "tui"
+      ]
+    },
+    {
       "id": "ReAct",
       "type": "entity",
       "title": "ReAct",
@@ -753,6 +813,18 @@
       ]
     },
     {
+      "id": "last30days",
+      "type": "entity",
+      "title": "last30days",
+      "tags": [
+        "ai-skill",
+        "deep-research",
+        "social-search",
+        "recency",
+        "agent-tool"
+      ]
+    },
+    {
       "id": "sso-cli",
       "type": "entity",
       "title": "sso-cli",
@@ -789,6 +861,18 @@
         "python",
         "local-first",
         "privacy"
+      ]
+    },
+    {
+      "id": "去哪儿AI-Coding体系",
+      "type": "entity",
+      "title": "去哪儿AI-Coding体系",
+      "tags": [
+        "ai-coding",
+        "harness",
+        "engineering-management",
+        "metrics",
+        "skill-governance"
       ]
     },
     {
@@ -1359,6 +1443,17 @@
       ]
     },
     {
+      "id": "Cua-GitHub",
+      "type": "source",
+      "title": "Cua GitHub",
+      "tags": [
+        "computer-use-agent",
+        "desktop-automation",
+        "sandbox",
+        "benchmark"
+      ]
+    },
+    {
       "id": "Harness-Engineering-AI能在出事会炸的后端系统里写代码吗",
       "type": "source",
       "title": "Harness Engineering：AI 能在出事会炸的后端系统里写代码吗",
@@ -1549,6 +1644,17 @@
       ]
     },
     {
+      "id": "OfficeCLI-GitHub",
+      "type": "source",
+      "title": "OfficeCLI GitHub",
+      "tags": [
+        "office",
+        "cli",
+        "agent-tool",
+        "document-automation"
+      ]
+    },
+    {
       "id": "OpenAI-Codex-Plugin-for-Claude-Code源码剖析",
       "type": "source",
       "title": "OpenAI-Codex-Plugin-for-Claude-Code源码剖析",
@@ -1592,6 +1698,17 @@
       ]
     },
     {
+      "id": "Ponytail-GitHub",
+      "type": "source",
+      "title": "Ponytail GitHub",
+      "tags": [
+        "coding-agent",
+        "yagni",
+        "skill",
+        "plugin"
+      ]
+    },
+    {
       "id": "Progressive-Disclosure-Claude-Mem",
       "type": "source",
       "title": "Progressive Disclosure: Claude-Mem's Context Priming Philosophy",
@@ -1632,6 +1749,17 @@
         "retrieval",
         "chunking",
         "reranking"
+      ]
+    },
+    {
+      "id": "RMUX-GitHub",
+      "type": "source",
+      "title": "RMUX GitHub",
+      "tags": [
+        "terminal",
+        "multiplexer",
+        "agent-runtime",
+        "tui"
       ]
     },
     {
@@ -1694,6 +1822,28 @@
         "enterprise",
         "context-engineering",
         "skills"
+      ]
+    },
+    {
+      "id": "last30days-skill-GitHub",
+      "type": "source",
+      "title": "last30days-skill GitHub",
+      "tags": [
+        "ai-skill",
+        "deep-research",
+        "social-search",
+        "recency"
+      ]
+    },
+    {
+      "id": "multica-ai-GitHub",
+      "type": "source",
+      "title": "multica-ai GitHub",
+      "tags": [
+        "managed-agents",
+        "coding-agent",
+        "platform",
+        "skill"
       ]
     },
     {
@@ -2502,6 +2652,18 @@
       ]
     },
     {
+      "id": "精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本",
+      "type": "source",
+      "title": "精华：去哪儿网AI Coding研发平台实践，值得读三遍的样本",
+      "tags": [
+        "ai-coding",
+        "harness",
+        "metrics",
+        "skill-governance",
+        "engineering-management"
+      ]
+    },
+    {
       "id": "缓存使用实践总结-以淘宝交易结算场景为例",
       "type": "source",
       "title": "缓存使用实践总结-以淘宝交易结算场景为例",
@@ -3015,6 +3177,16 @@
     },
     {
       "from": "AI-Infra推理优化-主题",
+      "to": "Cua",
+      "weight": 1
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
+      "to": "Cua-GitHub",
+      "weight": 1
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
       "to": "KV-Cache",
       "weight": 2
     },
@@ -3027,6 +3199,16 @@
       "from": "AI-Infra推理优化-主题",
       "to": "RAG全链路技术详解",
       "weight": 2
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
+      "to": "RMUX",
+      "weight": 1
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
+      "to": "RMUX-GitHub",
+      "weight": 1
     },
     {
       "from": "AI-Infra推理优化-主题",
@@ -3110,12 +3292,37 @@
     },
     {
       "from": "AI-Skill体系-主题",
+      "to": "Multica",
+      "weight": 3
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "OfficeCLI",
+      "weight": 3
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "OfficeCLI-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "AI-Skill体系-主题",
       "to": "OpenClaw",
       "weight": 2
     },
     {
       "from": "AI-Skill体系-主题",
       "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "Ponytail",
+      "weight": 3
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "Ponytail-GitHub",
       "weight": 2
     },
     {
@@ -3132,6 +3339,21 @@
       "from": "AI-Skill体系-主题",
       "to": "Token成本控制",
       "weight": 1
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "last30days",
+      "weight": 3
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "last30days-skill-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "multica-ai-GitHub",
+      "weight": 2
     },
     {
       "from": "AI-Skill体系-主题",
@@ -3172,6 +3394,11 @@
       "from": "AI-Skill体系-主题",
       "to": "深度解析LLM-Wiki-Obsidian-Wiki-GBrain",
       "weight": 1
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本",
+      "weight": 2
     },
     {
       "from": "AI-Skill体系-主题",
@@ -3790,6 +4017,16 @@
     },
     {
       "from": "Agentic-Engineering-主题",
+      "to": "Cua",
+      "weight": 3
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "Cua-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
       "to": "Harness-Engineering",
       "weight": 2
     },
@@ -3810,6 +4047,11 @@
     },
     {
       "from": "Agentic-Engineering-主题",
+      "to": "Multica",
+      "weight": 3
+    },
+    {
+      "from": "Agentic-Engineering-主题",
       "to": "OpenClaw",
       "weight": 2
     },
@@ -3820,7 +4062,22 @@
     },
     {
       "from": "Agentic-Engineering-主题",
+      "to": "RMUX",
+      "weight": 3
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "RMUX-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
       "to": "Spec-Driven-Development",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "multica-ai-GitHub",
       "weight": 2
     },
     {
@@ -3847,6 +4104,16 @@
       "from": "Agentic-Engineering-主题",
       "to": "从零设计生产级Multi-Agent-Harness",
       "weight": 1
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "去哪儿AI-Coding体系",
+      "weight": 3
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本",
+      "weight": 2
     },
     {
       "from": "Agentic-Engineering-主题",
@@ -4350,6 +4617,36 @@
     },
     {
       "from": "Claude-Code源码解析-主题",
+      "to": "OfficeCLI",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "OfficeCLI-GitHub",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "Ponytail",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "Ponytail-GitHub",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "last30days",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "last30days-skill-GitHub",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
       "to": "从IDE到Terminal-适合后端宝宝体质的Claude-Code工作流",
       "weight": 1
     },
@@ -4572,6 +4869,56 @@
       "from": "Cross-Encoder",
       "to": "如何构建一个更好的知识库",
       "weight": 1
+    },
+    {
+      "from": "Cua",
+      "to": "Cua-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "Cua",
+      "to": "MCP",
+      "weight": 2
+    },
+    {
+      "from": "Cua",
+      "to": "OfficeCLI",
+      "weight": 2
+    },
+    {
+      "from": "Cua",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "Cua",
+      "to": "RMUX",
+      "weight": 2
+    },
+    {
+      "from": "Cua-GitHub",
+      "to": "AI-Infra推理优化-主题",
+      "weight": 2
+    },
+    {
+      "from": "Cua-GitHub",
+      "to": "Agent架构演进-主题",
+      "weight": 2
+    },
+    {
+      "from": "Cua-GitHub",
+      "to": "Cua",
+      "weight": 2
+    },
+    {
+      "from": "Cua-GitHub",
+      "to": "MCP",
+      "weight": 2
+    },
+    {
+      "from": "Cua-GitHub",
+      "to": "OpenClaw",
+      "weight": 2
     },
     {
       "from": "Cursor",
@@ -5015,6 +5362,11 @@
     },
     {
       "from": "Harness-Engineering-主题",
+      "to": "去哪儿AI-Coding体系",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
       "to": "告别氛围编程-基于Harness治理和SDD的团队级AI研发范式",
       "weight": 1
     },
@@ -5037,6 +5389,11 @@
       "from": "Harness-Engineering-主题",
       "to": "深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践",
       "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本",
+      "weight": 2
     },
     {
       "from": "Harness-Engineering-主题",
@@ -5819,6 +6176,31 @@
       "weight": 2
     },
     {
+      "from": "Multica",
+      "to": "Agentic-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Multica",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Multica",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "Multica",
+      "to": "RMUX",
+      "weight": 2
+    },
+    {
+      "from": "Multica",
+      "to": "multica-ai-GitHub",
+      "weight": 2
+    },
+    {
       "from": "Nanobot",
       "to": "4000行代码撑起一个Agent框架-nanobot架构深度解析",
       "weight": 1
@@ -5856,6 +6238,61 @@
     {
       "from": "Nanobot-OpenClaw轻量实现的底层原理解析",
       "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "OfficeCLI",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "OfficeCLI",
+      "to": "Cua",
+      "weight": 2
+    },
+    {
+      "from": "OfficeCLI",
+      "to": "OfficeCLI-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "OfficeCLI",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "OfficeCLI",
+      "to": "Ponytail",
+      "weight": 2
+    },
+    {
+      "from": "OfficeCLI-GitHub",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "OfficeCLI-GitHub",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "OfficeCLI-GitHub",
+      "to": "Claude-Code源码解析-主题",
+      "weight": 2
+    },
+    {
+      "from": "OfficeCLI-GitHub",
+      "to": "OfficeCLI",
+      "weight": 2
+    },
+    {
+      "from": "OfficeCLI-GitHub",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "OfficeCLI-GitHub",
+      "to": "Ponytail",
       "weight": 2
     },
     {
@@ -6249,6 +6686,66 @@
       "weight": 2
     },
     {
+      "from": "Ponytail",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "Ponytail",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Ponytail",
+      "to": "Ponytail-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "Ponytail",
+      "to": "Spec-Driven-Development",
+      "weight": 2
+    },
+    {
+      "from": "Ponytail",
+      "to": "last30days",
+      "weight": 2
+    },
+    {
+      "from": "Ponytail-GitHub",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "Ponytail-GitHub",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "Ponytail-GitHub",
+      "to": "Claude-Code源码解析-主题",
+      "weight": 2
+    },
+    {
+      "from": "Ponytail-GitHub",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Ponytail-GitHub",
+      "to": "Ponytail",
+      "weight": 2
+    },
+    {
+      "from": "Ponytail-GitHub",
+      "to": "Skill开发最佳实践",
+      "weight": 2
+    },
+    {
+      "from": "Ponytail-GitHub",
+      "to": "Spec-Driven-Development",
+      "weight": 2
+    },
+    {
       "from": "Progressive-Disclosure",
       "to": "AI-Skill体系-主题",
       "weight": 1
@@ -6531,6 +7028,56 @@
     {
       "from": "RMM",
       "to": "THEANINE",
+      "weight": 2
+    },
+    {
+      "from": "RMUX",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "RMUX",
+      "to": "Cua",
+      "weight": 3
+    },
+    {
+      "from": "RMUX",
+      "to": "MCP",
+      "weight": 2
+    },
+    {
+      "from": "RMUX",
+      "to": "Multica",
+      "weight": 2
+    },
+    {
+      "from": "RMUX",
+      "to": "RMUX-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "RMUX-GitHub",
+      "to": "AI-Infra推理优化-主题",
+      "weight": 2
+    },
+    {
+      "from": "RMUX-GitHub",
+      "to": "Agentic-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "RMUX-GitHub",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "RMUX-GitHub",
+      "to": "Cua",
+      "weight": 2
+    },
+    {
+      "from": "RMUX-GitHub",
+      "to": "RMUX",
       "weight": 2
     },
     {
@@ -6882,6 +7429,91 @@
       "from": "claude-mem",
       "to": "Prompt-Cache",
       "weight": 1
+    },
+    {
+      "from": "last30days",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "last30days",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "last30days",
+      "to": "Ponytail",
+      "weight": 2
+    },
+    {
+      "from": "last30days",
+      "to": "Token成本控制",
+      "weight": 2
+    },
+    {
+      "from": "last30days",
+      "to": "last30days-skill-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "last30days-skill-GitHub",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "last30days-skill-GitHub",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "last30days-skill-GitHub",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "last30days-skill-GitHub",
+      "to": "Skill开发最佳实践",
+      "weight": 2
+    },
+    {
+      "from": "last30days-skill-GitHub",
+      "to": "Token成本控制",
+      "weight": 2
+    },
+    {
+      "from": "last30days-skill-GitHub",
+      "to": "last30days",
+      "weight": 2
+    },
+    {
+      "from": "multica-ai-GitHub",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "multica-ai-GitHub",
+      "to": "Agentic-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "multica-ai-GitHub",
+      "to": "Agentic-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "multica-ai-GitHub",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "multica-ai-GitHub",
+      "to": "Multica",
+      "weight": 2
+    },
+    {
+      "from": "multica-ai-GitHub",
+      "to": "OpenClaw",
+      "weight": 2
     },
     {
       "from": "sso-cli",
@@ -7357,6 +7989,31 @@
       "from": "别让AI瞎猜了-用Harness-Engineering终结无限返工",
       "to": "Harness-Engineering-主题",
       "weight": 1
+    },
+    {
+      "from": "去哪儿AI-Coding体系",
+      "to": "AI-Friendly架构",
+      "weight": 2
+    },
+    {
+      "from": "去哪儿AI-Coding体系",
+      "to": "Agentic-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "去哪儿AI-Coding体系",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "去哪儿AI-Coding体系",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "去哪儿AI-Coding体系",
+      "to": "精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本",
+      "weight": 2
     },
     {
       "from": "后端架构AI-Friendly的标准与路径",
@@ -7847,6 +8504,41 @@
       "from": "知识库分层编排-从RAG到Agent-native-Knowledge-Context-Layer",
       "to": "RAG",
       "weight": 1
+    },
+    {
+      "from": "精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本",
+      "to": "AI-Friendly架构",
+      "weight": 2
+    },
+    {
+      "from": "精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本",
+      "to": "Agentic-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本",
+      "to": "去哪儿AI-Coding体系",
+      "weight": 2
     },
     {
       "from": "腾讯云-兄弟你真的懂-Skill-吗",

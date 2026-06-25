@@ -8,8 +8,8 @@ date: 2026-06-03
 
 ## 状态
 
-- 实体数：72 ｜ 主题数：9 ｜ 来源数：170
-- 最后更新：2026-06-23
+- 实体数：79 ｜ 主题数：9 ｜ 来源数：177
+- 最后更新：2026-06-26
 
 ### 主题导航
 
@@ -24,6 +24,14 @@ date: 2026-06-03
 - [[OpenClaw-digest-20260510|OpenClaw 综合]] —— 架构总览与三大子系统设计哲学
 
 ## 最近更新
+
+### 2026-06-26
+
+新增来源：[[精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本]]、[[Cua-GitHub]]、[[RMUX-GitHub]]、[[OfficeCLI-GitHub]]、[[last30days-skill-GitHub]]、[[Ponytail-GitHub]]、[[multica-ai-GitHub]] —— 批量补充去哪儿组织级 AI Coding 平台实践、Computer-Use Agent 桌面/沙箱基础设施、终端/TUI 复用层、Office 文档自动化 CLI、最近 30 天社区研究 Skill、反过度工程化插件和 managed agents 平台。
+
+新增实体：[[去哪儿AI-Coding体系]]、[[Cua]]、[[RMUX]]、[[OfficeCLI]]、[[last30days]]、[[Ponytail]]、[[Multica]] —— 分别归入 Harness 与 AI 工程化、基础设施/平台、Claude Code 编码工具、Skill 与 Agent 架构范式。
+
+更新实体/主题：[[Harness-Engineering-主题]]、[[AI-Skill体系-主题]]、[[Agentic-Engineering-主题]]、[[Claude-Code源码解析-主题]]、[[AI-Infra推理优化-主题]] —— 补入组织级度量与双估时、Skill 软件包化、Agent 运行时/组织层、Office/代码简化工具和 computer-use 运行环境视角。
 
 ### 2026-06-23
 

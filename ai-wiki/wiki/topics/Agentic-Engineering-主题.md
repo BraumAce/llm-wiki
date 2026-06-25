@@ -17,6 +17,10 @@ related_entities:
   - "[[Claude-Code]]"
   - "[[OpenClaw]]"
   - "[[Hermes-Agent]]"
+  - "[[Cua]]"
+  - "[[RMUX]]"
+  - "[[Multica]]"
+  - "[[去哪儿AI-Coding体系]]"
 sources:
   - "[[从第一性原理思考Agentic-Engineering]]"
   - "[[从Vibe-Coding到Agentic-Engineering-重构后台开发全流程]]"
@@ -28,6 +32,10 @@ sources:
   - "[[从语言涌现到协作涌现-如何让AI产生高质量决策]]"
   - "[[AI-时代如何超过大多数人]]"
   - "[[面向Skills编程-淘宝企业购端对端研发提效实践]]"
+  - "[[Cua-GitHub]]"
+  - "[[RMUX-GitHub]]"
+  - "[[multica-ai-GitHub]]"
+  - "[[精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本]]"
   - "[[Loop Engineering 概念解析、思考与实践]]"
 ---
 
@@ -59,6 +67,8 @@ Agentic Engineering 涵盖从"Vibe Coding"（借助 AI 快速生成代码片段�
 
 10. **从写代码到写能力单元**：面向 Skills 编程把人的经验、领域知识和交付流程产品化为 Skill。工程师的工作重心从实现适配逻辑转向定义不变量、拆分上下文、写约束和验证生成结果。
 
+11. **Agentic Engineering 正在补齐运行时和组织层**：[[Cua]] 补桌面/沙箱，[[RMUX]] 补终端/TUI 会话，[[Multica]] 补任务分配与团队管理，[[去哪儿AI-Coding体系]] 则展示组织级数据采集、自动化分级和 Skills 治理。
+
 ## 涉及实体
 
 - [[Agentic-Engineering]] —— 核心概念实体，定义了"人与 AI Agent 协作"的范式框架
@@ -69,6 +79,10 @@ Agentic Engineering 涵盖从"Vibe Coding"（借助 AI 快速生成代码片段�
 - [[Hermes-Agent]] —— 代表了 Agentic Engineering 的自进化方向
 - [[Loop-Engineering]] —— 外部自动化闭环，减少人在执行过程中的反复纠偏
 - [[OpenClaw-Skills]] —— 领域经验与工作流的能力封装单元
+- [[Cua]] —— Agent 的桌面、沙箱和 computer-use benchmark 基础设施
+- [[RMUX]] —— Agent 的终端/TUI 会话持久化和 Claude teammate mode 运行层
+- [[Multica]] —— 把 coding agents 管理为可分配任务、跟踪进度的团队成员
+- [[去哪儿AI-Coding体系]] —— 组织级 AI Coding 的数据、分级、Harness 和 Skills 治理样本
 
 ## 对比矩阵
 
@@ -90,3 +104,5 @@ Agentic Engineering 涵盖从"Vibe Coding"（借助 AI 快速生成代码片段�
 - [[AI-时代如何超过大多数人]] —— AI 时代个人问题定义、上下文、验证和判断力方法
 - [[面向Skills编程-淘宝企业购端对端研发提效实践]] —— 从 Vibe Coding 到面向 Skills 编程的组织级实践
 - [[Loop Engineering 概念解析、思考与实践]] —— Agent Loop 与 Loop Engineering 的边界、实践和适用条件
+- [[Cua-GitHub]]、[[RMUX-GitHub]]、[[multica-ai-GitHub]] —— Agent 运行时从桌面、终端到任务平台的基础设施补全
+- [[精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本]] —— 组织级 AI Coding 自动化分级、度量与平台化落地

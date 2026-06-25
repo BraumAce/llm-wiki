@@ -13,6 +13,8 @@ related_entities:
   - "[[KV-Cache]]"
   - "[[RAG]]"
   - "[[Agent-Memory]]"
+  - "[[Cua]]"
+  - "[[RMUX]]"
 sources:
   - "[[万字入门AI-Infra-深入理解大模型中的数学与Infra优化]]"
   - "[[AI-Infra入门干货总结-大模型是如何高效推理的]]"
@@ -21,6 +23,8 @@ sources:
   - "[[腾讯云Agent-Memory节省61-Percent-Token提升52-Percent成功率]]"
   - "[[深度解析腾讯云Agent-Memory-4层渐进式记忆管道]]"
   - "[[AI记忆的Git版本控制-Memoir-分层路径替代向量数据库]]"
+  - "[[Cua-GitHub]]"
+  - "[[RMUX-GitHub]]"
   - "[[Spring-AI-Session-API-大多数人用ChatMemory用错了场景]]"
 ---
 

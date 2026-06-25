@@ -14,6 +14,9 @@ related_entities:
   - "[[Claude-Code]]"
   - "[[Harness-Engineering]]"
   - "Anthropic"
+  - "[[OfficeCLI]]"
+  - "[[Ponytail]]"
+  - "[[last30days]]"
 sources:
   - "[[逆向深扒Claude-Code源码我发现了什么]]"
   - "[[深度解析Claude-Code在Prompt-Context-Harness的设计与实践]]"
@@ -27,6 +30,9 @@ sources:
   - "[[Claude-Code-最佳实践-可验证可治理可分层的工程现实]]"
   - "[[Claude-Code-一篇带你从入门到精通]]"
   - "[[从IDE到Terminal-适合后端宝宝体质的Claude-Code工作流]]"
+  - "[[OfficeCLI-GitHub]]"
+  - "[[Ponytail-GitHub]]"
+  - "[[last30days-skill-GitHub]]"
   - "[[开源Claude-Code工程级开发插件Superpowers完整上手攻略]]"
 ---
 

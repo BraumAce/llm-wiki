@@ -14,6 +14,10 @@ related_entities:
   - "[[OpenClaw-Skills]]"
   - "[[Harness-Engineering]]"
   - "[[OpenClaw]]"
+  - "[[OfficeCLI]]"
+  - "[[last30days]]"
+  - "[[Ponytail]]"
+  - "[[Multica]]"
 sources:
   - "[[AI-Skill体系全解-企业级AI能力标准化可插拔可审计]]"
   - "[[Agent-Skills-打通可复用专业领域知识的最后一公里]]"
@@ -35,6 +39,11 @@ sources:
   - "[[AI编程的下半场来了-学会用Agent-Skill解决编程的痛点问题]]"
   - "[[AI-Agent-Skill-测评方案及落地实践]]"
   - "[[面向Skills编程-淘宝企业购端对端研发提效实践]]"
+  - "[[OfficeCLI-GitHub]]"
+  - "[[last30days-skill-GitHub]]"
+  - "[[Ponytail-GitHub]]"
+  - "[[multica-ai-GitHub]]"
+  - "[[精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本]]"
   - "[[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]]"
 ---
 
@@ -66,12 +75,19 @@ AI Skill 体系涵盖 2026 年 AI 工程领域关于 Skill（技能/能力单元
 
 10. **Skill 也有上下文成本**：Skill 未加载时通常只有 description 进入菜单，成本很低；一旦 SKILL.md 全文进入历史，就无法在当前会话中卸载。复杂 Skill 需要靠触发边界、子 Skill 拆分和 references 按需读取控制 Token 成本。
 
+11. **Skill 正在从“提示词文件”变成可安装、可治理、可观测的软件包**：[[last30days]] 展示了复杂研究 Skill 的输出合同和运行引擎，[[OfficeCLI]] 把 Office 操作封成 CLI + SKILL.md，[[Ponytail]] 把工程判断封成跨宿主规则，[[Multica]] 则把 CLI Skill 的读写权限、副作用和 workspace 边界写成安全协议。
+
 ## 涉及实体
 
 - [[OpenClaw-Skills]] —— Skill 机制的典型实现，6 源加载 + 优先级覆盖 + 菜单注入 + 自主选择
 - [[Harness-Engineering]] —— Skill 是 Harness 的能力封装层，两者在实践中高度融合
 - [[OpenClaw]] —— OpenClaw 的 16 大模块中 Skills 模块是核心子系统之一
 - [[Token成本控制]] —— Skill 加载策略直接影响上下文成本
+
+- [[OfficeCLI]] —— Office 文档自动化 Skill/CLI，强调 help/schema/render 验证闭环
+- [[last30days]] —— 跨平台社区研究 Skill，展示复杂输出合同与引擎式执行
+- [[Ponytail]] —— 反过度工程化规则/插件，把 senior engineer 的取舍写成可复用梯子
+- [[Multica]] —— managed agents 平台，其 CLI Skill 明确写操作授权和 mention/status 副作用
 
 ## 对比矩阵
 
@@ -93,3 +109,8 @@ AI Skill 体系涵盖 2026 年 AI 工程领域关于 Skill（技能/能力单元
 - [[AI-Agent-Skill-测评方案及落地实践]] —— Agent/Skill 测评框架、用例集、基线与 Trace 工程化
 - [[面向Skills编程-淘宝企业购端对端研发提效实践]] —— 淘宝企业购端到端研发 Skill 流水线
 - [[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]] —— Skill 加载成本、缓存链和配置层经济学
+- [[OfficeCLI-GitHub]] —— Office 文档自动化 CLI + Skill 的 schema/help/render 验证闭环
+- [[last30days-skill-GitHub]] —— 复杂研究 Skill 的输出合同、query plan 与多源引擎化执行
+- [[Ponytail-GitHub]] —— 用规则梯子约束 coding agent 过度工程化
+- [[multica-ai-GitHub]] —— Multica CLI Skill 的读写授权、workspace 和 mention/status 副作用协议
+- [[精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本]] —— 企业级 Skills Gateway、私有验证、PR 审核、统一分发和全流程观测

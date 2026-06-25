@@ -14,6 +14,7 @@ related_entities:
   - "[[OpenClaw-Skills]]"
   - "[[OpenHarness]]"
   - "[[Headroom]]"
+  - "[[去哪儿AI-Coding体系]]"
 sources:
   - "[[Loop-Engineering循环工程橙皮书]]"
   - "[[从Prompt-Context到Harness-工程的三次进化与终局之战]]"
@@ -44,6 +45,7 @@ sources:
   - "[[Loop Engineering 概念解析、思考与实践]]"
   - "[[AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家]]"
   - "[[重磅！Loop Engineering 实操手册公开]]"
+  - "[[精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本]]"
   - "[[一文搞懂！Loop Engineering的进化史和本质]]"
 ---
 
@@ -76,6 +78,8 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 
 14. **在 Loop 时代，验证器比更强的生成模型更关键**：从控制论视角看，loop 是否收敛取决于传感器给控制器喂回来的偏差信号质量。`strong verification > strong prompt`，这也是 Harness 为什么必须把评测、断言、审查和门禁前置成系统能力。
 
+15. **组织级 AI Coding 要先进入度量和计划系统**：去哪儿实践把出码率放回 Volume × Maturity 框架下，用 L0-L5 自动化等级、Harness 四把锁、QunarDevCenter 会话采集和“双估时”机制，让 AI Coding 从个人工具升级为研发管理对象。
+
 ## 涉及实体
 
 - [[Harness-Engineering]] —— 核心概念实体
@@ -85,6 +89,7 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 - [[OpenClaw-Skills]] —— Skills 是 Harness 的能力封装层
 - [[AI可观测性]] —— Harness 的评测与 trace 观测能力
 - [[Headroom]] —— Agent 上下文压缩与成本治理中间层
+- [[去哪儿AI-Coding体系]] —— QunarDevCenter、天弦、Qsuperpowers 与 Skills Gateway 组合成组织级 AI Coding 样本
 
 ## 对比矩阵
 
@@ -108,3 +113,4 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 - [[AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家]] —— Headroom 作为流量侧上下文治理和成本控制面的实践
 - [[重磅！Loop Engineering 实操手册公开]] —— Loop 的五个核心构件、最小落地配方与上线安全红线
 - [[一文搞懂！Loop Engineering的进化史和本质]] —— 从 Prompt / Context / Harness 到 Loop 的演进链，以及控制论视角下的验证器中心论
+- [[精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本]] —— 去哪儿组织级 AI Coding 度量、分级、数据采集、自动化编排与 Skills 治理案例
