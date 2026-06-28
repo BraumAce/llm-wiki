@@ -37,6 +37,7 @@ sources:
   - "[[multica-ai-GitHub]]"
   - "[[精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本]]"
   - "[[Loop Engineering 概念解析、思考与实践]]"
+  - "[[聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔]]"
 ---
 
 # Agentic Engineering 主题
@@ -68,6 +69,8 @@ Agentic Engineering 涵盖从"Vibe Coding"（借助 AI 快速生成代码片段�
 10. **从写代码到写能力单元**：面向 Skills 编程把人的经验、领域知识和交付流程产品化为 Skill。工程师的工作重心从实现适配逻辑转向定义不变量、拆分上下文、写约束和验证生成结果。
 
 11. **Agentic Engineering 正在补齐运行时和组织层**：[[Cua]] 补桌面/沙箱，[[RMUX]] 补终端/TUI 会话，[[Multica]] 补任务分配与团队管理，[[去哪儿AI-Coding体系]] 则展示组织级数据采集、自动化分级和 Skills 治理。
+
+12. **源码阅读与人工审查仍是验证闭环的一部分**：AI 可以承担骨架搭建、模板迁移和候选代码生成，但核心模块仍需要人从整体设计、数据结构选择、边界条件、测试与压测上做批判式审查。生成速度提高后，能不能发现“看起来对、实则语义错”的实现，反而更能区分真正的 Agentic Engineering 和纯粹的 Vibe Coding。
 
 ## 涉及实体
 
@@ -106,3 +109,4 @@ Agentic Engineering 涵盖从"Vibe Coding"（借助 AI 快速生成代码片段�
 - [[Loop Engineering 概念解析、思考与实践]] —— Agent Loop 与 Loop Engineering 的边界、实践和适用条件
 - [[Cua-GitHub]]、[[RMUX-GitHub]]、[[multica-ai-GitHub]] —— Agent 运行时从桌面、终端到任务平台的基础设施补全
 - [[精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本]] —— 组织级 AI Coding 自动化分级、度量与平台化落地
+- [[聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔]] —— Claude Code 生成 Redis Set 复刻后的人工审查案例，补充源码阅读、数据结构验证和端到端测试视角

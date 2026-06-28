@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-26T00:22:53+08:00",
+  "generated_at": "2026-06-28T23:56:29+08:00",
   "wiki_dir": "/Users/liuguang/Documents/Private/llm-wiki/ai-wiki/wiki",
   "stats": {
-    "nodes": 265,
-    "edges": 1159,
-    "edge_weight_total": 2069,
+    "nodes": 267,
+    "edges": 1166,
+    "edge_weight_total": 2083,
     "orphan_links": [],
     "by_type": {
       "entity": 79,
       "topic": 9,
-      "source": 177
+      "source": 179
     }
   },
   "nodes": [
@@ -1102,6 +1102,19 @@
         "java",
         "spring-boot",
         "tool-calling"
+      ]
+    },
+    {
+      "id": "AI时代Java开发者的流式编程入门课",
+      "type": "source",
+      "title": "AI时代Java开发者的流式编程入门课",
+      "tags": [
+        "java",
+        "stream",
+        "functional-programming",
+        "parallelstream",
+        "ai-code-review",
+        "通用工程实践"
       ]
     },
     {
@@ -2685,6 +2698,18 @@
       ]
     },
     {
+      "id": "聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔",
+      "type": "source",
+      "title": "聊一聊我是怎么审查 Claude Code 写的代码：记一次复刻 Redis Set 审查随笔",
+      "tags": [
+        "claude-code",
+        "ai-coding",
+        "code-review",
+        "redis",
+        "mini-redis"
+      ]
+    },
+    {
       "id": "腾讯云-兄弟你真的懂-Skill-吗",
       "type": "source",
       "title": "腾讯云开发者：兄弟！你真的懂 Skill 吗？",
@@ -3982,6 +4007,11 @@
     },
     {
       "from": "Agentic-Engineering",
+      "to": "聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering",
       "to": "面向Skills编程-淘宝企业购端对端研发提效实践",
       "weight": 2
     },
@@ -4113,6 +4143,11 @@
     {
       "from": "Agentic-Engineering-主题",
       "to": "精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔",
       "weight": 2
     },
     {
@@ -4443,6 +4478,11 @@
     {
       "from": "Claude-Code",
       "to": "深度解析Claude-Code在Prompt-Context-Harness的设计与实践",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code",
+      "to": "聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔",
       "weight": 2
     },
     {
@@ -8538,6 +8578,26 @@
     {
       "from": "精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本",
       "to": "去哪儿AI-Coding体系",
+      "weight": 2
+    },
+    {
+      "from": "聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔",
+      "to": "Agentic-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔",
+      "to": "Agentic-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔",
+      "to": "Harness-Engineering",
       "weight": 2
     },
     {

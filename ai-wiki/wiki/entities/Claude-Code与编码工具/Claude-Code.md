@@ -27,6 +27,7 @@ sources:
   - "[[Claude-Code-源码架构解析-从启动Prompt到权限管道]]"
   - "[[你不知道的-Claude-Code-架构治理与工程实践]]"
   - "[[Claude-Code防封号指南-国内终极解决方案]]"
+  - "[[聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔]]"
 related_entities:
   - "[[Harness-Engineering]]"
   - "[[OpenClaw]]"
@@ -171,6 +172,7 @@ Claude Code 的 Hooks 系统是 Harness Engineering 的核心实践——将确�
 - **Harness 工程化**：得物技术团队在数仓场景下用 CLAUDE.md + hooks + subagents 构建五层防御体系，解决 compact 后约束丢失问题
 - **云端部署**：通过 npm pack 离线打包 + FastAPI + SSE 魔改 SDK，实现 HTTP 流式调用和多用户沙箱隔离
 - **插件生态**：OpenAI 官方推出 codex-plugin-cc，将 Codex 变成 Claude Code 工作流里的第二审阅者和异步 worker
+- **学习与代码审查**：Claude Code 的 learning 模式适合让 AI 搭骨架、迁移模板和生成候选实现，开发者再围绕数据结构选择、边界条件、压测与真实指令链路做批判式审查。
 
 ### 局限与争议
 
@@ -179,6 +181,7 @@ Claude Code 的 Hooks 系统是 Harness Engineering 的核心实践——将确�
 - **过度工程化风险**：Harness 过厚会降低开发速度，"合适厚度"需要团队自己摸索
 - **成本问题**：Full LLM Compact 需要额外 LLM 调用，大规模使用时 token 成本可观
 - **本地优先 vs 云端**：CLI 工具天然受限于本地环境，云端部署需要额外的 SDK 改造和沙箱隔离工程
+- **生成顺滑不等于语义正确**：AI 生成的代码可能语法漂亮、逻辑自洽，却遗漏位宽、数据结构语义、并发边界或真实链路测试；Claude Code 越深入核心模块，越需要人类保留源码阅读和可证伪验证能力。
 
 ## 与其他实体的关系
 
@@ -197,3 +200,4 @@ Claude Code 的 Hooks 系统是 Harness Engineering 的核心实践——将确�
 - [[Claude-Code-Harness工程-数仓侧落地方案-得物技术]] —— 数仓场景下 Harness 工程的五层防御体系实践
 - [[OpenAI-Codex-Plugin-for-Claude-Code源码剖析]] —— OpenAI Codex 插件的桥接架构，将 Codex 集成为 Claude Code 的第二审阅者
 - [[让-Claude-Code-拥有自我进化和记忆系统]] —— 得物技术，Hook 机制驱动的自我学习系统
+- [[聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔]] —— 用 Redis Set 复刻案例展示 Claude Code 生成代码后的人工审查、数据结构验证和端到端测试闸门。
