@@ -47,6 +47,8 @@ sources:
   - "[[重磅！Loop Engineering 实操手册公开]]"
   - "[[精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本]]"
   - "[[一文搞懂！Loop Engineering的进化史和本质]]"
+  - "[[最新-万字综述-Prompt-到-Loop-进化]]"
+  - "[[开启Harness-Engineering探索之旅]]"
 ---
 
 # Harness Engineering 主题
@@ -79,6 +81,10 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 14. **在 Loop 时代，验证器比更强的生成模型更关键**：从控制论视角看，loop 是否收敛取决于传感器给控制器喂回来的偏差信号质量。`strong verification > strong prompt`，这也是 Harness 为什么必须把评测、断言、审查和门禁前置成系统能力。
 
 15. **组织级 AI Coding 要先进入度量和计划系统**：去哪儿实践把出码率放回 Volume × Maturity 框架下，用 L0-L5 自动化等级、Harness 四把锁、QunarDevCenter 会话采集和“双估时”机制，让 AI Coding 从个人工具升级为研发管理对象。
+
+16. **Loop 必须先有运行协议再谈自治**：`TRIGGER`、`SCOPE`、`ACTION`、`BUDGET`、`STOP`、`REPORT` 组成 Loop Contract；Circuit Breaker 和 Watchdog 是防止自动化返工、死循环和风险动作外溢的最低安全线。
+
+17. **生产级 Harness 是研发操作系统**：腾讯 SpecWorker 样本说明，P1-P6 阶段、机器可读契约、评分卡、SubAgent、trace 诊断、阶段指标和知识库回写要串成一条线，单点规则文件不足以支撑团队级 AI Coding。
 
 ## 涉及实体
 
@@ -114,3 +120,5 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 - [[重磅！Loop Engineering 实操手册公开]] —— Loop 的五个核心构件、最小落地配方与上线安全红线
 - [[一文搞懂！Loop Engineering的进化史和本质]] —— 从 Prompt / Context / Harness 到 Loop 的演进链，以及控制论视角下的验证器中心论
 - [[精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本]] —— 去哪儿组织级 AI Coding 度量、分级、数据采集、自动化编排与 Skills 治理案例
+- [[最新-万字综述-Prompt-到-Loop-进化]] —— 补充 Prompt / Context / Harness / Loop 四层栈、Loop Contract、熔断器、Watchdog 和 Loop Designer 角色变化
+- [[开启Harness-Engineering探索之旅]] —— 腾讯技术工程 P1-P6、线上运营、长期记忆、可观测性和 token 成本治理的端到端实践

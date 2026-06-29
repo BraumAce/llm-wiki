@@ -39,6 +39,8 @@ sources:
   - "[[更可靠的主播助理：淘宝主播Agent的Harness工程实战]]"
   - "[[面向Skills编程-淘宝企业购端对端研发提效实践]]"
   - "[[Loop Engineering 概念解析、思考与实践]]"
+  - "[[最新-万字综述-Prompt-到-Loop-进化]]"
+  - "[[开启Harness-Engineering探索之旅]]"
 related_entities:
   - "[[OpenClaw]]"
   - "[[Loop-Engineering]]"
@@ -96,6 +98,18 @@ Harness Engineering 的核心是五类组件的协同：
 └── AGENTS.md        # 入口文件
 ```
 
+### 端到端研发管线：协议层、纪律层与长期记忆
+
+腾讯技术工程的 SpecWorker 实践把 Harness 进一步落成“2 条轨道 + 1 个长期记忆”：研发端到端交付、线上运营，以及项目知识库。研发轨道从 P1 requirements、P2 design、P3 implementation、P4 e2e-test、P5 deploy 到 P6 archive，每个阶段都有机器可读的输入/输出、评分门槛和停止点。
+
+这套实践的关键不是阶段命名，而是三层约束：
+
+- **协议层**：`requirements.md` 和 `test-cases.md` 共用同一组 AC；`design.md` 写接口签名、数据模型、`sandbox_mode` 和 D-x 改动点；P6 用 delta spec 标记 ADDED / MODIFIED / REMOVED / RENAMED。
+- **纪律层**：TDD、Debug、Verify、Review、Evaluate 分别拦住 AI 跳过测试、猜修复、无证据完成、偏离设计和自评偏高。
+- **长期记忆**：项目级 `specs/` 与变更级 `knowledge-spec/` 通过 `index.md` 互通，P6 强制把反复出现的契约、坑和约定增量沉回知识库。
+
+这说明 Harness 的生产形态已经不只是 `.harness/` 目录，而是一套让 AI 能看见契约、系统能追踪证据、团队能复用知识的研发操作系统。
+
 ### 应用 / 使用场景
 
 - **存量应用改造**：阿里工程师在 10 万行 Java 应用中搭建 Harness，AI 代码率从 24.86% 提升到 90.54%
@@ -103,6 +117,7 @@ Harness Engineering 的核心是五类组件的协同：
 - **团队协作**：QQ 音乐在 50+ 微服务拓扑中用服务矩阵 + 五阶段流程 + 四道门禁实现可审计的 AI 协作
 - **消除返工**：爱奇艺数据库团队用最小 harness（五类组件）终结"AI 瞎猜"式的无限返工
 - **全栈开发**：得物团队用 Harness + SDD + 多仓模式实现前后端并行开发，提效 50%+
+- **端到端研发交付**：腾讯技术工程用 P1-P6 流水线、评分卡、SubAgent、trace 诊断和知识库回写，把“AI 多写代码”推进到“AI 可交付、可追踪、可复用”
 - **个人工作流**：把一次性 AI 对话沉淀为材料、标准、验证和复用流程。问题定义、上下文质量、验证能力、工作流沉淀和判断标准，是个人层面最小 Harness 的五个抓手
 - **高风险业务 Agent**：淘宝主播 Agent 把 Harness 推到直播间场景，要求操作即时生效、错误不可撤回、主播无法逐条复核、会话长且可中断。框架层负责上下文、状态、Hook、安全、评测和记忆，业务方只用 Skill 声明能力边界、风险等级和参数校验
 - **端到端研发流水线**：淘宝企业购把客户定制对接沉淀为 Skill 工作流，脚本承担接口提取等高精度环节，references 承载领域知识，子 Skill 拆分长文档与单接口生成，把不可控对话变成可复现流水线
@@ -166,3 +181,5 @@ Harness Engineering 的理念可以扩展到 Agent 评测领域。阿里团队�
 - [[更可靠的主播助理：淘宝主播Agent的Harness工程实战]] —— 阿里云开发者，直播间高风险 Agent 的 Harness 六元组、Reducer 状态、Hook、评测和记忆对账
 - [[面向Skills编程-淘宝企业购端对端研发提效实践]] —— 大淘宝技术，企业购客户对接从 Prompt/SDD 演进到 Skill 流水线
 - [[Loop Engineering 概念解析、思考与实践]] —— 阿里技术，区分底层 Agent Loop 与 Harness 之上的自动化验收闭环
+- [[最新-万字综述-Prompt-到-Loop-进化]] —— Datawhale，把 Prompt、Context、Harness、Loop 串成统一演进栈，并强调 Harness 的安全围栏位置
+- [[开启Harness-Engineering探索之旅]] —— 腾讯技术工程，展示 P1-P6 研发交付、线上运营、知识库长期记忆和可观测性指标如何组成生产级 Harness

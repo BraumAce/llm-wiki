@@ -17,6 +17,7 @@ sources:
   - "[[Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统]]"
   - "[[重磅！Loop Engineering 实操手册公开]]"
   - "[[一文搞懂！Loop Engineering的进化史和本质]]"
+  - "[[最新-万字综述-Prompt-到-Loop-进化]]"
 related_entities:
   - "[[Harness-Engineering]]"
   - "[[Context-Engineering]]"
@@ -68,6 +69,12 @@ Loop Engineering（循环工程）是把"那个负责 prompt agent 的人"从你
 3. **验证（verification）**：换一个 instructions 不同、有时连模型都不同的 agent 来挑刺。这是最容易偷工减料、也最不能省的一步（见 [[Generator-Evaluator]]）。
 4. **持久化（persistence）**：把状态写到对话之外的磁盘上——PR、工单、markdown 状态文件。"agent 会忘，仓库不会。"
 5. **调度（decide next / scheduling）**："Automations are what make a loop an actual loop and not just one run you did once." 没有调度，前四步做得再漂亮也只是一次性手工活。
+
+### Loop Contract：让循环有边界
+
+Datawhale 的后续综述把 Loop Engineering 的安全边界总结成一份 **Loop Contract**：循环启动前必须明确 `TRIGGER`（触发条件）、`SCOPE`（影响范围）、`ACTION`（允许动作）、`BUDGET`（token/时长/重试/并发预算）、`STOP`（停止条件）和 `REPORT`（向人类汇报的证据）。这组字段把“让 agent 自己跑”从愿景变成可审查的运行协议。
+
+真正生产化的 loop 还需要两道硬保护：**Circuit Breaker** 在连续失败、超时或风险动作异常时熔断并转人工；**Watchdog** 独立监控自旋、CPU 满载、长时间无 I/O 等死循环迹象，必要时强制杀进程和回收资源。没有这些边界的 loop，本质上只是无人看管的自动返工器。
 
 ### Agent Loop 与 Loop Engineering 的边界
 
@@ -170,3 +177,4 @@ Loop Engineering（Outer Loop）
 - [[Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统]] —— 腾讯技术工程，落到 CodeBuddy 的命令面（`/goal`/`/loop`/Automations/Team），并厘清 ReAct 与 Loop Engineering 的 Inner/Outer Loop 边界
 - [[重磅！Loop Engineering 实操手册公开]] —— Datawhale，总结 loop 的适用门槛、五个核心构件和 14 步最小落地路线
 - [[一文搞懂！Loop Engineering的进化史和本质]] —— Datawhale，把 loop 放回 Prompt / Context / Harness / Loop 演进链，并用控制论解释为什么传感器决定收敛速度
+- [[最新-万字综述-Prompt-到-Loop-进化]] —— Datawhale，补充 Loop Contract、Circuit Breaker、Watchdog 和开发者转向 Loop Designer 的系统架构视角

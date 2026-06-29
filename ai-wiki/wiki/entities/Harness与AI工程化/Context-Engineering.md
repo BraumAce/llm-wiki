@@ -13,7 +13,9 @@ sources:
   - "[[面向Skills编程-淘宝企业购端对端研发提效实践]]"
   - "[[AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家]]"
   - "[[Context-Engineering-for-AI-Agents]]"
-related_entities: [AI-Friendly架构, RAG, Agentic-Engineering, Agent-Memory, Harness-Engineering, Headroom, Progressive-Disclosure, claude-mem]
+  - "[[最新-万字综述-Prompt-到-Loop-进化]]"
+  - "[[开启Harness-Engineering探索之旅]]"
+related_entities: [AI-Friendly架构, RAG, Agentic-Engineering, Agent-Memory, Harness-Engineering, Headroom, Progressive-Disclosure, claude-mem, Token成本控制]
 related_topics: []
 ---
 
@@ -105,6 +107,8 @@ Context Engineering：
 
 生产级 Agent 的上下文治理不是只做摘要压缩。淘宝主播 Agent 用 Reducer 维护结构化 State，模型只产生 Action，每轮通过 system-hint 读最新状态，避免完整工具 JSON 堆进历史；淘宝企业购 Skill 流水线用索引、references 和子 Skill 按需加载单接口上下文；Token 经济学进一步说明，Memory、Rules、Skills、MCP 的加载策略本身就是上下文成本控制的一部分。
 
+腾讯技术工程的 SpecWorker 实践把这个原则推进到阶段级：P1 读需求和验收条件，P2 读设计契约，P3 的 reviewer 优先读 `git diff` 与关键片段，P4 的 debugger 按 trace-id 拉日志和数据证据，P6 再把 delta spec 增量沉回知识库。这里最关键的经验是 **SubAgent 不是免费的上下文隔离**：每个 SubAgent 读全文件都会独立计费，所以上下文注入必须和阶段、角色、证据链绑定。
+
 ### 业界实践
 
 Anthropic在其官方文档中系统性地介绍了Effective Context Engineering for AI Agents，将上下文工程视为提升Agent表现的关键手段，强调"精心挑选、组织、压缩上下文信息"的重要性，与本文中Context Engineering的定义高度一致。
@@ -181,3 +185,5 @@ JIT 的代价是比预取慢、且需要良好的工具指引以免走进死胡�
 - [[面向Skills编程-淘宝企业购端对端研发提效实践]]
 - [[AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家]]
 - [[Context-Engineering-for-AI-Agents]]
+- [[最新-万字综述-Prompt-到-Loop-进化]]
+- [[开启Harness-Engineering探索之旅]]

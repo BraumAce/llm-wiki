@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-28T23:56:29+08:00",
+  "generated_at": "2026-06-29T23:38:23+08:00",
   "wiki_dir": "/Users/liuguang/Documents/Private/llm-wiki/ai-wiki/wiki",
   "stats": {
-    "nodes": 267,
-    "edges": 1166,
-    "edge_weight_total": 2083,
+    "nodes": 269,
+    "edges": 1185,
+    "edge_weight_total": 2125,
     "orphan_links": [],
     "by_type": {
       "entity": 79,
       "topic": 9,
-      "source": 179
+      "source": 181
     }
   },
   "nodes": [
@@ -2405,6 +2405,18 @@
       ]
     },
     {
+      "id": "开启Harness-Engineering探索之旅",
+      "type": "source",
+      "title": "开启Harness Engineering探索之旅",
+      "tags": [
+        "harness-engineering",
+        "ai-coding",
+        "specworker",
+        "ai-observability",
+        "knowledge-base"
+      ]
+    },
+    {
       "id": "开源Claude-Code工程级开发插件Superpowers完整上手攻略",
       "type": "source",
       "title": "开源 Claude Code 工程级开发插件 Superpowers 完整上手攻略",
@@ -2468,6 +2480,18 @@
         "agent-memory",
         "safety",
         "evaluation"
+      ]
+    },
+    {
+      "id": "最新-万字综述-Prompt-到-Loop-进化",
+      "type": "source",
+      "title": "最新！万字综述 Prompt 到 Loop 进化",
+      "tags": [
+        "prompt-engineering",
+        "context-engineering",
+        "harness-engineering",
+        "loop-engineering",
+        "agentic-engineering"
       ]
     },
     {
@@ -4812,7 +4836,17 @@
     },
     {
       "from": "Context-Engineering",
+      "to": "开启Harness-Engineering探索之旅",
+      "weight": 2
+    },
+    {
+      "from": "Context-Engineering",
       "to": "更可靠的主播助理：淘宝主播Agent的Harness工程实战",
+      "weight": 2
+    },
+    {
+      "from": "Context-Engineering",
+      "to": "最新-万字综述-Prompt-到-Loop-进化",
       "weight": 2
     },
     {
@@ -5227,7 +5261,17 @@
     },
     {
       "from": "Harness-Engineering",
+      "to": "开启Harness-Engineering探索之旅",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
       "to": "更可靠的主播助理：淘宝主播Agent的Harness工程实战",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "最新-万字综述-Prompt-到-Loop-进化",
       "weight": 2
     },
     {
@@ -5422,7 +5466,17 @@
     },
     {
       "from": "Harness-Engineering-主题",
+      "to": "开启Harness-Engineering探索之旅",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
       "to": "更可靠的主播助理：淘宝主播Agent的Harness工程实战",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "最新-万字综述-Prompt-到-Loop-进化",
       "weight": 2
     },
     {
@@ -5978,6 +6032,11 @@
     {
       "from": "Loop-Engineering",
       "to": "一文搞懂！Loop Engineering的进化史和本质",
+      "weight": 2
+    },
+    {
+      "from": "Loop-Engineering",
+      "to": "最新-万字综述-Prompt-到-Loop-进化",
       "weight": 2
     },
     {
@@ -8286,6 +8345,36 @@
       "weight": 2
     },
     {
+      "from": "开启Harness-Engineering探索之旅",
+      "to": "AI可观测性",
+      "weight": 2
+    },
+    {
+      "from": "开启Harness-Engineering探索之旅",
+      "to": "Context-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "开启Harness-Engineering探索之旅",
+      "to": "Harness-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "开启Harness-Engineering探索之旅",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "开启Harness-Engineering探索之旅",
+      "to": "Spec-Driven-Development",
+      "weight": 2
+    },
+    {
+      "from": "开启Harness-Engineering探索之旅",
+      "to": "Token成本控制",
+      "weight": 3
+    },
+    {
       "from": "开源Claude-Code工程级开发插件Superpowers完整上手攻略",
       "to": "Claude-Code",
       "weight": 2
@@ -8388,6 +8477,36 @@
     {
       "from": "更可靠的主播助理：淘宝主播Agent的Harness工程实战",
       "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "最新-万字综述-Prompt-到-Loop-进化",
+      "to": "Context-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "最新-万字综述-Prompt-到-Loop-进化",
+      "to": "Generator-Evaluator",
+      "weight": 2
+    },
+    {
+      "from": "最新-万字综述-Prompt-到-Loop-进化",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "最新-万字综述-Prompt-到-Loop-进化",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "最新-万字综述-Prompt-到-Loop-进化",
+      "to": "Loop-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "最新-万字综述-Prompt-到-Loop-进化",
+      "to": "Token成本控制",
       "weight": 2
     },
     {

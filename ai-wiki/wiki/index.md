@@ -8,8 +8,8 @@ date: 2026-06-03
 
 ## 状态
 
-- 实体数：79 ｜ 主题数：9 ｜ 来源数：179
-- 最后更新：2026-06-28
+- 实体数：79 ｜ 主题数：9 ｜ 来源数：181
+- 最后更新：2026-06-29
 
 ### 主题导航
 
@@ -24,6 +24,12 @@ date: 2026-06-03
 - [[OpenClaw-digest-20260510|OpenClaw 综合]] —— 架构总览与三大子系统设计哲学
 
 ## 最近更新
+
+### 2026-06-29
+
+新增来源：[[最新-万字综述-Prompt-到-Loop-进化]]、[[开启Harness-Engineering探索之旅]] —— 分别补充 Prompt / Context / Harness / Loop 四层演进综述，以及腾讯技术工程 P1-P6、线上运营、长期记忆、可观测性和 token 成本治理的 Harness 生产实践。
+
+更新实体/主题：[[Loop-Engineering]]、[[Harness-Engineering]]、[[Context-Engineering]]、[[Harness-Engineering-主题]] —— 补入 Loop Contract、Circuit Breaker、Watchdog、端到端研发流水线、阶段化上下文注入和 SubAgent 独立计费视角。
 
 ### 2026-06-28
 
