@@ -17,6 +17,8 @@ related_entities:
   - "[[OfficeCLI]]"
   - "[[Ponytail]]"
   - "[[last30days]]"
+  - "[[oh-my-pi]]"
+  - "[[oh-my-claudecode]]"
 sources:
   - "[[逆向深扒Claude-Code源码我发现了什么]]"
   - "[[深度解析Claude-Code在Prompt-Context-Harness的设计与实践]]"
@@ -35,6 +37,8 @@ sources:
   - "[[last30days-skill-GitHub]]"
   - "[[开源Claude-Code工程级开发插件Superpowers完整上手攻略]]"
   - "[[万字长文推演Claude的代码统治力从何而来]]"
+  - "[[oh-my-pi-GitHub]]"
+  - "[[oh-my-claudecode-GitHub]]"
 ---
 
 # Claude Code 源码解析主题
@@ -61,11 +65,15 @@ Claude Code 源码解析涵盖 2026 年上半年社区对 Anthropic 官方 AI �
 
 8. **Claude Code 的优势也可能来自训练与产品飞轮**：除了源码中的 Harness，Claude 代码能力还可以从训练侧理解：代码任务有可验证奖励，Constitutional AI 给安全和可读性加辅助约束，Claude 产品端的复制、修改、追问、重生成等行为形成高质量偏好反馈。这个视角不能替代源码分析，但能解释为什么工具外壳与模型能力会相互强化。
 
+9. **Claude Code 生态正在形成外围工程层**：[[oh-my-claudecode]] 把 Claude Code 会话扩展成 Team、skills、HUD、通知、tmux workers 和多模型 advisor 的工作流发行版；[[oh-my-pi]] 则从独立 coding agent 方向验证 LSP/DAP、Hashline、subagent、advisor、collab 和 filesystem-shaped internal schemes 的工具协议化路线。
+
 ## 涉及实体
 
 - [[Claude-Code]] —— 被深度解析的 AI 编程助手主体
 - [[Harness-Engineering]] —— Claude Code 是 Harness Engineering 理念最完整的工程实现
 - [[Anthropic]] —— Claude Code 的开发方，也提供 Constitutional AI、模型卡和产品反馈飞轮的训练侧线索
+- [[oh-my-claudecode]] —— Claude Code 外围编排与技能扩展层
+- [[oh-my-pi]] —— 与 Claude Code 同类的开放式终端 AI Coding Agent 对照样本
 
 ## 对比矩阵
 
@@ -86,3 +94,5 @@ Claude Code 源码解析涵盖 2026 年上半年社区对 Anthropic 官方 AI �
 - [[Claude-Code源码泄露深度解析-51.2万行代码里藏着怎样的AI编程系统]] —— 51.2 万行代码的系统性解析
 - [[Claude-Code-源码架构解析-从启动Prompt到权限管道]] —— 从启动 Prompt 到权限校验管道的完整链路
 - [[万字长文推演Claude的代码统治力从何而来]] —— 从可验证奖励 RL、Constitutional AI、安全护栏、用户反馈飞轮和合成数据角度补充 Claude 代码能力来源推演
+- [[oh-my-pi-GitHub]] —— 终端 coding agent 的 LSP/DAP、Hashline、subagent、advisor 和内部 scheme 工具体系
+- [[oh-my-claudecode-GitHub]] —— Claude Code 插件/CLI 编排层，覆盖 Team、skills、tmux workers、HUD 和通知

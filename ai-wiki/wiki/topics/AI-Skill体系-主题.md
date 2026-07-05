@@ -19,6 +19,7 @@ related_entities:
   - "[[last30days]]"
   - "[[Ponytail]]"
   - "[[Multica]]"
+  - "[[oh-my-claudecode]]"
 sources:
   - "[[AI-Skill体系全解-企业级AI能力标准化可插拔可审计]]"
   - "[[Agent-Skills-打通可复用专业领域知识的最后一公里]]"
@@ -48,6 +49,7 @@ sources:
   - "[[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]]"
   - "[[AI-Agent的Skill系统设计]]"
   - "[[Harness工程之道-Skill原理与最佳实践]]"
+  - "[[oh-my-claudecode-GitHub]]"
 ---
 
 # AI Skill 体系主题
@@ -84,6 +86,8 @@ AI Skill 体系涵盖 2026 年 AI 工程领域关于 Skill（技能/能力单元
 
 13. **工程级 Skill 要有权限、状态和观测**：trade-ab-skill 样本显示，复杂 Skill 需要模块级工具白名单、危险接口显式禁用、快照参数传递、脚本 JSON 输出和两阶段 traceId 日志。Skill 的迭代也应像软件一样测试触发、功能、性能和异常场景。
 
+14. **Claude Code Skill 正在插件发行版化**：[[oh-my-claudecode]] 将大量 `skills/*/SKILL.md`、项目级 `.omc/skills/`、`/skillify`、Team、HUD、通知和 session artifacts 放在同一发行版中，说明 Skill 不再只是单个 Markdown 文件，而是安装、运行、观测和沉淀一体的能力包。
+
 ## 涉及实体
 
 - [[Agent-Skill]] —— 通用 Skill 能力包实体，覆盖触发、渐进加载、门控、资源分层和前向测试。
@@ -96,6 +100,7 @@ AI Skill 体系涵盖 2026 年 AI 工程领域关于 Skill（技能/能力单元
 - [[last30days]] —— 跨平台社区研究 Skill，展示复杂输出合同与引擎式执行
 - [[Ponytail]] —— 反过度工程化规则/插件，把 senior engineer 的取舍写成可复用梯子
 - [[Multica]] —— managed agents 平台，其 CLI Skill 明确写操作授权和 mention/status 副作用
+- [[oh-my-claudecode]] —— Claude Code 插件/CLI 发行版，包含大量内置 skills 与项目级 skill 工作流
 
 ## 对比矩阵
 
@@ -124,3 +129,4 @@ AI Skill 体系涵盖 2026 年 AI 工程领域关于 Skill（技能/能力单元
 - [[精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本]] —— 企业级 Skills Gateway、私有验证、PR 审核、统一分发和全流程观测
 - [[AI-Agent的Skill系统设计]] —— 把 Skill 定义为行为编程能力包，强调上下文预算、资源分层、硬门控和前向测试
 - [[Harness工程之道-Skill原理与最佳实践]] —— 以 trade-ab-skill 说明 Skill 结构、触发、作用域、工具隔离、脚本增强、快照参数和观测迭代
+- [[oh-my-claudecode-GitHub]] —— Claude Code skill 发行、项目级 skill、skillify、Team 和 HUD 的工程化组合样本

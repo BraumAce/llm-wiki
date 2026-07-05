@@ -8,8 +8,8 @@ date: 2026-06-03
 
 ## 状态
 
-- 实体数：80 ｜ 主题数：9 ｜ 来源数：185
-- 最后更新：2026-07-01
+- 实体数：85 ｜ 主题数：9 ｜ 来源数：190
+- 最后更新：2026-07-05
 
 ### 主题导航
 
@@ -24,6 +24,14 @@ date: 2026-06-03
 - [[OpenClaw-digest-20260510|OpenClaw 综合]] —— 架构总览与三大子系统设计哲学
 
 ## 最近更新
+
+### 2026-07-05
+
+新增来源：[[oh-my-pi-GitHub]]、[[OmniRoute-GitHub]]、[[oh-my-claudecode-GitHub]]、[[whichllm-GitHub]]、[[Project-NOMAD-GitHub]] —— 批量补充终端 AI Coding Agent、AI gateway 多 provider 路由、Claude Code 多代理/技能编排发行版、本地 LLM 硬件适配与 benchmark-aware 选型 CLI，以及离线知识与教育服务器。
+
+新增实体：[[oh-my-pi]]、[[OmniRoute]]、[[oh-my-claudecode]]、[[whichllm]]、[[Project-NOMAD]] —— 分别归入 Claude-Code与编码工具、基础设施-模型-平台、Claude-Code与编码工具、基础设施-模型-平台、RAG与知识库。
+
+更新实体/主题：[[RAG]]、[[Claude-Code源码解析-主题]]、[[Agentic-Engineering-主题]]、[[AI-Infra推理优化-主题]]、[[AI-Skill体系-主题]] —— 补入开放 coding agent surface、Claude Code Team/Skill 外围工程层、gateway 级 token/route/cost 治理、本地模型选型作为推理工程前置环节，以及离线 RAG 对内容预下载、存储、GPU、更新和访问控制的要求。
 
 ### 2026-07-01
 

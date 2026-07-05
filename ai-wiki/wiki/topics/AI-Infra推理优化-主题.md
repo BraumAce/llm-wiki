@@ -15,6 +15,9 @@ related_entities:
   - "[[Agent-Memory]]"
   - "[[Cua]]"
   - "[[RMUX]]"
+  - "[[OmniRoute]]"
+  - "[[whichllm]]"
+  - "[[Project-NOMAD]]"
 sources:
   - "[[万字入门AI-Infra-深入理解大模型中的数学与Infra优化]]"
   - "[[AI-Infra入门干货总结-大模型是如何高效推理的]]"
@@ -26,6 +29,9 @@ sources:
   - "[[Cua-GitHub]]"
   - "[[RMUX-GitHub]]"
   - "[[Spring-AI-Session-API-大多数人用ChatMemory用错了场景]]"
+  - "[[OmniRoute-GitHub]]"
+  - "[[whichllm-GitHub]]"
+  - "[[Project-NOMAD-GitHub]]"
 ---
 
 # AI Infra 推理优化主题
@@ -45,6 +51,9 @@ AI Infra 推理优化涵盖大模型推理服务的完整技术栈——从底�
 7. **记忆即版本控制**：Memoir 把 Git 的 branch/commit/merge/rollback 搬进记忆层
 8. **数学等价变换是推理优化主线**：RMSNorm 去均值、Safe Softmax 减最大值、Online Softmax 动态修正、Gumbel-Max 采样，都在用等价变换或受控近似换取更少 HBM 访存、更高并行度和更稳定的数值范围
 9. **KV-Cache 是 Serving 的核心资源**：Prompt Cache 的成本收益、vLLM 的 PagedAttention、Flash-Decoding 的 Split-K 与长上下文延迟，都围绕历史 K/V 的存储、读取和合并展开
+10. **推理优化正在上移到 gateway 层**：[[OmniRoute]] 把 provider health、quota、fallback、routing strategy、compression 和成本 header 放到本地代理层，让多个 coding tools 共享同一套模型使用策略。
+11. **本地模型选型也是推理工程的一部分**：[[whichllm]] 在 serving 之前先估算硬件、VRAM、KV cache、量化、benchmark evidence 和速度，避免只按参数量选择一个“能 fit 但不好用”的模型。
+12. **离线 AI Infra 必须把内容、模型和服务一起治理**：[[Project-NOMAD]] 把 Kiwix、Kolibri、ProtoMaps、Ollama、Qdrant、Docker 编排和本地 Knowledge Base 放在同一 Command Center 中，说明离线 RAG 的瓶颈不只在检索算法，也在内容预下载、存储、GPU、更新和访问控制。
 
 ## 涉及实体
 
@@ -52,6 +61,9 @@ AI Infra 推理优化涵盖大模型推理服务的完整技术栈——从底�
 - [[KV-Cache]] —— 自回归推理中缓存历史 Key/Value 张量的机制
 - [[RAG]] —— 检索增强生成
 - [[Agent-Memory]] —— Agent 记忆系统
+- [[OmniRoute]] —— 多 provider gateway 与 token/compression/cost 治理层
+- [[whichllm]] —— 本地 LLM 硬件适配、模型排序与采购规划 CLI
+- [[Project-NOMAD]] —— 离线优先的知识与教育服务器，整合本地 AI Chat、Qdrant RAG 和容器化内容服务
 
 ## 对比矩阵
 
@@ -71,3 +83,6 @@ AI Infra 推理优化涵盖大模型推理服务的完整技术栈——从底�
 - [[万字入门AI-Infra-深入理解大模型中的数学与Infra优化]] —— 数学原理
 - [[拆解大模型几项核心操作背后的数学与 Infra 优化逻辑]] —— RMSNorm、Softmax、FlashAttention、Gumbel-Max 和 KV 优化
 - [[RAG全链路技术详解]] —— RAG 全链路
+- [[OmniRoute-GitHub]] —— 本地 AI gateway、fallback、quota-share、compression 和 MCP/A2A 端点
+- [[whichllm-GitHub]] —— 本地模型选型、VRAM/KV cache 估算、benchmark evidence 和硬件模拟
+- [[Project-NOMAD-GitHub]] —— 离线知识服务器、Ollama/Qdrant RAG、Kiwix/Kolibri/ProtoMaps 和 Docker Command Center

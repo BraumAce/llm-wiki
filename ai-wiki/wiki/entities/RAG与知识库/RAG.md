@@ -14,6 +14,7 @@ sources:
   - "[[RAG全链路技术详解]]"
   - "[[深度解析LLM-Wiki-Obsidian-Wiki-GBrain]]"
   - "[[知识库分层编排-从RAG到Agent-native-Knowledge-Context-Layer]]"
+  - "[[Project-NOMAD-GitHub]]"
 related_entities:
   - "[[vLLM]]"
   - "[[OpenClaw-双源记忆系统]]"
@@ -21,6 +22,7 @@ related_entities:
   - "[[LightRAG]]"
   - "[[GraphRAG]]"
   - "[[Pyramid-KB]]"
+  - "[[Project-NOMAD]]"
 ---
 
 # RAG
@@ -34,6 +36,8 @@ RAG（Retrieval-Augmented Generation，检索增强生成）是一种将外部�
 RAG 是 2023-2025 年 LLM 应用中最核心的技术范式之一。它的基本思路是：大模型的参数化知识有截止日期且无法覆盖私域数据，通过在推理时动态检索外部知识并注入上下文，可以扩展模型的知识边界。RAG 的全链路包括文档加载、语义切分、向量索引构建、查询优化、检索排序、答案生成六大环节。
 
 2026 年的 RAG 实践已经远超"简单向量检索"的阶段。Meta-Chunking 语义切分、HyDE 假设性文档嵌入、Graph RAG 多跳推理、Ragas 评估体系等技术构成了完整的工程化闭环。同时，以 LLM Wiki / GBrain 为代表的"知识编译"思路正在挑战传统 RAG 的"每次从头检索"模式。
+
+[[Project-NOMAD]] 补充了一个更偏个人/离线场景的 RAG 样本：它不把 RAG 作为单独 SaaS 功能，而是嵌入离线知识服务器中，围绕 Kiwix、Kolibri、ProtoMaps、Ollama、Qdrant 和本地上传文档组织知识访问。这个样本说明 RAG 的工程边界正在扩展到内容预下载、断网使用、存储预算、本地模型选择、离线地图和家庭/远程场景。
 
 ## 详情
 
@@ -57,6 +61,7 @@ RAG 的全链路分为六个环节：
 - **企业知识库**：内部文档、FAQ、产品手册的智能问答
 - **客服系统**：基于产品文档的自动应答
 - **代码助手**：基于代码库的上下文感知编程辅助
+- **离线知识服务器**：把预下载的百科、医疗、教育、地图和用户上传文档建成本地可问答知识库
 
 ### 局限与争议
 
@@ -70,9 +75,11 @@ RAG 的全链路分为六个环节：
 - [[OpenClaw-双源记忆系统]] —— OpenClaw 的记忆系统结合了 RAG 和结构化存储两种思路
 - [[Agent-Memory]] —— RAG 可以看作 Agent Memory 的检索层
 - [[LightRAG]] —— LightRAG 是 RAG 的图增强扩展，通过知识图谱解决传统 RAG 的碎片化检索问题
+- [[Project-NOMAD]] —— 将 RAG 放进离线优先的本地知识与教育服务器，强调断网可用、本地模型和 Qdrant 语义检索
 
 ## 参考来源
 
 - [[RAG全链路技术详解]] —— RAG 全链路工程实践
 - [[深度解析LLM-Wiki-Obsidian-Wiki-GBrain]] —— LLM Wiki vs RAG 对比
 - [[如何构建一个更好的知识库]] —— RAG 全链路优化技术详解
+- [[Project-NOMAD-GitHub]] —— 离线知识服务器中的本地 AI Chat、Qdrant Knowledge Base 和内容管理实践

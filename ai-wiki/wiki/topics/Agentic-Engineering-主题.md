@@ -21,6 +21,9 @@ related_entities:
   - "[[RMUX]]"
   - "[[Multica]]"
   - "[[去哪儿AI-Coding体系]]"
+  - "[[oh-my-pi]]"
+  - "[[oh-my-claudecode]]"
+  - "[[OmniRoute]]"
 sources:
   - "[[从第一性原理思考Agentic-Engineering]]"
   - "[[从Vibe-Coding到Agentic-Engineering-重构后台开发全流程]]"
@@ -38,6 +41,9 @@ sources:
   - "[[精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本]]"
   - "[[Loop Engineering 概念解析、思考与实践]]"
   - "[[聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔]]"
+  - "[[oh-my-pi-GitHub]]"
+  - "[[oh-my-claudecode-GitHub]]"
+  - "[[OmniRoute-GitHub]]"
 ---
 
 # Agentic Engineering 主题
@@ -72,6 +78,8 @@ Agentic Engineering 涵盖从"Vibe Coding"（借助 AI 快速生成代码片段�
 
 12. **源码阅读与人工审查仍是验证闭环的一部分**：AI 可以承担骨架搭建、模板迁移和候选代码生成，但核心模块仍需要人从整体设计、数据结构选择、边界条件、测试与压测上做批判式审查。生成速度提高后，能不能发现“看起来对、实则语义错”的实现，反而更能区分真正的 Agentic Engineering 和纯粹的 Vibe Coding。
 
+13. **Agentic Engineering 的运行面继续外扩**：[[oh-my-pi]] 把 IDE、调试器、浏览器、PR/issue 和子代理都纳入终端 agent surface；[[oh-my-claudecode]] 把 Claude Code 会话升级成 Team pipeline 与 skill 工作流；[[OmniRoute]] 则把 provider、quota、fallback、compression 和 MCP/A2A 放到统一 gateway 中治理。
+
 ## 涉及实体
 
 - [[Agentic-Engineering]] —— 核心概念实体，定义了"人与 AI Agent 协作"的范式框架
@@ -86,6 +94,9 @@ Agentic Engineering 涵盖从"Vibe Coding"（借助 AI 快速生成代码片段�
 - [[RMUX]] —— Agent 的终端/TUI 会话持久化和 Claude teammate mode 运行层
 - [[Multica]] —— 把 coding agents 管理为可分配任务、跟踪进度的团队成员
 - [[去哪儿AI-Coding体系]] —— 组织级 AI Coding 的数据、分级、Harness 和 Skills 治理样本
+- [[oh-my-pi]] —— 完整终端 AI Coding Agent surface，补 LSP/DAP、Hashline、subagent 与协作层
+- [[oh-my-claudecode]] —— Claude Code 多代理/技能编排层，补 Team、tmux workers、HUD 与通知
+- [[OmniRoute]] —— coding tools 前置 gateway，治理 provider、quota、fallback 与 token compression
 
 ## 对比矩阵
 
@@ -110,3 +121,4 @@ Agentic Engineering 涵盖从"Vibe Coding"（借助 AI 快速生成代码片段�
 - [[Cua-GitHub]]、[[RMUX-GitHub]]、[[multica-ai-GitHub]] —— Agent 运行时从桌面、终端到任务平台的基础设施补全
 - [[精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本]] —— 组织级 AI Coding 自动化分级、度量与平台化落地
 - [[聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔]] —— Claude Code 生成 Redis Set 复刻后的人工审查案例，补充源码阅读、数据结构验证和端到端测试视角
+- [[oh-my-pi-GitHub]]、[[oh-my-claudecode-GitHub]]、[[OmniRoute-GitHub]] —— 分别补充开放 coding agent surface、Claude Code 编排发行版和多 provider gateway 视角
