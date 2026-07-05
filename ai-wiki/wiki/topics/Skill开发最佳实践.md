@@ -8,6 +8,8 @@ tags:
   - best-practice
   - prompt-engineering
 sources:
+  - "[[AI-Agent的Skill系统设计]]"
+  - "[[Harness工程之道-Skill原理与最佳实践]]"
   - "[[如何写好Skill-一份终极实战经验手册]]"
   - "[[Claude-Code-Skills-完全指南]]"
   - "[[Skills开发技能指南-别脱离具体场景谈方案]]"
@@ -16,6 +18,7 @@ sources:
   - "[[面向Skills编程-淘宝企业购端对端研发提效实践]]"
   - "[[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]]"
 related_entities:
+  - "[[Agent-Skill]]"
   - "[[OpenClaw-Skills]]"
   - "[[Harness-Engineering]]"
   - "[[MCP]]"
@@ -49,3 +52,7 @@ related_entities:
 11. **高精度步骤脚本化**——接口提取、目录索引、编译验证这类确定性环节不要交给模型自由发挥。淘宝企业购把接口提取从模型中剥离出来，由脚本解析后再让 AI 校验补漏，避免错误沿流水线逐级放大。
 
 12. **长链路拆子 Skill**——一个 Skill 不应承载超长文档和多个复杂接口的全部推理。可用编排 Skill 负责总流程，子 Skill 独立处理单接口、单阶段或单评审点，再由汇总步骤组装结果。
+
+13. **先例子后能力，先边界后正文**——不要从抽象能力开始写 Skill。先收集真实触发请求、输入输出、失败点和成功标准，再规划 scripts / references / assets。没有具体例子就开始写，往往会得到宽泛但不可执行的说明。
+
+14. **description 只负责触发，正文才负责执行**——description 应覆盖做什么、何时使用、典型触发词和不适用边界，但不要写完整流程。完整流程放进 `SKILL.md` 和模块文件，否则 Agent 可能只凭 description 的印象执行，跳过真正的约束和验证。

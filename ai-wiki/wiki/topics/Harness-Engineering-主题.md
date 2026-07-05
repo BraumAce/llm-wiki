@@ -15,6 +15,7 @@ related_entities:
   - "[[OpenHarness]]"
   - "[[Headroom]]"
   - "[[去哪儿AI-Coding体系]]"
+  - "[[Agent-Skill]]"
 sources:
   - "[[Loop-Engineering循环工程橙皮书]]"
   - "[[从Prompt-Context到Harness-工程的三次进化与终局之战]]"
@@ -49,6 +50,7 @@ sources:
   - "[[一文搞懂！Loop Engineering的进化史和本质]]"
   - "[[最新-万字综述-Prompt-到-Loop-进化]]"
   - "[[开启Harness-Engineering探索之旅]]"
+  - "[[给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地]]"
 ---
 
 # Harness Engineering 主题
@@ -86,6 +88,8 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 
 17. **生产级 Harness 是研发操作系统**：腾讯 SpecWorker 样本说明，P1-P6 阶段、机器可读契约、评分卡、SubAgent、trace 诊断、阶段指标和知识库回写要串成一条线，单点规则文件不足以支撑团队级 AI Coding。
 
+18. **Agent 数量本身也是上下文成本**：悟空 AI 招聘案例显示，全能 Agent 会在工具堆、长 Prompt 和易失上下文里失控；更稳的做法是少量专才 Agent + 大量原子化 Skill + Workspace 状态文件 + Linter/Reviewer 硬护栏。能沉成 [[Agent-Skill]] 的能力，不要轻易拆成新 Agent。
+
 ## 涉及实体
 
 - [[Harness-Engineering]] —— 核心概念实体
@@ -93,6 +97,7 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 - [[Spec-Driven-Development]] —— SDD 是 Harness 在需求阶段的实践
 - [[OpenClaw]] —— OpenClaw 体现了 Harness 思维
 - [[OpenClaw-Skills]] —— Skills 是 Harness 的能力封装层
+- [[Agent-Skill]] —— 通用 Skill 能力包，是 Harness 中比新增 Agent 更低成本的能力封装方式
 - [[AI可观测性]] —— Harness 的评测与 trace 观测能力
 - [[Headroom]] —— Agent 上下文压缩与成本治理中间层
 - [[去哪儿AI-Coding体系]] —— QunarDevCenter、天弦、Qsuperpowers 与 Skills Gateway 组合成组织级 AI Coding 样本
@@ -122,3 +127,4 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 - [[精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本]] —— 去哪儿组织级 AI Coding 度量、分级、数据采集、自动化编排与 Skills 治理案例
 - [[最新-万字综述-Prompt-到-Loop-进化]] —— 补充 Prompt / Context / Harness / Loop 四层栈、Loop Contract、熔断器、Watchdog 和 Loop Designer 角色变化
 - [[开启Harness-Engineering探索之旅]] —— 腾讯技术工程 P1-P6、线上运营、长期记忆、可观测性和 token 成本治理的端到端实践
+- [[给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地]] —— 用钉钉悟空 AI 招聘案例展示专才 Agent、Workspace、RPA lock、外发消息硬护栏和 Agent OS 判断

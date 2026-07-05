@@ -11,6 +11,7 @@ tags:
   - auditability
   - harness-engineering
 related_entities:
+  - "[[Agent-Skill]]"
   - "[[OpenClaw-Skills]]"
   - "[[Harness-Engineering]]"
   - "[[OpenClaw]]"
@@ -45,6 +46,8 @@ sources:
   - "[[multica-ai-GitHub]]"
   - "[[精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本]]"
   - "[[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]]"
+  - "[[AI-Agent的Skill系统设计]]"
+  - "[[Harness工程之道-Skill原理与最佳实践]]"
 ---
 
 # AI Skill 体系主题
@@ -77,8 +80,13 @@ AI Skill 体系涵盖 2026 年 AI 工程领域关于 Skill（技能/能力单元
 
 11. **Skill 正在从“提示词文件”变成可安装、可治理、可观测的软件包**：[[last30days]] 展示了复杂研究 Skill 的输出合同和运行引擎，[[OfficeCLI]] 把 Office 操作封成 CLI + SKILL.md，[[Ponytail]] 把工程判断封成跨宿主规则，[[Multica]] 则把 CLI Skill 的读写权限、副作用和 workspace 边界写成安全协议。
 
+12. **Skill 是行为系统，不是知识仓库**：高质量 [[Agent-Skill]] 要影响发现、加载、执行、约束、验证和迭代的完整链路。`description` 是路由器，不是教程；`SKILL.md` 是执行入口，不是百科；scripts、references、assets 分别承接确定性逻辑、领域知识和产物材料。
+
+13. **工程级 Skill 要有权限、状态和观测**：trade-ab-skill 样本显示，复杂 Skill 需要模块级工具白名单、危险接口显式禁用、快照参数传递、脚本 JSON 输出和两阶段 traceId 日志。Skill 的迭代也应像软件一样测试触发、功能、性能和异常场景。
+
 ## 涉及实体
 
+- [[Agent-Skill]] —— 通用 Skill 能力包实体，覆盖触发、渐进加载、门控、资源分层和前向测试。
 - [[OpenClaw-Skills]] —— Skill 机制的典型实现，6 源加载 + 优先级覆盖 + 菜单注入 + 自主选择
 - [[Harness-Engineering]] —— Skill 是 Harness 的能力封装层，两者在实践中高度融合
 - [[OpenClaw]] —— OpenClaw 的 16 大模块中 Skills 模块是核心子系统之一
@@ -114,3 +122,5 @@ AI Skill 体系涵盖 2026 年 AI 工程领域关于 Skill（技能/能力单元
 - [[Ponytail-GitHub]] —— 用规则梯子约束 coding agent 过度工程化
 - [[multica-ai-GitHub]] —— Multica CLI Skill 的读写授权、workspace 和 mention/status 副作用协议
 - [[精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本]] —— 企业级 Skills Gateway、私有验证、PR 审核、统一分发和全流程观测
+- [[AI-Agent的Skill系统设计]] —— 把 Skill 定义为行为编程能力包，强调上下文预算、资源分层、硬门控和前向测试
+- [[Harness工程之道-Skill原理与最佳实践]] —— 以 trade-ab-skill 说明 Skill 结构、触发、作用域、工具隔离、脚本增强、快照参数和观测迭代

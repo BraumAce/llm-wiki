@@ -8,8 +8,8 @@ date: 2026-06-03
 
 ## 状态
 
-- 实体数：79 ｜ 主题数：9 ｜ 来源数：181
-- 最后更新：2026-06-29
+- 实体数：80 ｜ 主题数：9 ｜ 来源数：185
+- 最后更新：2026-07-01
 
 ### 主题导航
 
@@ -24,6 +24,14 @@ date: 2026-06-03
 - [[OpenClaw-digest-20260510|OpenClaw 综合]] —— 架构总览与三大子系统设计哲学
 
 ## 最近更新
+
+### 2026-07-01
+
+新增来源：[[AI-Agent的Skill系统设计]]、[[Harness工程之道-Skill原理与最佳实践]]、[[给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地]]、[[万字长文推演Claude的代码统治力从何而来]] —— 批量补充 Agent Skill 行为系统设计、trade-ab-skill 工程实践、悟空 AI 招聘 Harness 案例，以及 Claude 代码能力的数据飞轮推演。
+
+新增实体：[[Agent-Skill]] —— 归入 Skill与鉴权，抽象通用 Skill 能力包的触发、渐进加载、资源分层、门控和验证方法。
+
+更新实体/主题：[[Harness-Engineering]]、[[Claude-Code]]、[[AI-Skill体系-主题]]、[[Skill开发最佳实践]]、[[Harness-Engineering-主题]]、[[Claude-Code源码解析-主题]] —— 补入专才 Agent + N Skill、Workspace/RPA lock、外发消息硬护栏、Skill 工具隔离/快照参数/观测迭代，以及 Claude 的可验证奖励 RL 与产品反馈飞轮视角。
 
 ### 2026-06-29
 

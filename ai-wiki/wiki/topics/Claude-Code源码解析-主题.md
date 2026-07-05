@@ -13,7 +13,7 @@ tags:
 related_entities:
   - "[[Claude-Code]]"
   - "[[Harness-Engineering]]"
-  - "Anthropic"
+  - "[[Anthropic]]"
   - "[[OfficeCLI]]"
   - "[[Ponytail]]"
   - "[[last30days]]"
@@ -34,6 +34,7 @@ sources:
   - "[[Ponytail-GitHub]]"
   - "[[last30days-skill-GitHub]]"
   - "[[开源Claude-Code工程级开发插件Superpowers完整上手攻略]]"
+  - "[[万字长文推演Claude的代码统治力从何而来]]"
 ---
 
 # Claude Code 源码解析主题
@@ -58,11 +59,13 @@ Claude Code 源码解析涵盖 2026 年上半年社区对 Anthropic 官方 AI �
 
 7. **51.2 万行源码揭示的工程规模**：Claude Code 泄露的约 51.2 万行 TypeScript 代码展现了其作为工业级 AI 编程系统的完整度——从 `QueryEngine.ts` 主入口到 `services/compact/` 三层压缩、`services/tools/` 工具注册与执行、`constants/prompts.ts` System Prompt 构建、`utils/systemPrompt.ts` 优先级决策、`context.ts` Git 状态 + CLAUDE.md 加载、`memdir/` 结构化记忆系统，每一个模块都经过精心设计
 
+8. **Claude Code 的优势也可能来自训练与产品飞轮**：除了源码中的 Harness，Claude 代码能力还可以从训练侧理解：代码任务有可验证奖励，Constitutional AI 给安全和可读性加辅助约束，Claude 产品端的复制、修改、追问、重生成等行为形成高质量偏好反馈。这个视角不能替代源码分析，但能解释为什么工具外壳与模型能力会相互强化。
+
 ## 涉及实体
 
 - [[Claude-Code]] —— 被深度解析的 AI 编程助手主体
 - [[Harness-Engineering]] —— Claude Code 是 Harness Engineering 理念最完整的工程实现
-- Anthropic —— Claude Code 的开发方
+- [[Anthropic]] —— Claude Code 的开发方，也提供 Constitutional AI、模型卡和产品反馈飞轮的训练侧线索
 
 ## 对比矩阵
 
@@ -82,3 +85,4 @@ Claude Code 源码解析涵盖 2026 年上半年社区对 Anthropic 官方 AI �
 - [[Claude-Code-顶级开发团队设计的Harness工程项目源码什么样]] —— 顶级开发团队的 Harness 工程源码组织方式
 - [[Claude-Code源码泄露深度解析-51.2万行代码里藏着怎样的AI编程系统]] —— 51.2 万行代码的系统性解析
 - [[Claude-Code-源码架构解析-从启动Prompt到权限管道]] —— 从启动 Prompt 到权限校验管道的完整链路
+- [[万字长文推演Claude的代码统治力从何而来]] —— 从可验证奖励 RL、Constitutional AI、安全护栏、用户反馈飞轮和合成数据角度补充 Claude 代码能力来源推演

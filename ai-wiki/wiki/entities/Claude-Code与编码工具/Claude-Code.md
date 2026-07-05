@@ -28,7 +28,9 @@ sources:
   - "[[你不知道的-Claude-Code-架构治理与工程实践]]"
   - "[[Claude-Code防封号指南-国内终极解决方案]]"
   - "[[聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔]]"
+  - "[[万字长文推演Claude的代码统治力从何而来]]"
 related_entities:
+  - "[[Anthropic]]"
   - "[[Harness-Engineering]]"
   - "[[OpenClaw]]"
   - "[[Agent-Memory]]"
@@ -165,6 +167,12 @@ Claude Code 在执行长任务时展现出高度的可靠性，核心机制包�
 
 Claude Code 的 Hooks 系统是 Harness Engineering 的核心实践——将确定性行为从不可靠的 LLM 记忆迁移到工程化的 hooks + 持久化文件中。Hooks 在每次工具调用前后确定性地执行，用于注入规范、验证输出、触发自动化流程，不依赖模型判断。
 
+### 代码能力的数据飞轮视角
+
+从训练侧看，Claude Code 的“代码统治力”不只来自 CLI/Harness 外壳，也可能来自 [[Anthropic]] 在代码场景中的系统工程组合：代码任务天然有可验证奖励（测试、编译、类型检查、沙箱运行），Constitutional AI 给输出质量和安全性加辅助约束，产品端再通过复制、修改、点踩、重新生成、继续追问等用户行为收集偏好反馈。
+
+这一视角把 Claude 的代码优势解释为“可验证奖励 RL + 安全宪法 + 产品数据飞轮”的复合结果，而不是某一个提示词技巧。它也解释了为什么 Claude 在多文件、真实 Issue、复杂依赖场景中表现更突出：这类任务更依赖规划、执行、自纠错和多步验证，而这些能力更容易通过可验证奖励和真实反馈被强化。需要注意的是，这部分是基于公开资料和第一性原理的推断，适合作为理解框架，不应当当作 Anthropic 已披露的训练细节。
+
 ### 应用 / 使用场景
 
 - **日常编程**：代码阅读、编辑、调试、重构，支持图片和 PDF 等多模态输入
@@ -186,6 +194,7 @@ Claude Code 的 Hooks 系统是 Harness Engineering 的核心实践——将确�
 ## 与其他实体的关系
 
 - [[Harness-Engineering]] —— Claude Code 是 Harness Engineering 理念最完整的工程实现。CLAUDE.md 四级注入、Hooks 机制、三层上下文压缩体系是 Harness 的核心组件。得物团队称"Harness = Claude Code 的宿主运行框架"
+- [[Anthropic]] —— Claude Code 的开发方；其 Constitutional AI、模型卡、评估方法和产品形态共同影响 Claude 的代码能力
 - [[OpenClaw]] —— 同为 Agent 系统但定位不同：Claude Code 聚焦 AI Coding（开发者工具），OpenClaw 聚焦个人 AI 助手（日常交互）。两者在 CLAUDE.md 注入、上下文管理、工具系统等方面有大量设计交集
 - [[Agent-Memory]] —— Claude Code 的 Memdir 系统和三层上下文压缩体系是 Agent Memory 的一种实现路径，与 OpenClaw 的双源记忆系统、腾讯云的 4 层渐进式管道形成对比
 - [[Spec-Driven-Development]] —— SDD 的 Spec 文档 + constitution.md 设计与 Claude Code 的 CLAUDE.md 四级注入异曲同工，两者经常组合使用
@@ -201,3 +210,4 @@ Claude Code 的 Hooks 系统是 Harness Engineering 的核心实践——将确�
 - [[OpenAI-Codex-Plugin-for-Claude-Code源码剖析]] —— OpenAI Codex 插件的桥接架构，将 Codex 集成为 Claude Code 的第二审阅者
 - [[让-Claude-Code-拥有自我进化和记忆系统]] —— 得物技术，Hook 机制驱动的自我学习系统
 - [[聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔]] —— 用 Redis Set 复刻案例展示 Claude Code 生成代码后的人工审查、数据结构验证和端到端测试闸门。
+- [[万字长文推演Claude的代码统治力从何而来]] —— 腾讯云开发者，从可验证奖励 RL、Constitutional AI、用户反馈飞轮和合成数据自举角度推演 Claude 代码能力来源

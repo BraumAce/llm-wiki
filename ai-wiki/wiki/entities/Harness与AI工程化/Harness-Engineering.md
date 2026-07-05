@@ -41,10 +41,12 @@ sources:
   - "[[Loop Engineering 概念解析、思考与实践]]"
   - "[[最新-万字综述-Prompt-到-Loop-进化]]"
   - "[[开启Harness-Engineering探索之旅]]"
+  - "[[给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地]]"
 related_entities:
   - "[[OpenClaw]]"
   - "[[Loop-Engineering]]"
   - "[[Spec-Driven-Development]]"
+  - "[[Agent-Skill]]"
   - "[[OpenClaw-Skills]]"
   - "[[OpenHarness]]"
   - "[[Agent-Oriented-Infra]]"
@@ -121,6 +123,7 @@ Harness Engineering 的核心是五类组件的协同：
 - **个人工作流**：把一次性 AI 对话沉淀为材料、标准、验证和复用流程。问题定义、上下文质量、验证能力、工作流沉淀和判断标准，是个人层面最小 Harness 的五个抓手
 - **高风险业务 Agent**：淘宝主播 Agent 把 Harness 推到直播间场景，要求操作即时生效、错误不可撤回、主播无法逐条复核、会话长且可中断。框架层负责上下文、状态、Hook、安全、评测和记忆，业务方只用 Skill 声明能力边界、风险等级和参数校验
 - **端到端研发流水线**：淘宝企业购把客户定制对接沉淀为 Skill 工作流，脚本承担接口提取等高精度环节，references 承载领域知识，子 Skill 拆分长文档与单接口生成，把不可控对话变成可复现流水线
+- **企业招聘 Agent**：钉钉悟空 AI 招聘系统把全能 Agent 拆成 2 个专才 Agent 与一组原子化 Skill，用 Workspace 文件、RPA lock、Linter 和独立 Reviewer 守住状态、合规和对外消息边界
 
 ### Harness 平台化（Agent-Oriented Infra 视角）
 
@@ -135,6 +138,14 @@ Harness Engineering 的核心是五类组件的协同：
 直播场景补充了一个重要视角：Harness 不只是 AI Coding 的质量辅助，而是高风险业务操作的安全边界。主播 Agent 的实现把状态更新从模型里拿出来，采用 Reducer 模式：模型只产生 Action，确定性的 Reducer 负责更新结构化 State，每轮再通过 system-hint 注入最新状态。这样既减少工具 JSON 污染上下文，也让状态可回放、可审计。
 
 Lifecycle Hook 则把强规则放到模型循环的关键节点：`PreReasoning` 注入状态和记忆，`PreToolCall` 校验能力边界、幂等键和审批，`PostToolCall` 校验结果并更新状态，`PostReasoning` 检测幻觉，`LiveEnd` 触发记忆回写。评测层不只看最终答案，还看工具成功率、审批通过率、主播干预率、端到端延迟和会话满意度。
+
+### 专才 Agent、Workspace 与 Agent OS
+
+钉钉悟空 AI 招聘实践把 Harness 的工程取舍压缩成四条铁律：上下文越少越好，专才 Agent 胜过通才 Agent，状态写文件而不是塞上下文，能写成 Linter 的约束不要只留在文档里。它的第一版“全能招聘 Agent”把简历解析、人岗匹配、聊天、约面试、日历、RPA 和日报都塞进同一个 600 行 Prompt 与十多个工具中，结果工具选择、状态延续和错误复现都失控。
+
+改造后变成“2 Agent + N Skill + Workspace”：悟空只做 Orchestrator，人岗匹配 Agent 负责 RPA 与打分，招聘沟通 Agent 负责候选人对话，其余能力下沉为原子化 [[Agent-Skill]]。候选人状态、聊天历史、JD、RPA lock 都写入 Workspace，外发消息再经过白名单工具、Linter 拦截和独立 Reviewer Agent 三层护栏。这个案例说明，Agent 数量本身也是上下文成本；Skill 可以增加很多，但对外说话和动用户数据的地方必须先有硬护栏。
+
+这也把 Harness 推向“Agent OS”隐喻：用户交互层像 Shell，编排层像 Scheduler，Skill 是系统调用，Workspace 是文件系统，MCP 是设备驱动。竞争焦点不再只是“模型多聪明”，而是运行环境是否干净、可审计、可恢复、可替换。
 
 ### Harness 在评测领域的应用
 
@@ -160,6 +171,7 @@ Harness Engineering 的理念可以扩展到 Agent 评测领域。阿里团队�
 - [[OpenClaw]] —— OpenClaw 的设计哲学本身就体现了 Harness 思维：CLAUDE.md 持久化状态、hooks 强制规范、Skills 封装领域知识
 - [[Loop-Engineering]] —— 循环工程是 harness 的"上一层楼"：harness 武装单次运行，loop 让这次运行在定时器上自动重来
 - [[Spec-Driven-Development]] —— SDD 是 Harness 在需求阶段的具体实践，两者经常组合使用
+- [[Agent-Skill]] —— Skill 是 Harness 的低成本能力单元；在专才架构中，能沉成 Skill 的能力通常不应拆成新 Agent
 - [[OpenClaw-Skills]] —— Skills 是 Harness 的能力封装层，Agent 按需加载领域知识包
 - [[AI可观测性]] —— 生产级 Agent 需要 trace、离线评测、在线指标和人工满意度共同判断质量
 
@@ -183,3 +195,4 @@ Harness Engineering 的理念可以扩展到 Agent 评测领域。阿里团队�
 - [[Loop Engineering 概念解析、思考与实践]] —— 阿里技术，区分底层 Agent Loop 与 Harness 之上的自动化验收闭环
 - [[最新-万字综述-Prompt-到-Loop-进化]] —— Datawhale，把 Prompt、Context、Harness、Loop 串成统一演进栈，并强调 Harness 的安全围栏位置
 - [[开启Harness-Engineering探索之旅]] —— 腾讯技术工程，展示 P1-P6 研发交付、线上运营、知识库长期记忆和可观测性指标如何组成生产级 Harness
+- [[给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地]] —— 阿里云开发者，用悟空 AI 招聘说明全能 Agent 到 2 Agent + N Skill + Workspace + Linter 护栏的架构迁移
