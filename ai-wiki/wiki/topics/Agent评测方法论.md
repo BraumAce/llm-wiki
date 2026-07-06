@@ -13,11 +13,14 @@ sources:
   - "[[Agent-Memory评测全景-基准评估与记忆系统]]"
   - "[[AI-Agent-Skill-测评方案及落地实践]]"
   - "[[AI Evals的一些实践：如何从 0 到 1 构建 agent 的评测系统？]]"
+  - "[[Agent 评测：方法论与体系设计]]"
 related_entities:
   - "[[Harness-Engineering]]"
   - "[[Claude-Code]]"
   - "[[Anthropic]]"
   - "[[Prompt评估体系]]"
+  - "[[AI可观测性]]"
+  - "[[Agent-Skill]]"
   - "[[Generator-Evaluator]]"
 ---
 
@@ -52,3 +55,7 @@ related_entities:
 13. **先校准评分器，再扩大样本规模**：小团队起步时，10 个高频黄金 case 就足够校准 LLM-as-Judge；如果维度分差、排序倒置率、极端 case 一致率都还没对齐，盲目扩到几百条样本只会放大噪声。
 
 14. **只评结果不评过程，很难真正优化系统**：生产评测集跑完后，最有价值的不是“最后总分”，而是 bad case 暴露出的结构性缺陷。要把坏样本回推到 prompt、few-shot、模型选择、工具策略或验证规则，而不是停在“分数变低了”。
+
+15. **Agent 类型决定评测侧重，底层骨架可以复用**：执行用例、采集 Trace、运行 Scorer、生成报告、做根因归类是一套通用骨架；真正需要业务定制的是“评什么”和“怎么判”。对话 Agent 不能只看单轮答案，还要同时看 Turn、Session、Trace、Outcome。
+
+16. **反馈生产比出分更重要**：线上失败要变成可复用研发资产。Badcase 入库前至少要有稳定 Trace 或人工确认、明确期望行为、清晰根因标签、代表性样本和脱敏合规；最终沉淀为用例库、Trace 库、根因标签库、修复建议库、Judge 校准集和回归集。

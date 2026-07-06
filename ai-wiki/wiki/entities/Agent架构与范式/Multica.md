@@ -16,6 +16,7 @@ sources:
 related_entities:
   - "[[Agentic-Engineering]]"
   - "[[Harness-Engineering]]"
+  - "[[Tutti]]"
   - "[[OpenClaw]]"
   - "[[RMUX]]"
 ---
@@ -63,6 +64,7 @@ Managed agents 的难点在于状态副作用：评论、mention、status change
 
 - [[Agentic-Engineering]] —— Multica 是 Agentic Engineering 从单机 agent 走向组织工作台的代表。
 - [[Harness-Engineering]] —— 它把状态、权限、可观测、技能复用和运行时检测纳入平台 harness。
+- [[Tutti]] —— 两者都试图解决多 Agent 协作中的状态和交接问题；Multica 更偏 issue/squad/runtime 管理，Tutti 更偏实时共享工作空间和应用产物流转。
 - [[OpenClaw]] —— OpenClaw 是可接入的 agent runtime 之一。
 - [[RMUX]] —— RMUX 可作为单个 runtime 内的终端会话层，Multica 则管理更上层的任务生命周期。
 

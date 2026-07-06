@@ -28,6 +28,7 @@ sources:
   - "[[面向Skills编程-淘宝企业购端对端研发提效实践]]"
   - "[[Loop Engineering 概念解析、思考与实践]]"
   - "[[聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔]]"
+  - "[[Tutti-GitHub]]"
 related_entities:
   - "[[Harness-Engineering]]"
   - "[[Context-Engineering]]"
@@ -36,6 +37,7 @@ related_entities:
   - "[[Hermes-Agent]]"
   - "[[Loop-Engineering]]"
   - "[[OpenClaw-Skills]]"
+  - "[[Tutti]]"
 ---
 
 # Agentic Engineering
@@ -101,6 +103,7 @@ Agentic Engineering 建立在三条公理之上：
 - **面向 Skills 的研发组织化**：淘宝企业购的路径显示，Agentic Engineering 不止是让 AI 写代码，而是把领域经验、工作流、代码模板、审查规则沉淀为可版本化 Skill，让人从实现逻辑转向定义能力单元
 - **Loop 化验收闭环**：Loop Engineering 把人机反复纠偏改造成自动化验证与反馈循环，要求需求和验收标准更清晰。它把 Agentic Engineering 从"提需求让 Agent 做"推进到"定义一套闭环让 Agent 自己验收和迭代"
 - **AI 代码审查与源码阅读**：在 Claude Code 等工具承担骨架生成和迁移工作的场景里，工程师仍要负责读懂核心模块、提出可证伪问题、补测试与压测，把“看起来能跑”的候选实现推进到“语义上正确、边界上可靠”的工程实现。
+- **多 Agent 共享工作空间**：[[Tutti]] 代表 Agentic Engineering 的运行面继续外扩。多个 Agent 不再只是通过人写的 handoff 文档接力，而是共享文件、任务、应用产物、历史对话和运行状态，让 Codex 可以直接引用 Claude Code 的上下文或应用生成的原型、文档、图片。
 
 ### 局限与争议
 
@@ -121,6 +124,7 @@ Agentic Engineering 建立在三条公理之上：
 - [[Hermes-Agent]] —— Hermes Agent 代表了 Agentic Engineering 的自进化方向，通过记忆模块、反馈循环和自我反思机制实现"越用越好用"
 - [[Loop-Engineering]] —— 外部闭环让 Agent 自动执行、验证、反馈和沉淀
 - [[OpenClaw-Skills]] —— Skill 是 Agentic Engineering 中沉淀领域经验和流程的能力单元
+- [[Tutti]] —— 多 Agent 共享工作空间，把上下文、任务、文件和应用产物变成可引用对象
 
 ## 参考来源
 
@@ -136,3 +140,4 @@ Agentic Engineering 建立在三条公理之上：
 - [[面向Skills编程-淘宝企业购端对端研发提效实践]] —— 大淘宝技术，面向 Skills 编程与端到端研发流水线
 - [[Loop Engineering 概念解析、思考与实践]] —— 阿里技术，把 Human-in-the-Loop 纠偏改造成自动化验收闭环
 - [[聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔]] —— 以 Redis Set 复刻为例说明 AI Coding 仍需要人工源码阅读、数据结构审查和真实链路验收。
+- [[Tutti-GitHub]] —— 多 Agent 实时共享工作空间、桌面 monorepo 分层和 architecture review skill 实践

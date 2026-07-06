@@ -11,6 +11,7 @@ tags:
 related_entities:
   - "[[vLLM]]"
   - "[[KV-Cache]]"
+  - "[[Prompt-Cache]]"
   - "[[RAG]]"
   - "[[Agent-Memory]]"
   - "[[Cua]]"
@@ -32,6 +33,7 @@ sources:
   - "[[OmniRoute-GitHub]]"
   - "[[whichllm-GitHub]]"
   - "[[Project-NOMAD-GitHub]]"
+  - "[[为什么大模型的缓存命中率能到90-Percent]]"
 ---
 
 # AI Infra 推理优化主题
@@ -54,11 +56,13 @@ AI Infra 推理优化涵盖大模型推理服务的完整技术栈——从底�
 10. **推理优化正在上移到 gateway 层**：[[OmniRoute]] 把 provider health、quota、fallback、routing strategy、compression 和成本 header 放到本地代理层，让多个 coding tools 共享同一套模型使用策略。
 11. **本地模型选型也是推理工程的一部分**：[[whichllm]] 在 serving 之前先估算硬件、VRAM、KV cache、量化、benchmark evidence 和速度，避免只按参数量选择一个“能 fit 但不好用”的模型。
 12. **离线 AI Infra 必须把内容、模型和服务一起治理**：[[Project-NOMAD]] 把 Kiwix、Kolibri、ProtoMaps、Ollama、Qdrant、Docker 编排和本地 Knowledge Base 放在同一 Command Center 中，说明离线 RAG 的瓶颈不只在检索算法，也在内容预下载、存储、GPU、更新和访问控制。
+13. **Agent 会话天然利于前缀缓存，但高命中率不是终点**：多轮 Agent 调用通常只在历史末尾追加工具输出和新回复，前面的大段系统提示、工具定义和历史对话可以反复命中 [[Prompt-Cache]]；但 90% 命中率也意味着每轮都在重发大上下文，仍要同时看 cache read、cache write 和未缓存输入的绝对量。
 
 ## 涉及实体
 
 - [[vLLM]] —— LLM 推理框架的事实标准
 - [[KV-Cache]] —— 自回归推理中缓存历史 Key/Value 张量的机制
+- [[Prompt-Cache]] —— 跨请求复用稳定前缀的产品层缓存抽象
 - [[RAG]] —— 检索增强生成
 - [[Agent-Memory]] —— Agent 记忆系统
 - [[OmniRoute]] —— 多 provider gateway 与 token/compression/cost 治理层
@@ -86,3 +90,4 @@ AI Infra 推理优化涵盖大模型推理服务的完整技术栈——从底�
 - [[OmniRoute-GitHub]] —— 本地 AI gateway、fallback、quota-share、compression 和 MCP/A2A 端点
 - [[whichllm-GitHub]] —— 本地模型选型、VRAM/KV cache 估算、benchmark evidence 和硬件模拟
 - [[Project-NOMAD-GitHub]] —— 离线知识服务器、Ollama/Qdrant RAG、Kiwix/Kolibri/ProtoMaps 和 Docker Command Center
+- [[为什么大模型的缓存命中率能到90-Percent]] —— Agent 会话中 KV Cache、Prefix Caching、PagedAttention 和 90% 命中率的工程解释

@@ -42,6 +42,7 @@ sources:
   - "[[最新-万字综述-Prompt-到-Loop-进化]]"
   - "[[开启Harness-Engineering探索之旅]]"
   - "[[给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地]]"
+  - "[[Agent 评测：方法论与体系设计]]"
 related_entities:
   - "[[OpenClaw]]"
   - "[[Loop-Engineering]]"
@@ -159,6 +160,10 @@ Harness Engineering 的理念可以扩展到 Agent 评测领域。阿里团队�
 
 同时，Skill 编写领域的工程化评估（Skill Creator 的触发评估 + 效果评估）也体现了 Harness 思维：不是靠感觉判断 Skill 好不好，而是用数据说话——触发准确率、召回率、效果通过率、相对提升率。
 
+新一轮 Agent 评测实践把 Harness 的验证层进一步具体化：执行用例、采集 Trace、运行 Scorer、生成报告、根因归类可以作为通用骨架复用，但“评什么”和“怎么判”必须按 Agent 类型和业务风险定制。对话 Agent 要同时看 Turn、Session、Trace、Outcome；Skill 要评触发条件、流程正确性、工具参数、产物质量和异常降级。发布时还要把离线门禁与线上灰度联动，如果离线质量提升但转人工率、投诉率或业务闭环率恶化，就应触发回滚或降级。
+
+这说明 Harness 的目标不是让每次评测出一个更漂亮的分数，而是形成反馈生产：线上失败通过 Trace 归因进入用例库、根因标签库、修复建议库、Judge 校准集和回归集。质量资产越厚，Agent 迭代越不依赖个人经验和临时救火。
+
 ### 局限与争议
 
 - **过度工程化风险**：Harness 过厚会降低开发速度，"合适厚度"需要团队自己摸索
@@ -196,3 +201,4 @@ Harness Engineering 的理念可以扩展到 Agent 评测领域。阿里团队�
 - [[最新-万字综述-Prompt-到-Loop-进化]] —— Datawhale，把 Prompt、Context、Harness、Loop 串成统一演进栈，并强调 Harness 的安全围栏位置
 - [[开启Harness-Engineering探索之旅]] —— 腾讯技术工程，展示 P1-P6 研发交付、线上运营、知识库长期记忆和可观测性指标如何组成生产级 Harness
 - [[给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地]] —— 阿里云开发者，用悟空 AI 招聘说明全能 Agent 到 2 Agent + N Skill + Workspace + Linter 护栏的架构迁移
+- [[Agent 评测：方法论与体系设计]] —— 阿里技术，把 Agent 评测拆成类型侧重、Trace、Scorer、线上灰度和反馈生产闭环

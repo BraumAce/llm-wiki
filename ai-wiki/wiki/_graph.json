@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-29T23:38:23+08:00",
+  "generated_at": "2026-07-06T23:51:05+08:00",
   "wiki_dir": "/Users/liuguang/Documents/Private/llm-wiki/ai-wiki/wiki",
   "stats": {
-    "nodes": 269,
-    "edges": 1185,
-    "edge_weight_total": 2125,
+    "nodes": 288,
+    "edges": 1356,
+    "edge_weight_total": 2500,
     "orphan_links": [],
     "by_type": {
-      "entity": 79,
+      "entity": 86,
       "topic": 9,
-      "source": 181
+      "source": 193
     }
   },
   "nodes": [
@@ -96,6 +96,17 @@
         "ai-engineering",
         "architecture",
         "design-principle"
+      ]
+    },
+    {
+      "id": "Agent-Skill",
+      "type": "entity",
+      "title": "Agent-Skill",
+      "tags": [
+        "agent-skill",
+        "skill-engineering",
+        "harness-engineering",
+        "progressive-disclosure"
       ]
     },
     {
@@ -532,6 +543,19 @@
       ]
     },
     {
+      "id": "OmniRoute",
+      "type": "entity",
+      "title": "OmniRoute",
+      "tags": [
+        "ai-gateway",
+        "model-routing",
+        "fallback",
+        "token-compression",
+        "mcp",
+        "a2a"
+      ]
+    },
+    {
       "id": "OpenClaw",
       "type": "entity",
       "title": "OpenClaw",
@@ -632,6 +656,19 @@
         "agent-memory",
         "token-cost",
         "skill"
+      ]
+    },
+    {
+      "id": "Project-NOMAD",
+      "type": "entity",
+      "title": "Project-NOMAD",
+      "tags": [
+        "offline-knowledge",
+        "local-ai",
+        "rag",
+        "docker",
+        "kiwix",
+        "qdrant"
       ]
     },
     {
@@ -800,6 +837,17 @@
       ]
     },
     {
+      "id": "Tutti",
+      "type": "entity",
+      "title": "Tutti",
+      "tags": [
+        "multi-agent",
+        "shared-workspace",
+        "local-first",
+        "desktop"
+      ]
+    },
+    {
       "id": "claude-mem",
       "type": "entity",
       "title": "claude-mem",
@@ -822,6 +870,32 @@
         "social-search",
         "recency",
         "agent-tool"
+      ]
+    },
+    {
+      "id": "oh-my-claudecode",
+      "type": "entity",
+      "title": "oh-my-claudecode",
+      "tags": [
+        "claude-code",
+        "multi-agent",
+        "team-mode",
+        "skills",
+        "tmux",
+        "orchestration"
+      ]
+    },
+    {
+      "id": "oh-my-pi",
+      "type": "entity",
+      "title": "oh-my-pi",
+      "tags": [
+        "ai-coding-agent",
+        "terminal-agent",
+        "lsp",
+        "dap",
+        "hashline",
+        "subagents"
       ]
     },
     {
@@ -861,6 +935,19 @@
         "python",
         "local-first",
         "privacy"
+      ]
+    },
+    {
+      "id": "whichllm",
+      "type": "entity",
+      "title": "whichllm",
+      "tags": [
+        "local-llm",
+        "hardware-detection",
+        "gpu",
+        "benchmark",
+        "gguf",
+        "vram"
       ]
     },
     {
@@ -999,6 +1086,17 @@
         "enterprise",
         "insurance",
         "llm"
+      ]
+    },
+    {
+      "id": "AI-Agent的Skill系统设计",
+      "type": "source",
+      "title": "AI Agent 的 Skill 系统设计",
+      "tags": [
+        "agent-skill",
+        "skill-engineering",
+        "progressive-disclosure",
+        "validation"
       ]
     },
     {
@@ -1176,6 +1274,17 @@
         "控制论",
         "AI-Native",
         "工程化"
+      ]
+    },
+    {
+      "id": "Agent 评测：方法论与体系设计",
+      "type": "source",
+      "title": "Agent 评测：方法论与体系设计",
+      "tags": [
+        "agent-evaluation",
+        "trace",
+        "scorer",
+        "quality-assurance"
       ]
     },
     {
@@ -1558,6 +1667,17 @@
       ]
     },
     {
+      "id": "Harness工程之道-Skill原理与最佳实践",
+      "type": "source",
+      "title": "Harness 工程之道：Skill 原理与最佳实践",
+      "tags": [
+        "agent-skill",
+        "trade-ab-skill",
+        "tool-isolation",
+        "skill-testing"
+      ]
+    },
+    {
       "id": "Harness的尽头不是缰绳是镜子",
       "type": "source",
       "title": "Harness的尽头不是缰绳是镜子",
@@ -1668,6 +1788,19 @@
       ]
     },
     {
+      "id": "OmniRoute-GitHub",
+      "type": "source",
+      "title": "OmniRoute GitHub",
+      "tags": [
+        "ai-gateway",
+        "model-routing",
+        "fallback",
+        "token-compression",
+        "mcp",
+        "a2a"
+      ]
+    },
+    {
       "id": "OpenAI-Codex-Plugin-for-Claude-Code源码剖析",
       "type": "source",
       "title": "OpenAI-Codex-Plugin-for-Claude-Code源码剖析",
@@ -1731,6 +1864,20 @@
         "agent-memory",
         "token-cost",
         "claude-code"
+      ]
+    },
+    {
+      "id": "Project-NOMAD-GitHub",
+      "type": "source",
+      "title": "Project-NOMAD GitHub",
+      "tags": [
+        "offline-knowledge",
+        "rag",
+        "local-ai",
+        "qdrant",
+        "ollama",
+        "docker",
+        "kiwix"
       ]
     },
     {
@@ -1838,6 +1985,17 @@
       ]
     },
     {
+      "id": "Tutti-GitHub",
+      "type": "source",
+      "title": "Tutti-GitHub",
+      "tags": [
+        "multi-agent",
+        "shared-workspace",
+        "local-first",
+        "desktop"
+      ]
+    },
+    {
       "id": "last30days-skill-GitHub",
       "type": "source",
       "title": "last30days-skill GitHub",
@@ -1860,6 +2018,32 @@
       ]
     },
     {
+      "id": "oh-my-claudecode-GitHub",
+      "type": "source",
+      "title": "oh-my-claudecode GitHub",
+      "tags": [
+        "claude-code",
+        "multi-agent",
+        "teams",
+        "skills",
+        "tmux",
+        "orchestration"
+      ]
+    },
+    {
+      "id": "oh-my-pi-GitHub",
+      "type": "source",
+      "title": "oh-my-pi GitHub",
+      "tags": [
+        "ai-coding-agent",
+        "terminal-agent",
+        "lsp",
+        "dap",
+        "hashline",
+        "subagents"
+      ]
+    },
+    {
       "id": "verify-data-一个端到端的数据验数Agent-Skill",
       "type": "source",
       "title": "verify-data-一个端到端的数据验数Agent-Skill",
@@ -1879,6 +2063,19 @@
         "cli",
         "source-code-analysis",
         "wechat-api"
+      ]
+    },
+    {
+      "id": "whichllm-GitHub",
+      "type": "source",
+      "title": "whichllm GitHub",
+      "tags": [
+        "local-llm",
+        "hardware-detection",
+        "gpu",
+        "benchmark",
+        "gguf",
+        "vram"
       ]
     },
     {
@@ -2021,6 +2218,17 @@
       ]
     },
     {
+      "id": "万字长文推演Claude的代码统治力从何而来",
+      "type": "source",
+      "title": "万字长文推演Claude的代码统治力从何而来",
+      "tags": [
+        "claude-code",
+        "anthropic",
+        "reinforcement-learning",
+        "product-data-flywheel"
+      ]
+    },
+    {
       "id": "业务逻辑的坍塌-当应用层只剩下胶水代码",
       "type": "source",
       "title": "业务逻辑的坍塌：当应用层只剩下胶水代码",
@@ -2039,6 +2247,17 @@
         "agent",
         "tutorial",
         "terminology"
+      ]
+    },
+    {
+      "id": "为什么大模型的缓存命中率能到90-Percent",
+      "type": "source",
+      "title": "为什么大模型的缓存命中率能到 90%？",
+      "tags": [
+        "kv-cache",
+        "prefix-caching",
+        "llm-inference",
+        "token-cost"
       ]
     },
     {
@@ -2701,6 +2920,17 @@
       ]
     },
     {
+      "id": "给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地",
+      "type": "source",
+      "title": "给野马套上缰绳：Agent Harness 工程实践 ——从范式理论到钉钉AI招聘的真实落地",
+      "tags": [
+        "harness-engineering",
+        "agent-os",
+        "subagent",
+        "enterprise-agent"
+      ]
+    },
+    {
       "id": "缓存使用实践总结-以淘宝交易结算场景为例",
       "type": "source",
       "title": "缓存使用实践总结-以淘宝交易结算场景为例",
@@ -3155,6 +3385,36 @@
       "weight": 2
     },
     {
+      "from": "AI-Agent的Skill系统设计",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "AI-Agent的Skill系统设计",
+      "to": "Agent-Skill",
+      "weight": 2
+    },
+    {
+      "from": "AI-Agent的Skill系统设计",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "AI-Agent的Skill系统设计",
+      "to": "Progressive-Disclosure",
+      "weight": 2
+    },
+    {
+      "from": "AI-Agent的Skill系统设计",
+      "to": "Skill开发最佳实践",
+      "weight": 2
+    },
+    {
+      "from": "AI-Agent的Skill系统设计",
+      "to": "Token成本控制",
+      "weight": 2
+    },
+    {
       "from": "AI-Coding前端实践后的复盘总结",
       "to": "Claude-Code",
       "weight": 2
@@ -3241,6 +3501,31 @@
     },
     {
       "from": "AI-Infra推理优化-主题",
+      "to": "OmniRoute",
+      "weight": 3
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
+      "to": "OmniRoute-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
+      "to": "Project-NOMAD",
+      "weight": 3
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
+      "to": "Project-NOMAD-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
+      "to": "Prompt-Cache",
+      "weight": 3
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
       "to": "RAG",
       "weight": 2
     },
@@ -3271,7 +3556,22 @@
     },
     {
       "from": "AI-Infra推理优化-主题",
+      "to": "whichllm",
+      "weight": 3
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
+      "to": "whichllm-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
       "to": "万字入门AI-Infra-深入理解大模型中的数学与Infra优化",
+      "weight": 2
+    },
+    {
+      "from": "AI-Infra推理优化-主题",
+      "to": "为什么大模型的缓存命中率能到90-Percent",
       "weight": 2
     },
     {
@@ -3306,6 +3606,11 @@
     },
     {
       "from": "AI-Skill体系-主题",
+      "to": "AI-Agent的Skill系统设计",
+      "weight": 2
+    },
+    {
+      "from": "AI-Skill体系-主题",
       "to": "AI-Skill体系全解-企业级AI能力标准化可插拔可审计",
       "weight": 2
     },
@@ -3313,6 +3618,11 @@
       "from": "AI-Skill体系-主题",
       "to": "AI编程的下半场来了-学会用Agent-Skill解决编程的痛点问题",
       "weight": 1
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "Agent-Skill",
+      "weight": 3
     },
     {
       "from": "AI-Skill体系-主题",
@@ -3337,6 +3647,11 @@
     {
       "from": "AI-Skill体系-主题",
       "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "Harness工程之道-Skill原理与最佳实践",
       "weight": 2
     },
     {
@@ -3402,6 +3717,16 @@
     {
       "from": "AI-Skill体系-主题",
       "to": "multica-ai-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "oh-my-claudecode",
+      "weight": 3
+    },
+    {
+      "from": "AI-Skill体系-主题",
+      "to": "oh-my-claudecode-GitHub",
       "weight": 2
     },
     {
@@ -3550,6 +3875,16 @@
       "weight": 1
     },
     {
+      "from": "AI可观测性",
+      "to": "Agent 评测：方法论与体系设计",
+      "weight": 1
+    },
+    {
+      "from": "AI可观测性",
+      "to": "面向LLM的架构设计-什么是真正的AI-Friendly架构",
+      "weight": 1
+    },
+    {
       "from": "AI研发自动化-Wiki知识库+技能包",
       "to": "AI-Skill体系全解-企业级AI能力标准化可插拔可审计",
       "weight": 1
@@ -3668,6 +4003,31 @@
       "from": "Addy-Osmani",
       "to": "OpenClaw",
       "weight": 1
+    },
+    {
+      "from": "Agent 评测：方法论与体系设计",
+      "to": "AI可观测性",
+      "weight": 2
+    },
+    {
+      "from": "Agent 评测：方法论与体系设计",
+      "to": "Agent-Skill",
+      "weight": 2
+    },
+    {
+      "from": "Agent 评测：方法论与体系设计",
+      "to": "Agent评测方法论",
+      "weight": 3
+    },
+    {
+      "from": "Agent 评测：方法论与体系设计",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Agent 评测：方法论与体系设计",
+      "to": "Prompt评估体系",
+      "weight": 2
     },
     {
       "from": "Agent-DX",
@@ -3865,6 +4225,41 @@
       "weight": 2
     },
     {
+      "from": "Agent-Skill",
+      "to": "AI-Agent的Skill系统设计",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Skill",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Skill",
+      "to": "Harness工程之道-Skill原理与最佳实践",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Skill",
+      "to": "MCP",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Skill",
+      "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Skill",
+      "to": "Progressive-Disclosure",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Skill",
+      "to": "Token成本控制",
+      "weight": 2
+    },
+    {
       "from": "Agent-Skill-Auth",
       "to": "Credential-Brokering",
       "weight": 1
@@ -4006,6 +4401,16 @@
     },
     {
       "from": "Agentic-Engineering",
+      "to": "Tutti",
+      "weight": 3
+    },
+    {
+      "from": "Agentic-Engineering",
+      "to": "Tutti-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering",
       "to": "从0开发大模型的17种Agent架构演进详细拆解",
       "weight": 2
     },
@@ -4102,7 +4507,17 @@
     {
       "from": "Agentic-Engineering-主题",
       "to": "Multica",
+      "weight": 4
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "OmniRoute",
       "weight": 3
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "OmniRoute-GitHub",
+      "weight": 2
     },
     {
       "from": "Agentic-Engineering-主题",
@@ -4131,7 +4546,37 @@
     },
     {
       "from": "Agentic-Engineering-主题",
+      "to": "Tutti",
+      "weight": 3
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "Tutti-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
       "to": "multica-ai-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "oh-my-claudecode",
+      "weight": 3
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "oh-my-claudecode-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "oh-my-pi",
+      "weight": 3
+    },
+    {
+      "from": "Agentic-Engineering-主题",
+      "to": "oh-my-pi-GitHub",
       "weight": 2
     },
     {
@@ -4241,6 +4686,16 @@
     },
     {
       "from": "Agent架构演进-主题",
+      "to": "Tutti",
+      "weight": 3
+    },
+    {
+      "from": "Agent架构演进-主题",
+      "to": "Tutti-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "Agent架构演进-主题",
       "to": "一文讲透从0构建AI-Agent",
       "weight": 1
     },
@@ -4326,7 +4781,22 @@
     },
     {
       "from": "Agent评测方法论",
+      "to": "AI可观测性",
+      "weight": 1
+    },
+    {
+      "from": "Agent评测方法论",
+      "to": "Agent 评测：方法论与体系设计",
+      "weight": 1
+    },
+    {
+      "from": "Agent评测方法论",
       "to": "Agent-Memory评测全景-基准评估与记忆系统",
+      "weight": 1
+    },
+    {
+      "from": "Agent评测方法论",
+      "to": "Agent-Skill",
       "weight": 1
     },
     {
@@ -4431,6 +4901,11 @@
     },
     {
       "from": "Claude-Code",
+      "to": "Anthropic",
+      "weight": 3
+    },
+    {
+      "from": "Claude-Code",
       "to": "Claude-Code-Harness工程-数仓侧落地方案-得物技术",
       "weight": 2
     },
@@ -4492,6 +4967,11 @@
     {
       "from": "Claude-Code",
       "to": "Spec-Driven-Development",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code",
+      "to": "万字长文推演Claude的代码统治力从何而来",
       "weight": 2
     },
     {
@@ -4631,6 +5111,11 @@
     },
     {
       "from": "Claude-Code源码解析-主题",
+      "to": "Anthropic",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
       "to": "Claude-Code",
       "weight": 2
     },
@@ -4708,6 +5193,31 @@
       "from": "Claude-Code源码解析-主题",
       "to": "last30days-skill-GitHub",
       "weight": 1
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "oh-my-claudecode",
+      "weight": 3
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "oh-my-claudecode-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "oh-my-pi",
+      "weight": 3
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "oh-my-pi-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "万字长文推演Claude的代码统治力从何而来",
+      "weight": 2
     },
     {
       "from": "Claude-Code源码解析-主题",
@@ -5126,8 +5636,18 @@
     },
     {
       "from": "Harness-Engineering",
+      "to": "Agent 评测：方法论与体系设计",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
       "to": "Agent-Oriented-Infra",
       "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "Agent-Skill",
+      "weight": 3
     },
     {
       "from": "Harness-Engineering",
@@ -5286,6 +5806,11 @@
     },
     {
       "from": "Harness-Engineering",
+      "to": "给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
       "to": "重新思考研发基础设施-当Agent成为第一公民",
       "weight": 2
     },
@@ -5318,6 +5843,11 @@
       "from": "Harness-Engineering-主题",
       "to": "AI编程实践第18节：使用Headroom代理，帮我省下Token的隐形管家",
       "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "Agent-Skill",
+      "weight": 3
     },
     {
       "from": "Harness-Engineering-主题",
@@ -5491,6 +6021,11 @@
     },
     {
       "from": "Harness-Engineering-主题",
+      "to": "给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
       "to": "规范驱动AI编程实战指南-OpenSpec-vs-Spec-Kit-vs-BMAD",
       "weight": 1
     },
@@ -5633,6 +6168,41 @@
       "from": "Harness不是目的-知识才是护城河",
       "to": "Harness-Engineering-主题",
       "weight": 1
+    },
+    {
+      "from": "Harness工程之道-Skill原理与最佳实践",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "Harness工程之道-Skill原理与最佳实践",
+      "to": "Agent-Skill",
+      "weight": 2
+    },
+    {
+      "from": "Harness工程之道-Skill原理与最佳实践",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "Harness工程之道-Skill原理与最佳实践",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Harness工程之道-Skill原理与最佳实践",
+      "to": "MCP",
+      "weight": 2
+    },
+    {
+      "from": "Harness工程之道-Skill原理与最佳实践",
+      "to": "Progressive-Disclosure",
+      "weight": 2
+    },
+    {
+      "from": "Harness工程之道-Skill原理与最佳实践",
+      "to": "Skill开发最佳实践",
+      "weight": 2
     },
     {
       "from": "Harness的尽头不是缰绳是镜子",
@@ -5817,7 +6387,7 @@
     {
       "from": "KV-Cache",
       "to": "Token成本控制",
-      "weight": 2
+      "weight": 3
     },
     {
       "from": "KV-Cache",
@@ -5832,6 +6402,11 @@
     {
       "from": "KV-Cache",
       "to": "万字入门AI-Infra-深入理解大模型中的数学与Infra优化",
+      "weight": 2
+    },
+    {
+      "from": "KV-Cache",
+      "to": "为什么大模型的缓存命中率能到90-Percent",
       "weight": 2
     },
     {
@@ -6296,6 +6871,11 @@
     },
     {
       "from": "Multica",
+      "to": "Tutti",
+      "weight": 2
+    },
+    {
+      "from": "Multica",
       "to": "multica-ai-GitHub",
       "weight": 2
     },
@@ -6392,6 +6972,81 @@
     {
       "from": "OfficeCLI-GitHub",
       "to": "Ponytail",
+      "weight": 2
+    },
+    {
+      "from": "OmniRoute",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "OmniRoute",
+      "to": "Cursor",
+      "weight": 2
+    },
+    {
+      "from": "OmniRoute",
+      "to": "MCP",
+      "weight": 2
+    },
+    {
+      "from": "OmniRoute",
+      "to": "OmniRoute-GitHub",
+      "weight": 3
+    },
+    {
+      "from": "OmniRoute",
+      "to": "Prompt-Cache",
+      "weight": 2
+    },
+    {
+      "from": "OmniRoute",
+      "to": "Token成本控制",
+      "weight": 3
+    },
+    {
+      "from": "OmniRoute",
+      "to": "whichllm",
+      "weight": 2
+    },
+    {
+      "from": "OmniRoute-GitHub",
+      "to": "AI-Infra推理优化-主题",
+      "weight": 2
+    },
+    {
+      "from": "OmniRoute-GitHub",
+      "to": "Agentic-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "OmniRoute-GitHub",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "OmniRoute-GitHub",
+      "to": "Cursor",
+      "weight": 2
+    },
+    {
+      "from": "OmniRoute-GitHub",
+      "to": "MCP",
+      "weight": 2
+    },
+    {
+      "from": "OmniRoute-GitHub",
+      "to": "OmniRoute",
+      "weight": 2
+    },
+    {
+      "from": "OmniRoute-GitHub",
+      "to": "Prompt-Cache",
+      "weight": 2
+    },
+    {
+      "from": "OmniRoute-GitHub",
+      "to": "Token成本控制",
       "weight": 2
     },
     {
@@ -6920,6 +7575,51 @@
       "weight": 2
     },
     {
+      "from": "Project-NOMAD",
+      "to": "OmniRoute",
+      "weight": 2
+    },
+    {
+      "from": "Project-NOMAD",
+      "to": "Project-NOMAD-GitHub",
+      "weight": 3
+    },
+    {
+      "from": "Project-NOMAD",
+      "to": "RAG",
+      "weight": 3
+    },
+    {
+      "from": "Project-NOMAD",
+      "to": "whichllm",
+      "weight": 2
+    },
+    {
+      "from": "Project-NOMAD-GitHub",
+      "to": "AI-Infra推理优化-主题",
+      "weight": 2
+    },
+    {
+      "from": "Project-NOMAD-GitHub",
+      "to": "OmniRoute",
+      "weight": 2
+    },
+    {
+      "from": "Project-NOMAD-GitHub",
+      "to": "Project-NOMAD",
+      "weight": 2
+    },
+    {
+      "from": "Project-NOMAD-GitHub",
+      "to": "RAG",
+      "weight": 2
+    },
+    {
+      "from": "Project-NOMAD-GitHub",
+      "to": "whichllm",
+      "weight": 2
+    },
+    {
       "from": "Prompt-Cache",
       "to": "Anthropic",
       "weight": 3
@@ -6950,6 +7650,11 @@
       "weight": 2
     },
     {
+      "from": "Prompt-Cache",
+      "to": "为什么大模型的缓存命中率能到90-Percent",
+      "weight": 2
+    },
+    {
       "from": "Prompt评估体系",
       "to": "AI Evals的一些实践：如何从 0 到 1 构建 agent 的评测系统？",
       "weight": 1
@@ -6957,6 +7662,11 @@
     {
       "from": "Prompt评估体系",
       "to": "AI-Agent-Skill-测评方案及落地实践",
+      "weight": 1
+    },
+    {
+      "from": "Prompt评估体系",
+      "to": "Agent 评测：方法论与体系设计",
       "weight": 1
     },
     {
@@ -7022,6 +7732,16 @@
     {
       "from": "RAG",
       "to": "OpenClaw-双源记忆系统",
+      "weight": 2
+    },
+    {
+      "from": "RAG",
+      "to": "Project-NOMAD",
+      "weight": 3
+    },
+    {
+      "from": "RAG",
+      "to": "Project-NOMAD-GitHub",
       "weight": 2
     },
     {
@@ -7236,6 +7956,16 @@
     },
     {
       "from": "Skill开发最佳实践",
+      "to": "AI-Agent的Skill系统设计",
+      "weight": 1
+    },
+    {
+      "from": "Skill开发最佳实践",
+      "to": "Agent-Skill",
+      "weight": 1
+    },
+    {
+      "from": "Skill开发最佳实践",
       "to": "Claude-Code-Skills-完全指南",
       "weight": 1
     },
@@ -7247,6 +7977,11 @@
     {
       "from": "Skill开发最佳实践",
       "to": "Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "Skill开发最佳实践",
+      "to": "Harness工程之道-Skill原理与最佳实践",
       "weight": 1
     },
     {
@@ -7475,6 +8210,76 @@
       "weight": 2
     },
     {
+      "from": "Tutti",
+      "to": "Agentic-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Tutti",
+      "to": "Claude-Code",
+      "weight": 3
+    },
+    {
+      "from": "Tutti",
+      "to": "Harness-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "Tutti",
+      "to": "Multica",
+      "weight": 3
+    },
+    {
+      "from": "Tutti",
+      "to": "OpenClaw",
+      "weight": 4
+    },
+    {
+      "from": "Tutti",
+      "to": "Tutti-GitHub",
+      "weight": 2
+    },
+    {
+      "from": "Tutti-GitHub",
+      "to": "Agentic-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Tutti-GitHub",
+      "to": "Agentic-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "Tutti-GitHub",
+      "to": "Agent架构演进-主题",
+      "weight": 2
+    },
+    {
+      "from": "Tutti-GitHub",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "Tutti-GitHub",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Tutti-GitHub",
+      "to": "Multica",
+      "weight": 3
+    },
+    {
+      "from": "Tutti-GitHub",
+      "to": "OpenClaw",
+      "weight": 2
+    },
+    {
+      "from": "Tutti-GitHub",
+      "to": "Tutti",
+      "weight": 2
+    },
+    {
       "from": "claude-mem",
       "to": "Agent-Memory",
       "weight": 2
@@ -7615,6 +8420,151 @@
       "weight": 2
     },
     {
+      "from": "oh-my-claudecode",
+      "to": "Agent-Skill",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-claudecode",
+      "to": "Agentic-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-claudecode",
+      "to": "Claude-Code",
+      "weight": 3
+    },
+    {
+      "from": "oh-my-claudecode",
+      "to": "Cursor",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-claudecode",
+      "to": "Harness-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "oh-my-claudecode",
+      "to": "oh-my-claudecode-GitHub",
+      "weight": 3
+    },
+    {
+      "from": "oh-my-claudecode",
+      "to": "oh-my-pi",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-claudecode-GitHub",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-claudecode-GitHub",
+      "to": "Agent-Skill",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-claudecode-GitHub",
+      "to": "Agentic-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-claudecode-GitHub",
+      "to": "Agentic-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-claudecode-GitHub",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-claudecode-GitHub",
+      "to": "Claude-Code源码解析-主题",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-claudecode-GitHub",
+      "to": "Cursor",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-claudecode-GitHub",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-claudecode-GitHub",
+      "to": "oh-my-claudecode",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-pi",
+      "to": "Agentic-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-pi",
+      "to": "Claude-Code",
+      "weight": 3
+    },
+    {
+      "from": "oh-my-pi",
+      "to": "Harness-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "oh-my-pi",
+      "to": "MCP",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-pi",
+      "to": "oh-my-claudecode",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-pi",
+      "to": "oh-my-pi-GitHub",
+      "weight": 3
+    },
+    {
+      "from": "oh-my-pi-GitHub",
+      "to": "Agentic-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-pi-GitHub",
+      "to": "Agentic-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-pi-GitHub",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-pi-GitHub",
+      "to": "Claude-Code源码解析-主题",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-pi-GitHub",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-pi-GitHub",
+      "to": "MCP",
+      "weight": 2
+    },
+    {
+      "from": "oh-my-pi-GitHub",
+      "to": "oh-my-pi",
+      "weight": 2
+    },
+    {
       "from": "sso-cli",
       "to": "Agent-Skill-Auth",
       "weight": 1
@@ -7656,6 +8606,11 @@
     },
     {
       "from": "vLLM",
+      "to": "为什么大模型的缓存命中率能到90-Percent",
+      "weight": 2
+    },
+    {
+      "from": "vLLM",
       "to": "拆解大模型几项核心操作背后的数学与 Infra 优化逻辑",
       "weight": 2
     },
@@ -7682,6 +8637,46 @@
     {
       "from": "wechat-cli-源码剖析",
       "to": "wechat-cli",
+      "weight": 2
+    },
+    {
+      "from": "whichllm",
+      "to": "KV-Cache",
+      "weight": 3
+    },
+    {
+      "from": "whichllm",
+      "to": "OmniRoute",
+      "weight": 2
+    },
+    {
+      "from": "whichllm",
+      "to": "vLLM",
+      "weight": 3
+    },
+    {
+      "from": "whichllm",
+      "to": "whichllm-GitHub",
+      "weight": 3
+    },
+    {
+      "from": "whichllm-GitHub",
+      "to": "AI-Infra推理优化-主题",
+      "weight": 2
+    },
+    {
+      "from": "whichllm-GitHub",
+      "to": "KV-Cache",
+      "weight": 2
+    },
+    {
+      "from": "whichllm-GitHub",
+      "to": "vLLM",
+      "weight": 2
+    },
+    {
+      "from": "whichllm-GitHub",
+      "to": "whichllm",
       "weight": 2
     },
     {
@@ -7880,6 +8875,31 @@
       "weight": 1
     },
     {
+      "from": "万字长文推演Claude的代码统治力从何而来",
+      "to": "AI可观测性",
+      "weight": 2
+    },
+    {
+      "from": "万字长文推演Claude的代码统治力从何而来",
+      "to": "Anthropic",
+      "weight": 2
+    },
+    {
+      "from": "万字长文推演Claude的代码统治力从何而来",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "万字长文推演Claude的代码统治力从何而来",
+      "to": "Claude-Code源码解析-主题",
+      "weight": 2
+    },
+    {
+      "from": "万字长文推演Claude的代码统治力从何而来",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
       "from": "业务逻辑的坍塌-当应用层只剩下胶水代码",
       "to": "Claude-Code",
       "weight": 2
@@ -7893,6 +8913,31 @@
       "from": "串讲LLM和Agent的核心原理以及各种术语",
       "to": "OpenClaw",
       "weight": 1
+    },
+    {
+      "from": "为什么大模型的缓存命中率能到90-Percent",
+      "to": "AI-Infra推理优化-主题",
+      "weight": 2
+    },
+    {
+      "from": "为什么大模型的缓存命中率能到90-Percent",
+      "to": "KV-Cache",
+      "weight": 3
+    },
+    {
+      "from": "为什么大模型的缓存命中率能到90-Percent",
+      "to": "Prompt-Cache",
+      "weight": 3
+    },
+    {
+      "from": "为什么大模型的缓存命中率能到90-Percent",
+      "to": "Token成本控制",
+      "weight": 2
+    },
+    {
+      "from": "为什么大模型的缓存命中率能到90-Percent",
+      "to": "vLLM",
+      "weight": 2
     },
     {
       "from": "从0到1搭建Agent-原理分析及个人助手实践",
@@ -8697,6 +9742,46 @@
     {
       "from": "精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本",
       "to": "去哪儿AI-Coding体系",
+      "weight": 2
+    },
+    {
+      "from": "给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地",
+      "to": "AI可观测性",
+      "weight": 2
+    },
+    {
+      "from": "给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地",
+      "to": "Agent-Skill",
+      "weight": 2
+    },
+    {
+      "from": "给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地",
+      "to": "Generator-Evaluator",
+      "weight": 2
+    },
+    {
+      "from": "给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地",
+      "to": "MCP",
       "weight": 2
     },
     {

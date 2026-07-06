@@ -16,6 +16,7 @@ sources:
   - "[[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]]"
   - "[[AI-Infra入门干货总结-大模型是如何高效推理的]]"
   - "[[万字入门AI-Infra-深入理解大模型中的数学与Infra优化]]"
+  - "[[为什么大模型的缓存命中率能到90-Percent]]"
 related_entities:
   - "[[vLLM]]"
   - "[[Prompt-Cache]]"
@@ -49,6 +50,12 @@ KV-Cache 是模型内部推理机制；[[Prompt-Cache]] 是产品和 API 层对�
 - KV-Cache 关注推理引擎内部的 K/V 张量存储、调度和读取。
 - Prompt Cache 关注 API 或产品层的前缀匹配、计费、过期时间和命中策略。
 - KV-Cache 一般生命周期短，绑定请求或会话；Prompt Cache 可能由服务端做更长时间的前缀复用。
+
+### Prefix Caching 与 90% 命中率
+
+标准 KV-Cache 解决的是“同一次请求生成后续 token 时，不要重算历史 K/V”；Prefix Caching 进一步解决“下一次请求开头与之前完全相同，能不能复用已经算过的前缀 K/V”。Agent 式调用天然适配这个模式：系统提示、工具 schema、Skill 定义和历史对话通常排在前面，每一轮只在末尾追加工具返回和新回复。若一段会话有 `T` 轮、每轮新增量近似相等，累计命中读与新写入的比例可以粗略估为 `(T-1)/(T+1)`，因此 20 轮会话会落到约 90% 命中率。
+
+这个数字不是某家模型的魔法能力，而是“只追加 + 前缀一致”的工作负载结果。它也有反面：中途切换模型、改变工具集、修改系统提示、插入时间戳或把请求轮询到不共享缓存的后端，都会从变动点之后打断缓存链。对 [[Token成本控制]] 来说，稳定前缀、少改工具 schema、绑定单一模型和 cache-aware 路由，比单纯压短 prompt 更关键。
 
 ### vLLM 与 PagedAttention
 
@@ -86,3 +93,4 @@ KV-Cache 管历史 K/V，FlashAttention 管单次 attention 计算如何少写 H
 - [[一文搞懂Token经济学：同样额度多干3倍活，只需理解消耗机制]] —— 从 API 调用和缓存命中解释 KV/Prompt Cache 对成本的影响。
 - [[AI-Infra入门干货总结-大模型是如何高效推理的]] —— vLLM、PagedAttention、KV block 和调度机制。
 - [[万字入门AI-Infra-深入理解大模型中的数学与Infra优化]] —— 大模型推理优化的数学与系统背景。
+- [[为什么大模型的缓存命中率能到90-Percent]] —— Agent 会话中 KV Cache、Prefix Caching、PagedAttention 和 90% 命中率的工程解释。

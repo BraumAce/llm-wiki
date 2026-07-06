@@ -14,6 +14,7 @@ sources:
   - "[[AI-Infra入门干货总结-大模型是如何高效推理的]]"
   - "[[万字入门AI-Infra-深入理解大模型中的数学与Infra优化]]"
   - "[[拆解大模型几项核心操作背后的数学与 Infra 优化逻辑]]"
+  - "[[为什么大模型的缓存命中率能到90-Percent]]"
 related_entities:
   - "[[RAG]]"
   - "[[KV-Cache]]"
@@ -47,6 +48,10 @@ Continuous Batching 则解决了另一个问题：传统 Static Batching 要等�
 
 vLLM 内部用 Flattened 布局管理所有请求的 KV Cache Block，通过 `slot_mapping` 映射逻辑位置到物理位置，`cu_seqlens` 累积序列长度用于请求隔离。
 
+**Automatic Prefix Caching（自动前缀缓存）**：
+
+vLLM 的 APC 把前缀切成定长 block，每个 block 的哈希由父块哈希和本块内容链式生成，用这条哈希链表达完整前缀。缓存块进入哈希表后独立分配、释放和 LRU 淘汰；命中时逐块精确匹配，只复用已经写满的整块。它与 PagedAttention 的 block 化管理相互呼应：PagedAttention 解决 KV 如何更省显存地存放，APC 解决相同前缀如何跨请求命中复用。
+
 **Gumbel-Max Sampling**：
 
 vLLM 的采样实现可以用 Gumbel-Max Trick 把传统 multinomial sampling 的前缀和与查找，改写成 element-wise 噪声生成、向量除法和 `argmax` 规约。这样贪心采样和随机采样的执行流更统一，也更适合超大词表和张量并行下的多卡规约。
@@ -74,3 +79,4 @@ vLLM 的采样实现可以用 Gumbel-Max Trick 把传统 multinomial sampling �
 - [[AI-Infra入门干货总结-大模型是如何高效推理的]] —— vLLM 源码深度解读
 - [[万字入门AI-Infra-深入理解大模型中的数学与Infra优化]] —— 大模型核心操作的数学原理
 - [[拆解大模型几项核心操作背后的数学与 Infra 优化逻辑]] —— RMSNorm、Online Softmax、FlashAttention、Gumbel-Max 等数学与 Kernel 优化逻辑
+- [[为什么大模型的缓存命中率能到90-Percent]] —— Prefix Caching、vLLM APC、PagedAttention 与 Agent 会话缓存命中率解释

@@ -8,6 +8,7 @@ sources:
   - "[[深入解析Chromium的AI-Coding开发体系]]"
   - "[[AI-Agent-Skill-测评方案及落地实践]]"
   - "[[AI Evals的一些实践：如何从 0 到 1 构建 agent 的评测系统？]]"
+  - "[[Agent 评测：方法论与体系设计]]"
 related_entities: [Prompt分层组合架构, Context-Engineering, AI可观测性, Generator-Evaluator, Harness-Engineering]
 related_topics: []
 ---
@@ -135,6 +136,8 @@ Agent/Skill 测评三类评分器：
 
 基线方法也更接近软件回归测试：先执行一次真实用例，人工确认其过程和结果可接受后，把工具调用序列、报告、输出文件、耗时与 Token 固化成快照。后续每次变更都和基线对比，判断是否退化。这让 Prompt 评估从"场景样例打分"变成可进 CI 的回归系统。
 
+阿里技术的 Agent 评测体系进一步强调按 Agent 类型定义侧重：对话 Agent 不能只平均每轮得分，而要同时看 Turn、Session、Trace、Outcome；大量依赖 Skill 的系统，还要把 Skill 触发条件、流程正确性、工具参数、产物质量和异常降级纳入评测。评分结果也必须回到“反馈生产”，把线上失败沉淀为用例库、Trace 库、根因标签库、修复建议库、Judge 校准集和回归集。
+
 ### 行业实践
 
 **Chromium的评估实践**：
@@ -159,3 +162,9 @@ Agent/Skill 测评三类评分器：
 - 先用 10 个黄金 case 做人工打分和 LLM-as-Judge 对齐
 - 生产评测集扩到 100-500 条，并用 bad case 反推 prompt / few-shot / 模型路由
 - 评分器的可信度优先于样本规模，没校准过的评分器“跑一万个 case 也没用”
+
+**阿里技术的 Agent 评测体系**：
+- 按 Agent 类型拆分评测重点，而不是用一套万能指标评所有系统
+- 用 Trace、Scorer、报告和根因归类复用底层评测骨架
+- 发布阶段联动离线质量、线上体验和业务结果三类信号
+- 对 badcase 做入库门槛和样本治理，避免回归集无限膨胀

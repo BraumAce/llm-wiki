@@ -20,6 +20,7 @@ related_entities:
   - "[[Cua]]"
   - "[[RMUX]]"
   - "[[Multica]]"
+  - "[[Tutti]]"
   - "[[去哪儿AI-Coding体系]]"
   - "[[oh-my-pi]]"
   - "[[oh-my-claudecode]]"
@@ -38,6 +39,7 @@ sources:
   - "[[Cua-GitHub]]"
   - "[[RMUX-GitHub]]"
   - "[[multica-ai-GitHub]]"
+  - "[[Tutti-GitHub]]"
   - "[[精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本]]"
   - "[[Loop Engineering 概念解析、思考与实践]]"
   - "[[聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔]]"
@@ -80,6 +82,8 @@ Agentic Engineering 涵盖从"Vibe Coding"（借助 AI 快速生成代码片段�
 
 13. **Agentic Engineering 的运行面继续外扩**：[[oh-my-pi]] 把 IDE、调试器、浏览器、PR/issue 和子代理都纳入终端 agent surface；[[oh-my-claudecode]] 把 Claude Code 会话升级成 Team pipeline 与 skill 工作流；[[OmniRoute]] 则把 provider、quota、fallback、compression 和 MCP/A2A 放到统一 gateway 中治理。
 
+14. **多 Agent 协作开始从“交接文档”走向“共享工作空间”**：[[Multica]] 把 coding agents 管成 issue/squad/runtime，[[Tutti]] 则把 Claude Code、Codex、应用产物、文件、任务和运行状态放进本地优先的实时共享桌面。二者都在说明：Agentic Engineering 的下一个瓶颈不是单 Agent 会不会执行，而是状态、产物、权限、任务和上下文如何被多个 Agent 安全共享。
+
 ## 涉及实体
 
 - [[Agentic-Engineering]] —— 核心概念实体，定义了"人与 AI Agent 协作"的范式框架
@@ -93,6 +97,7 @@ Agentic Engineering 涵盖从"Vibe Coding"（借助 AI 快速生成代码片段�
 - [[Cua]] —— Agent 的桌面、沙箱和 computer-use benchmark 基础设施
 - [[RMUX]] —— Agent 的终端/TUI 会话持久化和 Claude teammate mode 运行层
 - [[Multica]] —— 把 coding agents 管理为可分配任务、跟踪进度的团队成员
+- [[Tutti]] —— 本地优先的 Agent-Agent 实时共享工作空间，强调上下文、文件、应用、任务和运行状态流转
 - [[去哪儿AI-Coding体系]] —— 组织级 AI Coding 的数据、分级、Harness 和 Skills 治理样本
 - [[oh-my-pi]] —— 完整终端 AI Coding Agent surface，补 LSP/DAP、Hashline、subagent 与协作层
 - [[oh-my-claudecode]] —— Claude Code 多代理/技能编排层，补 Team、tmux workers、HUD 与通知
@@ -119,6 +124,7 @@ Agentic Engineering 涵盖从"Vibe Coding"（借助 AI 快速生成代码片段�
 - [[面向Skills编程-淘宝企业购端对端研发提效实践]] —— 从 Vibe Coding 到面向 Skills 编程的组织级实践
 - [[Loop Engineering 概念解析、思考与实践]] —— Agent Loop 与 Loop Engineering 的边界、实践和适用条件
 - [[Cua-GitHub]]、[[RMUX-GitHub]]、[[multica-ai-GitHub]] —— Agent 运行时从桌面、终端到任务平台的基础设施补全
+- [[Tutti-GitHub]] —— 本地优先桌面共享工作空间，把多 Agent handoff 从人肉复述推进到对象级引用和产物流转
 - [[精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本]] —— 组织级 AI Coding 自动化分级、度量与平台化落地
 - [[聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔]] —— Claude Code 生成 Redis Set 复刻后的人工审查案例，补充源码阅读、数据结构验证和端到端测试视角
 - [[oh-my-pi-GitHub]]、[[oh-my-claudecode-GitHub]]、[[OmniRoute-GitHub]] —— 分别补充开放 coding agent surface、Claude Code 编排发行版和多 provider gateway 视角

@@ -13,6 +13,7 @@ related_entities:
   - "[[OpenClaw-SandBox]]"
   - "[[Agent-Memory]]"
   - "[[Harness-Engineering]]"
+  - "[[Tutti]]"
 sources:
   - "[[Agent核心技术概念与范式发生了哪些演变]]"
   - "[[从0开发大模型的17种Agent架构演进详细拆解]]"
@@ -31,6 +32,7 @@ sources:
   - "[[Agent-Skills-Teams架构演进过程及技术选型之道]]"
   - "[[业务逻辑的坍塌-当应用层只剩下胶水代码]]"
   - "[[AI-Agent在保险业务的落地实践]]"
+  - "[[Tutti-GitHub]]"
 ---
 
 # Agent 架构演进主题
@@ -48,6 +50,7 @@ Agent 架构演进涵盖 AI 智能体从简单的"一问一答"到复杂的"自�
 5. **从一问一答到自主执行的鸿沟**：定时任务、高可用、统一管理、权限、可观测——这些"无聊的工程问题"才是 Agent 走向生产的关键瓶颈
 6. **上下文编排 vs 流程编排**：Agent Room 协作模式让多个角色在同一上下文场中交互，形成涌现式集体判断
 7. **OpenClaw 的 16 大模块是完整的工程参考**：覆盖了 Agent 工程的所有关键维度
+8. **多 Agent 架构需要共享工作空间而不只是消息传递**：[[Tutti]] 把多个 Agent 的对话、文件、任务、应用产物和运行状态放在同一个实时桌面空间中，说明 Agent 架构演进正在从 ReAct / Planner / Tool Loop 扩展到跨 Agent 状态共享、产物流转和协作边界设计。
 
 ## 涉及实体
 
@@ -56,6 +59,7 @@ Agent 架构演进涵盖 AI 智能体从简单的"一问一答"到复杂的"自�
 - [[OpenClaw-SandBox]] —— 安全隔离子系统
 - [[Agent-Memory]] —— Agent 记忆系统
 - [[Harness-Engineering]] —— Agent 从"能跑"到"可靠"的框架
+- [[Tutti]] —— Agent-Agent 实时共享工作空间，补多 Agent handoff 与产物引用层
 
 ## 对比矩阵
 
@@ -70,3 +74,4 @@ Agent 架构演进涵盖 AI 智能体从简单的"一问一答"到复杂的"自�
 - [[从0开发大模型的17种Agent架构演进详细拆解]] —— 17种架构完整拆解
 - [[Agent核心技术概念与范式发生了哪些演变]] —— 范式演变梳理
 - [[从0到1搭建Agent-原理分析及个人助手实践]] —— 从零搭建指南
+- [[Tutti-GitHub]] —— 多 Agent 共享工作空间和本地优先桌面架构样本
