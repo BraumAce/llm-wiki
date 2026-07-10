@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-06T23:51:05+08:00",
+  "generated_at": "2026-07-10T23:12:15+08:00",
   "wiki_dir": "/Users/liuguang/Documents/Private/llm-wiki/ai-wiki/wiki",
   "stats": {
-    "nodes": 288,
-    "edges": 1356,
-    "edge_weight_total": 2500,
+    "nodes": 294,
+    "edges": 1406,
+    "edge_weight_total": 2598,
     "orphan_links": [],
     "by_type": {
       "entity": 86,
       "topic": 9,
-      "source": 193
+      "source": 199
     }
   },
   "nodes": [
@@ -1427,6 +1427,18 @@
       ]
     },
     {
+      "id": "Claude-Code-Skills的技术实现和运行方式",
+      "type": "source",
+      "title": "Claude Code Skills 的技术实现和运行方式",
+      "tags": [
+        "claude-code",
+        "agent-skill",
+        "progressive-disclosure",
+        "allowed-tools",
+        "skill-security"
+      ]
+    },
+    {
       "id": "Claude-Code-一篇带你从入门到精通",
       "type": "source",
       "title": "Claude Code 一篇带你从入门到精通",
@@ -1678,6 +1690,18 @@
       ]
     },
     {
+      "id": "Harness工程实践-如何让Agent完成自主迭代",
+      "type": "source",
+      "title": "Harness 工程实践：如何让 Agent 完成自主迭代",
+      "tags": [
+        "harness-engineering",
+        "agent-evaluation",
+        "champion-challenger",
+        "reward-hacking",
+        "subagent"
+      ]
+    },
+    {
       "id": "Harness的尽头不是缰绳是镜子",
       "type": "source",
       "title": "Harness的尽头不是缰绳是镜子",
@@ -1707,6 +1731,18 @@
         "agent-loop",
         "human-in-the-loop",
         "skill"
+      ]
+    },
+    {
+      "id": "Loop-Engineering实战-实现从日志扫描到预发部署的全自主闭环",
+      "type": "source",
+      "title": "Loop Engineering 实战：实现从日志扫描到预发部署的全自主闭环",
+      "tags": [
+        "loop-engineering",
+        "observability",
+        "automation",
+        "verification",
+        "worktree"
       ]
     },
     {
@@ -2181,6 +2217,18 @@
       ]
     },
     {
+      "id": "一文读懂Harness-Engineering",
+      "type": "source",
+      "title": "一文读懂 Harness Engineering！",
+      "tags": [
+        "harness-engineering",
+        "long-running-agents",
+        "context-reset",
+        "external-memory",
+        "verification"
+      ]
+    },
+    {
       "id": "一篇搞懂-AI-Coding-Agent的Token成本控制",
       "type": "source",
       "title": "一篇搞懂 AI Coding Agent 的 Token 成本控制",
@@ -2322,6 +2370,30 @@
         "backend-development",
         "ai-assisted-development",
         "workflow-automation"
+      ]
+    },
+    {
+      "id": "从Vibe-Coding到Harness-一套大仓AI工程化实战",
+      "type": "source",
+      "title": "从 Vibe Coding 到 Harness：一套大仓 AI 工程化实战",
+      "tags": [
+        "harness-engineering",
+        "spec-driven-development",
+        "multi-repo",
+        "workflow",
+        "mcp"
+      ]
+    },
+    {
+      "id": "从分布式架构到AI架构面试题",
+      "type": "source",
+      "title": "从分布式架构到 AI 架构面试题",
+      "tags": [
+        "claude-code",
+        "harness-engineering",
+        "system-design",
+        "hooks",
+        "agent-architecture"
       ]
     },
     {
@@ -3641,6 +3713,11 @@
     },
     {
       "from": "AI-Skill体系-主题",
+      "to": "Claude-Code-Skills的技术实现和运行方式",
+      "weight": 1
+    },
+    {
+      "from": "AI-Skill体系-主题",
       "to": "Claude-Code-工程师亲授-OpenClaw-调教指南-Skills的工程化心法",
       "weight": 1
     },
@@ -4227,6 +4304,11 @@
     {
       "from": "Agent-Skill",
       "to": "AI-Agent的Skill系统设计",
+      "weight": 2
+    },
+    {
+      "from": "Agent-Skill",
+      "to": "Claude-Code-Skills的技术实现和运行方式",
       "weight": 2
     },
     {
@@ -4821,6 +4903,11 @@
     },
     {
       "from": "Agent评测方法论",
+      "to": "Harness工程实践-如何让Agent完成自主迭代",
+      "weight": 1
+    },
+    {
+      "from": "Agent评测方法论",
       "to": "Prompt评估体系",
       "weight": 2
     },
@@ -4911,6 +4998,11 @@
     },
     {
       "from": "Claude-Code",
+      "to": "Claude-Code-Skills的技术实现和运行方式",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code",
       "to": "Claude-Code-源码拆解-从启动到多Agent扩展层",
       "weight": 1
     },
@@ -4976,6 +5068,11 @@
     },
     {
       "from": "Claude-Code",
+      "to": "从分布式架构到AI架构面试题",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code",
       "to": "你不知道的-Claude-Code-架构治理与工程实践",
       "weight": 1
     },
@@ -5027,6 +5124,36 @@
     {
       "from": "Claude-Code-Skills-完全指南",
       "to": "OpenClaw-Skills",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-Skills的技术实现和运行方式",
+      "to": "AI-Skill体系-主题",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-Skills的技术实现和运行方式",
+      "to": "Agent-Skill",
+      "weight": 3
+    },
+    {
+      "from": "Claude-Code-Skills的技术实现和运行方式",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-Skills的技术实现和运行方式",
+      "to": "Claude-Code源码解析-主题",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-Skills的技术实现和运行方式",
+      "to": "MCP",
+      "weight": 2
+    },
+    {
+      "from": "Claude-Code-Skills的技术实现和运行方式",
+      "to": "Progressive-Disclosure",
       "weight": 2
     },
     {
@@ -5122,6 +5249,11 @@
     {
       "from": "Claude-Code源码解析-主题",
       "to": "Claude-Code-Skills-完全指南",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "Claude-Code-Skills的技术实现和运行方式",
       "weight": 1
     },
     {
@@ -5222,6 +5354,11 @@
     {
       "from": "Claude-Code源码解析-主题",
       "to": "从IDE到Terminal-适合后端宝宝体质的Claude-Code工作流",
+      "weight": 1
+    },
+    {
+      "from": "Claude-Code源码解析-主题",
+      "to": "从分布式架构到AI架构面试题",
       "weight": 1
     },
     {
@@ -5656,6 +5793,11 @@
     },
     {
       "from": "Harness-Engineering",
+      "to": "Context-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering",
       "to": "Credential-Brokering",
       "weight": 1
     },
@@ -5696,6 +5838,11 @@
     },
     {
       "from": "Harness-Engineering",
+      "to": "Harness工程实践-如何让Agent完成自主迭代",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
       "to": "Harness的尽头不是缰绳是镜子",
       "weight": 1
     },
@@ -5707,6 +5854,11 @@
     {
       "from": "Harness-Engineering",
       "to": "Loop-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "Loop-Engineering实战-实现从日志扫描到预发部署的全自主闭环",
       "weight": 2
     },
     {
@@ -5746,12 +5898,22 @@
     },
     {
       "from": "Harness-Engineering",
+      "to": "一文读懂Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
       "to": "万字干货-Harness-Engineering如何工程化落地",
       "weight": 1
     },
     {
       "from": "Harness-Engineering",
       "to": "从Prompt-Context到Harness-工程的三次进化与终局之战",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "从Vibe-Coding到Harness-一套大仓AI工程化实战",
       "weight": 2
     },
     {
@@ -5896,6 +6058,11 @@
     },
     {
       "from": "Harness-Engineering-主题",
+      "to": "Harness工程实践-如何让Agent完成自主迭代",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
       "to": "Harness的尽头不是缰绳是镜子",
       "weight": 1
     },
@@ -5913,6 +6080,11 @@
       "from": "Harness-Engineering-主题",
       "to": "Loop-Engineering",
       "weight": 3
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "Loop-Engineering实战-实现从日志扫描到预发部署的全自主闭环",
+      "weight": 1
     },
     {
       "from": "Harness-Engineering-主题",
@@ -5961,8 +6133,18 @@
     },
     {
       "from": "Harness-Engineering-主题",
+      "to": "一文读懂Harness-Engineering",
+      "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
       "to": "从Prompt-Context到Harness-工程的三次进化与终局之战",
       "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "从Vibe-Coding到Harness-一套大仓AI工程化实战",
+      "weight": 1
     },
     {
       "from": "Harness-Engineering-主题",
@@ -6202,6 +6384,36 @@
     {
       "from": "Harness工程之道-Skill原理与最佳实践",
       "to": "Skill开发最佳实践",
+      "weight": 2
+    },
+    {
+      "from": "Harness工程实践-如何让Agent完成自主迭代",
+      "to": "Agent-Skill",
+      "weight": 2
+    },
+    {
+      "from": "Harness工程实践-如何让Agent完成自主迭代",
+      "to": "Agent评测方法论",
+      "weight": 2
+    },
+    {
+      "from": "Harness工程实践-如何让Agent完成自主迭代",
+      "to": "Generator-Evaluator",
+      "weight": 2
+    },
+    {
+      "from": "Harness工程实践-如何让Agent完成自主迭代",
+      "to": "Harness-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "Harness工程实践-如何让Agent完成自主迭代",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "Harness工程实践-如何让Agent完成自主迭代",
+      "to": "Loop-Engineering",
       "weight": 2
     },
     {
@@ -6576,6 +6788,11 @@
     },
     {
       "from": "Loop-Engineering",
+      "to": "Loop-Engineering实战-实现从日志扫描到预发部署的全自主闭环",
+      "weight": 2
+    },
+    {
+      "from": "Loop-Engineering",
       "to": "Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统",
       "weight": 2
     },
@@ -6618,6 +6835,31 @@
       "from": "Loop-Engineering",
       "to": "重磅！Loop Engineering 实操手册公开",
       "weight": 2
+    },
+    {
+      "from": "Loop-Engineering实战-实现从日志扫描到预发部署的全自主闭环",
+      "to": "AI可观测性",
+      "weight": 2
+    },
+    {
+      "from": "Loop-Engineering实战-实现从日志扫描到预发部署的全自主闭环",
+      "to": "Generator-Evaluator",
+      "weight": 2
+    },
+    {
+      "from": "Loop-Engineering实战-实现从日志扫描到预发部署的全自主闭环",
+      "to": "Harness-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "Loop-Engineering实战-实现从日志扫描到预发部署的全自主闭环",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "Loop-Engineering实战-实现从日志扫描到预发部署的全自主闭环",
+      "to": "Loop-Engineering",
+      "weight": 3
     },
     {
       "from": "Loop-Engineering实践指南-在CodeBuddy中构建自主循环系统",
@@ -8820,6 +9062,31 @@
       "weight": 2
     },
     {
+      "from": "一文读懂Harness-Engineering",
+      "to": "Agent-Skill",
+      "weight": 2
+    },
+    {
+      "from": "一文读懂Harness-Engineering",
+      "to": "Claude-Code",
+      "weight": 2
+    },
+    {
+      "from": "一文读懂Harness-Engineering",
+      "to": "Context-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "一文读懂Harness-Engineering",
+      "to": "Harness-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "一文读懂Harness-Engineering",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
       "from": "一篇搞懂-AI-Coding-Agent的Token成本控制",
       "to": "CodeBuddy",
       "weight": 2
@@ -8997,6 +9264,61 @@
     {
       "from": "从RAG到GraphRAG-货拉拉元数据检索应用实践",
       "to": "RAG",
+      "weight": 2
+    },
+    {
+      "from": "从Vibe-Coding到Harness-一套大仓AI工程化实战",
+      "to": "Agent-Skill",
+      "weight": 2
+    },
+    {
+      "from": "从Vibe-Coding到Harness-一套大仓AI工程化实战",
+      "to": "Harness-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "从Vibe-Coding到Harness-一套大仓AI工程化实战",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "从Vibe-Coding到Harness-一套大仓AI工程化实战",
+      "to": "Loop-Engineering",
+      "weight": 2
+    },
+    {
+      "from": "从Vibe-Coding到Harness-一套大仓AI工程化实战",
+      "to": "Spec-Driven-Development",
+      "weight": 2
+    },
+    {
+      "from": "从分布式架构到AI架构面试题",
+      "to": "Agent-Skill",
+      "weight": 2
+    },
+    {
+      "from": "从分布式架构到AI架构面试题",
+      "to": "Claude-Code",
+      "weight": 3
+    },
+    {
+      "from": "从分布式架构到AI架构面试题",
+      "to": "Claude-Code源码解析-主题",
+      "weight": 2
+    },
+    {
+      "from": "从分布式架构到AI架构面试题",
+      "to": "Harness-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "从分布式架构到AI架构面试题",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "从分布式架构到AI架构面试题",
+      "to": "MCP",
       "weight": 2
     },
     {

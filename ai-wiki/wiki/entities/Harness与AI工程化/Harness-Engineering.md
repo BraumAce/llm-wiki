@@ -43,6 +43,10 @@ sources:
   - "[[开启Harness-Engineering探索之旅]]"
   - "[[给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地]]"
   - "[[Agent 评测：方法论与体系设计]]"
+  - "[[从Vibe-Coding到Harness-一套大仓AI工程化实战]]"
+  - "[[Loop-Engineering实战-实现从日志扫描到预发部署的全自主闭环]]"
+  - "[[Harness工程实践-如何让Agent完成自主迭代]]"
+  - "[[一文读懂Harness-Engineering]]"
 related_entities:
   - "[[OpenClaw]]"
   - "[[Loop-Engineering]]"
@@ -164,6 +168,14 @@ Harness Engineering 的理念可以扩展到 Agent 评测领域。阿里团队�
 
 这说明 Harness 的目标不是让每次评测出一个更漂亮的分数，而是形成反馈生产：线上失败通过 Trace 归因进入用例库、根因标签库、修复建议库、Judge 校准集和回归集。质量资产越厚，Agent 迭代越不依赖个人经验和临时救火。
 
+### 多团队实践：从一次交付到持续维护与评测优化
+
+腾讯 TAB 的大仓实践补强了 Harness 的**组织与交付边界**：先通过 SPEC 把需求、方案、实现、集成验证拆成有产物的阶段，再让需求、方案、开发、代码审查四个 Agent 只承担各自的认知责任。可判定规范不再停留在 Rule 文本，而是前移为 lint、覆盖率、事务扫描和真实 HTTP 集成测试等脚本证据；MCP 则只在初始化和交付收尾受控地接入需求、文档、代码评审和通知系统。这个案例说明，大仓的 Harness 首先是状态机和责任边界，而不是“多 Agent 数量”。
+
+阿里两篇实践分别把 Harness 延长为**持续维护**与**自主优化**。前者以日志连接器、自动化、工作树、Skill、独立子 Agent 和状态文件构成发现→修复→预发的循环，且把重试限制为三轮；后者把部署和评测变成 Agent 工具，将结果分析委托给子 Agent，并以训练/验证隔离和 champion-challenger 防止 prompt 只对单个 badcase 过拟合。这些案例共同把“Agent 已完成”的判断从模型自述迁移到独立测试、Trace、评测集和对比基线。
+
+长程 Agent 的底层制度也更清晰：[[Context-Engineering]] 解决信息存取和压缩，但不能保证 Agent 会读取、遵循和验证；Harness 还必须以机器可读任务清单、每轮唤醒步骤、Git 可恢复历史与 Context Reset 控制提前交卷、虚标完成和 session 失忆。因此，结构化状态和可验证完成条件优先于继续堆叠 prompt。
+
 ### 局限与争议
 
 - **过度工程化风险**：Harness 过厚会降低开发速度，"合适厚度"需要团队自己摸索
@@ -202,3 +214,7 @@ Harness Engineering 的理念可以扩展到 Agent 评测领域。阿里团队�
 - [[开启Harness-Engineering探索之旅]] —— 腾讯技术工程，展示 P1-P6 研发交付、线上运营、知识库长期记忆和可观测性指标如何组成生产级 Harness
 - [[给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地]] —— 阿里云开发者，用悟空 AI 招聘说明全能 Agent 到 2 Agent + N Skill + Workspace + Linter 护栏的架构迁移
 - [[Agent 评测：方法论与体系设计]] —— 阿里技术，把 Agent 评测拆成类型侧重、Trace、Scorer、线上灰度和反馈生产闭环
+- [[从Vibe-Coding到Harness-一套大仓AI工程化实战]] —— 腾讯 TAB，SPEC、4 个 Agent、13 阶段、脚本门禁与 MCP 交付闭环
+- [[Loop-Engineering实战-实现从日志扫描到预发部署的全自主闭环]] —— 阿里云开发者，日志发现、独立验证、预发与状态沉淀的持续维护 Loop
+- [[Harness工程实践-如何让Agent完成自主迭代]] —— 阿里技术，父子 Agent、评测隔离与 champion-challenger 防止 reward hacking
+- [[一文读懂Harness-Engineering]] —— 腾讯云开发者，长程 Agent 的结构化状态、唤醒、回滚与 Context Reset

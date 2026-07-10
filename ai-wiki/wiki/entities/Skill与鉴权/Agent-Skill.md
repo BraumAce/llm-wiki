@@ -14,6 +14,7 @@ tags:
 sources:
   - "[[AI-Agent的Skill系统设计]]"
   - "[[Harness工程之道-Skill原理与最佳实践]]"
+  - "[[Claude-Code-Skills的技术实现和运行方式]]"
 related_entities:
   - "[[OpenClaw-Skills]]"
   - "[[Harness-Engineering]]"
@@ -50,6 +51,12 @@ Agent-Skill 出现在 Prompt 工程遇到两类瓶颈之后：一是项目规则
 
 Skill 的自由度要匹配任务风险。写技术文章可以给较高自由度，用原则和示例引导；内部指标查询适合中自由度，用字段说明和 SQL 模板控制口径；PDF 转换、固定报告生成、外部消息发送等脆弱操作适合低自由度，用脚本、白名单和硬门控约束。门控的意义不是语气更严厉，而是在条件满足前明确禁止下一步动作，把自然语言建议变成执行边界。
 
+### Claude Code 中的发现、加载与可信边界
+
+Claude Code 的实现说明让三层结构获得了可运行的解释：文件系统 Skill 标准形态是 `<skill-name>/SKILL.md`，用户级、项目级、managed、bundled、Plugin 和 MCP 都可提供来源；会话启动时系统只用 `name`、`description`、`when_to_use` 等元数据供模型判断，真正命中或显式调用后才渲染正文、展开参数与路径变量。因而 Skill 的渐进披露不是写作偏好，而是由发现索引、调用时渲染和 supporting files 三个时点共同实现的上下文预算策略。
+
+安全边界同样应随来源变化：动态上下文命令只适合收集只读材料，不能替代真实操作；远端 MCP Skill 不执行内嵌 shell，防止远程返回的内容变成本机代码执行。本地第三方 Skill 也要审查脚本与参考资料，并以 `allowed-tools` 收窄权限。这个机制说明 Skill 的风险不只在“description 是否命中”，也在命中后到底让 Agent 获得了哪些预处理和工具能力。
+
 ### 应用 / 使用场景
 
 - **AI Coding 工作流**：封装代码审查、需求澄清、PR 处理、测试生成、迁移改造等重复流程。
@@ -77,3 +84,4 @@ Skill 的自由度要匹配任务风险。写技术文章可以给较高自由�
 
 - [[AI-Agent的Skill系统设计]] —— 大淘宝技术，从行为编程、上下文预算、资源分层、门控和前向测试角度系统定义 Skill。
 - [[Harness工程之道-Skill原理与最佳实践]] —— 阿里云开发者，以 trade-ab-skill 为例说明 Skill 的结构、触发机制、作用域优先级、工具隔离、脚本增强和观测迭代。
+- [[Claude-Code-Skills的技术实现和运行方式]] —— JavaGuide，补充 Skill 来源、延迟渲染、supporting files、动态上下文与 MCP shell 安全边界。

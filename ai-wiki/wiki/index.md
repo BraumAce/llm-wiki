@@ -8,8 +8,8 @@ date: 2026-06-03
 
 ## 状态
 
-- 实体数：86 ｜ 主题数：9 ｜ 来源数：193
-- 最后更新：2026-07-06
+- 实体数：86 ｜ 主题数：9 ｜ 来源数：199
+- 最后更新：2026-07-10
 
 ### 主题导航
 
@@ -24,6 +24,12 @@ date: 2026-06-03
 - [[OpenClaw-digest-20260510|OpenClaw 综合]] —— 架构总览与三大子系统设计哲学
 
 ## 最近更新
+
+### 2026-07-10
+
+新增来源：[[从Vibe-Coding到Harness-一套大仓AI工程化实战]]、[[从分布式架构到AI架构面试题]]、[[Claude-Code-Skills的技术实现和运行方式]]、[[Loop-Engineering实战-实现从日志扫描到预发部署的全自主闭环]]、[[Harness工程实践-如何让Agent完成自主迭代]]、[[一文读懂Harness-Engineering]] —— 批量补充腾讯 TAB 大仓的 SPEC/角色/门禁/MCP 交付链路、Claude Code 的四层模型与 Skill 运行时、日志到预发的持续维护 Loop，以及评测驱动的 Agent 自主迭代。
+
+更新实体/主题：[[Harness-Engineering]]、[[Loop-Engineering]]、[[Agent-Skill]]、[[Claude-Code]]、[[Harness-Engineering-主题]]、[[AI-Skill体系-主题]]、[[Claude-Code源码解析-主题]]、[[Agent评测方法论]] —— 补入结构化任务状态、独立验证、Context Reset、Skill 来源与 shell 安全、训练/验证隔离和 champion-challenger 的工程边界；[[为什么大模型的缓存命中率能到90-Percent]] 已存在，按原链接去重保留。
 
 ### 2026-07-06
 

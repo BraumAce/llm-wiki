@@ -39,6 +39,8 @@ sources:
   - "[[万字长文推演Claude的代码统治力从何而来]]"
   - "[[oh-my-pi-GitHub]]"
   - "[[oh-my-claudecode-GitHub]]"
+  - "[[从分布式架构到AI架构面试题]]"
+  - "[[Claude-Code-Skills的技术实现和运行方式]]"
 ---
 
 # Claude Code 源码解析主题
@@ -60,6 +62,10 @@ Claude Code 源码解析涵盖 2026 年上半年社区对 Anthropic 官方 AI �
 5. **Hooks 机制将确定性行为从 LLM 记忆迁移到工程流程**：Hooks 在每次工具调用前后确定性地执行，用于注入规范、验证输出、触发自动化流程，不依赖模型判断。这是 Harness Engineering 的核心实践——把确定性的工作交给脚本和 lint，让 AI 只做理解和决策
 
 6. **长任务执行的六大核心机制**：任务编排元数据文件化（将计划、进度、决策写入文件系统而非依赖脆弱的对话上下文）、TODO 驱动开发（将 TODO 直接插入代码文件）、接力赛式子代理调度（避免并行处理导致的文件冲突）、三步循环（生成任务 → 生成计划 → 实现代码，成功率从 50% 提升到 95%+）、消费约 9 亿 token 的长时连续操作能力、结构化 Memdir 记忆系统
+
+7. **四层工程模型有助于组件选型**：记忆层提供项目事实，扩展层放 commands、Skills、Subagents、Hooks，集成层用 headless 与 MCP 接到外部系统，编程层由 SDK 构造工作流；需要确定性拦截的高风险工具操作必须放到 Hook，而不是寄望 Skill 或 prompt 自觉遵守。
+
+8. **Skill 的“按需加载”可追到具体运行链路**：标准目录是 `<skill-name>/SKILL.md`，多个来源合并后先以描述形成可发现索引，调用期才展开正文、参数和 supporting files；MCP 来源不运行内嵌 shell，说明扩展机制同时承担上下文管理与安全隔离。
 
 7. **51.2 万行源码揭示的工程规模**：Claude Code 泄露的约 51.2 万行 TypeScript 代码展现了其作为工业级 AI 编程系统的完整度——从 `QueryEngine.ts` 主入口到 `services/compact/` 三层压缩、`services/tools/` 工具注册与执行、`constants/prompts.ts` System Prompt 构建、`utils/systemPrompt.ts` 优先级决策、`context.ts` Git 状态 + CLAUDE.md 加载、`memdir/` 结构化记忆系统，每一个模块都经过精心设计
 

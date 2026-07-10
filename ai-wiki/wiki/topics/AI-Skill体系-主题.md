@@ -50,6 +50,7 @@ sources:
   - "[[AI-Agent的Skill系统设计]]"
   - "[[Harness工程之道-Skill原理与最佳实践]]"
   - "[[oh-my-claudecode-GitHub]]"
+  - "[[Claude-Code-Skills的技术实现和运行方式]]"
 ---
 
 # AI Skill 体系主题
@@ -61,6 +62,10 @@ AI Skill 体系涵盖 2026 年 AI 工程领域关于 Skill（技能/能力单元
 ## 核心要点
 
 1. **Skill 本质是 Harness 而非 Prompt**：Skill 看起来像 prompt（都是 Markdown 文件），实际上更像 harness（约束 + 验证 + 反馈的工程框架）。写一个能跑的 Skill 不难——随手糊一个 SKILL.md 模型就能照着做事，但要让它稳定干活则是另一回事：触发边界怎么定？安全规则怎么加？references 之间的一致性谁来管？脚本版本兼容谁来保证？Skill 最容易让人误会的一点，是它看起来像 prompt，实际上更像 harness
+
+2. **渐进式披露由运行时加载机制保证**：Claude Code 在启动阶段只暴露 Skill 的 name、description、when_to_use，语义命中或显式调用后才渲染 SKILL.md，再由正文路由至 scripts、references 与 templates。常驻项目规则留在 CLAUDE.md，不应把 Skill 写成另一份超长项目说明书。
+
+3. **Skill 的可信边界必须覆盖预处理与来源**：`allowed-tools` 不只约束主 Agent 的工具调用，也约束 Skill 的动态上下文；动态命令应仅采集只读资料。远端 MCP Skill 跳过内嵌 shell，安装第三方本地 Skill 前也需要审查 SKILL.md、脚本和参考资料。
 
 2. **CLI 接管确定性事务，Agent 限定为纯决策引擎**：腾讯技术工程的核心洞察是"凡是涉及精确格式、固定流程的事 AI 不靠谱；凡是涉及理解、判断、表达的事 AI 很在行"。通过 CLI 接管一切确定性事务（API 调用、状态管理、流程编排），配合步进式披露、Gate 门禁、状态持久化和模板变量等机制，把 Agent 从不可控的对话机器人变成精确、可恢复、可审计的工程化组件。"不改变河的本性，但给它修好渠"
 

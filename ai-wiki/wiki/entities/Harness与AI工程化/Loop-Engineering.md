@@ -18,6 +18,7 @@ sources:
   - "[[重磅！Loop Engineering 实操手册公开]]"
   - "[[一文搞懂！Loop Engineering的进化史和本质]]"
   - "[[最新-万字综述-Prompt-到-Loop-进化]]"
+  - "[[Loop-Engineering实战-实现从日志扫描到预发部署的全自主闭环]]"
 related_entities:
   - "[[Harness-Engineering]]"
   - "[[Context-Engineering]]"
@@ -141,6 +142,12 @@ Loop Engineering（Outer Loop）
 
 这个视角把一个常见误解纠正得很彻底：决定 loop 是否收敛的，往往不是生成模型有多强，而是传感器有多好。只返回 `pass/fail` 的验证器会让控制器近乎盲修；能指出“哪个用例挂了、哪个断言失败了、哪个 diff 引入了问题”的验证器，才能真正压缩搜索空间。这也是为什么 **strong verification 比 strong prompt 更关键**。
 
+### 生产维护 Loop：可观测、可停止、可交接
+
+日志扫描到预发的实践把 Loop 的六个零件映射到一条很具体的维护链：Connectors 从多日志库获取事件，Automations 负责定时发现，诊断和修复 Skills 在隔离工作树内产出补丁，独立 Sub Agent 负责验证，最终把修复证据和结果写回状态系统。它将“循环已经完成”的判定拆成测试、集成测试、Trace 验证和独立复查，避免修复 Agent 既写补丁又宣布补丁正确。
+
+这类生产 Loop 还补足了概念文常被略过的**停止协议**：验证失败可以根据失败证据回到修复，但最多三轮；超过上限转人工 Owner。循环开始前先检查任务是否重复、能否自动验收、token 预算是否承受、工具是否齐全。换言之，Loop 的成熟度不由能运行多久衡量，而由它是否能在证据不足、代价过高时果断停下衡量。
+
 ### 应用 / 使用场景
 
 - **个人早间分诊**：Addy 的 triage loop，每天早上 automation 自动读 CI 失败 / open issue / 最近 commit，开 worktree，子 agent 起草+审查，过了自动开 PR，没把握的进收件箱。
@@ -178,3 +185,4 @@ Loop Engineering（Outer Loop）
 - [[重磅！Loop Engineering 实操手册公开]] —— Datawhale，总结 loop 的适用门槛、五个核心构件和 14 步最小落地路线
 - [[一文搞懂！Loop Engineering的进化史和本质]] —— Datawhale，把 loop 放回 Prompt / Context / Harness / Loop 演进链，并用控制论解释为什么传感器决定收敛速度
 - [[最新-万字综述-Prompt-到-Loop-进化]] —— Datawhale，补充 Loop Contract、Circuit Breaker、Watchdog 和开发者转向 Loop Designer 的系统架构视角
+- [[Loop-Engineering实战-实现从日志扫描到预发部署的全自主闭环]] —— 阿里云开发者，3 个日志库、334 条测试、三轮重试上限与预发 Trace 验证的生产闭环

@@ -29,6 +29,8 @@ sources:
   - "[[Claude-Code防封号指南-国内终极解决方案]]"
   - "[[聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔]]"
   - "[[万字长文推演Claude的代码统治力从何而来]]"
+  - "[[从分布式架构到AI架构面试题]]"
+  - "[[Claude-Code-Skills的技术实现和运行方式]]"
 related_entities:
   - "[[Anthropic]]"
   - "[[Harness-Engineering]]"
@@ -173,6 +175,12 @@ Claude Code 的 Hooks 系统是 Harness Engineering 的核心实践——将确�
 
 这一视角把 Claude 的代码优势解释为“可验证奖励 RL + 安全宪法 + 产品数据飞轮”的复合结果，而不是某一个提示词技巧。它也解释了为什么 Claude 在多文件、真实 Issue、复杂依赖场景中表现更突出：这类任务更依赖规划、执行、自纠错和多步验证，而这些能力更容易通过可验证奖励和真实反馈被强化。需要注意的是，这部分是基于公开资料和第一性原理的推断，适合作为理解框架，不应当当作 Anthropic 已披露的训练细节。
 
+### 四层工程模型与 Skill 的延迟加载
+
+从工程选型看，Claude Code 可以拆成记忆、扩展、集成、编程四层：CLAUDE.md、rules 和 memory 负责项目事实；commands、Skills、Subagents、Hooks 负责行为扩展；headless 与 MCP 使其进入 CI/CD 和外部系统；SDK 则支持将整个 Agent 工作流嵌入应用。这个分层的重点是触发与风险匹配：可由模型解释的流程交给 Skill，支线任务交给 Subagent，无人值守流程交给 headless，而工具调用前后的禁止动作必须由 Hook 在推理外确定性拦截。
+
+Skills 的加载过程进一步说明为什么 CLAUDE.md 不能承担全部内容：常驻文件只保留每轮必须知道的规则，Skill 先通过 description 被发现，命中后读取正文，脚本和长参考资料还可继续按需读取。变量替换、动态只读上下文与 `allowed-tools` 构成了调用期行为；MCP 远端来源不执行内嵌 shell，避免把远程 Skill 内容变成在本地执行的命令。
+
 ### 应用 / 使用场景
 
 - **日常编程**：代码阅读、编辑、调试、重构，支持图片和 PDF 等多模态输入
@@ -211,3 +219,5 @@ Claude Code 的 Hooks 系统是 Harness Engineering 的核心实践——将确�
 - [[让-Claude-Code-拥有自我进化和记忆系统]] —— 得物技术，Hook 机制驱动的自我学习系统
 - [[聊一聊我是怎么审查-Claude-Code-写的代码-记一次复刻-Redis-Set-审查随笔]] —— 用 Redis Set 复刻案例展示 Claude Code 生成代码后的人工审查、数据结构验证和端到端测试闸门。
 - [[万字长文推演Claude的代码统治力从何而来]] —— 腾讯云开发者，从可验证奖励 RL、Constitutional AI、用户反馈飞轮和合成数据自举角度推演 Claude 代码能力来源
+- [[从分布式架构到AI架构面试题]] —— SharkChili，用记忆、扩展、集成、编程四层解释 Claude Code 与 Hook/Skill/headless 选型
+- [[Claude-Code-Skills的技术实现和运行方式]] —— JavaGuide，补充 Skill 的 SKILL.md 目录、来源加载、延迟渲染与远端 MCP 安全边界
