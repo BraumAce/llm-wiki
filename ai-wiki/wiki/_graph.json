@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-10T23:12:15+08:00",
+  "generated_at": "2026-07-12T23:21:22+08:00",
   "wiki_dir": "/Users/liuguang/Documents/Private/llm-wiki/ai-wiki/wiki",
   "stats": {
-    "nodes": 294,
-    "edges": 1406,
-    "edge_weight_total": 2598,
+    "nodes": 296,
+    "edges": 1419,
+    "edge_weight_total": 2629,
     "orphan_links": [],
     "by_type": {
-      "entity": 86,
+      "entity": 87,
       "topic": 9,
-      "source": 199
+      "source": 200
     }
   },
   "nodes": [
@@ -973,6 +973,17 @@
         "event-driven",
         "pub-sub",
         "inter-agent-communication"
+      ]
+    },
+    {
+      "id": "知识库工程",
+      "type": "entity",
+      "title": "知识库工程",
+      "tags": [
+        "knowledge-management",
+        "ai-engineering",
+        "ai-coding",
+        "context-engineering"
       ]
     },
     {
@@ -2327,6 +2338,18 @@
         "architecture",
         "agno",
         "17-architectures"
+      ]
+    },
+    {
+      "id": "从AI-Coding到Harness-Engineering的端到端工程开发实践",
+      "type": "source",
+      "title": "从AI Coding到Harness Engineering的端到端工程开发实践",
+      "tags": [
+        "harness-engineering",
+        "knowledge-engineering",
+        "ai-coding",
+        "multi-agent",
+        "workflow"
       ]
     },
     {
@@ -5908,6 +5931,11 @@
     },
     {
       "from": "Harness-Engineering",
+      "to": "从AI-Coding到Harness-Engineering的端到端工程开发实践",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
       "to": "从Prompt-Context到Harness-工程的三次进化与终局之战",
       "weight": 2
     },
@@ -5964,6 +5992,11 @@
     {
       "from": "Harness-Engineering",
       "to": "深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering",
+      "to": "知识库工程",
       "weight": 2
     },
     {
@@ -6138,6 +6171,11 @@
     },
     {
       "from": "Harness-Engineering-主题",
+      "to": "从AI-Coding到Harness-Engineering的端到端工程开发实践",
+      "weight": 2
+    },
+    {
+      "from": "Harness-Engineering-主题",
       "to": "从Prompt-Context到Harness-工程的三次进化与终局之战",
       "weight": 2
     },
@@ -6195,6 +6233,11 @@
       "from": "Harness-Engineering-主题",
       "to": "深度解析OpenClaw在Prompt-Context-Harness三个维度中的设计哲学与实践",
       "weight": 1
+    },
+    {
+      "from": "Harness-Engineering-主题",
+      "to": "知识库工程",
+      "weight": 2
     },
     {
       "from": "Harness-Engineering-主题",
@@ -9227,6 +9270,31 @@
       "weight": 1
     },
     {
+      "from": "从AI-Coding到Harness-Engineering的端到端工程开发实践",
+      "to": "Agent-Skill",
+      "weight": 2
+    },
+    {
+      "from": "从AI-Coding到Harness-Engineering的端到端工程开发实践",
+      "to": "CodeBuddy",
+      "weight": 2
+    },
+    {
+      "from": "从AI-Coding到Harness-Engineering的端到端工程开发实践",
+      "to": "Harness-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "从AI-Coding到Harness-Engineering的端到端工程开发实践",
+      "to": "Harness-Engineering-主题",
+      "weight": 2
+    },
+    {
+      "from": "从AI-Coding到Harness-Engineering的端到端工程开发实践",
+      "to": "知识库工程",
+      "weight": 3
+    },
+    {
       "from": "从IDE到Terminal-适合后端宝宝体质的Claude-Code工作流",
       "to": "Claude-Code",
       "weight": 2
@@ -10030,6 +10098,26 @@
       "from": "知识库分层编排-从RAG到Agent-native-Knowledge-Context-Layer",
       "to": "RAG",
       "weight": 1
+    },
+    {
+      "from": "知识库工程",
+      "to": "Agent-Skill",
+      "weight": 3
+    },
+    {
+      "from": "知识库工程",
+      "to": "Harness-Engineering",
+      "weight": 3
+    },
+    {
+      "from": "知识库工程",
+      "to": "RAG",
+      "weight": 3
+    },
+    {
+      "from": "知识库工程",
+      "to": "从AI-Coding到Harness-Engineering的端到端工程开发实践",
+      "weight": 2
     },
     {
       "from": "精华：去哪儿网AI-Coding研发平台实践，值得读三遍的样本",
