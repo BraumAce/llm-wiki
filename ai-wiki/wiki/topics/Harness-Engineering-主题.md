@@ -57,6 +57,7 @@ sources:
   - "[[Harness工程实践-如何让Agent完成自主迭代]]"
   - "[[一文读懂Harness-Engineering]]"
   - "[[从AI-Coding到Harness-Engineering的端到端工程开发实践]]"
+  - "[[从-Coder-到-Designer-电商团队数据研发的-Harness-Engineering实践]]"
 ---
 
 # Harness Engineering 主题
@@ -106,6 +107,8 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 
 19. **知识库是交付流水线的底座，不是静态附件**：应用宝活动平台将全局/域/服务三级知识、人工补充、`git hash` 新鲜度检测与渐进加载放在需求拆解前；上层用状态文件、职责隔离的专家 Agent、DAG/worktree 和脚本化确定性操作，把 AI 从单窗口编码延伸至可恢复、可审计的端到端交付。
 
+20. **数据研发 Harness 必须先治理语义、再生成 SQL**：电商数研实践将自然语言先映射为指标—维度语义，再生成 SQL；用专家确认、别名与边界、资产去重和健康度来控制语义漂移。关键步骤保留人工 Gate，完成状态以独立工件和真实系统状态验证，人工修正再经心跳机制回写为知识或规则。
+
 ## 涉及实体
 
 - [[Harness-Engineering]] —— 核心概念实体
@@ -118,6 +121,7 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 - [[Headroom]] —— Agent 上下文压缩与成本治理中间层
 - [[去哪儿AI-Coding体系]] —— QunarDevCenter、天弦、Qsuperpowers 与 Skills Gateway 组合成组织级 AI Coding 样本
 - [[知识库工程]] —— 以分层目录、版本新鲜度和按需加载为 Harness 提供业务上下文底座
+- [[NL2SQL]] —— 语义层将自然语言约束为受治理的指标—维度定义，再交由 Harness 编排生成与验证 SQL
 
 ## 对比矩阵
 
@@ -146,3 +150,4 @@ Harness Engineering 涵盖 2026 年 AI 工程领域最重要的范式转移—�
 - [[开启Harness-Engineering探索之旅]] —— 腾讯技术工程 P1-P6、线上运营、长期记忆、可观测性和 token 成本治理的端到端实践
 - [[给野马套上缰绳-Agent-Harness工程实践-从范式理论到钉钉AI招聘的真实落地]] —— 用钉钉悟空 AI 招聘案例展示专才 Agent、Workspace、RPA lock、外发消息硬护栏和 Agent OS 判断
 - [[从AI-Coding到Harness-Engineering的端到端工程开发实践]] —— 腾讯应用宝活动平台以知识库工程、状态文件、专家 Agent、DAG/worktree 与脚本化执行串起端到端交付
+- [[从-Coder-到-Designer-电商团队数据研发的-Harness-Engineering实践]] —— 阿里技术用语义资产、NL2DSL2SQL、人工 Gate、执行证据与心跳回写落地数据研发 Harness
