@@ -16,23 +16,22 @@
 
 ## 步骤
 
-1. **收集**：用 query 流程拉到所有相关 entities / topics / sources
+1. **收集**：用 query 流程拉到所有相关 entities / topics / sources。若 subject 是 `private/projects/` 下的项目，只收集该项目树，**禁止**把项目笔记写进公开 `topics/`
 2. **去重 & 排序**：相同事实的多源合并；按时间或重要性排序
 3. **结构化输出**（按 style）：
     - **report**：发展脉络 → 核心机制对比 → 应用案例 → 争议与开放问题 → 引用清单
     - **essay**：从一个具体问题/故事切入，自然展开
     - **compare**：维度矩阵 + 每维度横向叙述
-4. **写入文件**：`ai-wiki/wiki/topics/<subject>-digest-YYYYMMDD.md`
-    - frontmatter `type: topic`、`tags: [digest]`
-    - 至少引用 5 个 sources / entities
-5. **链接回写**（仅 entity 页）：在被引用的 entity 页底部加 `## 相关综合\n\n- [[<subject>-digest-YYYYMMDD]]`
+4. **写入文件**：默认 `ai-wiki/wiki/topics/<subject>-digest-YYYYMMDD.md`（frontmatter `type: topic`、`tags: [digest]`，至少引用 5 个 sources / entities）。项目 subject 改为 `ai-wiki/wiki/private/projects/<repo>/<repo>-digest-YYYYMMDD.md`，不回写百科实体页
+5. **链接回写**（仅百科 entity 页；项目 digest 跳过）：在被引用的 entity 页底部加 `## 相关综合\n\n- [[<subject>-digest-YYYYMMDD]]`
     - **不要回写到 source 页**：source 是原料归档，多次 digest 累积会让 source 底部塞满"相关综合"，污染严重；反向关系靠 `graph` workflow 解析 `[[wikilink]]` 还原即可
     - **回写时去重**：若 entity 已有 `## 相关综合` 段，把新 digest 追加为列表项；若指向的 digest 已在列表中，跳过
 6. **lint**
 
 ## 输出
 
-- `ai-wiki/wiki/topics/<subject>-digest-YYYYMMDD.md`
+- 百科：`ai-wiki/wiki/topics/<subject>-digest-YYYYMMDD.md`
+- 项目：`ai-wiki/wiki/private/projects/<repo>/<repo>-digest-YYYYMMDD.md`
 
 ## 验证
 

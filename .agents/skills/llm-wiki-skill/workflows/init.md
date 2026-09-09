@@ -14,7 +14,7 @@
 
 1. **预检**：若 `ai-wiki/wiki/_meta.json` 已存在，停止并提示用户改用 `status`。
 2. **创建 raw 子目录**：`ai-wiki/raw/{webpage,x,wechat,xiaohongshu,zhihu,youtube,pdf,local}`，每个放一个 `.gitkeep`。
-3. **创建 wiki 子目录**：`ai-wiki/wiki/{entities,topics,sources}`，每个放一个 `.gitkeep`。
+3. **创建 wiki 子目录**：`ai-wiki/wiki/{entities,topics,sources,private/projects}`，每个放一个 `.gitkeep`（`private/projects` 需要两层）。
 4. **生成 `ai-wiki/wiki/_meta.json`**：
     ```json
     {

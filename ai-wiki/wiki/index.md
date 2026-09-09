@@ -23,6 +23,10 @@ date: 2026-06-03
 - [[AI-Infra推理优化-主题|AI Infra 推理优化]] —— 推理服务全栈：数学原理 → RAG / Memory
 - [[OpenClaw-digest-20260510|OpenClaw 综合]] —— 架构总览与三大子系统设计哲学
 
+### 项目知识
+
+不计入上方实体/主题/来源数，也不进入静态站。笔记在 `wiki/private/projects/<repo>/`，仓库内入口为 `private/项目知识.md`。问知识库时带上项目名会检索该树；写入用 project-note，禁止当文章 ingest。
+
 ## 最近更新
 
 ### 2026-07-15

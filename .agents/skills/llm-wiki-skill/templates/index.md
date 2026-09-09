@@ -14,6 +14,10 @@ date: {{date}}
 - [[topics]] —— 主题页（聚合多个实体）
 - [[sources]] —— 来源摘要（每篇素材一份）
 
+### 项目知识
+
+不计入上方实体/主题/来源数，也不进入静态站。笔记在 `wiki/private/projects/<repo>/`。写入用 project-note，禁止当文章 ingest。
+
 ## 最近更新
 
 （init 创建时为空，ingest 后由 status workflow 自动维护）

@@ -22,7 +22,7 @@ llm-wiki/
 ├── .claude/skills         # 指向 ../.agents/skills 的兼容 symlink
 ├── ai-wiki/
 │   ├── raw/               # 原始素材按来源分类（webpage/x/wechat/...）
-│   └── wiki/              # 整理后的结构化页面（entities/topics/sources）
+│   └── wiki/              # 百科（entities/topics/sources）+ 不发布的 private/projects
 ├── quartz/                # Quartz v4 静态站（源码已入仓库，npm i 即可）
 │   └── content/           # 由 sync-content.sh 从 ai-wiki/wiki/ 同步（gitignore）
 ├── .env.example
@@ -103,7 +103,8 @@ bash .agents/skills/quartz-wiki/scripts/deploy.sh
 | 初始化 | llm-wiki-skill | `init` | 创建 raw/ wiki/ 目录与索引 |
 | 消化单篇 | llm-wiki-skill | `ingest` | 抓取 → 摘要 → 写实体页 → 链接修复 |
 | 批量处理 | llm-wiki-skill | `batch-ingest` | 对 raw/ 下未处理素材批量执行 |
-| 快速查询 | llm-wiki-skill | `query` | 翻阅 wiki/ 回答问题 |
+| 快速查询 | llm-wiki-skill | `query` | 翻阅 wiki/ 回答问题（点名项目时搜 private/projects） |
+| 项目笔记 | llm-wiki-skill | `project-note` | 写入 private/projects，不走 ingest、不发布 |
 | 深度综合 | llm-wiki-skill | `digest` | 跨多个实体页生成综合报告 |
 | 健康检查 | llm-wiki-skill | `lint` | 链接一致性、占位符、字数、来源完整性 |
 | 状态统计 | llm-wiki-skill | `status` | 实体数、主题数、来源数 |
