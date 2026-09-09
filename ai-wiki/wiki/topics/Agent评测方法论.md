@@ -15,6 +15,7 @@ sources:
   - "[[AI Evals的一些实践：如何从 0 到 1 构建 agent 的评测系统？]]"
   - "[[Agent 评测：方法论与体系设计]]"
   - "[[Harness工程实践-如何让Agent完成自主迭代]]"
+  - "[[HSCodeComp 揭开智能体分层规则应用能力鸿沟]]"
 related_entities:
   - "[[Harness-Engineering]]"
   - "[[Claude-Code]]"
@@ -23,6 +24,7 @@ related_entities:
   - "[[AI可观测性]]"
   - "[[Agent-Skill]]"
   - "[[Generator-Evaluator]]"
+  - "[[HSCodeComp]]"
 ---
 
 # Agent 评测方法论
@@ -62,3 +64,5 @@ related_entities:
 15. **Agent 类型决定评测侧重，底层骨架可以复用**：执行用例、采集 Trace、运行 Scorer、生成报告、做根因归类是一套通用骨架；真正需要业务定制的是“评什么”和“怎么判”。对话 Agent 不能只看单轮答案，还要同时看 Turn、Session、Trace、Outcome。
 
 16. **反馈生产比出分更重要**：线上失败要变成可复用研发资产。Badcase 入库前至少要有稳定 Trace 或人工确认、明确期望行为、清晰根因标签、代表性样本和脱敏合规；最终沉淀为用例库、Trace 库、根因标签库、修复建议库、Judge 校准集和回归集。
+
+17. **专家规则任务要按路径评测，而不只评最终标签**：[[HSCodeComp]] 以十位 HS Code 为严格终点，同时要求系统经历属性抽取、规则检索、例外/交叉引用核验、先例比对、优先级裁决与最终校验。对法律、税务、医疗编码等任务，最终答案即使碰巧正确，也不足以证明系统能稳定遵守规则；应保留每层的证据与回溯 Trace。

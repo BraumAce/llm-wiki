@@ -8,6 +8,7 @@ WIKI_DIR="${WIKI_DIR:-$(pwd)/ai-wiki/wiki}"
 ENTITIES_DIR="$WIKI_DIR/entities"
 TOPICS_DIR="$WIKI_DIR/topics"
 SOURCES_DIR="$WIKI_DIR/sources"
+PRIVATE_DIR="$WIKI_DIR/private"
 
 if [ ! -d "$WIKI_DIR" ]; then
   echo "✗ 找不到 wiki 目录: $WIKI_DIR"
@@ -32,8 +33,31 @@ if [ -n "$links" ]; then
     [ -z "$link" ] && continue
     # 跳过分类索引（entities/topics/sources 是 index.md 的入口锚，不是实体）
     case "$link" in entities|topics|sources) continue ;; esac
-    if ! find "$ENTITIES_DIR" "$TOPICS_DIR" "$SOURCES_DIR" -name "${link}.md" 2>/dev/null | grep -q .; then
+    roots=("$ENTITIES_DIR" "$TOPICS_DIR" "$SOURCES_DIR")
+    [ -d "$PRIVATE_DIR" ] && roots+=("$PRIVATE_DIR")
+    hits=$(find "${roots[@]}" -name "${link}.md" 2>/dev/null || true)
+    if [ -z "$hits" ]; then
       err "孤儿链接 [[$link]] —— 找不到对应文件"
+      continue
+    fi
+    # 公开页链到仅存在于 private 的目标 → 静态站死链
+    only_private=1
+    while IFS= read -r hit; do
+      [ -z "$hit" ] && continue
+      case "$hit" in
+        "$PRIVATE_DIR"/*) ;;
+        *) only_private=0; break ;;
+      esac
+    done <<< "$hits"
+    if [ "$only_private" -eq 1 ]; then
+      while IFS= read -r -d '' src; do
+        case "$src" in
+          "$PRIVATE_DIR"/*) continue ;;
+        esac
+        if grep -qF "[[$link]]" "$src" 2>/dev/null || grep -qF "[[$link|" "$src" 2>/dev/null; then
+          err "公开页 ${src#$WIKI_DIR/} 链到 private [[$link]]"
+        fi
+      done < <(find "$WIKI_DIR" -name '*.md' -type f -print0 2>/dev/null)
     fi
   done <<< "$links"
 fi
@@ -56,6 +80,9 @@ echo "[3/5] 占位符 (待补充/TBD/TODO:/XXX 标记)..."
 # 正文里把 TODO 当普通词（如"TODO 驱动开发"）不误报。
 # 跳过 ``` 代码块和 `行内代码` —— 里面的 TODO 通常是源码引用，不是真的"待补充"
 while IFS= read -r -d '' f; do
+  case "$f" in
+    "$PRIVATE_DIR"/*) continue ;;
+  esac
   cleaned=$(awk '
     BEGIN {in_fence=0}
     /^```/ {in_fence=!in_fence; next}

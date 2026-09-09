@@ -35,7 +35,7 @@ npm i
 | copy | 部署 | `cp -r ../ai-wiki/wiki content`，每次构建前同步 |
 | git submodule / CI 拉取 | 生产 | 推荐 |
 
-`quartz.config.ts` 必须排除：`raw`、`templates`、`private`、`.obsidian`。
+`quartz.config.ts` 必须排除：`raw`、`templates`、`private`、`.obsidian`。`scripts/sync-content.sh` 同步时也 `--exclude=private`，项目知识不进入 `quartz/content/`。
 
 ### Phase 3: Frontmatter 修复（关键）
 

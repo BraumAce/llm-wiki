@@ -22,6 +22,7 @@ desktop.ini
 
 # Tooling artifacts
 .codegraph/
+.omp/
 
 # Quartz build artifacts / synced content
 .quartz-cache/

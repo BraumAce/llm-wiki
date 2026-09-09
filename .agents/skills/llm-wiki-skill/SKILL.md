@@ -1,6 +1,6 @@
 ---
 name: llm-wiki-skill
-description: 个人 AI 知识库系统的工作流路由器。把碎片化素材（网页/X/公众号/小红书/知乎/YouTube/PDF/本地文件）整理成结构化、互链的 wiki。当用户说「初始化知识库」「采集」「消化」「批量消化」「问知识库」「综合报告」「lint 检查」「知识库状态」「生成图谱」时触发。
+description: 个人 AI 知识库系统的工作流路由器。把碎片化素材（网页/X/公众号/小红书/知乎/YouTube/PDF/本地文件）整理成结构化、互链的 wiki；项目设计笔记写入 private/projects，不走文章 ingest。当用户说「初始化知识库」「采集」「消化」「批量消化」「问知识库」「项目笔记」「综合报告」「lint 检查」「知识库状态」「生成图谱」时触发。
 ---
 
 # llm-wiki: 个人 AI 知识库系统
@@ -20,8 +20,11 @@ ai-wiki/
     ├── entities/<分类>/     # 实体页，按 7 个域分子目录（见下「分类目录约定」）
     ├── topics/             # 主题页（聚合多个实体，扁平不分类）
     ├── sources/<分类>/      # 来源摘要，同 7 个域 +「通用工程实践」
+    ├── private/            # 项目知识（不发布、不计入百科计数）
+    │   ├── 项目知识.md      # 项目入口
+    │   └── projects/<repo>/ # 项目卡 <repo>.md + 前缀笔记
     ├── _meta.json          # 元信息（语言/版本/上次 lint）
-    └── index.md            # 总入口
+    └── index.md            # 总入口（公开；禁止链到 private）
 ```
 
 ## 分类目录约定
@@ -40,6 +43,18 @@ ai-wiki/
 
 来源额外有 `通用工程实践`：非 AI 主题的后端/数据库/系统设计文章（MySQL、缓存、排行榜、BI 等）。
 
+## 项目知识约定
+
+`wiki/private/` 存仓库级设计思路与决策，**不是**百科实体。
+
+- 路径：`wiki/private/项目知识.md` + `wiki/private/projects/<repo>/<repo>.md`（项目卡）+ `<repo>-<slug>.md`（笔记）
+- `<repo>` 与仓库目录名一致（如 `Nova`、`can_gateway`）；新项目只加目录
+- 笔记文件名强制项目前缀，避免和 `entities/` 撞 `[[wikilink]]`
+- **禁止走 ingest / batch-ingest**；用 [workflows/project-note.md](workflows/project-note.md)
+- 不把 `AGENTS.md` 全文搬进来；不写密钥。可迁移模式另走 ingest 进百科
+- 笔记可链百科实体；百科页与公开 `index.md` 默认不反向链接（静态站不发布 private）
+- lint：`private/` 豁免字数 / sources / 占位符；wikilink 仍须能解析
+
 ## 工作流路由器
 
 根据用户意图派发到 `workflows/<name>.md`，**先读对应文件再执行**：
@@ -50,6 +65,7 @@ ai-wiki/
 | 「消化」「加这一篇」「ingest」+ 单个素材 | **ingest** | [workflows/ingest.md](workflows/ingest.md) |
 | 「批量」「全部消化」「inbox」 | **batch-ingest** | [workflows/batch-ingest.md](workflows/batch-ingest.md) |
 | 「查一下」「问知识库」「找」 | **query** | [workflows/query.md](workflows/query.md) |
+| 「项目笔记」「记项目知识」「Nova 设计」 | **project-note** | [workflows/project-note.md](workflows/project-note.md) |
 | 「综合报告」「digest」「深度分析 X」 | **digest** | [workflows/digest.md](workflows/digest.md) |
 | 「检查」「lint」「健康度」 | **lint** | [workflows/lint.md](workflows/lint.md) |
 | 「状态」「统计」「status」 | **status** | [workflows/status.md](workflows/status.md) |
@@ -65,21 +81,22 @@ ai-wiki/
 ## 质量约束（强制，由 lint 校验）
 
 - 文件名必须与 `[[wikilink]]` 内的名字完全一致（包括大小写、连字符）
-- 实体页 ≥ 1000 字，无占位符（`TODO` / `XXX` / `待补充` / `TBD`）
+- 实体页 ≥ 1000 字，无占位符（`TODO` / `XXX` / `待补充` / `TBD`）——**不含** `private/`
 - 每篇 source 摘要含 ≥ 2 段 100 字以上的原文摘录 + "实践内容"段（代码/prompt/教程原样保留）
-- frontmatter `sources: []` 字段非空（实体页/主题页）
+- frontmatter `sources: []` 字段非空（实体页/主题页；**不含** `private/`）
 - 主题页 ≥ 5 个核心要点
+- `private/` 仍校验孤儿 wikilink；公开页禁止 `[[wikilink]]` 指向仅存在于 private 的文件
 
 ## 自动联动
 
-- **每次 ingest / batch-ingest 结束前**强制调用 `lint`，输出问题清单后再决定是否完成
-- **lint 通过后同步首页**：跑 `scripts/sync-index.sh` 刷新 `index.md` 状态区与 `_meta.json.stats`（机械计数，勿手改），并在 `index.md` 的「最近更新」追加本次条目（叙述，手动写）。详见各 workflow 末步
+- **每次 ingest / batch-ingest / project-note 结束前**强制调用 `lint`，输出问题清单后再决定是否完成
+- **lint 通过后同步首页**（仅 ingest / batch-ingest）：跑 `scripts/sync-index.sh` 刷新 `index.md` 状态区与 `_meta.json.stats`（机械计数，勿手改），并在 `index.md` 的「最近更新」追加本次条目（叙述，手动写）。`project-note` 只更新 `private/项目知识.md`，不改公开最近更新、不改实体/来源计数
 - 出现 3+ 可对比实体（同 type 同 tag）→ 自动建对比小节到主题页
 - 同主题来源数 ≥ 5 → 自动建主题页 `wiki/topics/<topic>.md`
 
 ## 模板与脚本
 
-- 内容模板：[templates/entity.md](templates/entity.md) [templates/topic.md](templates/topic.md) [templates/source.md](templates/source.md) [templates/index.md](templates/index.md)
+- 内容模板：[templates/entity.md](templates/entity.md) [templates/topic.md](templates/topic.md) [templates/source.md](templates/source.md) [templates/index.md](templates/index.md) [templates/project.md](templates/project.md) [templates/project-note.md](templates/project-note.md)
 - 来源抓取约定：[references/sources/webpage.md](references/sources/webpage.md) [references/sources/local.md](references/sources/local.md)
 - 校验脚本：`scripts/lint.sh`、`scripts/status.sh`、`scripts/sync-index.sh`（必须可执行）
 

@@ -6,7 +6,7 @@
 #
 # 行为:
 #   1. 整体替换 quartz/content/ 内容（删除后重建）
-#   2. 排除 _meta.json / _graph.json / .DS_Store
+#   2. 排除 _meta.json / _graph.json / .DS_Store / private（项目知识不发布）
 #   3. 输出同步的 markdown 数量
 #
 # 兼容性: 优先使用 rsync，不可用时降级为 cp + find 清理
@@ -35,6 +35,7 @@ if command -v rsync >/dev/null 2>&1; then
     --exclude='_meta.json' \
     --exclude='_graph.json' \
     --exclude='.DS_Store' \
+    --exclude='private' \
     "$SRC/" "$DEST/"
 else
   echo "  ⚠ 未找到 rsync，降级为 cp（Windows 兼容模式）"
@@ -43,6 +44,7 @@ else
   find "$DEST" -name '_meta.json' -delete 2>/dev/null || true
   find "$DEST" -name '_graph.json' -delete 2>/dev/null || true
   find "$DEST" -name '.DS_Store' -delete 2>/dev/null || true
+  rm -rf "$DEST/private"
 fi
 
 count=$(find "$DEST" -name '*.md' | wc -l | xargs)

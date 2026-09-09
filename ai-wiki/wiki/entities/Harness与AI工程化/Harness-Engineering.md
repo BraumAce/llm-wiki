@@ -47,6 +47,8 @@ sources:
   - "[[Loop-Engineering实战-实现从日志扫描到预发部署的全自主闭环]]"
   - "[[Harness工程实践-如何让Agent完成自主迭代]]"
   - "[[一文读懂Harness-Engineering]]"
+  - "[[从AI-Coding到Harness-Engineering的端到端工程开发实践]]"
+  - "[[从-Coder-到-Designer-电商团队数据研发的-Harness-Engineering实践]]"
 related_entities:
   - "[[OpenClaw]]"
   - "[[Loop-Engineering]]"
@@ -176,6 +178,18 @@ Harness Engineering 的理念可以扩展到 Agent 评测领域。阿里团队�
 
 长程 Agent 的底层制度也更清晰：[[Context-Engineering]] 解决信息存取和压缩，但不能保证 Agent 会读取、遵循和验证；Harness 还必须以机器可读任务清单、每轮唤醒步骤、Git 可恢复历史与 Context Reset 控制提前交卷、虚标完成和 session 失忆。因此，结构化状态和可验证完成条件优先于继续堆叠 prompt。
 
+### 知识库底座与状态驱动的端到端交付
+
+腾讯应用宝活动平台进一步给出了一种“底座 + 流水线”的拆法。底座是 [[知识库工程]]：总览、业务域索引、服务事实文档与人工 `custom/` 补充形成分层上下文；文档生成记录 `git hash`，借增量更新和追加式日志对抗业务知识过期。查询先缩小业务域，再按问题类型读取必要的服务文档，避免把整套知识一次性塞入模型窗口。
+
+上层端到端开发不把状态藏在对话里，而将需求拆解、任务 DAG、波次开发、测试、代码审查、部署和接口验证的输入输出写成结构化状态。专家 Agent 只做一件事，并按职责裁剪可见上下文和工具；并发任务用 worktree 隔离，共享入口、协议和全局配置则串行收口。文章将此归结为“AI 负责认知，脚本负责执行”：状态解析、工作树、编译发布等确定性步骤封装为脚本，模型负责需求理解、方案和生成，从而减少随机性、token 浪费和越权操作。
+
+### 数据研发：把“生成 SQL”收束为可验证交付
+
+电商数研案例表明，Harness 的对象不必是代码仓库，也可以是高准确性的数据研发流程。其前置条件是语义资产：自然语言先映射为受治理的指标—维度语义，再生成 SQL；指标的标准名称、别名和语义边界由专家确认，并用上线前去重、上线后健康度评估对抗资产劣化。这样，模型的自由生成被收束为对业务契约的选择与组合。
+
+工作流以顺序协作和反馈循环结合人工 Gate：下游发现 SQL 质量问题时能够回滚上游重新决策。对“Agent 说已完成”的幻觉，Hook 要比较自述与真实状态，关键步骤必须留下文件、数据或状态变更等独立证据。案例还要求 Workspace 隔离、禁止跨 workspace 加载、按需开放 Skill，并通过 Git 备份和配置同步保证运行环境可恢复。最后，心跳机制从成功率、失败原因和人工修正中发现模式，把核准后的 Prompt、知识条目或工作流参数调整写回，形成受控的持续优化而非无边界自治。
+
 ### 局限与争议
 
 - **过度工程化风险**：Harness 过厚会降低开发速度，"合适厚度"需要团队自己摸索
@@ -189,6 +203,8 @@ Harness Engineering 的理念可以扩展到 Agent 评测领域。阿里团队�
 - [[Loop-Engineering]] —— 循环工程是 harness 的"上一层楼"：harness 武装单次运行，loop 让这次运行在定时器上自动重来
 - [[Spec-Driven-Development]] —— SDD 是 Harness 在需求阶段的具体实践，两者经常组合使用
 - [[Agent-Skill]] —— Skill 是 Harness 的低成本能力单元；在专才架构中，能沉成 Skill 的能力通常不应拆成新 Agent
+- [[知识库工程]] —— 将代码事实、人工业务知识、索引和新鲜度检测转化为上层 Agent 可精确加载的上下文底座
+- [[NL2SQL]] —— Harness 可把语义治理、文档状态机、人工 Gate 和结果验证组合为生产级的数据研发交付链
 - [[OpenClaw-Skills]] —— Skills 是 Harness 的能力封装层，Agent 按需加载领域知识包
 - [[AI可观测性]] —— 生产级 Agent 需要 trace、离线评测、在线指标和人工满意度共同判断质量
 
@@ -218,3 +234,5 @@ Harness Engineering 的理念可以扩展到 Agent 评测领域。阿里团队�
 - [[Loop-Engineering实战-实现从日志扫描到预发部署的全自主闭环]] —— 阿里云开发者，日志发现、独立验证、预发与状态沉淀的持续维护 Loop
 - [[Harness工程实践-如何让Agent完成自主迭代]] —— 阿里技术，父子 Agent、评测隔离与 champion-challenger 防止 reward hacking
 - [[一文读懂Harness-Engineering]] —— 腾讯云开发者，长程 Agent 的结构化状态、唤醒、回滚与 Context Reset
+- [[从AI-Coding到Harness-Engineering的端到端工程开发实践]] —— 腾讯应用宝活动平台，以知识库工程、状态文件、职责隔离、DAG/worktree 与脚本化执行串起从需求到接口验证的交付链
+- [[从-Coder-到-Designer-电商团队数据研发的-Harness-Engineering实践]] —— 阿里技术以 NL2DSL2SQL、语义资产治理、7 Agent 工作流、结果校验和心跳回写构成数据研发 Harness 案例

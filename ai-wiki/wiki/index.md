@@ -8,8 +8,8 @@ date: 2026-06-03
 
 ## 状态
 
-- 实体数：86 ｜ 主题数：9 ｜ 来源数：199
-- 最后更新：2026-07-10
+- 实体数：90 ｜ 主题数：9 ｜ 来源数：204
+- 最后更新：2026-07-15
 
 ### 主题导航
 
@@ -23,7 +23,35 @@ date: 2026-06-03
 - [[AI-Infra推理优化-主题|AI Infra 推理优化]] —— 推理服务全栈：数学原理 → RAG / Memory
 - [[OpenClaw-digest-20260510|OpenClaw 综合]] —— 架构总览与三大子系统设计哲学
 
+### 项目知识
+
+不计入上方实体/主题/来源数，也不进入静态站。笔记在 `wiki/private/projects/<repo>/`，仓库内入口为 `private/项目知识.md`。问知识库时带上项目名会检索该树；写入用 project-note，禁止当文章 ingest。
+
 ## 最近更新
+
+### 2026-07-15
+
+新增来源：[[Prompting guidance for GPT-5.6 Sol]]、[[HSCodeComp 揭开智能体分层规则应用能力鸿沟]]、[[DeepWiki-Open-GitHub]] —— 分别补充 outcome-first 的 GPT-5.6 提示词契约与迁移评测、专家级 Deep Search 的分层规则应用基准，以及面向代码仓库自动生成交互式 Wiki 的开源项目说明。
+
+新增实体：[[GPT-5.6]]、[[HSCodeComp]] —— 分别归入基础设施-模型-平台与 Agent记忆与评测，沉淀提示词精简/工具路由/验证边界，以及专家规则任务的过程性评测与回溯机制。
+
+更新实体/主题：[[Prompt分层组合架构]]、[[Agent评测方法论]] —— 补入“精简也要回归验证”的 Prompt 迁移纪律，以及按规则路径、证据与 Trace 评估高风险专业 Agent 的要求。
+
+### 2026-07-14
+
+新增来源：[[从-Coder-到-Designer-电商团队数据研发的-Harness-Engineering实践]] —— 阿里技术把语义资产治理、NL2DSL2SQL、多 Agent、人工 Gate、结果校验和经验回写组合为电商数据研发 Harness。
+
+新增实体：[[NL2SQL]] —— 归入 RAG 与知识库，说明自然语言查询从需求澄清、语义映射到 SQL 验证和资产回写的完整约束链。
+
+更新实体/主题：[[知识库工程]]、[[Harness-Engineering]]、[[Harness-Engineering-主题]] —— 补入数据语义资产的防腐闭环、技能幻觉检测、Workspace 隔离和心跳回写实践。
+
+### 2026-07-12
+
+新增来源：[[从AI-Coding到Harness-Engineering的端到端工程开发实践]] —— 腾讯应用宝活动平台以知识库工程、状态文件、专家 Agent、DAG/worktree 与脚本化执行串起从需求到接口验证的 Harness 交付链。
+
+新增实体：[[知识库工程]] —— 归入 RAG 与知识库，沉淀分层知识、自动/人工协同、版本新鲜度与渐进加载的工程方法。
+
+更新实体/主题：[[Harness-Engineering]]、[[Harness-Engineering-主题]] —— 补入“知识库底座 + 状态驱动流水线”的端到端实践，以及确定性操作交给脚本的边界。
 
 ### 2026-07-10
 

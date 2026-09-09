@@ -13,6 +13,8 @@
   - 一条 URL（自动归类到对应 `<source_type>/` 子目录后再处理）
   - 一段直接粘贴的文本（写入 `raw/local/<auto-title>.md`）
 
+项目设计笔记、决策、铁律**禁止**走本 workflow，也不得写入 `raw/` 再消化。写到 `wiki/private/projects/<repo>/`，用 [project-note](project-note.md)。
+
 ## 步骤
 
 ### 1. 准备 raw 文件

@@ -26,6 +26,7 @@ count_chars() {
 ENTITIES=$(count_md "$WIKI_DIR/entities")
 TOPICS=$(count_md "$WIKI_DIR/topics")
 SOURCES=$(count_md "$WIKI_DIR/sources")
+PRIVATE=$(count_md "$WIKI_DIR/private")
 WORDS=$(count_chars "$WIKI_DIR")
 
 RECENT=0
@@ -49,6 +50,7 @@ LLM Wiki Status
 实体数:     $ENTITIES
 主题数:     $TOPICS
 来源数:     $SOURCES
+项目笔记:   $PRIVATE  (private/，不发布、不计入上三项)
 总字数:     $WORDS
 最近 7 天:  $RECENT 个文件更新
 原始素材:   $RAW_FILES 个文件 (raw/)

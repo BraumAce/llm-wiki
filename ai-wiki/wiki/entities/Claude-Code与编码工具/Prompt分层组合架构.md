@@ -4,7 +4,7 @@ type: entity
 date: 2026-06-02
 also_known_as: [分层Prompt设计, Prompt分层组合]
 tags: [Prompt, 架构设计, 渐进式加载]
-sources: [深入解析Chromium的AI-Coding开发体系, Agent核心技术概念与范式发生了哪些演变以及背后的思考]
+sources: [深入解析Chromium的AI-Coding开发体系, Agent核心技术概念与范式发生了哪些演变以及背后的思考, Prompting guidance for GPT-5.6 Sol]
 related_entities: [Context-Engineering, Chromium-AI-Coding, OpenClaw-Skills, Spec-Driven-Development]
 related_topics: [Agent架构演进-主题]
 ---
@@ -92,6 +92,10 @@ Prompt分层组合架构是Context Engineering在Prompt组织层面的具体实�
 3. 具体执行：加载第四层（任务提示词）→ 动态
 ```
 
+#### GPT-5.6 的契约精简视角
+
+OpenAI 的 [[GPT-5.6]] 指南为分层架构补充了一条迁移纪律：先保留用户可见目标、成功/停止条件、证据和权限边界、依赖上下文的工具路由与验证要求，再逐组删除重复规则、无行为差异的示例和无关工具，并用同一批代表性评测验证。分层并不天然等于更短；每层若重复描述相同规则，或不同层给出冲突的绝对指令，仍会造成行为不稳定。对检索、追问和重试这类判断，优先写条件化决策规则；只将安全和真正不可违反的事项写成强制规则。
+
 ### 应用场景
 
 - 大型项目的AI Coding标准化（如Chromium）
@@ -105,3 +109,11 @@ Prompt分层组合架构是Context Engineering在Prompt组织层面的具体实�
 - 层级之间的引用关系需要清晰的文档
 - 过度分层可能增加配置复杂度
 - 需要团队共识和规范来维护层级边界
+
+### 验证与演进
+
+Prompt 分层的改动也应像代码变更一样接受回归检查：先在固定任务集上记录质量、token、延迟和失败 Trace，再以一次只改一层或一类指令的方式迭代。若某次精简导致漏掉证据、引用、权限或关键字段，应恢复或替换恰好负责该行为的契约，而不是把所有历史说明重新塞回 system prompt。这样才能区分模型变化、规则冲突、工具定义和上下文装配分别造成的回归。
+
+## 参考来源
+
+- [[Prompting guidance for GPT-5.6 Sol]] —— 用 outcome、约束、工具路由、停止条件和代表性 eval 指导提示词精简与迁移。
